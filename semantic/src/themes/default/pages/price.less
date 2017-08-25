@@ -1,0 +1,192 @@
+.page#price {
+  #clock-offer {
+    //min-height: 300px;
+    font-family: @codeFont;
+    color: @blue;
+    padding-bottom: 45px;
+    @media only screen and (max-width: (@tabletBreakpoint - 1)) {
+      padding-bottom: 15px;
+    }
+    .price-description {
+      text-align: center;
+      @media only screen and (max-width: (@tabletBreakpoint - 1)) {
+        margin-bottom: 1em;
+      }
+      .ui.header > .image, .ui.header {
+        > img {
+          width: auto;
+          margin-top: -8px;
+        }
+      }
+      @media only screen and (max-width: (@tabletBreakpoint - 1)) {
+        width: 100% !important;
+      }
+      font-size: 1.0666666em;
+      font-weight: bold;
+      position: relative;
+      .clamp {
+        position: absolute;
+        top: 1.07em;
+        &.left {
+          left: -9em;
+        }
+        &.right {
+          right: -9em;
+        }
+      }
+    }
+    #papers {
+      position: relative;
+      .one-thousand-papers {
+        position: absolute;
+        top: 1em;
+        left: 4.7em;
+        @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+          left: 1.5em;
+        }
+        @media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1)) {
+          left: 1.2em;
+        }
+        .paper {
+          position: absolute;
+          &.front {
+            top: 0;
+            left: 0;
+          }
+          &.back {
+            top: 2em;
+            left: 2em;
+          }
+          img {
+            /* thousand-paper-front: */
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.50);
+          }
+        }
+      }
+    }
+    #equal-sign {
+      font-size: 6em;
+      color: @red;
+      padding-top: 1.3em;
+      @media only screen and (min-width: @largeMonitorBreakpoint) {
+        padding-left: 0.2em;
+      }
+      @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+        padding-left: 0.3em;
+      }
+    }
+    #clocks {
+      padding-top: 3em;
+    }
+  }
+  .notice {
+    font-family: @headerFontName;
+    padding-bottom: 3em;
+  }
+  #price-descriptions {
+    .description {
+      border-radius: 8px;
+      margin-bottom: 3em;
+      @media only screen and (max-width: (@computerBreakpoint - 1)) {
+        padding: 1rem;
+      }
+      &.tomato {
+        border: 3px solid #358101;
+        background: #D5E6E5;
+        min-height: 260px;
+        span#pomodoro {
+          color: #CA2235;
+          margin-right: -43px;
+          font-weight: bold;
+          img {
+            position: relative;
+            top: -5px;
+            left: -56px;
+          }
+        }
+        .img.large {
+          background: url(/static/img/adminoid/pages/price/tomato-img.jpg) 100% 0 no-repeat;
+        }
+        .img.small {
+          img {
+            @media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1)) {
+              height: 40vh;
+              width: 40vw;
+              object-fit: cover;
+              object-position: 90% 10%;
+            }
+          }
+        }
+      }
+      &.video {
+        background-image: linear-gradient(-180deg, #EDE9EA 0%, #EDE9EA 52%, #EAE8E9 79%, #E8E2E4 100%);
+        border: 3px solid #FF981C;
+        min-height: 260px;
+        .img.large {
+          background: url(/static/img/adminoid/pages/price/girl-with-camera.jpg) 100% 50% no-repeat;
+        }
+      }
+      &.speed {
+        //background: #F6F6F6;
+        border: 3px solid #1254B0;
+        min-height: 260px;
+        .img.large {
+          background: url(/static/img/adminoid/pages/price/speed-img.jpg) 100% 50% no-repeat;
+        }
+        .img.small {
+          img {
+            @media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1)) {
+              height: 40vh;
+              width: 40vw;
+              object-fit: cover;
+              object-position: 90% 10%;
+            }
+          }
+        }
+      }
+      &.greed {
+        background: #F6F6F6;
+        border: 3px solid #1254B0;
+        min-height: 260px;
+        .img.large {
+          background: url(/static/img/adminoid/pages/price/greed-img.png) 0% 50% no-repeat;
+        }
+      }
+      &.total {
+        background: #FFF;
+        border: 3px solid #418B1B;
+        min-height: 260px;
+        .img.large {
+          background: url(/static/img/adminoid/pages/price/money-img.jpg) 50% 50% no-repeat;
+        }
+      }
+      .column.img {
+        @media only screen and (max-width: (@computerBreakpoint - 1)) {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          vertical-align: middle;
+          -ms-flex-item-align: center !important;
+          align-self: center !important;
+        }
+        .img.large {
+          width: 100%;
+          height: 100%;
+        }
+        .img.small {
+          img {
+            margin: auto;
+          }
+        }
+      }
+      .text {
+        font-family: @codeFont;
+        font-size: 14px;
+      }
+      > .column.img {
+        padding: 0;
+      }
+    }
+  }
+}

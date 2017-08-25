@@ -1,3 +1,105 @@
 /*******************************
          Theme Overrides
 *******************************/
+
+.ui.sidebar#top-menu-sidebar {
+  padding: 16px 0 0 16px;
+  width: 150px;
+  border-left: 2px solid #fff;
+  &:after {
+    display: none;
+    //color: #000;
+  }
+  a.item {
+    font-family: @codeFont;
+    font-size: 1.033rem;
+    padding-bottom: 14px;
+    background: none !important;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:before {
+      display: none !important;
+    }
+  }
+}
+
+.ui.menu#top-menu {
+  border-bottom: 1px solid #8EB4E9 !important;
+  height: 4.66667rem;
+  .grid.container {
+    height: 5.66667rem;
+    > .column {
+      padding-bottom: 0;
+      height: 5.66667rem;
+      &#micro-menu-wr {
+        width: 76px;
+        svg#micro-menu-svg {
+          cursor: pointer;
+          &:hover {
+            #Rectangle-28 {
+              #Rectangle-28-fill {
+                fill: #0049AA;
+              }
+              #Rectangle-28-stroke {
+                stroke: none;
+              }
+            }
+            path.svg-lines {
+              stroke: #fff;
+            }
+          }
+          &.active {
+            #Rectangle-28 {
+              #Rectangle-28-fill {
+                fill: #0049AA;
+              }
+              #Rectangle-28-stroke {
+                stroke: #CD2E41;
+              }
+            }
+            path.svg-lines {
+              stroke: #CD2E41;
+            }
+          }
+        }
+      }
+      #header-logo {
+        width: 219px;
+        > a {
+          padding-top: 5px;
+          //#header-logo-svg{
+          //  g#eye-pupil{
+          //    opacity: 0;
+          //  }
+          //}
+        }
+      }
+      g#webmaster {
+        font-weight: lighter;
+      }
+    }
+    .column {
+      .item:last-child:before {
+        display: none;
+      }
+      a.item:hover {
+        text-decoration: underline;
+      }
+      .item {
+        //padding: 0 !important;
+        height: 4.66667rem;
+        &.active {
+          &:hover {
+            background: linear-gradient(-180deg, #193D6A 0%, #326DBA 100%);
+          }
+        }
+        &.header {
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

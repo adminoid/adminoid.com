@@ -1,0 +1,188 @@
+.page#portfolio {
+  .ui.card {
+    .content {
+      > img.zoom {
+        //border: ;
+        border: 1px solid rgba(34, 36, 38, 0.1);
+      }
+      &.fix {
+        height: 320px;
+        @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+          height: 283px;
+        }
+      }
+      &.fix-mini {
+        height: 136px;
+      }
+      &.fix-mid {
+        height: 241px;
+      }
+      &.window {
+        //padding: 0 !important;
+        cursor: zoom-in;
+        position: relative;
+        overflow: hidden;
+        > img.abs {
+          position: absolute;
+        }
+        &#ikmed {
+          > img {
+            transform-style: preserve-3d;
+            transform: perspective(900px) rotate3d(1, 1, 0, 20deg);
+            transition: transform 0.3s;
+            &:hover {
+              transform: perspective(900px) rotate3d(1, 1, 0, 0deg);
+            }
+          }
+          @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+            img {
+              transform: scale(0.77) perspective(900px) rotate3d(1, 1, 0, 20deg);
+              &:hover {
+                transform: scale(0.77) perspective(900px) rotate3d(1, 1, 0, 0deg);
+              }
+              &.ikmed-logo {
+                top: 0;
+              }
+              &.iphone {
+                top: 6.83em;
+                left: 51.7em;
+              }
+              &.chrome {
+                top: 0;
+                left: 16em;
+              }
+              &.ipad {
+                top: 0.3em;
+                left: 39.8em;
+              }
+            }
+          }
+          @media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1)) {
+            img {
+              transform: scale(0.77) perspective(900px) rotate3d(1, 1, 0, 20deg);
+              &:hover {
+                transform: scale(0.77) perspective(900px) rotate3d(1, 1, 0, 0deg);
+              }
+              &.ikmed-logo {
+                top: 0;
+              }
+              &.iphone {
+                top: 6.83em;
+                left: 37.3em;
+              }
+              &.chrome {
+                top: 0;
+                left: 2.9em;
+              }
+              &.ipad {
+                top: 0.3em;
+                left: 26em;
+              }
+            }
+          }
+          @media only screen and (max-width: (@tabletBreakpoint - 1)) {
+            img {
+              transform: none;
+              &.iphone {
+                position: relative;
+                z-index: 100;
+                left: 15em;
+              }
+              &.ipad {
+                left: 35em;
+              }
+              &.chrome {
+                left: 15%;
+              }
+            }
+          }
+          .ikmed-logo {
+            top: 1em;
+            left: 1em;
+          }
+          .chrome {
+            top: 1em;
+            left: 20em;
+          }
+          .ipad {
+            top: 1.4em;
+            left: 48.5em;
+          }
+          .iphone {
+            top: 8.7em;
+            left: 62.5em;
+          }
+        }
+        &#ikmed-orders {
+          > img {
+            &.ikmed-logo {
+              top: 1em;
+              right: -1.5em;
+              transform: scale(0.7);
+            }
+            &.chrome-1 {
+              top: 1em;
+              left: 1em;
+            }
+            &.chrome-2 {
+              top: 1em;
+              left: 10em;
+            }
+            &.chrome-3 {
+              top: 1em;
+              left: 20em;
+            }
+            &.chrome-4 {
+              top: 1em;
+              left: 30em;
+            }
+          }
+        }
+        &#ikmed-admin-panel {
+          > img {
+            transform: scale(0.77);
+            transform-origin: 0 0 0;
+            z-index: 5;
+            &:hover {
+              z-index: 10;
+            }
+            &.ikmed-logo {
+              top: 4em;
+              right: -9.6em;
+            }
+            &.chrome-1 {
+              top: 1em;
+              left: 1em;
+            }
+            &.chrome-2 {
+              top: 1em;
+              left: 11em;
+            }
+            &.chrome-3 {
+              top: 1em;
+              left: 21em;
+            }
+            &.chrome-4 {
+              top: 1em;
+              left: 31em;
+            }
+          }
+        }
+        &#ikmed-prices {
+          > img {
+            &.ikmed-logo {
+              bottom: -5.6em;
+              right: -4.9em;
+              transform: rotate(-45deg) scale(0.6);
+              opacity: 0.3;
+            }
+            &.chrome {
+              top: 1em;
+              left: 1em;
+            }
+          }
+        }
+      }
+    }
+  }
+}

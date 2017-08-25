@@ -7,8 +7,8 @@
       <br>
       <div class="ui stackable grid">
 
-        <tools-block inline-template>
-          <div class="ui segment block sixteen wide column" id="projecting">
+        <div>
+          <div class="ui segment block sixteen wide column" id="projecting" is="tools-block">
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Проектирование</h2>
@@ -24,10 +24,9 @@
               </div>
             </div>
           </div>
-        </tools-block>
-
-        <tools-block inline-template>
-          <div class="ui segment block sixteen wide column" id="design">
+        </div>
+        <div>
+          <div class="ui segment block sixteen wide column" id="design" is="tools-block">
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Дизайн</h2>
@@ -42,10 +41,11 @@
               </div>
             </div>
           </div>
-        </tools-block>
+        </div>
 
-        <tools-block inline-template>
-          <div class="ui segment block sixteen wide column" id="backend">
+
+        <div>
+          <div class="ui segment block sixteen wide column" id="backend" is="tools-block">
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Бэкенд</h2>
@@ -65,10 +65,10 @@
               </div>
             </div>
           </div>
-        </tools-block>
+        </div>
 
-        <tools-block inline-template>
-          <div class="ui segment block sixteen wide column" id="frontend">
+        <div>
+          <div class="ui segment block sixteen wide column" id="frontend" is="tools-block">
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Фронтенд</h2>
@@ -110,9 +110,10 @@
               </div>
             </div>
           </div>
-        </tools-block>
-        <tools-block inline-template>
-          <div class="ui segment block sixteen wide column" id="administration">
+        </div>
+
+        <div>
+          <div class="ui segment block sixteen wide column" id="administration" is="tools-block">
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Администрирование</h2>
@@ -139,9 +140,10 @@
               </div>
             </div>
           </div>
-        </tools-block>
-        <tools-block inline-template>
-          <div class="ui segment block sixteen wide column" id="environment">
+        </div>
+
+        <div>
+          <div class="ui segment block sixteen wide column" id="environment" is="tools-block">
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Рабочее окружение</h2>
@@ -169,7 +171,7 @@
               </div>
             </div>
           </div>
-        </tools-block>
+        </div>
       </div>
     </div>
 @endsection

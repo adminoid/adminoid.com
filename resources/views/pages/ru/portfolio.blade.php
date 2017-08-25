@@ -123,8 +123,7 @@
               <div class="right floated meta yellow"><i class="calendar icon"></i>2015</div>
             </div>
 
-            <zoom inline-template>
-              <div class="content window fix" id="ikmed-prices"
+              <div class="content window fix" id="ikmed-prices" is="zoom"
                    v-on:mouseenter="startZoom" v-on:touchstart="startZoom"
                    v-on:mousemove="onZoom" v-on:touchmove="onZoom"
                    v-on:mouseleave="stopZoom" v-on:touchend="stopZoom"
@@ -136,7 +135,6 @@
                 <img class="ikmed-logo abs" src="/static/img/adminoid/pages/portfolio/presentations/ikmed-logo-big.png"
                      alt="">
               </div>
-            </zoom>
 
             <div class="extra content">
               <span class="right floated links">
@@ -158,8 +156,8 @@
               <h3 class="left floated">YOYO YO!!!</h3>
               <div class="right floated meta yellow"><i class="calendar icon"></i>2013-2014</div>
             </div>
-            <zoom inline-template>
-              <div class="content window fix"
+
+              <div class="content window fix" is="zoom"
                    v-on:mouseenter="startZoom" v-on:touchstart="startZoom"
                    v-on:mousemove="onZoom" v-on:touchmove="onZoom"
                 v-on:mouseleave="stopZoom" v-on:touchend="stopZoom">
@@ -168,7 +166,7 @@
                      alt=""
                      :style="{ left: left + 'px', top: top + 'px' }">
               </div>
-            </zoom>
+
             <div class="extra content">
               <a class="ui image label original"><img src="/static/img/adminoid/icons/tags/laravel.png"> Laravel</a>
               <a class="ui image label original"><img src="/static/img/adminoid/icons/tags/php.png"> PHP</a>
@@ -186,15 +184,16 @@
               <h3 class="left floated">Проектирование БД для магазина плитки</h3>
               <div class="right floated meta yellow"><i class="calendar icon"></i>2013-2014</div>
             </div>
-            <zoom inline-template>
-              <div class="content window fix-mini" v-on:mouseenter="startZoom" v-on:touchstart="startZoom"
+
+              <div class="content window fix-mini" is="zoom"
+                   v-on:mouseenter="startZoom" v-on:touchstart="startZoom"
                    v-on:mousemove="onZoom" v-on:touchmove="onZoom" v-on:mouseleave="stopZoom" v-on:touchend="stopZoom">
                 <img class="ui fluid image zoom"
                      src="/static/img/adminoid/pages/portfolio/presentations/ikmed-prices/chrome.jpg"
                      alt=""
                      :style="{ left: left + 'px', top: top + 'px' }">
               </div>
-            </zoom>
+
             <div class="extra content">
               <a class="ui image label original"><img src="/static/img/adminoid/icons/tags/laravel.png"> Laravel</a>
               <a class="ui image label original"><img src="/static/img/adminoid/icons/tags/php.png"> PHP</a>
@@ -243,8 +242,8 @@
                 <h3 class="left floated">Проектирование БД для магазина плитки 112</h3>
                 <div class="right floated meta yellow"><i class="calendar icon"></i>2013-2014</div>
               </div>
-              <zoom inline-template>
-                <div class="content window fix-mid"
+
+                <div class="content window fix-mid" is="zoom"
                      v-on:mouseenter="startZoom" v-on:touchstart="startZoom"
                      v-on:mousemove="onZoom" v-on:touchmove="onZoom"
                      v-on:mouseleave="stopZoom" v-on:touchend="stopZoom">
@@ -253,7 +252,7 @@
                        alt=""
                        :style="{ left: left + 'px', top: top + 'px' }">
                 </div>
-              </zoom>
+
               <div class="extra content">
                 <a class="ui image label original"><img src="/static/img/adminoid/icons/tags/laravel.png">
                   Laravel</a>
@@ -302,8 +301,8 @@
                 <h3 class="left floated">Проектирование БД для магазина плитки</h3>
                 <div class="right floated meta yellow"><i class="calendar icon"></i>2013-2014</div>
               </div>
-              <zoom inline-template>
-                <div class="content window fix-mid"
+
+                <div class="content window fix-mid" is="zoom"
                      v-on:mouseenter="startZoom" v-on:touchstart="startZoom"
                      v-on:mousemove="onZoom" v-on:touchmove="onZoom"
                      v-on:mouseleave="stopZoom" v-on:touchend="stopZoom">
@@ -312,7 +311,7 @@
                        alt=""
                        :style="{ left: left + 'px', top: top + 'px' }">
                 </div>
-              </zoom>
+
               <div class="extra content">
                 <a class="ui image label original"><img src="/static/img/adminoid/icons/tags/laravel.png">
                   Laravel</a>

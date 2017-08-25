@@ -1,3 +1,15 @@
 /*******************************
          Theme Overrides
 *******************************/
+#portfolio > div {
+  div.extra.content {
+    span.links {
+      margin-top: 0.8em;
+      a {
+        color: @blue;
+        font-size: 0.9333em;
+        font-family: @headerFont;
+      }
+    }
+  }
+}

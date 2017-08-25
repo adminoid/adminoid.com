@@ -31,7 +31,9 @@
     "menu",
     "card",
     "item",
-    "sidebar"
+    "sidebar",
+    "label",
+    "icon"
   ],
   "version": "2.2.13"
 }

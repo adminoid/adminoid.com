@@ -1,3 +1,76 @@
 /*******************************
         Global Overrides
 *******************************/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+//html, body {
+html {
+  height: auto !important;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+body#app {
+  height: auto;
+}
+
+.ui.page.container {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7rem;
+  padding-bottom: 12rem;
+  height: 100%;
+}
+
+//.page-content {
+//margin-bottom: 1em;
+//}
+
+li {
+  margin-bottom: 10px;
+  > ul{
+    margin-top: 10px;
+  }
+}
+
+.page-footer {
+  height: 7.55em;
+  position: absolute !important;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  font-family: @headerFont;
+  &.pusher {
+    min-height: inherit !important;
+  }
+  a.item {
+    font-size: 1.06667rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  > .ui.footer > .ui.container > .ui.grid {
+    height: 114px;
+  }
+}
+
+@import "../helpers/visibility.less";
+
+/* Pages (Petja's custom) */
+@import "../pages/index";
+
+@import "../pages/price";
+
+@import "../pages/tools";
+
+@import "../pages/process";
+
+@import "../pages/portfolio";
+
+@import "../pages/reviews";
+

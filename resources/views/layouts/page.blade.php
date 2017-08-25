@@ -25,6 +25,8 @@
     <meta name="msapplication-TileImage" content="/static/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="stylesheet" href="{{ mix('/css/semantic.min.css') }}">
+
 </head>
 <body>
 
@@ -43,7 +45,7 @@
         <top-menu inline-template>
             <div class="ui fixed menu" id="top-menu">
                 <div class="ui grid container">
-                    <div class="three wide column">
+                    <div class="four wide column">
                         <div id="header-logo" class="header item">
                             <a href="/">
                                 <svg id="header-logo-svg" width="219px" height="53px" viewBox="0 0 219 53" version="1.1"
@@ -141,7 +143,7 @@
                                                             <path
                                                                     d="M12,14 L11.7619048,14 L0,52 L26,52 L14.2380952,14 L14,14 C14,13.4477153 13.5522847,13 13,13 C12.4477153,13 12,13.4477153 12,14 Z"
                                                                     id="Combined-Shape" fill="#CD2E41"></path>
-                                                            <g id="eye-pupil"
+                                                            <g id="eye-pupil" style="visibility: hidden; opacity: 0;"
                                                                :transform="eyeTransformWithAngle">
                                                                 <path
                                                                         d="M5,10 C7.76142375,10 10,7.76142375 10,5 C10,2.23857625 7.76142375,0 5,0 C2.23857625,0 0,2.23857625 0,5 C0,7.76142375 2.23857625,10 5,10 Z"
@@ -219,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div class="thirteen wide column computer widescreen largescreen only">
+                    <div class="twelve wide left floated column computer widescreen largescreen only">
                         <div class="ui six item menu">
                             <a href="/price.html" class="item">
                                 Цена
@@ -227,17 +229,17 @@
                             <a href="/tools.html" class="item">
                                 Инструменты
                             </a>
-                            <a href="/process.html" class="item">
+                            <a href="/process.html" class="item active">
                                 Процесс
                             </a>
                             <a href="/portfolio.html" class="item">
                                 Портфолио
                             </a>
-                            <a href="reviews.html" class="item active">
+                            <a href="reviews.html" class="item">
                                 Отзывы
                             </a>
                             <div class="item">
-                                <button class="ui right floated button" id="super">
+                                <button class="ui button" id="super">
                                     Пиши
                                 </button>
                             </div>

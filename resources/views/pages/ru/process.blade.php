@@ -5,8 +5,8 @@
       <h1 class="ui blue header">Разработка сайта, пример рабочего процесса</h1>
       <div class="ui grid process-block projecting top">
         <div class="inner-column"></div>
-        <half-rotate inline-template>
-          <div class="sixteen wide column message"
+
+          <div class="sixteen wide column message" is="half-rotate"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"
                v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
@@ -39,12 +39,12 @@
               </div>
             </div>
           </div>
-        </half-rotate>
+
       </div>
       <div class="ui grid process-block design">
         <div class="inner-column"></div>
-        <half-rotate inline-template>
-          <div class="sixteen wide column message"
+
+          <div class="sixteen wide column message" is="half-rotate"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"
                v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
@@ -56,13 +56,13 @@
               <img src="static/img/adminoid/pages/process/design/site.png" alt="">
             </p>
           </div>
-        </half-rotate>
+
       </div>
 
       <div class="ui grid process-block frontend">
         <div class="inner-column"></div>
-        <half-rotate inline-template>
-          <div class="sixteen wide column message"
+
+          <div class="sixteen wide column message" is="half-rotate"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"
                v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
@@ -74,13 +74,13 @@
               Vue.js модули, Unit-тесты, верстка, стили, репозиторий
             </p>
           </div>
-        </half-rotate>
+
       </div>
 
       <div class="ui grid process-block backend bottom">
         <div class="inner-column"></div>
-        <half-rotate inline-template>
-          <div class="sixteen wide column message"
+
+          <div class="sixteen wide column message" is="half-rotate"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"
                v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
@@ -92,7 +92,7 @@
               Unit-тесты, репозиторий
             </p>
           </div>
-        </half-rotate>
+
       </div>
 
     </div>

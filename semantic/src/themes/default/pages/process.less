@@ -1,0 +1,102 @@
+.page#process {
+  .process-block {
+    /*******- begin -*/
+    position: relative;
+    z-index: 1;
+    perspective: 1000px;
+    //&:nth-child(even) {
+    //  .message {
+    //    margin-left: 20%;
+    //    transform-origin: 40% 50%;
+    //  }
+    //}
+    .message {
+      //padding-top: 0 !important;
+      //transform-origin: 64% 50%;
+      transform-style: preserve-3d;
+      -webkit-transition: all 150ms ease-out;
+      -moz-transition: all 150ms ease-out;
+      -o-transition: all 150ms ease-out;
+      transition: all 150ms ease-out;
+      /*******- end -*/
+      //font-family: @codeFont;
+      font-family: @pageFont;
+      margin: 1.3em 1em;
+      background: #fff;
+      padding-left: 2em;
+      padding-right: 2em;
+      text-align: center;
+    }
+    //&:hover .message {
+    //  transform: rotateY(180deg);
+    //}
+    //&:first-child{
+    &.top {
+      margin-top: 3em;
+      .inner-column {
+        border-radius: 1em 1em 0 0;
+      }
+    }
+    &.bottom {
+      .inner-column {
+        border-radius: 0 0 1em 1em;
+      }
+    }
+    .inner-column {
+      width: 2em;
+      height: 100%;
+      position: absolute;
+      right: 50%;
+      margin-right: -1em;
+    }
+
+    // TODO Перенести цвета в конфиг
+    &.projecting > .inner-column {
+      background-color: @red;
+    }
+    &.projecting .message {
+      border: 5px solid @red;
+      border-radius: 7px;
+      color: @blueTextColor;
+      background-color: #FEFBFB;
+    }
+
+    &.design > .inner-column {
+      background-color: @yellow;
+    }
+    &.design .message {
+      border: 5px solid @yellow;
+      border-radius: 7px;
+      color: @redTextColor;
+      background-color: #FFFCF8;
+      p {
+        margin: 0;
+        img {
+          position: relative;
+          bottom: -24px;
+        }
+      }
+    }
+
+    &.frontend > .inner-column {
+      background-color: @green;
+    }
+    &.frontend .message {
+      border: 5px solid @green;
+      border-radius: 7px;
+      color: @blueTextColor;
+      background-color: #F8FBF7;
+    }
+
+    &.backend > .inner-column {
+      background-color: @blue;
+    }
+    &.backend .message {
+      border: 5px solid @blue;
+      border-radius: 7px;
+      color: @greenTextColor;
+      background-color: #F8FAFD;
+    }
+
+  }
+}

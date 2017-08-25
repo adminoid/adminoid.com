@@ -1,0 +1,357 @@
+#tools {
+
+  a {
+    border-bottom: dotted 2px #1D60B5;
+    &:hover {
+      text-decoration: none;
+      border-bottom: none;
+    }
+  }
+  .block {
+    border: 2px dashed #FF981C;
+    margin-bottom: 2em;
+    &:hover {
+      border: 2px solid #418B1B;
+    }
+    .images-wrapper {
+      min-width: 325px;
+      min-height: 170px;
+      position: relative;
+      img {
+        position: absolute;
+      }
+    }
+    &#projecting {
+      .text-wrapper {
+        a.lucidchart {
+          background: no-repeat url('/static/img/adminoid/pages/tools/projecting/icons/lucidchart.png');
+          padding-left: 22px;
+        }
+        a.brain {
+          background: no-repeat url('/static/img/adminoid/pages/tools/projecting/icons/brain.png');
+          padding-left: 25px;
+        }
+      }
+      .images-wrapper {
+        img#lucidchart {
+          top: 29px;
+          left: 15px;
+        }
+
+        img#brain {
+          top: 84px;
+          left: 200px;
+        }
+      }
+    }
+    &#design {
+      .text-wrapper {
+        a.sketch {
+          background: no-repeat url(/static/img/adminoid/pages/tools/projecting/icons/sketch.png);
+          padding-left: 20px;
+        }
+        a.photoshop {
+          background: no-repeat url(/static/img/adminoid/pages/tools/projecting/icons/photoshop.png);
+          padding-left: 22px;
+        }
+      }
+      .images-wrapper {
+        img#sketch {
+          top: 16px;
+          left: 44px;
+        }
+        img#photoshop {
+          top: 70px;
+          left: 200px;
+        }
+      }
+    }
+    &#backend {
+      .text-wrapper {
+        a.php {
+          background: no-repeat url(/static/img/adminoid/pages/tools/backend/icons/php.png);
+          padding-left: 34px;
+        }
+        a.laravel {
+          background: no-repeat url(/static/img/adminoid/pages/tools/backend/icons/laravel.png);
+          padding-left: 30px;
+        }
+        a.php-unit {
+          background: no-repeat url(/static/img/adminoid/pages/tools/backend/icons/php-unit.png);
+          padding-left: 29px;
+        }
+        a.php-storm {
+          background: no-repeat url(/static/img/adminoid/pages/tools/backend/icons/php-storm.png);
+          padding-left: 22px;
+        }
+      }
+      .images-wrapper {
+        img#php {
+          top: 32px;
+          left: 67px;
+        }
+        img#laravel {
+          top: 31px;
+          left: 12px;
+        }
+        img#php-storm {
+          left: 207px;
+          top: 14px;
+        }
+        img#php-unit {
+          left: 207px;
+          top: 100px;
+        }
+      }
+    }
+    &#frontend {
+      h2 {
+        margin: 0;
+      }
+      h3 {
+        //margin: 5px 0 0;
+        color: #418B1B;
+      }
+      .text-wrapper {
+        a.less {
+          background: no-repeat 0 3px url(/static/img/adminoid/pages/tools/frontend/icons/less.png);
+          padding-left: 32px;
+        }
+        a.sass {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/sass.png);
+          padding-left: 28px;
+        }
+        a.twitter-bootstrap {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/twitter-bootstrap.png);
+          padding-left: 22px;
+        }
+        a.semantic-ui {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/semantic-ui.png);
+          padding-left: 21px;
+        }
+        a.bourbon {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/bourbon.png);
+          padding-left: 22px;
+        }
+
+        a.ecma-script {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/ecma-script.png);
+          padding-left: 19px;
+        }
+        a.vue-js {
+          background: no-repeat 0 3px url(/static/img/adminoid/pages/tools/frontend/icons/vue-js.png);
+          padding-left: 17px;
+        }
+        a.webpack {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/webpack.png);
+          padding-left: 19px;
+        }
+        a.node-js {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/node-js.png);
+          padding-left: 35px;
+        }
+        a.chai {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/chai.png);
+          padding-left: 21px;
+        }
+        a.mocha {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/mocha.png);
+          padding-left: 22px;
+        }
+        a.karma {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/karma.png);
+          padding-left: 28px;
+        }
+        a.ext-js {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/ext-js.png);
+          padding-left: 22px;
+        }
+      }
+      .images-wrapper {
+        min-height: 330px;
+        @media (max-width: (@computerBreakpoint - 1)) {
+          margin-top: -2em !important;
+        }
+        img#less {
+          top: 66-33px;
+          left: 10px;
+        }
+        img#sass {
+          top: 99-33px;
+          left: 22px;
+        }
+        img#twitter-bootstrap {
+          top: 78-33px;
+          left: 100px;
+        }
+        img#semantic-ui {
+          top: 77-33px;
+          left: 173px;
+        }
+        img#bourbon {
+          top: 78-33px;
+          left: 244px;
+        }
+
+        img#ecma-script {
+          top: 167-33px;
+          left: 20px;
+        }
+        img#vue-js {
+          top: 240-33px;
+          left: -1px;
+        }
+        img#karma {
+          top: 183-33px;
+          left: 134px;
+        }
+        img#chai {
+          top: 230-33px;
+          left: 116px;
+        }
+        img#mocha {
+          top: 231-33px;
+          left: 168px;
+        }
+        img#ext-js {
+          top: 178-33px;
+          left: 241px;
+        }
+        img#node-js {
+          top: 290-33px;
+          left: 117px;
+        }
+        img#webpack {
+          top: 272-33px;
+          left: 228px;
+        }
+      }
+    }
+    &#administration {
+      .text-wrapper {
+        a.docker {
+          background: no-repeat url(/static/img/adminoid/pages/tools/administration/icons/docker.png);
+          padding-left: 36px;
+        }
+        a.nginx {
+          background: no-repeat url(/static/img/adminoid/pages/tools/administration/icons/nginx.png);
+          padding-left: 23px;
+        }
+        a.ubuntu {
+          background: no-repeat url(/static/img/adminoid/pages/tools/administration/icons/ubuntu.png);
+          padding-left: 23px;
+        }
+        a.debian {
+          background: no-repeat url(/static/img/adminoid/pages/tools/administration/icons/debian.png);
+          padding-left: 21px;
+        }
+        a.apache {
+          background: no-repeat url(/static/img/adminoid/pages/tools/administration/icons/apache.png);
+          padding-left: 11px;
+        }
+        a.laradock {
+          background: no-repeat url(/static/img/adminoid/pages/tools/administration/icons/laradock.png);
+          padding-left: 28px;
+        }
+      }
+      .images-wrapper {
+        min-height: 240px;
+        img#docker {
+          top: 29px;
+          left: 21px;
+        }
+        img#nginx {
+          top: 17px;
+          left: 187px;
+        }
+        img#ubuntu {
+          top: 16px;
+          left: 283px;
+        }
+        img#apache {
+          top: 115px;
+          left: 184px;
+        }
+        img#debian {
+          top: 83px;
+          left: 284px;
+        }
+        img#laradock {
+          top: 153px;
+          left: 54px;
+        }
+      }
+    }
+    &#environment {
+      .text-wrapper {
+        a.mac {
+          background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/mac.png);
+          padding-left: 21px;
+        }
+        a.keymap {
+          background: no-repeat 0 2px url(/static/img/adminoid/pages/tools/environment/icons/keymap.png);
+          padding-left: 32px;
+        }
+        a.vim {
+          background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/vim.png);
+          padding-left: 21px;
+        }
+        a.git {
+          background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/git.png);
+          padding-left: 23px;
+        }
+        a.markdown {
+          background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/markdown.png);
+          padding-left: 32px;
+        }
+        a.omni {
+          background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/omni.png);
+          padding-left: 19px;
+        }
+        a.vitamin {
+          background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/vitamin.png);
+          padding-left: 20px;
+        }
+        a.google-apps {
+          background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/google-apps.png);
+          padding-left: 29px;
+        }
+      }
+      .images-wrapper {
+        min-height: 305px;
+        img#mac {
+          top: 0;
+          left: 21px;
+        }
+        img#keymap {
+          top: 163px;
+          left: 31px;
+        }
+        img#vim {
+          top: 243px;
+          left: 42px;
+        }
+        img#git {
+          top: 243px;
+          left: 112px;
+        }
+        img#markdown {
+          top: 241px;
+          left: 216px;
+        }
+        img#omni {
+          top: 12px;
+          left: 270px;
+        }
+        img#vitamin {
+          top: 13px;
+          left: 202px;
+        }
+        img#google-apps {
+          top: 93px;
+          left: 192px;
+        }
+      }
+    }
+  }
+}

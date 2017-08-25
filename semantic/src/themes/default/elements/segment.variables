@@ -56,7 +56,6 @@
 @loaderSize: 3em;
 @loaderLineZIndex: 101;
 
-
 /*******************************
             Variations
 *******************************/
@@ -91,13 +90,12 @@
 @attachedWidth: ~"calc(100% + "-@attachedHorizontalOffset * 2~")";
 @attachedBoxShadow: none;
 @attachedBorder: @borderWidth solid @solidBorderColor;
-@attachedBottomBoxShadow:
-  @boxShadow,
-  @attachedBoxShadow
-;
+@attachedBottomBoxShadow: @boxShadow,
+@attachedBoxShadow;
 
 /* Inverted */
-@invertedBackground: @black;
+//@invertedBackground: @black;
+@invertedBackground: #193D6A;
 
 /* Floated */
 @floatedDistance: 1em;
@@ -115,25 +113,19 @@
 @secondaryBackground: @darkWhite;
 @secondaryColor: @mutedTextColor;
 
-@tertiaryBackground:  @midWhite;
+@tertiaryBackground: @midWhite;
 @tertiaryColor: @mutedTextColor;
 
 @secondaryInvertedLightness: 0.2;
-@secondaryInvertedBackground:
-  lighten(@black, (@secondaryInvertedLightness * 100))
-  linear-gradient(
-    rgba(255, 255, 255, @secondaryInvertedLightness) 0%,
-    rgba(255, 255, 255, @secondaryInvertedLightness) 100%
-  )
-;
+@secondaryInvertedBackground: lighten(@black, (@secondaryInvertedLightness * 100)) linear-gradient(
+        rgba(255, 255, 255, @secondaryInvertedLightness) 0%,
+        rgba(255, 255, 255, @secondaryInvertedLightness) 100%
+);
 @secondaryInvertedColor: @invertedMutedTextColor;
 
 @tertiaryInvertedLightness: 0.35;
-@tertiaryInvertedBackground:
-  lighten(@black, (@tertiaryInvertedLightness * 100))
-  linear-gradient(
-    rgba(255, 255, 255, @tertiaryInvertedLightness) 0%,
-    rgba(255, 255, 255, @tertiaryInvertedLightness) 100%
-  )
-;
+@tertiaryInvertedBackground: lighten(@black, (@tertiaryInvertedLightness * 100)) linear-gradient(
+        rgba(255, 255, 255, @tertiaryInvertedLightness) 0%,
+        rgba(255, 255, 255, @tertiaryInvertedLightness) 100%
+);
 @tertiaryInvertedColor: @invertedMutedTextColor;

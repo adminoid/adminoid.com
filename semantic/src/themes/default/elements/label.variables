@@ -12,7 +12,8 @@
 @backgroundColor: #E8E8E8;
 @color: @mutedTextColor;
 @backgroundImage: none;
-@verticalPadding: 0.5833em; /* medium is not @emSize custom value required */
+//@verticalPadding: 0.5833em; /* medium is not @emSize custom value required */
+@verticalPadding: 0.5em; /* medium is not @emSize custom value required */
 @horizontalPadding: 0.833em;
 @borderRadius: @absoluteBorderRadius;
 @textTransform: none;
@@ -68,9 +69,11 @@
 @imageLabelDetailDistance: @imageLabelTextDistance;
 @imageLabelBorderRadius: @borderRadius;
 @imageLabelBoxShadow: none;
-@imageLabelPadding: @imageLabelVerticalPadding @imageLabelHorizontalPadding @imageLabelVerticalPadding @imageLabelTextDistance;
+//@imageLabelPadding: @imageLabelVerticalPadding @imageLabelHorizontalPadding @imageLabelVerticalPadding @imageLabelTextDistance;
+@imageLabelPadding: 0.4em 0.833em 0.5em 0.5em;
 
-@imageLabelImageMargin: -@verticalPadding @imageLabelTextDistance -@verticalPadding -@imageLabelTextDistance;
+//@imageLabelImageMargin: -@verticalPadding @imageLabelTextDistance -@verticalPadding -@imageLabelTextDistance;
+@imageLabelImageMargin: -0.6em 0.5em -0.5em -0.5em;
 @imageLabelImageBorderRadius: @imageLabelBorderRadius 0em 0em @imageLabelBorderRadius;
 @imageLabelImageHeight: @imageHeight;
 
@@ -96,7 +99,6 @@
 @labelActiveHoverBackgroundColor: #C8C8C8;
 @labelActiveHoverBackgroundImage: none;
 @labelActiveHoverTextColor: @selectedTextColor;
-
 
 /*-------------------
       Variations
@@ -130,19 +132,18 @@
 @ribbonShadowColor: rgba(0, 0, 0, 0.15);
 
 @ribbonMargin: 1rem;
-@ribbonOffset: ~"calc("-@ribbonMargin~" - "@ribbonTriangleSize~")";
-@ribbonDistance: ~"calc("@ribbonMargin~" + "@ribbonTriangleSize~")";
-@rightRibbonOffset:  ~"calc(100% + "@ribbonMargin~" + "@ribbonTriangleSize~")";
+@ribbonOffset: ~"calc("-@ribbonMargin~" - " @ribbonTriangleSize ~")";
+@ribbonDistance: ~"calc(" @ribbonMargin ~" + " @ribbonTriangleSize ~")";
+@rightRibbonOffset: ~"calc(100% + " @ribbonMargin ~" + " @ribbonTriangleSize ~")";
 
 @ribbonImageTopDistance: 1rem;
 @ribbonImageMargin: -0.05rem; /* Rounding Offset on Triangle */
-@ribbonImageOffset: ~"calc("-@ribbonImageMargin~" - "@ribbonTriangleSize~")";
-@rightRibbonImageOffset:  ~"calc(100% + "@ribbonImageMargin~" + "@ribbonTriangleSize~")";
+@ribbonImageOffset: ~"calc("-@ribbonImageMargin~" - " @ribbonTriangleSize ~")";
+@rightRibbonImageOffset: ~"calc(100% + " @ribbonImageMargin ~" + " @ribbonTriangleSize ~")";
 
 @ribbonTableMargin: @relativeMini; /* Rounding Offset on Triangle */
-@ribbonTableOffset: ~"calc("-@ribbonTableMargin~" - "@ribbonTriangleSize~")";
-@rightRibbonTableOffset:  ~"calc(100% + "@ribbonTableMargin~" + "@ribbonTriangleSize~")";
-
+@ribbonTableOffset: ~"calc("-@ribbonTableMargin~" - " @ribbonTriangleSize ~")";
+@rightRibbonTableOffset: ~"calc(100% + " @ribbonTableMargin ~" + " @ribbonTriangleSize ~")";
 
 /* Colors */
 @redTextColor: @white;
@@ -244,11 +245,11 @@
 --------------------*/
 
 /* Sizing */
-@mini    : @9px;
-@tiny    : @10px;
-@small   : @11px;
-@medium  : @12px;
-@large   : @absoluteMedium;
-@big     : @absoluteBig;
-@huge    : @absoluteHuge;
-@massive : @absoluteMassive;
+@mini: @9px;
+@tiny: @10px;
+@small: @11px;
+@medium: @12px;
+@large: @absoluteMedium;
+@big: @absoluteBig;
+@huge: @absoluteHuge;
+@massive: @absoluteMassive;

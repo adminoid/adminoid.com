@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="189px" height="158px" viewBox="0 0 189 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>static/img/adminoid/pages/main/clouds</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="13" cy="148" rx="13" ry="10"></ellipse>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="26" height="20" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <ellipse id="path-3" cx="42" cy="125" rx="33" ry="25"></ellipse>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="66" height="50" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <ellipse id="path-5" cx="106.389262" cy="62" rx="82.3892617" ry="62"></ellipse>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="164.778523" height="124" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+    </defs>
+    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Monitor---Главная" transform="translate(-276.000000, -122.000000)">
+            <g id="adminoid/contents/main-page-content" transform="translate(94.000000, 96.000000)">
+                <g id="intro" transform="translate(3.000000, 0.000000)">
+                    <g id="static/img/adminoid/pages/main/clouds" transform="translate(179.000000, 26.000000)">
+                        <use id="Oval-Copy" stroke="#1254B0" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" stroke-dasharray="4" xlink:href="#path-1"></use>
+                        <use id="Oval-Copy" stroke="#1254B0" mask="url(#mask-4)" stroke-width="4" fill="#FFFFFF" stroke-dasharray="4" xlink:href="#path-3"></use>
+                        <use id="Oval-Copy" stroke="#CD2E41" mask="url(#mask-6)" stroke-width="4" fill="#FFFFFF" stroke-dasharray="4" xlink:href="#path-5"></use>
+                        <text id="Очень-красивый" opacity="0.393908514" font-family="RobotoMono-Regular, Roboto Mono" font-size="24" font-weight="normal" fill="#000000">
+                            <tspan x="69.9941406" y="56">Очень</tspan>
+                            <tspan x="48.390625" y="84">красивый</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
