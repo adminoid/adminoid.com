@@ -171,21 +171,19 @@
 
         <h3 class="ui green header">Надежность</h3>
 
-        <effect-block inline-template>
-            <div class="ui container effect-block">
-                <img class="ui fluid image" src="static/img/adminoid/pages/main/reliability.jpg">
-                <div class="inner">
-                    <div class="text">
-                        <p>За годы работы (с июня 2008) на крупнейшей российской бирже фриланса FL.ru у меня только
-                            положительные
-                            отзывы и завершенные сделки (см. отзывы).
-                        <p>В начале пути, когда я был неопытен, шанс совершить ошибку был еще велик, но я им не
-                            воспользовался.</p>
-                        <p>Как теперь накосячить ума не приложу…</p>
-                    </div>
+        <div class="ui container effect-block">
+            <img class="ui fluid image" src="static/img/adminoid/pages/main/reliability.jpg">
+            <div class="inner">
+                <div class="text">
+                    <p>За годы работы (с июня 2008) на крупнейшей российской бирже фриланса FL.ru у меня только
+                        положительные
+                        отзывы и завершенные сделки (см. отзывы).
+                    <p>В начале пути, когда я был неопытен, шанс совершить ошибку был еще велик, но я им не
+                        воспользовался.</p>
+                    <p>Как теперь накосячить ума не приложу…</p>
                 </div>
             </div>
-        </effect-block>
+        </div>
 
         <h3 class="ui green header">Фронтенд</h3>
 
