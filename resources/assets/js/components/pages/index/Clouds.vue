@@ -99,4 +99,3 @@
     </g>
   </svg>
 </template>
-<style></style>

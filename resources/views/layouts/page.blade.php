@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>adminoid.ru</title>
+    <title>@yield('title')</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png">
@@ -31,12 +31,12 @@
 <body>
 
 <div class="ui right sidebar inverted red vertical menu active" id="top-menu-sidebar">
-    <a href="/" class="item">Главная</a>
-    <a href="/price.html" class="item">Цена</a>
-    <a href="/tools.html" class="item">Инструменты</a>
-    <a href="/process.html" class="item">Процесс</a>
-    <a href="/portfolio.html" class="item">Портфолио</a>
-    <a href="/reviews.html" class="item active">Отзывы</a>
+    <a href="/" class="item{{ Request::is('/') ? ' active' : '' }}">Главная</a>
+    <a href="/price.html" class="item{{ Request::is('price.html') ? ' active' : '' }}">Цена</a>
+    <a href="/tools.html" class="item{{ Request::is('tools.html') ? ' active' : '' }}">Инструменты</a>
+    <a href="/process.html" class="item{{ Request::is('process.html') ? ' active' : '' }}">Процесс</a>
+    <a href="/portfolio.html" class="item{{ Request::is('portfolio.html') ? ' active' : '' }}">Портфолио</a>
+    <a href="/reviews.html" class="item{{ Request::is('reviews.html') ? ' active' : '' }}">Отзывы</a>
 </div>
 
 <div id="app" class="pusher ">
@@ -223,19 +223,19 @@
 
                     <div class="twelve wide left floated column computer widescreen largescreen only">
                         <div class="ui six item menu">
-                            <a href="/price.html" class="item">
+                            <a href="/price.html" class="item{{ Request::is('price.html') ? ' active' : '' }}">
                                 Цена
                             </a>
-                            <a href="/tools.html" class="item">
+                            <a href="/tools.html" class="item{{ Request::is('tools.html') ? ' active' : '' }}">
                                 Инструменты
                             </a>
-                            <a href="/process.html" class="item active">
+                            <a href="/process.html" class="item{{ Request::is('process.html') ? ' active' : '' }}">
                                 Процесс
                             </a>
-                            <a href="/portfolio.html" class="item">
+                            <a href="/portfolio.html" class="item{{ Request::is('portfolio.html') ? ' active' : '' }}">
                                 Портфолио
                             </a>
-                            <a href="reviews.html" class="item">
+                            <a href="reviews.html" class="item{{ Request::is('reviews.html') ? ' active' : '' }}">
                                 Отзывы
                             </a>
                             <div class="item">
@@ -278,12 +278,12 @@
     </div>
 </div>
 
-<!-- JavaScripts -->
-<script src="{{ mix('/js/manifest.js') }}"></script>
-<script src="{{ mix('/js/vendor.js') }}"></script>
-<script src="{{ mix('/js/sidebar.min.js') }}"></script>
-<script src="{{ mix('/js/all.js') }}"></script>
-<script src="{{ mix('/js/index.js') }}"></script>
+@section('js')
+    <script src="{{ mix('/js/manifest.js') }}"></script>
+    <script src="{{ mix('/js/vendor.js') }}"></script>
+    <script src="{{ mix('/js/all.js') }}"></script>
+    <script src="{{ mix('/js/sidebar.min.js') }}"></script>
+@show
 
 </body>
 </html>

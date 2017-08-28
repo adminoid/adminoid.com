@@ -250,3 +250,8 @@
 
     </div>
 @endsection
+
+@section('js')
+    @parent
+    <script src="{{ mix('/js/index.js') }}"></script>
+@endsection

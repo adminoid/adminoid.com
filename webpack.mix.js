@@ -14,7 +14,7 @@ let mix = require('laravel-mix');
 mix.js('resources/assets/js/all.js', 'public/js')
   .js('resources/assets/js/index.js', 'public/js')
   .extract(['vue', 'gsap', 'axios', 'jquery'])
-  .copy('semantic/dist/semantic.min.css', 'public/css/semantic.min.css')
+  .copy('semantic/dist/semantic.min.css', 'public/css')
   .copy('semantic/dist/components/sidebar.min.js', 'public/js')
   .version()
   .copyDirectory('semantic/dist/themes/default', 'public/css/themes/default');
