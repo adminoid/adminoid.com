@@ -1,5 +1,7 @@
 @extends('layouts.page')
 
+@section('title', 'Цена')
+
 @section('content')
     <div class="ui page container" id="price">
 
@@ -564,4 +566,9 @@
 
         </div>
     </div>
+@endsection
+
+@section('js')
+    @parent
+    <script src="{{ mix('/js/price.js') }}"></script>
 @endsection
