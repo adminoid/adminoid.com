@@ -278,12 +278,10 @@
     </div>
 </div>
 
-@section('js')
-    <script src="{{ mix('/js/manifest.js') }}"></script>
-    <script src="{{ mix('/js/vendor.js') }}"></script>
-    <script src="{{ mix('/js/all.js') }}"></script>
-    <script src="{{ mix('/js/sidebar.min.js') }}"></script>
-@show
+<script src="{{ mix('/js/manifest.js') }}"></script>
+<script src="{{ mix('/js/vendor.js') }}"></script>
+<script src="{{ mix('/js/app.js') }}"></script>
+<script src="{{ mix('/js/sidebar.min.js') }}"></script>
 
 </body>
 </html>

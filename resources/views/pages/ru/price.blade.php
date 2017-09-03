@@ -1,6 +1,6 @@
 @extends('layouts.page')
 
-@section('title', 'Цена')
+@section('title', 'Выгодная цена за фильтрованный концентрат')
 
 @section('content')
     <div class="ui page container" id="price">
@@ -102,7 +102,7 @@
             <div class="four wide tablet six wide computer column mobile hidden" id="clocks">
                 <div class="ui centered grid">
                     <div class="column">
-                        <clock inline-template>
+                        <clock>
                             <svg id="clock" width="163px" height="163px" viewBox="0 0 163 163" version="1.1"
                                  v-on:mouseover="onHover" v-on:mouseleave="onLeave"
                                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>
@@ -566,9 +566,4 @@
 
         </div>
     </div>
-@endsection
-
-@section('js')
-    @parent
-    <script src="{{ mix('/js/price.js') }}"></script>
 @endsection
