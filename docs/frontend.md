@@ -1,0 +1,25 @@
+# Information about frontend transference
+
+-   Vue.js
+    -   /public/js/app.js
+    -   /webpack.mix.js
+-   semantic ui
+    -   public/css/themes
+    -   installation semantic ui
+        -   npm install semantic-ui
+        -   npm install semantic-ui --save
+    -   move docs about semantic customization from frontend.adminoid.com or show git diff
+        -   semantic/src/definitions/elements/label.less
+        -   semantic/src/definitions/views/card.less
+        -   semantic/src/themes/default/collections/menu.overrides
+        -   semantic/src/themes/default/collections/menu.variables
+        -   semantic/src/themes/default/elements/button.overrides
+        -   semantic/src/themes/default/elements/label.variables
+        -   semantic/src/themes/default/elements/segment.variables
+        -   semantic/src/themes/default/globals/site.overrides
+        -   semantic/src/themes/default/globals/site.variables
+        -   semantic/src/themes/default/helpers/visibility.less
+        -   semantic/src/themes/default/pages - full folder new
+        -   semantic/src/themes/default/views/card.overrides
+        -   semantic/src/themes/default/views/card.variables
+    -   /semantic.json
