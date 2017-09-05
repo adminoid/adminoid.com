@@ -62,15 +62,15 @@ li {
 @import "../helpers/visibility.less";
 
 /* Pages (Petja's custom) */
-@import "../pages/index";
-
-@import "../pages/price";
-
-@import "../pages/tools";
-
-@import "../pages/process";
-
-@import "../pages/portfolio";
-
-@import "../pages/reviews";
+//@import "../pages/index";
+//
+//@import "../pages/price";
+//
+//@import "../pages/tools";
+//
+//@import "../pages/process";
+//
+//@import "../pages/portfolio";
+//
+//@import "../pages/reviews";
 

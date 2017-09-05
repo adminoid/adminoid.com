@@ -25,7 +25,17 @@
     <meta name="msapplication-TileImage" content="/static/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="{{ mix('/css/semantic.min.css') }}">
+    @section('styles')
+      <link rel="stylesheet" href="{{ mix('/css/components/reset.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/site.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/container.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/grid.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/menu.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/button.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/sidebar.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/header.min.css') }}">
+      <link rel="stylesheet" href="{{ mix('/css/components/segment.min.css') }}">
+    @show
 
 </head>
 <body>

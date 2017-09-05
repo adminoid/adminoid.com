@@ -102,7 +102,15 @@ module.exports = {
     'api',
     'form',
     'state',
-    'visibility'
+    'visibility',
+      
+    // pages
+    'index',
+    'price',
+    'tools',
+    'process',
+    'portfolio',
+    'reviews'
   ],
 
   // whether to load admin tasks

@@ -1,11 +1,18 @@
 @extends('layouts.page')
 
+@section('title', 'Пример рабочего процесса при разработке сайта')
+
+@section('styles')
+  @parent
+  <link rel="stylesheet" href="{{ mix('/css/components/process.min.css') }}">
+@endsection
+
 @section('content')
     <div class="ui page container" id="process">
-      <h1 class="ui blue header">Разработка сайта, пример рабочего процесса</h1>
+      <h1 class="ui blue header">Пример рабочего процесса при разработке сайта</h1>
       <div class="ui grid process-block projecting top">
         <div class="inner-column"></div>
-        <half-rotate inline-template>
+        <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"
@@ -43,7 +50,7 @@
       </div>
       <div class="ui grid process-block design">
         <div class="inner-column"></div>
-        <half-rotate inline-template>
+        <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"
@@ -56,12 +63,12 @@
               <img src="static/img/adminoid/pages/process/design/site.png" alt="">
             </p>
           </div>
-        </half-rotate>
+        {{--</half-rotate>--}}
       </div>
 
       <div class="ui grid process-block frontend">
         <div class="inner-column"></div>
-        <half-rotate inline-template>
+        <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"
@@ -80,7 +87,7 @@
       <div class="ui grid process-block backend bottom">
         <div class="inner-column"></div>
         
-        <half-rotate inline-template>
+        <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
                v-on:mousemove="onHover"
                v-on:mouseleave="onLeave"

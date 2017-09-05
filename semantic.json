@@ -21,19 +21,23 @@
   "components": [
     "reset",
     "site",
-    "button",
     "container",
-    "header",
-    "icon",
-    "image",
-    "segment",
     "grid",
     "menu",
-    "card",
-    "item",
+    "button",
     "sidebar",
+    "header",
+    "segment",
+    "index",
+    "image",
+    "portfolio",
+    "icon",
+    "card",
     "label",
-    "icon"
+    "price",
+    "tools",
+    "process",
+    "reviews"
   ],
   "version": "2.2.13"
 }

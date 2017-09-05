@@ -2,6 +2,12 @@
 
 @section('title', 'Разработка сайтов')
 
+@section('styles')
+  @parent
+  <link rel="stylesheet" href="{{ mix('/css/components/index.min.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/components/image.min.css') }}">
+@endsection
+
 @section('content')
     <div class="ui page container" id="index">
         <h1 class="ui green header">Разработка сайтов</h1>

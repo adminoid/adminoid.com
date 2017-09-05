@@ -106,6 +106,12 @@ module.exports = {
     'tab',
     'table',
     'transition',
-    'visibility'
+    'visibility',
+    'index',
+    'price',
+    'tools',
+    'process',
+    'portfolio',
+    'reviews'
   ]
 };

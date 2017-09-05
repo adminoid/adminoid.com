@@ -401,7 +401,13 @@ module.exports = {
           { name: "api", checked: true },
           { name: "form", checked: true },
           { name: "state", checked: true },
-          { name: "visibility", checked: true }
+          { name: "visibility", checked: true },
+          { name: "index", checked: true },
+          { name: "price", checked: true },
+          { name: "tools", checked: true },
+          { name: "process", checked: true },
+          { name: "portfolio", checked: true },
+          { name: "reviews", checked: true }
         ],
         when: when.notAuto
       },

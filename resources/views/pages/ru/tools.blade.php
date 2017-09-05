@@ -2,6 +2,11 @@
 
 @section('title', 'Инструменты, которые я использую для создания сайтов')
 
+@section('styles')
+  @parent
+  <link rel="stylesheet" href="{{ mix('/css/components/tools.min.css') }}">
+@endsection
+
 @section('content')
   <div class="ui page container" id="tools">
 
