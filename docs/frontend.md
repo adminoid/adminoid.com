@@ -91,3 +91,8 @@ _Pages:_
 **Reviews**
 "reviews" - custom component
 "icon"
+
+**Feedback** - modal window on click super button
+"modal" - js and css
+"dimmer" - js and css
+"form"

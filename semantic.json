@@ -37,7 +37,11 @@
     "price",
     "tools",
     "process",
-    "reviews"
+    "reviews",
+    "modal",
+    "dimmer",
+    "transition",
+    "form"
   ],
   "version": "2.2.13"
 }

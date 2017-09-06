@@ -1,7 +1,7 @@
 {
     "/js/vendor.js": "/js/vendor.js?id=2ca14aa71178d802c711",
-    "/js/app.js": "/js/app.js?id=d076fa79245c63f68a63",
-    "/js/manifest.js": "/js/manifest.js?id=e011adcd79d67dd45447",
+    "/js/app.js": "/js/app.js?id=f4f721bd1073376fa93a",
+    "/js/manifest.js": "/js/manifest.js?id=eac397bf0b8d0b45203d",
     "/css/components/reset.min.css": "/css/components/reset.min.css?id=4cee2aa8d0590bb284cf",
     "/css/components/site.min.css": "/css/components/site.min.css?id=527f953b0f68ab608ce5",
     "/css/components/container.min.css": "/css/components/container.min.css?id=818fd41c5256c4975326",
@@ -9,11 +9,12 @@
     "/css/components/menu.min.css": "/css/components/menu.min.css?id=ce0a46a718d70fe592b1",
     "/css/components/button.min.css": "/css/components/button.min.css?id=e05f2e50c3a18a425dd8",
     "/css/components/sidebar.min.css": "/css/components/sidebar.min.css?id=a786aaaa2c0b0196af89",
+    "/js/sidebar.min.js": "/js/sidebar.min.js?id=e7fc1b6b18d91f4cabaf",
     "/css/components/header.min.css": "/css/components/header.min.css?id=2a85cc7adf1a797a5f31",
     "/css/components/segment.min.css": "/css/components/segment.min.css?id=b9077f1fe88df872b90b",
     "/css/components/index.min.css": "/css/components/index.min.css?id=c5766c6262d8c3fba181",
     "/css/components/image.min.css": "/css/components/image.min.css?id=ca1224f92f720a782552",
-    "/css/components/price.min.css": "/css/components/price.min.css?id=9eb9cfb99c422fd2f781",
+    "/css/components/price.min.css": "/css/components/price.min.css?id=db0d9df7c722f203cc14",
     "/css/components/tools.min.css": "/css/components/tools.min.css?id=3ad70771a111bccbb7aa",
     "/css/components/process.min.css": "/css/components/process.min.css?id=a05d9903dde2aacfd407",
     "/css/components/portfolio.min.css": "/css/components/portfolio.min.css?id=9bb273ed0fe85e704cae",
@@ -21,5 +22,12 @@
     "/css/components/card.min.css": "/css/components/card.min.css?id=092edbaa9b1f23ff3bce",
     "/css/components/label.min.css": "/css/components/label.min.css?id=41add8db06454db635d3",
     "/css/components/reviews.min.css": "/css/components/reviews.min.css?id=ab7ccd90b6971428b550",
-    "/js/sidebar.min.js": "/js/sidebar.min.js?id=e7fc1b6b18d91f4cabaf"
+    "/css/components/modal.min.css": "/css/components/modal.min.css?id=f63617c60fc7607de566",
+    "/js/modal.min.js": "/js/modal.min.js?id=1906cb0d6e42cbf831cd",
+    "/css/components/dimmer.min.css": "/css/components/dimmer.min.css?id=7723ce690f172ff61e36",
+    "/js/dimmer.min.js": "/js/dimmer.min.js?id=07e6140b3d14126dce9e",
+    "/css/components/transition.min.css": "/css/components/transition.min.css?id=91459aa6baed450c0ef0",
+    "/js/transition.min.js": "/js/transition.min.js?id=906c737ba70f7f37c0fb",
+    "/css/components/form.min.css": "/css/components/form.min.css?id=079ad9fe31b225fda452",
+    "/js/form.min.js": "/js/form.min.js?id=c795c19adc9e6f0046f7"
 }
