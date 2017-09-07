@@ -40,7 +40,8 @@ mix.js('resources/assets/js/app.js', 'public/js')
   .copy('semantic/dist/components/transition.min.css', 'public/css/components')
   .copy('semantic/dist/components/transition.min.js', 'public/js')
   .copy('semantic/dist/components/form.min.css', 'public/css/components')
-  .copy('semantic/dist/components/form.min.js', 'public/js')
+  .copy('semantic/dist/components/shape.min.css', 'public/css/components')
+  .copy('semantic/dist/components/shape.min.js', 'public/js')
   .version()
   .copyDirectory('semantic/dist/themes/default', 'public/css/themes/default');
 

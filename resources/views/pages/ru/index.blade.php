@@ -6,6 +6,8 @@
   @parent
   <link rel="stylesheet" href="{{ mix('/css/components/index.min.css') }}">
   <link rel="stylesheet" href="{{ mix('/css/components/image.min.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/components/shape.min.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/components/icon.min.css') }}">
 @endsection
 
 @section('content')
@@ -116,9 +118,7 @@
       <li>Создание полнофункциональных прототипов сайтов. В современных реалиях часто дизайн, юзабилити и
         функциональность необходимо определять не гадая заранее, а уже в процессе работы бизнеса, по сплит/мульти
         тестам.
-        Я могу сделать простейший сайт (без неоправданных наворотов), запустить его и затем дорабатывать, проверяя
-        увеличились ли, например, продажи из-за следующей доработки или был выбран неверный шаг. Таким образом можно
-        очень быстро видеть результат и в итоге получать очень конверсионные сайты.
+        Я могу сделать простейший сайт (без неоправданных наворотов, которые погубят бизнес на корню), запустить его и затем дорабатывать, проверяя увеличились ли, например, продажи из-за следующей доработки или был выбран неверный шаг. Таким образом можно очень быстро видеть результат и в итоге получать очень конверсионные сайты.
       </li>
       <li>Разработка Интернет-магазинов, интегрированных систем, порталов и любых других сайтов под ключ, см.
         <a href="/process.html">процесс</a>.
@@ -174,6 +174,68 @@
     </ol>
 
     <h2 class="ui red header">Понты эпичные</h2>
+
+    <div class="ui grid">
+      <div class="sixteen wide tablet fourteen wide computer twelve wide large screen column">
+
+        <div class="four ui top attached basic buttons">
+          <button class="ui button btn-shape-left"><i class="left arrow blue icon"></i></button>
+          <button class="ui button btn-shape-down"><i class="down arrow yellow icon"></i></button>
+          <button class="ui button btn-shape-up"><i class="up arrow green icon"></i></button>
+          <button class="ui button btn-shape-right"><i class="right arrow red icon"></i></button>
+        </div>
+
+        <div class="ui attached segment">
+          <div class="ui shape auto" id="shape-gallery">
+            <div class="sides">
+              <div class="active side">
+                <div class="content">
+                  <div class="center">
+                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/reliability.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="side">
+                <div class="content">
+                  <div class="center">
+                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/frontend.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="side">
+                <div class="content">
+                  <div class="center">
+                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/backend.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="side">
+                <div class="content">
+                  <div class="center">
+                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/server.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="side">
+                <div class="content">
+                  <div class="center">
+                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/design.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="four ui bottom attached basic buttons">
+          <button class="ui button btn-shape-left"><i class="left arrow blue icon"></i></button>
+          <button class="ui button btn-shape-down"><i class="down arrow yellow icon"></i></button>
+          <button class="ui button btn-shape-up"><i class="up arrow green icon"></i></button>
+          <button class="ui button btn-shape-right"><i class="right arrow red icon"></i></button>
+        </div>
+
+      </div>
+    </div>
 
     <h3 class="ui green header">Надежность</h3>
 
@@ -255,4 +317,31 @@
     </div>
 
   </div>
+@endsection
+
+@section('scripts')
+  @parent
+  <script src="{{ mix('/js/shape.min.js') }}"></script>
+  <script>
+    $(document).ready(function () {
+      $('#shape-gallery').shape({
+        onChange: function () {
+//          $('.test11.modal').modal('setting', 'transition', value).modal('show');
+          console.log($(this));
+        }
+      });
+      $('.btn-shape-left').on('click', function () {
+        $('.shape').shape('flip left');
+      });
+      $('.btn-shape-up').on('click', function () {
+        $('.shape').shape('flip up');
+      });
+      $('.btn-shape-down').on('click', function () {
+        $('.shape').shape('flip down');
+      });
+      $('.btn-shape-right').on('click', function () {
+        $('.shape').shape('flip right');
+      });
+    });
+  </script>
 @endsection

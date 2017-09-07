@@ -71,6 +71,7 @@ _Pages:_
 **Index**  
 "index" - custom component  
 "image"  
+"shape" - for 'show off'
 
 **Price**  
 "price" - custom component  

@@ -1,7 +1,7 @@
 {
-    "/js/vendor.js": "/js/vendor.js?id=2ca14aa71178d802c711",
-    "/js/app.js": "/js/app.js?id=f4f721bd1073376fa93a",
-    "/js/manifest.js": "/js/manifest.js?id=eac397bf0b8d0b45203d",
+    "/js/vendor.js": "/js/vendor.js?id=4a0e24b59486af5bc1b4",
+    "/js/app.js": "/js/app.js?id=447441779d877f015c55",
+    "/js/manifest.js": "/js/manifest.js?id=9b1080cdfb6b28778fb4",
     "/css/components/reset.min.css": "/css/components/reset.min.css?id=4cee2aa8d0590bb284cf",
     "/css/components/site.min.css": "/css/components/site.min.css?id=527f953b0f68ab608ce5",
     "/css/components/container.min.css": "/css/components/container.min.css?id=818fd41c5256c4975326",
@@ -29,5 +29,6 @@
     "/css/components/transition.min.css": "/css/components/transition.min.css?id=91459aa6baed450c0ef0",
     "/js/transition.min.js": "/js/transition.min.js?id=906c737ba70f7f37c0fb",
     "/css/components/form.min.css": "/css/components/form.min.css?id=079ad9fe31b225fda452",
-    "/js/form.min.js": "/js/form.min.js?id=c795c19adc9e6f0046f7"
+    "/css/components/shape.min.css": "/css/components/shape.min.css?id=49abbaf9c7fbc7b4f006",
+    "/js/shape.min.js": "/js/shape.min.js?id=a1fa756409e5bcdfbeb6"
 }

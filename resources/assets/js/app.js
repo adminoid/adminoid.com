@@ -16,6 +16,7 @@ window.Vue = require('vue');
  */
 
 import TopMenu from './components/TopMenu'
+import FeedbackForm from './components/FeedbackForm'
 
 Vue.component("clouds", function (resolve) {
   require(['./components/pages/index/Clouds'], resolve)
@@ -40,6 +41,6 @@ Vue.component("half-rotate", function (resolve) {
 const app = new Vue({
   el: '#app',
   components: {
-    TopMenu
+    TopMenu, FeedbackForm
   }
 })

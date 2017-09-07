@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7446ad97ff58af2132c3538d4e65a37",
+    "content-hash": "6a3ae28d6cc3e24c20781cc8b14132cb",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -288,6 +288,45 @@
                 "nsm"
             ],
             "time": "2017-08-30T19:16:05+00:00"
+        },
+        {
+            "name": "kevindierkx/laravel-domain-localization",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kevindierkx/laravel-domain-localization.git",
+                "reference": "ef575ddc930e2ec234985f924e08c27374705a3d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kevindierkx/laravel-domain-localization/zipball/ef575ddc930e2ec234985f924e08c27374705a3d",
+                "reference": "ef575ddc930e2ec234985f924e08c27374705a3d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kevindierkx\\LaravelDomainLocalization\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Kevin Dierkx",
+                    "email": "contact@kevindierkx.com"
+                }
+            ],
+            "description": "Laravel domain localization",
+            "keywords": [
+                "domain",
+                "kevindierkx",
+                "localization"
+            ],
+            "time": "2017-05-17T14:45:26+00:00"
         },
         {
             "name": "laravel/framework",

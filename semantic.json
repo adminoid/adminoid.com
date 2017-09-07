@@ -41,7 +41,8 @@
     "modal",
     "dimmer",
     "transition",
-    "form"
+    "form",
+    "shape"
   ],
   "version": "2.2.13"
 }

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>@yield('title')</title>
+  <title>{{ Session::get('locale') }} > @yield('title')</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png">
@@ -289,39 +289,53 @@
   </div>
 </div>
 
-{{--TODO: https://laracasts.com/series/learn-vue-2-step-by-step/episodes/19--}}
-<div class="ui modal" id="super-modal">
-  <i class="close icon"></i>
-  <div class="header">
-    Пиши, брат, как на душе лежит!
-  </div>
-  <div class="content">
-    <form class="ui form">
-      <div class="required field">
-        <label>Мыло</label>
-        <input type="email" placeholder="Email">
-      </div>
-      <div class="required field">
-        <label>Веревка</label>
-        <textarea></textarea>
-      </div>
-      <div class="required field">
-        <label>Не менжуйся, телефон оставь!</label>
-        <input type="tel" placeholder="Телефон">
-      </div>
-      <button class="ui primary disabled button" type="submit">От души, братишка!</button>
-    </form>
-  </div>
-</div>
+<feedback-form inline-template>
+  <div class="ui modal" id="super-modal">
+    <i class="close icon"></i>
+    <div class="ui blue header">
+      Пиши, брат, как на душе лежит!
+    </div>
+    <div class="content">
+      <form class="ui form">
+        <div class="required field">
+          <label>Мыло</label>
+          <input type="email" placeholder="Email" v-model="email">
+        </div>
+        <div class="required field">
+          <label>Веревка</label>
+          <textarea v-model="message"></textarea>
+        </div>
 
-<script src="{{ mix('/js/manifest.js') }}"></script>
-<script src="{{ mix('/js/vendor.js') }}"></script>
-<script src="{{ mix('/js/app.js') }}"></script>
-<script src="{{ mix('/js/sidebar.min.js') }}"></script>
-<script src="{{ mix('/js/dimmer.min.js') }}"></script>
-<script src="{{ mix('/js/transition.min.js') }}"></script>
-<script src="{{ mix('/js/modal.min.js') }}"></script>
-<script src="{{ mix('/js/form.min.js') }}"></script>
+        <div class="three fields">
+          <div class="required field">
+            <label>Имя</label>
+            <input type="text" placeholder="Имя" v-model="first_name">
+          </div>
+          <div class="required field">
+            <label>Фамилия</label>
+            <input type="text" placeholder="Фамилия" v-model="last_name">
+          </div>
+          <div class="required field">
+            <label>Телефон</label>
+            <input type="tel" placeholder="Телефон" v-model="phone">
+          </div>
+        </div>
+
+        <button class="ui primary disabled button" type="submit">От души, братишка!</button>
+      </form>
+    </div>
+  </div>
+</feedback-form>
+
+@section('scripts')
+  <script src="{{ mix('/js/manifest.js') }}"></script>
+  <script src="{{ mix('/js/vendor.js') }}"></script>
+  <script src="{{ mix('/js/app.js') }}"></script>
+  <script src="{{ mix('/js/sidebar.min.js') }}"></script>
+  <script src="{{ mix('/js/dimmer.min.js') }}"></script>
+  <script src="{{ mix('/js/transition.min.js') }}"></script>
+  <script src="{{ mix('/js/modal.min.js') }}"></script>
+@show
 
 </body>
 </html>

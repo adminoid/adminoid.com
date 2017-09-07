@@ -15,6 +15,14 @@
 //    return view('welcome');
 //});
 
+$locale = \Localization::getSupportedLocaleNameByTld(\Localization::getTld());
+
+if (!Session::has($locale)) {
+    Session::put('locale', $locale);
+}
+
+app()->setLocale(Session::get('locale'));
+
 Route::get('/', function () {
     return view('pages.ru.index');
 });

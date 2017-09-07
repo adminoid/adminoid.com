@@ -65,9 +65,7 @@
     },
     methods: {
       write: function () {
-        console.log('Super button has pressed!')
         let $modal = $('#super-modal')
-        console.info($modal)
         $modal.modal('toggle')
       },
       eyeMove: function (e) {
