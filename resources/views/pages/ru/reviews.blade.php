@@ -6,7 +6,6 @@
   @parent
   <link rel="stylesheet" href="{{ mix('/css/components/portfolio.min.css') }}">
   <link rel="stylesheet" href="{{ mix('/css/components/card.min.css') }}">
-  <link rel="stylesheet" href="{{ mix('/css/components/label.min.css') }}">
   <link rel="stylesheet" href="{{ mix('/css/components/icon.min.css') }}">
 @endsection
 

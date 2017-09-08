@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="{{ mix('/css/components/dimmer.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/transition.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/form.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/label.min.css') }}">
   @show
 
 </head>
@@ -266,6 +267,60 @@
     @yield('content')
 
   </div>
+
+  <feedback-form inline-template>
+    <div class="ui modal" id="super-modal">
+      <i class="close icon"></i>
+      <h2 class="ui yellow header">
+        <div class="content">
+          Пиши, брат, как на душе лежит!
+          <div class="sub header"><em>* с мигрантами, мусульманами и прочими представителями подобного рода не работаю. Н.б.т.м.г.(ч.)</em></div>
+        </div>
+      </h2>
+      <div class="content">
+        <form class="ui form" method="post" action="/feedback-messages" v-on:submit.prevent="onSubmit" v-on:keydown="form.errors.clear($event.target.name)" v-on:focusin="form.errors.clear($event.target.name)">
+
+          <div class="required field" v-bind:class="[form.errors.has('email') ? 'error' : '']">
+            <label>Мыло</label>
+            <input type="email" name="email" placeholder="Email" v-model="form.email">
+            <div class="ui red pointing prompt label" v-if="form.errors.has('email')" v-text="form.errors.get('email')"></div>
+          </div>
+
+          <div class="required field" v-bind:class="[form.errors.has('message') ? 'error' : '']">
+            <label>Веревка</label>
+            <div class="ui red pointing below prompt label" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></div>
+            <textarea name="message" v-model="form.message"></textarea>
+          </div>
+
+          <div class="three fields">
+
+            <div class="required field" v-bind:class="[form.errors.has('first_name') ? 'error' : '']">
+              <label>Имя</label>
+              <input type="text" name="first_name" placeholder="Имя" v-model="form.first_name">
+              <div class="ui red pointing prompt label" v-if="form.errors.has('first_name')" v-text="form.errors.get('first_name')"></div>
+            </div>
+
+            <div class="required field" v-bind:class="[form.errors.has('last_name') ? 'error' : '']">
+              <label>Фамилия</label>
+              <input type="text" name="last_name" placeholder="Фамилия" v-model="form.last_name">
+              <div class="ui red pointing prompt label" v-if="form.errors.has('last_name')" v-text="form.errors.get('last_name')"></div>
+            </div>
+
+            <div class="required field" v-bind:class="[form.errors.has('phone') ? 'error' : '']">
+              <label>Телефон</label>
+              <input type="tel" name="phone" placeholder="Телефон" v-model="form.phone">
+              <div class="ui red pointing prompt label" v-if="form.errors.has('phone')" v-text="form.errors.get('phone')"></div>
+            </div>
+
+          </div>
+
+          <button class="ui primary button" type="submit"
+                  v-bind:class="[form.errors.any() ? 'loading' : '']" v-bind:disabled="form.errors.any()">От души, братишка!</button>
+        </form>
+      </div>
+    </div>
+  </feedback-form>
+
 </div>
 <div class="page-footer pusher">
   <div class="ui inverted vertical footer segment">
@@ -288,44 +343,6 @@
     </div>
   </div>
 </div>
-
-<feedback-form inline-template>
-  <div class="ui modal" id="super-modal">
-    <i class="close icon"></i>
-    <div class="ui blue header">
-      Пиши, брат, как на душе лежит!
-    </div>
-    <div class="content">
-      <form class="ui form">
-        <div class="required field">
-          <label>Мыло</label>
-          <input type="email" placeholder="Email" v-model="email">
-        </div>
-        <div class="required field">
-          <label>Веревка</label>
-          <textarea v-model="message"></textarea>
-        </div>
-
-        <div class="three fields">
-          <div class="required field">
-            <label>Имя</label>
-            <input type="text" placeholder="Имя" v-model="first_name">
-          </div>
-          <div class="required field">
-            <label>Фамилия</label>
-            <input type="text" placeholder="Фамилия" v-model="last_name">
-          </div>
-          <div class="required field">
-            <label>Телефон</label>
-            <input type="tel" placeholder="Телефон" v-model="phone">
-          </div>
-        </div>
-
-        <button class="ui primary disabled button" type="submit">От души, братишка!</button>
-      </form>
-    </div>
-  </div>
-</feedback-form>
 
 @section('scripts')
   <script src="{{ mix('/js/manifest.js') }}"></script>

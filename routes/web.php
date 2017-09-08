@@ -46,3 +46,5 @@ Route::get('/portfolio.html', function () {
 Route::get('/reviews.html', function () {
     return view('pages.ru.reviews');
 });
+
+Route::resource('feedback-messages', 'FeedbackMessagesController');

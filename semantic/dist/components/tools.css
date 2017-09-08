@@ -99,7 +99,7 @@
   padding-left: 28px;
 }
 #tools .block#frontend .text-wrapper a.twitter-bootstrap {
-  background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/twitter-bootstrap.png);
+  background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/t-b.png);
   padding-left: 22px;
 }
 #tools .block#frontend .text-wrapper a.semantic-ui {
@@ -282,7 +282,7 @@
   padding-left: 20px;
 }
 #tools .block#environment .text-wrapper a.google-apps {
-  background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/google-apps.png);
+  background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/g-a.png);
   padding-left: 29px;
 }
 #tools .block#environment .images-wrapper {

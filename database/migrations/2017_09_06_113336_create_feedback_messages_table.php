@@ -21,8 +21,7 @@ class CreateFeedbackMessagesTable extends Migration
       $table->string('last_name');
       $table->string('phone');
       $table->string('ip');
-      $table->string('os');
-      $table->string('browser');
+      $table->string('user_agent');
       $table->timestamps();
     });
   }

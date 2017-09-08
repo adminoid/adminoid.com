@@ -179,10 +179,10 @@
       <div class="sixteen wide tablet fourteen wide computer twelve wide large screen column">
 
         <div class="four ui top attached basic buttons">
-          <button class="ui button btn-shape-left"><i class="left arrow blue icon"></i></button>
-          <button class="ui button btn-shape-down"><i class="down arrow yellow icon"></i></button>
-          <button class="ui button btn-shape-up"><i class="up arrow green icon"></i></button>
-          <button class="ui button btn-shape-right"><i class="right arrow red icon"></i></button>
+          <button class="ui button btn-shape-left"><i class="left large arrow blue icon"></i></button>
+          <button class="ui button btn-shape-down"><i class="down large arrow yellow icon"></i></button>
+          <button class="ui button btn-shape-up"><i class="up large arrow green icon"></i></button>
+          <button class="ui button btn-shape-right"><i class="right large arrow red icon"></i></button>
         </div>
 
         <div class="ui attached segment">
@@ -228,10 +228,10 @@
         </div>
 
         <div class="four ui bottom attached basic buttons">
-          <button class="ui button btn-shape-left"><i class="left arrow blue icon"></i></button>
-          <button class="ui button btn-shape-down"><i class="down arrow yellow icon"></i></button>
-          <button class="ui button btn-shape-up"><i class="up arrow green icon"></i></button>
-          <button class="ui button btn-shape-right"><i class="right arrow red icon"></i></button>
+          <button class="ui button btn-shape-left"><i class="left large arrow blue icon"></i></button>
+          <button class="ui button btn-shape-down"><i class="down large arrow yellow icon"></i></button>
+          <button class="ui button btn-shape-up"><i class="up large arrow green icon"></i></button>
+          <button class="ui button btn-shape-right"><i class="right large arrow red icon"></i></button>
         </div>
 
       </div>
@@ -259,11 +259,11 @@
       <img class="ui fluid image" src="static/img/adminoid/pages/main/frontend.jpg">
       <div class="inner">
         <div class="text">
-          <p>Первый сайт сверстал в 2001 году табличной версткой.</p>
+          <p>Первый сайт сверстал в 2001 году табличной версткой. С той же поры игрался во всякие jQuery.</p>
           <p>В период пика популярности Internet Explorer 6, сверстал множество кросбраузерных страниц с
             поддержкой
             этого уникального браузера.</p>
-          <p>Профессионально занялся программированием на JavaScript с 2010 года.</p>
+          <p>Профессионально занялся программированием на JavaScript с 2010  года.</p>
           <p>С фреймворком Vue.js работаю с 2014 года.</p>
         </div>
       </div>
@@ -326,7 +326,6 @@
     $(document).ready(function () {
       $('#shape-gallery').shape({
         onChange: function () {
-//          $('.test11.modal').modal('setting', 'transition', value).modal('show');
           console.log($(this));
         }
       });

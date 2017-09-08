@@ -20429,7 +20429,7 @@ a.ui.basic.label:hover {
 }
 
 #tools .block#frontend .text-wrapper a.twitter-bootstrap {
-  background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/twitter-bootstrap.png);
+  background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/t-b.png);
   padding-left: 22px;
 }
 
@@ -20658,7 +20658,7 @@ a.ui.basic.label:hover {
 }
 
 #tools .block#environment .text-wrapper a.google-apps {
-  background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/google-apps.png);
+  background: no-repeat url(/static/img/adminoid/pages/tools/environment/icons/g-a.png);
   padding-left: 29px;
 }
 
