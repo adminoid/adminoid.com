@@ -1,4 +1,4 @@
-@extends('layouts.page')
+@extends('layouts.ru.page')
 
 @section('title', 'Инструменты, которые я использую для создания сайтов')
 

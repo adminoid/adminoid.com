@@ -39,7 +39,7 @@ Vue.component("zoom", function (resolve) {
 })
 
 Vue.component("half-rotate", function (resolve) {
-  require(['./components/pages/process/HalfRotate.vue'], resolve)
+  require(['./components/pages/workflow/HalfRotate.vue'], resolve)
 })
 
 const app = new Vue({

@@ -1,7 +1,7 @@
 {
     "/js/vendor.js": "/js/vendor.js?id=1cecd47aa4e28470950e",
-    "/js/app.js": "/js/app.js?id=28031bbadedaf0c23f0f",
-    "/js/manifest.js": "/js/manifest.js?id=202357289cc6c8b474ad",
+    "/js/app.js": "/js/app.js?id=b304e4c912853c152a0d",
+    "/js/manifest.js": "/js/manifest.js?id=c9ef0ace74021ba75043",
     "/css/components/reset.min.css": "/css/components/reset.min.css?id=4cee2aa8d0590bb284cf",
     "/css/components/site.min.css": "/css/components/site.min.css?id=432c7c304c59f9048d64",
     "/css/components/container.min.css": "/css/components/container.min.css?id=818fd41c5256c4975326",
@@ -16,7 +16,7 @@
     "/css/components/image.min.css": "/css/components/image.min.css?id=ca1224f92f720a782552",
     "/css/components/price.min.css": "/css/components/price.min.css?id=db0d9df7c722f203cc14",
     "/css/components/tools.min.css": "/css/components/tools.min.css?id=4625e440aa35c8ed0953",
-    "/css/components/process.min.css": "/css/components/process.min.css?id=a05d9903dde2aacfd407",
+    "/css/components/workflow.min.css": "/css/components/workflow.min.css?id=eb9f49114e1bd6bf93ce",
     "/css/components/portfolio.min.css": "/css/components/portfolio.min.css?id=9bb273ed0fe85e704cae",
     "/css/components/icon.min.css": "/css/components/icon.min.css?id=392b29a33896a5fab898",
     "/css/components/card.min.css": "/css/components/card.min.css?id=22cab75e29ec826459c1",

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ Session::get('locale') }} > @yield('title')</title>
+  <title>@yield('title')</title>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png">
@@ -48,11 +48,11 @@
 
 <div class="ui right sidebar inverted red vertical menu active" id="top-menu-sidebar">
   <a href="/" class="item{{ Request::is('/') ? ' active' : '' }}">Главная</a>
-  <a href="/price.html" class="item{{ Request::is('price.html') ? ' active' : '' }}">Цена</a>
-  <a href="/tools.html" class="item{{ Request::is('tools.html') ? ' active' : '' }}">Инструменты</a>
-  <a href="/process.html" class="item{{ Request::is('process.html') ? ' active' : '' }}">Процесс</a>
-  <a href="/portfolio.html" class="item{{ Request::is('portfolio.html') ? ' active' : '' }}">Портфолио</a>
-  <a href="/reviews.html" class="item{{ Request::is('reviews.html') ? ' active' : '' }}">Отзывы</a>
+  <a href="/price" class="item{{ Request::is('price') ? ' active' : '' }}">Цена</a>
+  <a href="/tools" class="item{{ Request::is('tools') ? ' active' : '' }}">Инструменты</a>
+  <a href="/workflow" class="item{{ Request::is('workflow') ? ' active' : '' }}">Процесс</a>
+  <a href="/portfolio" class="item{{ Request::is('portfolio') ? ' active' : '' }}">Портфолио</a>
+  <a href="/reviews" class="item{{ Request::is('reviews') ? ' active' : '' }}">Отзывы</a>
 </div>
 
 <div id="app" class="pusher ">
@@ -239,19 +239,19 @@
 
           <div class="twelve wide left floated column computer widescreen largescreen only">
             <div class="ui six item menu">
-              <a href="/price.html" class="item{{ Request::is('price.html') ? ' active' : '' }}">
+              <a href="/price" class="item{{ Request::is('price') ? ' active' : '' }}">
                 Цена
               </a>
-              <a href="/tools.html" class="item{{ Request::is('tools.html') ? ' active' : '' }}">
+              <a href="/tools" class="item{{ Request::is('tools') ? ' active' : '' }}">
                 Инструменты
               </a>
-              <a href="/process.html" class="item{{ Request::is('process.html') ? ' active' : '' }}">
+              <a href="/workflow" class="item{{ Request::is('workflow') ? ' active' : '' }}">
                 Процесс
               </a>
-              <a href="/portfolio.html" class="item{{ Request::is('portfolio.html') ? ' active' : '' }}">
+              <a href="/portfolio" class="item{{ Request::is('portfolio') ? ' active' : '' }}">
                 Портфолио
               </a>
-              <a href="reviews.html" class="item{{ Request::is('reviews.html') ? ' active' : '' }}">
+              <a href="reviews" class="item{{ Request::is('reviews') ? ' active' : '' }}">
                 Отзывы
               </a>
               <div class="item">
@@ -275,7 +275,7 @@
       <h2 class="ui yellow header">
         <div class="content">
           Пиши, брат, как на душе лежит!
-          <div class="sub header"><em>* с мигрантами, мусульманами не работаю. Н.б.т.м.г.ч.</em></div>
+          <div class="sub header"><em>* с мигрантами, мусульманами и т.п. не работаю. Н.б.т.м.г.ч.</em></div>
         </div>
       </h2>
       <div class="content">

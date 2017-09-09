@@ -1,16 +1,16 @@
-@extends('layouts.page')
+@extends('layouts.ru.page')
 
 @section('title', 'Пример рабочего процесса при разработке сайта')
 
 @section('styles')
   @parent
-  <link rel="stylesheet" href="{{ mix('/css/components/process.min.css') }}">
+  <link rel="stylesheet" href="{{ mix('/css/components/workflow.min.css') }}">
 @endsection
 
 @section('content')
-    <div class="ui page container" id="process">
+    <div class="ui page container" id="workflow">
       <h1 class="ui blue header">Пример рабочего процесса при разработке сайта</h1>
-      <div class="ui grid process-block projecting top">
+      <div class="ui grid workflow-block projecting top">
         <div class="inner-column"></div>
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
@@ -29,26 +29,26 @@
             <div class="ui five column centered grid">
               <div class="center aligned column">
                 <a href="https://www.lucidchart.com/documents/edit/2f8cdb14-161f-4afe-8ccf-6bf7d8567da9/0">
-                  <img src="static/img/adminoid/pages/process/projecting/lc-1.png" alt="lucidchart scheme">
+                  <img src="static/img/adminoid/pages/workflow/projecting/lc-1.png" alt="lucidchart scheme">
                 </a>
               </div>
 
               <div class="center aligned column">
                 <a href="https://www.lucidchart.com/documents/edit/a90a0bce-b152-4405-920f-98b0f1f4cae1">
-                  <img src="static/img/adminoid/pages/process/projecting/lc-2.png" alt="lucidchart scheme">
+                  <img src="static/img/adminoid/pages/workflow/projecting/lc-2.png" alt="lucidchart scheme">
                 </a>
               </div>
 
               <div class="center aligned column">
                 <a href="https://www.lucidchart.com/documents/edit/d5fd80c6-c43d-476e-89b3-0e5fb5371ae2">
-                  <img src="static/img/adminoid/pages/process/projecting/lc-3.png" alt="lucidchart scheme">
+                  <img src="static/img/adminoid/pages/workflow/projecting/lc-3.png" alt="lucidchart scheme">
                 </a>
               </div>
             </div>
           </div>
         </half-rotate>
       </div>
-      <div class="ui grid process-block design">
+      <div class="ui grid workflow-block design">
         <div class="inner-column"></div>
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
@@ -60,13 +60,13 @@
               Скачать дизайн-макет для этого сайта:
             </p>
             <p>
-              <img src="static/img/adminoid/pages/process/design/site.png" alt="">
+              <img src="static/img/adminoid/pages/workflow/design/site.png" alt="">
             </p>
           </div>
         {{--</half-rotate>--}}
       </div>
 
-      <div class="ui grid process-block frontend">
+      <div class="ui grid workflow-block frontend">
         <div class="inner-column"></div>
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
@@ -84,9 +84,9 @@
         </half-rotate>
       </div>
 
-      <div class="ui grid process-block backend bottom">
+      <div class="ui grid workflow-block backend bottom">
         <div class="inner-column"></div>
-        
+
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
                v-on:mousemove="onHover"
@@ -101,7 +101,7 @@
             </p>
           </div>
         </half-rotate>
-        
+
       </div>
 
     </div>

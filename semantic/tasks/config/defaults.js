@@ -108,7 +108,7 @@ module.exports = {
     'index',
     'price',
     'tools',
-    'process',
+    'workflow',
     'portfolio',
     'reviews'
   ],

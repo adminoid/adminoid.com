@@ -405,7 +405,7 @@ module.exports = {
           { name: "index", checked: true },
           { name: "price", checked: true },
           { name: "tools", checked: true },
-          { name: "process", checked: true },
+          { name: "workflow", checked: true },
           { name: "portfolio", checked: true },
           { name: "reviews", checked: true }
         ],

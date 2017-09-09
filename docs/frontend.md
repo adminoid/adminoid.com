@@ -80,8 +80,8 @@ _Pages:_
 **Tools**  
 "tools"
 
-**Process**  
-"process" - custom component
+**Workflow**  
+"workflow" - custom component
 
 **Portfolio**
 "portfolio" - custom component
