@@ -148,10 +148,11 @@
        Links
 --------------------*/
 
-@linkColor: #0E3F7E;
+@linkColor: #CD2E41;
 //@linkUnderline: none;
 @linkUnderline: none;
-@linkHoverColor: darken(saturate(@linkColor, 20), 15, relative);
+//@linkHoverColor: darken(saturate(@linkColor, 20), 15, relative);
+@linkHoverColor: #0E3F7E;
 //@linkHoverUnderline: @linkUnderline;
 @linkHoverUnderline: underline;
 

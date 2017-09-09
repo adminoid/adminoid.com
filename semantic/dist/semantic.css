@@ -651,12 +651,12 @@ p:last-child {
 --------------------*/
 
 a {
-  color: #0E3F7E;
+  color: #CD2E41;
   text-decoration: none;
 }
 
 a:hover {
-  color: #003477;
+  color: #0E3F7E;
   text-decoration: underline;
 }
 
@@ -17655,7 +17655,7 @@ i.icon.times.rectangle.outline:before {
 
 .ui.cards > .card > .content > a.header:hover,
 .ui.card > .content > a.header:hover {
-  color: #003477;
+  color: #0E3F7E;
 }
 
 /* Meta */
@@ -17775,7 +17775,7 @@ i.icon.times.rectangle.outline:before {
 
 .ui.cards > .card > .extra a:not(.ui):hover,
 .ui.card > .extra a:not(.ui):hover {
-  color: #003477;
+  color: #0E3F7E;
 }
 
 /*******************************
@@ -19612,7 +19612,7 @@ a.ui.basic.black.label:hover {
 a.ui.basic.label:hover {
   text-decoration: none;
   background: none #FFFFFF;
-  color: #003477;
+  color: #0E3F7E;
   -webkit-box-shadow: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: 1px solid rgba(34, 36, 38, 0.15);
   -webkit-box-shadow: none;

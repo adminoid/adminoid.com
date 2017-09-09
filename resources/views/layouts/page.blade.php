@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="{{ mix('/css/components/transition.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/form.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/label.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/message.min.css') }}">
   @show
 
 </head>
@@ -268,7 +269,6 @@
 
   </div>
 
-  {{--<feedback-form v-on:onchangeel="onChangeEl" inline-template>--}}
   <feedback-form inline-template>
     <div class="ui modal" id="super-modal">
       <i class="close icon"></i>
@@ -279,15 +279,20 @@
         </div>
       </h2>
       <div class="content">
-        <form class="ui form" method="post" action="/feedback-messages" v-on:submit.prevent="onSubmit" v-on:keydown="form.errors.clear($event.target.name)" v-on:focusin="form.errors.clear($event.target.name)">
-
-          <div class="required field" v-bind:class="[form.errors.has('email') ? 'error' : '']">
+        <div class="ui success message" v-if="form.success">
+          <p>@{{ form.message }}</p>
+        </div>
+        <form class="ui form success" method="post" action="/feedback-messages" v-on:submit.prevent="onSubmit" v-on:keydown="form.errors.clear($event.target.name)" v-on:focusin="form.errors.clear($event.target.name)"
+              v-if="!form.success">
+          <div class="required field" v-bind:class="[form.errors.has('email') ? 'error' : '']"
+               v-bind:class="[form.success ? 'disabled' : '']">
             <label>Мыло</label>
             <input type="email" name="email" placeholder="Email" v-model="form.email">
             <div class="ui red pointing prompt label" v-if="form.errors.has('email')" v-text="form.errors.get('email')"></div>
           </div>
 
-          <div class="required field" v-bind:class="[form.errors.has('message') ? 'error' : '']">
+          <div class="required field" v-bind:class="[form.errors.has('message') ? 'error' : '']"
+               v-bind:class="[form.success ? 'disabled' : '']">
             <label>Веревка</label>
             <div class="ui red pointing below prompt label" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></div>
             <textarea name="message" v-model="form.message"></textarea>
@@ -295,19 +300,22 @@
 
           <div class="three fields">
 
-            <div class="required field" v-bind:class="[form.errors.has('first_name') ? 'error' : '']">
+            <div class="required field" v-bind:class="[form.errors.has('first_name') ? 'error' : '']"
+                 v-bind:class="[form.success ? 'disabled' : '']">
               <label>Имя</label>
               <input type="text" name="first_name" placeholder="Имя" v-model="form.first_name">
               <div class="ui red pointing prompt label" v-if="form.errors.has('first_name')" v-text="form.errors.get('first_name')"></div>
             </div>
 
-            <div class="required field" v-bind:class="[form.errors.has('last_name') ? 'error' : '']">
+            <div class="required field" v-bind:class="[form.errors.has('last_name') ? 'error' : '']"
+                 v-bind:class="[form.success ? 'disabled' : '']">
               <label>Фамилия</label>
               <input type="text" name="last_name" placeholder="Фамилия" v-model="form.last_name">
               <div class="ui red pointing prompt label" v-if="form.errors.has('last_name')" v-text="form.errors.get('last_name')"></div>
             </div>
 
-            <div class="required field" v-bind:class="[form.errors.has('phone') ? 'error' : '']">
+            <div class="required field" v-bind:class="[form.errors.has('phone') ? 'error' : '']"
+                 v-bind:class="[form.success ? 'disabled' : '']">
               <label>Телефон</label>
               <input type="tel" name="phone" placeholder="Телефон" v-model="form.phone">
               <div class="ui red pointing prompt label" v-if="form.errors.has('phone')" v-text="form.errors.get('phone')"></div>
@@ -316,7 +324,7 @@
           </div>
 
           <button class="ui primary button" type="submit"
-                  v-bind:class="[form.errors.any() ? 'loading' : '']" v-bind:disabled="form.errors.any()">От души, братишка!</button>
+                  v-bind:class="[form.errors.any() ? 'loading' : '']" v-bind:disabled="form.errors.any() || form.success">От души, братишка!</button>
         </form>
       </div>
     </div>

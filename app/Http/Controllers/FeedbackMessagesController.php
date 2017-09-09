@@ -61,7 +61,7 @@ class FeedbackMessagesController extends Controller
             'user_agent' => $user_agent
         ]);
 
-        return ['message' => 'message send'];
+        return ['message' => __('messages.feedback_message_sent')];
 
     }
 

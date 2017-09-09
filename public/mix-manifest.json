@@ -1,9 +1,9 @@
 {
-    "/js/vendor.js": "/js/vendor.js?id=bf75db350804f33e8679",
-    "/js/app.js": "/js/app.js?id=474163b315b6a3a84b24",
-    "/js/manifest.js": "/js/manifest.js?id=db20d691030343e368bb",
+    "/js/vendor.js": "/js/vendor.js?id=1cecd47aa4e28470950e",
+    "/js/app.js": "/js/app.js?id=28031bbadedaf0c23f0f",
+    "/js/manifest.js": "/js/manifest.js?id=202357289cc6c8b474ad",
     "/css/components/reset.min.css": "/css/components/reset.min.css?id=4cee2aa8d0590bb284cf",
-    "/css/components/site.min.css": "/css/components/site.min.css?id=527f953b0f68ab608ce5",
+    "/css/components/site.min.css": "/css/components/site.min.css?id=432c7c304c59f9048d64",
     "/css/components/container.min.css": "/css/components/container.min.css?id=818fd41c5256c4975326",
     "/css/components/grid.min.css": "/css/components/grid.min.css?id=50c699fd75b06ad0fad3",
     "/css/components/menu.min.css": "/css/components/menu.min.css?id=ce0a46a718d70fe592b1",
@@ -19,8 +19,8 @@
     "/css/components/process.min.css": "/css/components/process.min.css?id=a05d9903dde2aacfd407",
     "/css/components/portfolio.min.css": "/css/components/portfolio.min.css?id=9bb273ed0fe85e704cae",
     "/css/components/icon.min.css": "/css/components/icon.min.css?id=392b29a33896a5fab898",
-    "/css/components/card.min.css": "/css/components/card.min.css?id=092edbaa9b1f23ff3bce",
-    "/css/components/label.min.css": "/css/components/label.min.css?id=41add8db06454db635d3",
+    "/css/components/card.min.css": "/css/components/card.min.css?id=22cab75e29ec826459c1",
+    "/css/components/label.min.css": "/css/components/label.min.css?id=36bcfa703bbd3f50c1dc",
     "/css/components/reviews.min.css": "/css/components/reviews.min.css?id=ab7ccd90b6971428b550",
     "/css/components/modal.min.css": "/css/components/modal.min.css?id=f63617c60fc7607de566",
     "/js/modal.min.js": "/js/modal.min.js?id=1906cb0d6e42cbf831cd",
@@ -30,5 +30,6 @@
     "/js/transition.min.js": "/js/transition.min.js?id=906c737ba70f7f37c0fb",
     "/css/components/form.min.css": "/css/components/form.min.css?id=079ad9fe31b225fda452",
     "/css/components/shape.min.css": "/css/components/shape.min.css?id=49abbaf9c7fbc7b4f006",
-    "/js/shape.min.js": "/js/shape.min.js?id=a1fa756409e5bcdfbeb6"
+    "/js/shape.min.js": "/js/shape.min.js?id=a1fa756409e5bcdfbeb6",
+    "/css/components/message.min.css": "/css/components/message.min.css?id=cb70eec4e9cb327762ff"
 }

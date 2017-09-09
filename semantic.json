@@ -42,7 +42,8 @@
     "dimmer",
     "transition",
     "form",
-    "shape"
+    "shape",
+    "message"
   ],
   "version": "2.2.13"
 }

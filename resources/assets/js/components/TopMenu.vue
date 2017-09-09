@@ -66,7 +66,9 @@
     methods: {
       write: function () {
         let $modal = $('#super-modal')
-        $modal.modal('toggle')
+        $modal
+                .modal('setting', 'transition', 'horizontal flip')
+                .modal('toggle')
       },
       eyeMove: function (e) {
         if (!this.reduced) return false
