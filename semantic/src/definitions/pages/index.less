@@ -1,3 +1,4 @@
+@mobileBreakpoint: 320px;
 @tabletBreakpoint: 768px;
 @codeFontName: 'Roboto Mono';
 @codeFont: @codeFontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -18,117 +19,34 @@
       }
     }
   }
-  @keyframes block-hover {
-    0% {
-      transform: scale(.1, .1);
-      opacity: 0;
-    }
-    40% {
-      transform: scale(.1, .1);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1, 1);
-      opacity: 1;
-    }
-  }
-  @keyframes block-unhover {
-    0% {
-      transform: scale(1, 1);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(.1, .1);
-      opacity: 0;
-    }
-  }
-  @keyframes block-text-hover {
-    0% {
-      transform: translate(-15000, 0);
-      opacity: 0;
-    }
-    100% {
-      transform: translate(0, 0);
-      opacity: 1;
-    }
-  }
-  .effect-block {
-    position: relative;
-    cursor: pointer;
-    &:hover, .hover {
-      .inner {
-        -ms-transform: scale(1, 1); /* IE 9 */
-        -webkit-transform: scale(1, 1); /* Safari */
-        transform: scale(1, 1);
-        opacity: 1;
-        animation-name: block-hover;
-        animation-duration: 0.5s;
-        background-color: rgba(255, 255, 255, 0.9);
-        .text {
-          animation-name: block-text-hover;
-          animation-duration: 0.5s;
-          animation-delay: 0.15s;
-          animation-fill-mode: forwards;
-          animation-iteration-count: 1;
-          color: #000;
-        }
+
+  #shape-gallery{
+    .attached.label {
+      z-index: 100!important;
+      background-color: rgba(255, 255, 255, 0.9);
+      @media (max-width: (550px)) {
+        padding: 6px 6px;
       }
     }
-    &.un-hover {
-      .inner {
-        -ms-transform: scale(.1, .1); /* IE 9 */
-        -webkit-transform: scale(.1, .1); /* Safari */
-        transform: scale(.1, .1);
-        opacity: 0;
-        animation-name: block-unhover;
-        animation-duration: 0.3s;
-        background-color: rgba(255, 255, 255, 0.9);
+    .center{
+      position: relative;
+      overflow: hidden;
+      img.ui.fluid.rounded.image {
+        margin-top: 0 !important;
+      }
+      .text{
         position: absolute;
-        top: 5px;
-        bottom: 5px;
-        left: 5px;
-        right: 5px;
-        display: flex;
-        align-items: center; /* Vertical center alignment */
-        justify-content: center; /* Horizontal center alignment */
-        .text {
-          -ms-transform: translate(-15000px, 0); /* IE 9 */
-          -webkit-transform: translate(-15000px, 0); /* Safari */
-          transform: translate(-15000px, 0);
-          width: 80%;
-          font-size: 18px;
-          color: #000;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        padding: 12px 9px;
+        background-color: rgba(255, 255, 255, 0.9);
+        @media (max-width: (@tabletBreakpoint - 1)) {
+          font-size: 12px !important;
         }
-      }
-    }
-    .inner {
-      -ms-transform: scale(.1, .1); /* IE 9 */
-      -webkit-transform: scale(.1, .1); /* Safari */
-      transform: scale(.1, .1);
-      opacity: 0;
-      animation-name: block-unhover;
-      animation-duration: 0.3s;
-      background-color: rgba(255, 255, 255, 0.3);
-      position: absolute;
-      top: 5px;
-      bottom: 5px;
-      left: 5px;
-      right: 5px;
-      display: flex;
-      align-items: center; /* Vertical center alignment */
-      justify-content: center; /* Horizontal center alignment */
-      .text {
-        -ms-transform: translate(-5000px, 0); /* IE 9 */
-        -webkit-transform: translate(-5000px, 0); /* Safari */
-        transform: translate(-5000px, 0);
-        width: 80%;
-        color: #000;
-        font-size: 18px;
-        @media only screen and (max-width: (@tabletBreakpoint - 1)) {
-          font-size: 13px !important;
-        }
-        @media only screen and (max-width: (540px)) {
-          font-size: 10px !important;
+        @media (max-width: (550px)) {
+          font-size: 9px !important;
+          padding: 6px 6px;
         }
       }
     }

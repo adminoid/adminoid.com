@@ -268,13 +268,14 @@
 
   </div>
 
+  {{--<feedback-form v-on:onchangeel="onChangeEl" inline-template>--}}
   <feedback-form inline-template>
     <div class="ui modal" id="super-modal">
       <i class="close icon"></i>
       <h2 class="ui yellow header">
         <div class="content">
           Пиши, брат, как на душе лежит!
-          <div class="sub header"><em>* с мигрантами, мусульманами и прочими представителями подобного рода не работаю. Н.б.т.м.г.(ч.)</em></div>
+          <div class="sub header"><em>* с мигрантами, мусульманами не работаю. Н.б.т.м.г.ч.</em></div>
         </div>
       </h2>
       <div class="content">

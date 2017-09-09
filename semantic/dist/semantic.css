@@ -12399,223 +12399,45 @@ a.ui.inverted.grey.header:hover {
   left: 195px;
 }
 
-@-webkit-keyframes block-hover {
-  0% {
-    -webkit-transform: scale(0.1, 0.1);
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
+.page#index #shape-gallery .attached.label {
+  z-index: 100!important;
+  background-color: rgba(255, 255, 255, 0.9);
+}
 
-  40% {
-    -webkit-transform: scale(0.1, 0.1);
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 1;
+@media (max-width: 550px) {
+  .page#index #shape-gallery .attached.label {
+    padding: 6px 6px;
   }
 }
 
-@keyframes block-hover {
-  0% {
-    -webkit-transform: scale(0.1, 0.1);
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-
-  40% {
-    -webkit-transform: scale(0.1, 0.1);
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes block-unhover {
-  0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scale(0.1, 0.1);
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-}
-
-@keyframes block-unhover {
-  0% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 1;
-  }
-
-  100% {
-    -webkit-transform: scale(0.1, 0.1);
-    transform: scale(0.1, 0.1);
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes block-text-hover {
-  0% {
-    -webkit-transform: translate(-15000, 0);
-    transform: translate(-15000, 0);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-@keyframes block-text-hover {
-  0% {
-    -webkit-transform: translate(-15000, 0);
-    transform: translate(-15000, 0);
-    opacity: 0;
-  }
-
-  100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
-.page#index .effect-block {
+.page#index #shape-gallery .center {
   position: relative;
-  cursor: pointer;
+  overflow: hidden;
 }
 
-.page#index .effect-block:hover .inner,
-.page#index .effect-block .hover .inner {
-  /* IE 9 */
-  -webkit-transform: scale(1, 1);
-  /* Safari */
-  transform: scale(1, 1);
-  opacity: 1;
-  -webkit-animation-name: block-hover;
-  animation-name: block-hover;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+.page#index #shape-gallery .center img.ui.fluid.rounded.image {
+  margin-top: 0 !important;
+}
+
+.page#index #shape-gallery .center .text {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 12px 9px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.page#index .effect-block:hover .inner .text,
-.page#index .effect-block .hover .inner .text {
-  -webkit-animation-name: block-text-hover;
-  animation-name: block-text-hover;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-delay: 0.15s;
-  animation-delay: 0.15s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  color: #000;
-}
-
-.page#index .effect-block.un-hover .inner {
-  /* IE 9 */
-  -webkit-transform: scale(0.1, 0.1);
-  /* Safari */
-  transform: scale(0.1, 0.1);
-  opacity: 0;
-  -webkit-animation-name: block-unhover;
-  animation-name: block-unhover;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* Vertical center alignment */
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  /* Horizontal center alignment */
-}
-
-.page#index .effect-block.un-hover .inner .text {
-  /* IE 9 */
-  -webkit-transform: translate(-15000px, 0);
-  /* Safari */
-  transform: translate(-15000px, 0);
-  width: 80%;
-  font-size: 18px;
-  color: #000;
-}
-
-.page#index .effect-block .inner {
-  /* IE 9 */
-  -webkit-transform: scale(0.1, 0.1);
-  /* Safari */
-  transform: scale(0.1, 0.1);
-  opacity: 0;
-  -webkit-animation-name: block-unhover;
-  animation-name: block-unhover;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  background-color: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  top: 5px;
-  bottom: 5px;
-  left: 5px;
-  right: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  /* Vertical center alignment */
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  /* Horizontal center alignment */
-}
-
-.page#index .effect-block .inner .text {
-  /* IE 9 */
-  -webkit-transform: translate(-5000px, 0);
-  /* Safari */
-  transform: translate(-5000px, 0);
-  width: 80%;
-  color: #000;
-  font-size: 18px;
-}
-
-@media only screen and (max-width: 767px) {
-  .page#index .effect-block .inner .text {
-    font-size: 13px !important;
+@media (max-width: 767px) {
+  .page#index #shape-gallery .center .text {
+    font-size: 12px !important;
   }
 }
 
-@media only screen and (max-width: 540px) {
-  .page#index .effect-block .inner .text {
-    font-size: 10px !important;
+@media (max-width: 550px) {
+  .page#index #shape-gallery .center .text {
+    font-size: 9px !important;
+    padding: 6px 6px;
   }
 }
 /*!

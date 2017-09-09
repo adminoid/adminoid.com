@@ -175,172 +175,150 @@
 
     <h2 class="ui red header">Понты эпичные</h2>
 
-    <div class="ui grid">
-      <div class="sixteen wide tablet fourteen wide computer twelve wide large screen column">
+    <cube inline-template>
+      <div class="ui grid">
+        <div class="sixteen wide tablet fourteen wide computer twelve wide large screen column">
 
-        <div class="four ui top attached basic buttons">
-          <button class="ui button btn-shape-left"><i class="left large arrow blue icon"></i></button>
-          <button class="ui button btn-shape-down"><i class="down large arrow yellow icon"></i></button>
-          <button class="ui button btn-shape-up"><i class="up large arrow green icon"></i></button>
-          <button class="ui button btn-shape-right"><i class="right large arrow red icon"></i></button>
-        </div>
+          <div class="four ui top attached basic buttons">
+            <button class="ui button btn-shape-left" v-on:click="flipLeft"><i class="left large arrow blue icon"></i>
+            </button>
+            <button class="ui button btn-shape-down" v-on:click="flipUp"><i class="down large arrow yellow icon"></i>
+            </button>
+            <button class="ui button btn-shape-up" v-on:click="flipDown"><i class="up large arrow green icon"></i>
+            </button>
+            <button class="ui button btn-shape-right" v-on:click="flipRight"><i class="right large arrow red icon"></i>
+            </button>
+          </div>
 
-        <div class="ui attached segment">
-          <div class="ui shape auto" id="shape-gallery">
-            <div class="sides">
-              <div class="active side">
-                <div class="content">
-                  <div class="center">
-                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/reliability.jpg">
+          <div class="ui attached segment">
+            <div class="ui shape auto" id="shape-gallery">
+              <div class="sides">
+                <cube-item inline-template>
+                  <div class="active side">
+                    <div class="content">
+                      <div class="center">
+                        <div class="ui top left attached label">
+                          <h3 class="ui green header" v-on:touchstart="onUnhover">Надежность</h3>
+                        </div>
+                        <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/reliability.jpg"
+                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
+                             v-on:touchstart="onHover">
+                        <div class="text" v-on:touchstart="onUnhover">
+                          <p>За годы работы (с июня 2008) на крупнейшей российской бирже фриланса FL.ru у меня только
+                            положительные
+                            отзывы и завершенные сделки (см. <a href="/reviews.html">отзывы</a>). В начале пути,
+                            когда я был неопытен, шанс совершить ошибку был еще велик, но я им не воспользовался. Как
+                            теперь накосячить ума не приложу…</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="side">
-                <div class="content">
-                  <div class="center">
-                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/frontend.jpg">
+                </cube-item>
+                <cube-item inline-template>
+                  <div class="side">
+                    <div class="content">
+                      <div class="center">
+                        <div class="ui top left attached label">
+                          <h3 class="ui green header" v-on:touchstart="onUnhover">Фронтенд</h3>
+                        </div>
+                        <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/frontend.jpg"
+                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
+                             v-on:touchstart="onHover">
+                        <div class="text" v-on:touchstart="onUnhover">
+                          <p>Первый сайт сверстал в 2002 году табличной версткой. В период пика популярности Internet
+                            Explorer 6, сверстал множество кросбраузерных страниц с поддержкой этого уникального
+                            браузера. Профессионально программирую на JavaScript с 2010 года (любительски
+                            - еще раньше). С фреймворком Vue.js работаю с 2014 года.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="side">
-                <div class="content">
-                  <div class="center">
-                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/backend.jpg">
+                </cube-item>
+                <cube-item inline-template>
+                  <div class="side">
+                    <div class="content">
+                      <div class="center">
+                        <div class="ui top left attached label">
+                          <h3 class="ui green header" v-on:touchstart="onUnhover">Бэкенд</h3>
+                        </div>
+                        <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/backend.jpg"
+                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
+                             v-on:touchstart="onHover">
+                        <div class="text" v-on:touchstart="onUnhover">
+                          <p>Программировал “для себя” на PHP с 2006 года. С 2010 года работаю профессиональным PHP
+                            разработчиком. С 2013 года использую фреймворк Laravel (3.x -> 4.x -> 5.x). В работе
+                            использую Unit-тесты, xDebug, phpStorm/VIM.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="side">
-                <div class="content">
-                  <div class="center">
-                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/server.jpg">
+                </cube-item>
+                <cube-item inline-template>
+                  <div class="side">
+                    <div class="content">
+                      <div class="center">
+                        <div class="ui top left attached label">
+                          <h3 class="ui green header" v-on:touchstart="onUnhover">Сервер</h3>
+                        </div>
+                        <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/server.jpg"
+                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
+                             v-on:touchstart="onHover">
+                        <div class="text" v-on:touchstart="onUnhover">
+                          <p>Я сам решаю задачи администрирования, потому что с 2000 по 2005 годы работал системным
+                            администратором
+                            *nix систем, администрировал крупные многоранговые сети до 250 машин. Сейчас в качестве
+                            сервера использую связку Docker+LEMP.</br>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="side">
-                <div class="content">
-                  <div class="center">
-                    <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/design.jpg">
+                </cube-item>
+                <cube-item inline-template>
+                  <div class="side">
+                    <div class="content">
+                      <div class="center">
+                        <div class="ui top left attached label">
+                          <h3 class="ui green header" v-on:touchstart="onUnhover">Дизайн</h3>
+                        </div>
+                        <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/design.jpg"
+                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
+                             v-on:touchstart="onHover">
+                        <div class="text" v-on:touchstart="onUnhover">
+                          <p>С 90-х годов начал изучать Photoshop, Corel Draw. Понимаю теорию дизайна (композиция,
+                            цветовой баланс и т.д.). Рисую на планшете. Разработаю функциональный дизайн в программе
+                            Sketch, в полной мере решающий практические задачи, адаптивный, с наборами стилей и UI
+                            элементов. Всегда готов бъяснить, что я сделал, почему и зачем.</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </cube-item>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="four ui bottom attached basic buttons">
-          <button class="ui button btn-shape-left"><i class="left large arrow blue icon"></i></button>
-          <button class="ui button btn-shape-down"><i class="down large arrow yellow icon"></i></button>
-          <button class="ui button btn-shape-up"><i class="up large arrow green icon"></i></button>
-          <button class="ui button btn-shape-right"><i class="right large arrow red icon"></i></button>
-        </div>
+          <div class="four ui bottom attached basic buttons">
+            <button class="ui button btn-shape-left" v-on:click="flipLeft">
+              <i class="left large arrow blue icon"></i>
+            </button>
+            <button class="ui button btn-shape-down" v-on:click="flipUp">
+              <i class="down large arrow yellow icon"></i>
+            </button>
+            <button class="ui button btn-shape-up" v-on:click="flipDown">
+              <i class="up large arrow green icon"></i>
+            </button>
+            <button class="ui button btn-shape-right" v-on:click="flipRight">
+              <i class="right large arrow red icon"></i>
+            </button>
+          </div>
 
-      </div>
-    </div>
-
-    <h3 class="ui green header">Надежность</h3>
-
-    <div class="ui container effect-block">
-      <img class="ui fluid image" src="static/img/adminoid/pages/main/reliability.jpg">
-      <div class="inner">
-        <div class="text">
-          <p>За годы работы (с июня 2008) на крупнейшей российской бирже фриланса FL.ru у меня только
-            положительные
-            отзывы и завершенные сделки (см. <a href="/reviews.html">отзывы</a>).
-          <p>В начале пути, когда я был неопытен, шанс совершить ошибку был еще велик, но я им не
-            воспользовался.</p>
-          <p>Как теперь накосячить ума не приложу…</p>
         </div>
       </div>
-    </div>
-
-    <h3 class="ui green header">Фронтенд</h3>
-
-    <div class="ui container effect-block">
-      <img class="ui fluid image" src="static/img/adminoid/pages/main/frontend.jpg">
-      <div class="inner">
-        <div class="text">
-          <p>Первый сайт сверстал в 2001 году табличной версткой. С той же поры игрался во всякие jQuery.</p>
-          <p>В период пика популярности Internet Explorer 6, сверстал множество кросбраузерных страниц с
-            поддержкой
-            этого уникального браузера.</p>
-          <p>Профессионально занялся программированием на JavaScript с 2010  года.</p>
-          <p>С фреймворком Vue.js работаю с 2014 года.</p>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="ui green header">Бэкенд</h3>
-
-    <div class="ui container effect-block">
-      <img class="ui fluid image" src="static/img/adminoid/pages/main/backend.jpg">
-      <div class="inner">
-        <div class="text">
-          <p>Программировал “для себя” на PHP с 2006 года, а в 2010 году начал работать профессиональным
-            веб-разработчиком.</p>
-          <p>С 2013 года использую фреймворк Laravel.</p>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="ui green header">Сервер</h3>
-
-    <div class="ui container effect-block">
-      <img class="ui fluid image" src="static/img/adminoid/pages/main/server.jpg">
-      <div class="inner">
-        <div class="text">
-          <p>Я сам решаю задачи администрирования, потому что с 2000 по 2005 годы работал системным
-            администратором
-            *nix систем, администрировал крупные многоранговые сети до 250 машин.</p>
-          <p>Сейчас в качестве сервера использую связку Docker+LEMP.</p>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="ui green header">Дизайн</h3>
-
-    <div class="ui container effect-block">
-      <img class="ui fluid image" src="static/img/adminoid/pages/main/design.jpg">
-      <div class="inner">
-        <div class="text">
-          <p>Графические пакеты начал изучать еще в 90-е годы (Photoshop, Corel Draw), в то же время начал
-            пользоваться Интернетом и следил за развитием веб-дизайна до сих пор.</p>
-          <p>Закончил выборочные дизайнерские курсы, знаком с теорией дизайна (композиция, цветовой баланс и
-            т.п.).
-            Рисую на планшете.</p>
-          <p>Хотя профессиональным дизайнером я себя назвать не могу, тем не менее, я в состоянии разработать
-            простой
-            функциональный дизайн в программе Sketch, в полной мере решающий практические задачи
-            (адаптивный, с
-            наборами стилей и UI элементов).</p>
-        </div>
-      </div>
-    </div>
-
+    </cube>
   </div>
 @endsection
 
 @section('scripts')
   @parent
   <script src="{{ mix('/js/shape.min.js') }}"></script>
-  <script>
-    $(document).ready(function () {
-      $('#shape-gallery').shape({
-        onChange: function () {
-          console.log($(this));
-        }
-      });
-      $('.btn-shape-left').on('click', function () {
-        $('.shape').shape('flip left');
-      });
-      $('.btn-shape-up').on('click', function () {
-        $('.shape').shape('flip up');
-      });
-      $('.btn-shape-down').on('click', function () {
-        $('.shape').shape('flip down');
-      });
-      $('.btn-shape-right').on('click', function () {
-        $('.shape').shape('flip right');
-      });
-    });
-  </script>
 @endsection

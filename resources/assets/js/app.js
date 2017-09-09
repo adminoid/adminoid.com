@@ -22,6 +22,10 @@ Vue.component("clouds", function (resolve) {
   require(['./components/pages/index/Clouds'], resolve)
 })
 
+Vue.component("cube", function (resolve) {
+  require(['./components/pages/index/Cube'], resolve)
+})
+
 Vue.component("clock", function (resolve) {
   require(['./components/pages/price/Clock.vue'], resolve)
 })
