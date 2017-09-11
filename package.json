@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "gsap": "^1.20.2",
-    "semantic-ui": "^2.2.13"
+    "semantic-ui": "^2.2.13",
+    "vue-session": "^0.9.8"
   }
 }

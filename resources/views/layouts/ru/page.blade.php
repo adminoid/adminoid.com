@@ -341,7 +341,7 @@
         </div>
         <div class="four wide column">
           <div class="ui inverted link list">
-            <img class="ui centered image" src="/static/img/adminoid/footer/colors.svg" alt="site colors">
+            {{--<img class="ui centered image" src="/static/img/adminoid/footer/colors.svg" alt="site colors">--}}
           </div>
         </div>
         <div class="seven wide column right aligned">

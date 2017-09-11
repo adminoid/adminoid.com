@@ -180,13 +180,13 @@
         <div class="sixteen wide tablet fourteen wide computer twelve wide large screen column">
 
           <div class="four ui top attached basic buttons">
-            <button class="ui button btn-shape-left" v-on:click="flipLeft"><i class="left large arrow blue icon"></i>
+            <button class="ui button btn-shape-left" v-on:click="moveLeft"><i class="left large arrow blue icon"></i>
             </button>
-            <button class="ui button btn-shape-down" v-on:click="flipUp"><i class="down large arrow yellow icon"></i>
+            <button class="ui button btn-shape-down" v-on:click="moveUp"><i class="down large arrow yellow icon"></i>
             </button>
-            <button class="ui button btn-shape-up" v-on:click="flipDown"><i class="up large arrow green icon"></i>
+            <button class="ui button btn-shape-up" v-on:click="moveDown"><i class="up large arrow green icon"></i>
             </button>
-            <button class="ui button btn-shape-right" v-on:click="flipRight"><i class="right large arrow red icon"></i>
+            <button class="ui button btn-shape-right" v-on:click="moveRight"><i class="right large arrow red icon"></i>
             </button>
           </div>
 
@@ -194,7 +194,7 @@
             <div class="ui shape auto" id="shape-gallery">
               <div class="sides">
                 <cube-item inline-template>
-                  <div class="active side reliability">
+                  <div class="active side reliability" id="reliability">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -215,7 +215,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side frontend">
+                  <div class="side frontend" id="frontend">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -235,7 +235,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side backend">
+                  <div class="side backend" id="backend">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -254,7 +254,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side server">
+                  <div class="side server" id="server">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -274,7 +274,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side design">
+                  <div class="side design" id="design">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -298,16 +298,16 @@
           </div>
 
           <div class="four ui bottom attached basic buttons">
-            <button class="ui button btn-shape-left" v-on:click="flipLeft">
+            <button class="ui button btn-shape-left" v-on:click="moveLeft">
               <i class="left large arrow blue icon"></i>
             </button>
-            <button class="ui button btn-shape-down" v-on:click="flipUp">
+            <button class="ui button btn-shape-down" v-on:click="moveUp">
               <i class="down large arrow yellow icon"></i>
             </button>
-            <button class="ui button btn-shape-up" v-on:click="flipDown">
+            <button class="ui button btn-shape-up" v-on:click="moveDown">
               <i class="up large arrow green icon"></i>
             </button>
-            <button class="ui button btn-shape-right" v-on:click="flipRight">
+            <button class="ui button btn-shape-right" v-on:click="moveRight">
               <i class="right large arrow red icon"></i>
             </button>
           </div>
