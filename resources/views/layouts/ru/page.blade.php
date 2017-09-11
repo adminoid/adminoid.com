@@ -275,7 +275,6 @@
       <h2 class="ui yellow header">
         <div class="content">
           Пиши, брат, как на душе лежит!
-          <div class="sub header"><em>* с мигрантами, мусульманами и т.п. не работаю. Н.б.т.м.г.ч.</em></div>
         </div>
       </h2>
       <div class="content">

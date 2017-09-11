@@ -16,6 +16,7 @@ class CreateImagesTable extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->increments('id');
             $table->string('folder')->nullable();
+            $table->string('folder_in_public')->nullable();
             $table->string('name');
             $table->string('ext');
             $table->string('alt_ru')->nullable();

@@ -2063,6 +2063,12 @@ Floated Menu / Item
 .ui.menu#top-menu {
   border-bottom: 1px solid #8EB4E9 !important;
   height: 4.66667rem;
+  -webkit-backface-visibility: hidden;
+  
+/* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 .ui.menu#top-menu .grid.container {
   height: 5.66667rem;

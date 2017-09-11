@@ -1,6 +1,6 @@
 @extends('layouts.ru.page')
 
-@section('title', 'Инструменты, которые я использую для создания сайтов')
+@section('title', $page->title_ru)
 
 @section('styles')
   @parent
@@ -10,7 +10,7 @@
 @section('content')
   <div class="ui page container" id="tools">
 
-    <h1 class="ui blue header">Инструменты, которые я использую для создания сайтов</h1>
+    <h1 class="ui blue header">{{ $page->title_ru }}</h1>
     <br>
     <div class="ui stackable grid">
 

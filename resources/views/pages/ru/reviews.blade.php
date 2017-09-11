@@ -1,6 +1,6 @@
 @extends('layouts.ru.page')
 
-@section('title', 'Отзывы')
+@section('title', $page->title_ru)
 
 @section('styles')
   @parent
@@ -12,67 +12,24 @@
 @section('content')
     <div class="ui page container" id="reviews">
 
-      <h1 class="ui blue header">Отзывы</h1>
+      <h1 class="ui blue header">{{ $page->title_ru }}</h1>
 
-      <div class="ui segment review">
-        <div class="ui container">
-          <h2 class="ui header">
-            <img src="static/img/adminoid/pages/reviews/user-default-small.png" class="ui circular image">
-            Виктория Власева <span class="nick">[Gosti_tyt]</span>
-          </h2>
-          <div class="review-text">
-            <p>Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.</p>
+      @foreach($page->descendants as $review)
+        <div class="ui segment review">
+          <div class="ui container">
+            <h2 class="ui header">
+              <img src="{{ $review->images->first()->folder_in_public }}/{{ $review->images->first()->name }}.{{ $review->images->first()->ext }}" class="ui circular image">
+              {{ $review->pageable->name }} <span class="nick">[<a href="{{ $review->pageable->link_to_profile }}">{{ $review->pageable->nick }}</a>]</span>
+            </h2>
+            <div class="review-text">
+              <p>{!! $review->pageable->content_ru !!}</p>
+            </div>
+            <div class="ui top right attached label">{{ date('d.m.Y', strtotime($review->pageable->published_at)) }}</div>
+            <div class="ui bottom right attached label"><i
+                      class="outline linkify icon"></i><a href="{{ $review->pageable->link_to_review }}" class="right floated">Ссылка на отзыв</a></div>
           </div>
-          <div class="ui top right attached label">Date</div>
-          <div class="ui bottom right attached label"><i
-              class="outline linkify icon"></i><a href="#" class="right floated">Ссылка на отзыв</a></div>
         </div>
-      </div>
-
-      <div class="ui segment review">
-        <div class="ui container">
-          <h2 class="ui header">
-            <img src="static/img/adminoid/pages/reviews/user-default-small.png" class="ui circular image">
-            Виктория Власева <span class="nick">[Gosti_tyt]</span>
-          </h2>
-          <div class="review-text">
-            <p>Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.</p>
-          </div>
-          <div class="ui top right attached label">Date</div>
-          <div class="ui bottom right attached label"><i
-              class="outline linkify icon"></i><a href="#" class="right floated">Ссылка на отзыв</a></div>
-        </div>
-      </div>
-
-      <div class="ui segment review">
-        <div class="ui container">
-          <h2 class="ui header">
-            <img src="static/img/adminoid/pages/reviews/user-default-small.png" class="ui circular image">
-            Виктория Власева <span class="nick">[Gosti_tyt]</span>
-          </h2>
-          <div class="review-text">
-            <p>Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.
-              Нравится работать с этим исполнителем – делает быстро и четко. Продолжаем сотрудничество.</p>
-          </div>
-          <div class="ui top right attached label">Date</div>
-          <div class="ui bottom right attached label"><i
-              class="outline linkify icon"></i><a href="#" class="right floated">Ссылка на отзыв</a></div>
-        </div>
-      </div>
+      @endforeach
 
     </div>
 @endsection

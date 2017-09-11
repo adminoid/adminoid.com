@@ -1,6 +1,6 @@
 @extends('layouts.ru.page')
 
-@section('title', 'Разработка сайтов')
+@section('title', $page->title_ru)
 
 @section('styles')
   @parent
@@ -12,7 +12,7 @@
 
 @section('content')
   <div class="ui page container" id="index">
-    <h1 class="ui green header">Разработка сайтов</h1>
+    <h1 class="ui green header">{{ $page->title_ru }}</h1>
     <div class="ui stackable two tablet column grid" id="intro">
       <div class="six wide large screen seven wide computer sixteen wide tablet column">
         <img src="/static/img/adminoid/pages/main/ava-circle.jpg" alt="">
@@ -194,7 +194,7 @@
             <div class="ui shape auto" id="shape-gallery">
               <div class="sides">
                 <cube-item inline-template>
-                  <div class="active side">
+                  <div class="active side reliability">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -215,7 +215,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side">
+                  <div class="side frontend">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -235,7 +235,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side">
+                  <div class="side backend">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -254,7 +254,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side">
+                  <div class="side server">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
@@ -274,7 +274,7 @@
                   </div>
                 </cube-item>
                 <cube-item inline-template>
-                  <div class="side">
+                  <div class="side design">
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">

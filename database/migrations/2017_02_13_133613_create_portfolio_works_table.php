@@ -25,6 +25,8 @@ class CreatePortfolioWorksTable extends Migration
             $table->string('link')->nullable();
             $table->string('custom_date')->nullable();
             $table->boolean('custom_face')->default(false);
+            $table->string('chunk_ru')->nullable();
+            $table->string('chunk_en')->nullable();
             $table->timestamps();
         });
     }

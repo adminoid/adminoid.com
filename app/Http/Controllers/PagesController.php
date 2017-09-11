@@ -13,6 +13,6 @@ class PagesController extends Controller
         $page = Page::where('uri', '=', $path)->firstOrFail();
         $locale = \Lang::getLocale();
         $template = $page->{"template_$locale"};
-        return view($template);
+        return view($template, compact('page'));
     }
 }

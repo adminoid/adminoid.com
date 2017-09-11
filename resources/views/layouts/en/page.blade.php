@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,24 +35,18 @@
     <link rel="stylesheet" href="{{ mix('/css/components/sidebar.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/header.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/segment.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('/css/components/modal.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('/css/components/dimmer.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('/css/components/transition.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('/css/components/form.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('/css/components/label.min.css') }}">
-    <link rel="stylesheet" href="{{ mix('/css/components/message.min.css') }}">
   @show
 
 </head>
 <body>
 
 <div class="ui right sidebar inverted red vertical menu active" id="top-menu-sidebar">
-  <a href="/" class="item{{ Request::is('/') ? ' active' : '' }}">Главная</a>
-  <a href="/price" class="item{{ Request::is('price') ? ' active' : '' }}">Цена</a>
-  <a href="/tools" class="item{{ Request::is('tools') ? ' active' : '' }}">Инструменты</a>
-  <a href="/process" class="item{{ Request::is('process') ? ' active' : '' }}">Процесс</a>
-  <a href="/portfolio" class="item{{ Request::is('portfolio') ? ' active' : '' }}">Портфолио</a>
-  <a href="/reviews" class="item{{ Request::is('reviews') ? ' active' : '' }}">Отзывы</a>
+  <a href="/" class="item{{ Request::is('/') ? ' active' : '' }}">Main page</a>
+  <a href="/price" class="item{{ Request::is('price') ? ' active' : '' }}">Price</a>
+  <a href="/tools" class="item{{ Request::is('tools') ? ' active' : '' }}">Tools</a>
+  <a href="/workflow" class="item{{ Request::is('workflow') ? ' active' : '' }}">Workflow</a>
+  <a href="/portfolio" class="item{{ Request::is('portfolio') ? ' active' : '' }}">Portfolio</a>
+  <a href="/reviews" class="item{{ Request::is('reviews') ? ' active' : '' }}">Reviews</a>
 </div>
 
 <div id="app" class="pusher ">
@@ -240,23 +234,23 @@
           <div class="twelve wide left floated column computer widescreen largescreen only">
             <div class="ui six item menu">
               <a href="/price" class="item{{ Request::is('price') ? ' active' : '' }}">
-                Цена
+               Price
               </a>
               <a href="/tools" class="item{{ Request::is('tools') ? ' active' : '' }}">
-                Инструменты
+                Tools
               </a>
-              <a href="/process" class="item{{ Request::is('process') ? ' active' : '' }}">
-                Процесс
+              <a href="/workflow" class="item{{ Request::is('workflow') ? ' active' : '' }}">
+                Workflow
               </a>
               <a href="/portfolio" class="item{{ Request::is('portfolio') ? ' active' : '' }}">
-                Портфолио
+                Portfolio
               </a>
               <a href="reviews" class="item{{ Request::is('reviews') ? ' active' : '' }}">
-                Отзывы
+                Reviews
               </a>
               <div class="item">
                 <button class="ui button" id="super" v-on:click="write">
-                  Пиши
+                  Write
                 </button>
               </div>
             </div>
@@ -268,67 +262,6 @@
     @yield('content')
 
   </div>
-
-  <feedback-form inline-template>
-    <div class="ui modal" id="super-modal">
-      <i class="close icon"></i>
-      <h2 class="ui yellow header">
-        <div class="content">
-          Пиши, брат, как на душе лежит!
-          <div class="sub header"><em>* с мигрантами, мусульманами и т.п. не работаю. Н.б.т.м.г.ч.</em></div>
-        </div>
-      </h2>
-      <div class="content">
-        <div class="ui success message" v-if="form.success">
-          <p>@{{ form.message }}</p>
-        </div>
-        <form class="ui form success" method="post" action="/feedback-messages" v-on:submit.prevent="onSubmit" v-on:keydown="form.errors.clear($event.target.name)" v-on:focusin="form.errors.clear($event.target.name)"
-              v-if="!form.success">
-          <div class="required field" v-bind:class="[form.errors.has('email') ? 'error' : '']"
-               v-bind:class="[form.success ? 'disabled' : '']">
-            <label>Мыло</label>
-            <input type="email" name="email" placeholder="Email" v-model="form.email">
-            <div class="ui red pointing prompt label" v-if="form.errors.has('email')" v-text="form.errors.get('email')"></div>
-          </div>
-
-          <div class="required field" v-bind:class="[form.errors.has('message') ? 'error' : '']"
-               v-bind:class="[form.success ? 'disabled' : '']">
-            <label>Веревка</label>
-            <div class="ui red pointing below prompt label" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></div>
-            <textarea name="message" v-model="form.message"></textarea>
-          </div>
-
-          <div class="three fields">
-
-            <div class="required field" v-bind:class="[form.errors.has('first_name') ? 'error' : '']"
-                 v-bind:class="[form.success ? 'disabled' : '']">
-              <label>Имя</label>
-              <input type="text" name="first_name" placeholder="Имя" v-model="form.first_name">
-              <div class="ui red pointing prompt label" v-if="form.errors.has('first_name')" v-text="form.errors.get('first_name')"></div>
-            </div>
-
-            <div class="required field" v-bind:class="[form.errors.has('last_name') ? 'error' : '']"
-                 v-bind:class="[form.success ? 'disabled' : '']">
-              <label>Фамилия</label>
-              <input type="text" name="last_name" placeholder="Фамилия" v-model="form.last_name">
-              <div class="ui red pointing prompt label" v-if="form.errors.has('last_name')" v-text="form.errors.get('last_name')"></div>
-            </div>
-
-            <div class="required field" v-bind:class="[form.errors.has('phone') ? 'error' : '']"
-                 v-bind:class="[form.success ? 'disabled' : '']">
-              <label>Телефон</label>
-              <input type="tel" name="phone" placeholder="Телефон" v-model="form.phone">
-              <div class="ui red pointing prompt label" v-if="form.errors.has('phone')" v-text="form.errors.get('phone')"></div>
-            </div>
-
-          </div>
-
-          <button class="ui primary button" type="submit"
-                  v-bind:class="[form.errors.any() ? 'loading' : '']" v-bind:disabled="form.errors.any() || form.success">От души, братишка!</button>
-        </form>
-      </div>
-    </div>
-  </feedback-form>
 
 </div>
 <div class="page-footer pusher">
@@ -358,9 +291,6 @@
   <script src="{{ mix('/js/vendor.js') }}"></script>
   <script src="{{ mix('/js/app.js') }}"></script>
   <script src="{{ mix('/js/sidebar.min.js') }}"></script>
-  <script src="{{ mix('/js/dimmer.min.js') }}"></script>
-  <script src="{{ mix('/js/transition.min.js') }}"></script>
-  <script src="{{ mix('/js/modal.min.js') }}"></script>
 @show
 
 </body>

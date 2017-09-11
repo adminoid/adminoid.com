@@ -44,8 +44,10 @@ class Page extends Model
         $slug = $this->slug;
         $this->uri = $this->isRoot() ? $slug : $this->parent->uri . '/' . $slug;
         $folder = $this->getImageFolder();
+        $folderInPublic = $this->getImageFolderInPublic();
         foreach ($this->images()->get() as $image) {
             $image->folder = $folder;
+            $image->folder_in_public = $folderInPublic;
             $image->save();
         }
         return $this;
@@ -63,13 +65,14 @@ class Page extends Model
     public function loadImage($source, $imageData = [])
     {
         $folder = $this->getImageFolder();
-
+        $folderInPublic = $this->getImageFolderInPublic();
         $ext = pathinfo($source, PATHINFO_EXTENSION);
         $name = basename($source, '.' . $ext);
         $imageData = array_merge(
             $imageData,
             [
                 'folder' => $folder,
+                'folder_in_public' => $folderInPublic,
                 'name' => $name,
                 'ext' => $ext,
             ]
@@ -100,6 +103,11 @@ class Page extends Model
     public function getImageFolder($uri = '')
     {
         return ($uri) ? 'public/images/' . $uri : 'public/images/' . $this->uri;
+    }
+
+    public function getImageFolderInPublic($uri = '')
+    {
+        return ($uri) ? 'images/' . $uri : 'images/' . $this->uri;
     }
 
 }

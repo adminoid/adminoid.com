@@ -88,6 +88,7 @@ _Pages:_
 "icon"
 "card"
 "label"
+"image"
 
 **Reviews**
 "reviews" - custom component

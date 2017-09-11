@@ -1,6 +1,6 @@
 @extends('layouts.ru.page')
 
-@section('title', 'Пример рабочего процесса при разработке сайта')
+@section('title', $page->title_ru)
 
 @section('styles')
   @parent
@@ -9,7 +9,7 @@
 
 @section('content')
     <div class="ui page container" id="workflow">
-      <h1 class="ui blue header">Пример рабочего процесса при разработке сайта</h1>
+      <h1 class="ui blue header">{{ $page->title_ru }}</h1>
       <div class="ui grid workflow-block projecting top">
         <div class="inner-column"></div>
         <half-rotate class="sixteen wide column" inline-template>

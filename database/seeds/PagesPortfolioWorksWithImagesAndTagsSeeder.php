@@ -11,7 +11,6 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
      */
     public function run()
     {
-        //
         $pages = [
             [
                 'name_ru' => 'Главная',
@@ -170,6 +169,8 @@ SEO-optimization",
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2015-2016',
                 'custom_face' => true,
+                'chunk_ru' => 'chunks/ru/portfolios/1',
+                'chunk_en' => 'chunks/en/portfolios/1',
                 'images' => [
                     'database/seeds/images/portfolio/0/0.jpg',
                     'database/seeds/images/portfolio/0/f_1545741da73a36a9.jpg',
@@ -190,6 +191,8 @@ SEO-optimization",
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2015',
                 'custom_face' => true,
+                'chunk_ru' => 'chunks/ru/portfolios/2',
+                'chunk_en' => 'chunks/en/portfolios/2',
                 'images' => [
                     'database/seeds/images/portfolio/1/f_14657436ae522b62.jpg',
                 ],
@@ -213,6 +216,8 @@ CRUD/Laravel resource",
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2016',
                 'custom_face' => true,
+                'chunk_ru' => 'chunks/ru/portfolios/3',
+                'chunk_en' => 'chunks/en/portfolios/3',
                 'images' => [
                     'database/seeds/images/portfolio/2/0.jpg',
                     'database/seeds/images/portfolio/2/f_3105741bfd419e3d.jpg',
@@ -233,6 +238,8 @@ CRUD/Laravel resource",
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2016',
                 'custom_face' => true,
+                'chunk_ru' => 'chunks/ru/portfolios/4',
+                'chunk_en' => 'chunks/en/portfolios/4',
                 'images' => [
                     'database/seeds/images/portfolio/3/f_31957436ab2538b2.jpg',
                 ],

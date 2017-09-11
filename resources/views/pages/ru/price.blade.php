@@ -1,6 +1,6 @@
 @extends('layouts.ru.page')
 
-@section('title', 'Выгодная цена за фильтрованный концентрат')
+@section('title', $page->title_ru)
 
 @section('styles')
   @parent
@@ -11,7 +11,7 @@
 @section('content')
   <div class="ui page container" id="price">
 
-    <h1 class="ui blue header">Выгодная цена за фильтрованный концентрат</h1>
+    <h1 class="ui blue header">{{ $page->title_ru }}</h1>
 
     <div class="ui stackable grid" id="clock-offer">
 
