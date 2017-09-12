@@ -45,8 +45,8 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
             [
                 'name_ru' => 'Процесс',
                 'name_en' => 'Workflow',
-                'title_ru' => 'Пример рабочего процесса при разработке этого сайта',
-                'title_en' => 'An example of a workflow in the development of this site',
+                'title_ru' => 'Пример рабочего процесса при разработке сайта',
+                'title_en' => 'An example of a workflow in site development',
                 'template_ru' => 'pages.ru.workflow',
                 'template_en' => 'pages.en.workflow',
                 'slug' => 'workflow',

@@ -24,25 +24,26 @@
             </p>
             <p>
               Вот несколько примеров (там еще вкладки есть):
+              <a href="https://www.lucidchart.com/documents/edit/2f8cdb14-161f-4afe-8ccf-6bf7d8567da9/0"
+                 target="_blank">схема 1</a>,
+              <a href="https://www.lucidchart.com/documents/edit/a90a0bce-b152-4405-920f-98b0f1f4cae1"
+                 target="_blank">схема 2</a>,
+              <a href="https://www.lucidchart.com/documents/edit/d5fd80c6-c43d-476e-89b3-0e5fb5371ae2"
+                 target="_blank">схема 3</a>
             </p>
 
             <div class="ui five column centered grid">
+
               <div class="center aligned column">
-                <a href="https://www.lucidchart.com/documents/edit/2f8cdb14-161f-4afe-8ccf-6bf7d8567da9/0">
                   <img src="static/img/adminoid/pages/workflow/projecting/lc-1.png" alt="lucidchart scheme">
-                </a>
               </div>
 
               <div class="center aligned column">
-                <a href="https://www.lucidchart.com/documents/edit/a90a0bce-b152-4405-920f-98b0f1f4cae1">
-                  <img src="static/img/adminoid/pages/workflow/projecting/lc-2.png" alt="lucidchart scheme">
-                </a>
+                <img src="static/img/adminoid/pages/workflow/projecting/lc-2.png" alt="lucidchart scheme">
               </div>
 
               <div class="center aligned column">
-                <a href="https://www.lucidchart.com/documents/edit/d5fd80c6-c43d-476e-89b3-0e5fb5371ae2">
                   <img src="static/img/adminoid/pages/workflow/projecting/lc-3.png" alt="lucidchart scheme">
-                </a>
               </div>
             </div>
           </div>
@@ -57,13 +58,13 @@
                v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
             <h2>Дизайн</h2>
             <p>
-              Скачать дизайн-макет для этого сайта:
+              <a href="/downloads/pages/workflow/adminoid-clean.sketch" target="_blank">Скачать дизайн-макет</a> для этого сайта
             </p>
             <p>
               <img src="static/img/adminoid/pages/workflow/design/site.png" alt="">
             </p>
           </div>
-        {{--</half-rotate>--}}
+        </half-rotate>
       </div>
 
       <div class="ui grid workflow-block frontend">
@@ -78,7 +79,7 @@
               Примеры из этого проекта:
             </p>
             <p>
-              Vue.js модули, Unit-тесты, верстка, стили, репозиторий
+              <a href="https://github.com/adminoid/frontend.adminoid.com" target="_blank">Репозиторий</a>, <a href="https://github.com/adminoid/frontend.adminoid.com/tree/master/test/unit/specs" target="_blank">unit-тесты</a>, <a href="https://github.com/adminoid/adminoid.com/tree/master/semantic/src/definitions/pages" target="_blank">стили страниц</a>, <a href="https://github.com/adminoid/adminoid.com/tree/master/resources/assets/js/components" target="_blank">Vue.js модули</a>, <a href="https://github.com/adminoid/adminoid.com/blob/master/docs/frontend.md" target="_blank">Документация</a>
             </p>
           </div>
         </half-rotate>
@@ -94,10 +95,10 @@
                v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
             <h2>Бэкенд</h2>
             <p>
-              Примеры:
+              Примеры из этого проекта:
             </p>
             <p>
-              Unit-тесты, репозиторий
+              <a href="https://github.com/adminoid/adminoid.com/tree/master/tests/Feature" target="_blank">Unit-тесты</a>, <a href="https://github.com/adminoid/backend.adminoid.com" target="_blank">репозиторий</a>, <a href="https://github.com/adminoid/adminoid.com/blob/master/docs/backend.md" target="_blank">Документация</a>
             </p>
           </div>
         </half-rotate>

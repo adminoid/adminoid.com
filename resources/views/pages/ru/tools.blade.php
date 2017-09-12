@@ -20,7 +20,7 @@
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Проектирование</h2>
-               <p> Для построения ER-диаграмм, блок схем, мозгового штурма обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a> и <a href="#brain" class="hover brain">ум</a> (не мозг, ибо это - орган тела, а ум - свойство духа, не души).</p>
+               <p> Для построения ER-диаграмм, блок схем, мозгового штурма обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a> и <a href="#brain" class="hover brain">ум</a>.</p>
               </div>
               <div class="six wide column images-wrapper">
                 <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart">

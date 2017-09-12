@@ -12,7 +12,7 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-.extract(['vue', 'gsap', 'axios', 'jquery'])
+.extract(['vue', 'vue-session', 'jquery', 'lodash', 'gsap', 'axios'])
 .copy('semantic/dist/components/reset.min.css', 'public/css/components')
 .copy('semantic/dist/components/site.min.css', 'public/css/components')
 .copy('semantic/dist/components/container.min.css', 'public/css/components')
