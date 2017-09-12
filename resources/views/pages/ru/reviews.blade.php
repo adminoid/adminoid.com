@@ -31,5 +31,7 @@
         </div>
       @endforeach
 
+        <p>Отзывы взяты отсюда: <a href="https://www.fl.ru/users/adminoid/opinions/">https://www.fl.ru/users/adminoid/opinions/</a></p>
+        
     </div>
 @endsection

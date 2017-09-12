@@ -5,7 +5,7 @@
             <div class="right floated meta green"><i class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}
             </div>
         </div>
-        <div class="content window fix" id="ikmed">
+        <div class="content window fix normal-cursor" id="ikmed">
             <img class="ikmed-logo abs" src="/static/img/adminoid/pages/portfolio/presentations/ikmed-logo-big.png"
                  alt="">
             <img class="iphone abs" src="/static/img/adminoid/pages/portfolio/presentations/ikmed/iphone.png"
