@@ -15,7 +15,17 @@
 //    return view('welcome');
 //});
 
-$locale = \Localization::getSupportedLocaleNameByTld(\Localization::getTld());
+$locale = 'ru';
+if (array_key_exists('HTTP_HOST', $_SERVER)) {
+    $domain = $_SERVER['HTTP_HOST'];
+    $domainParts = explode('.', $domain);
+    $zone = $domainParts[count($domainParts) - 1];
+    if ($zone == 'com') {
+        $locale = 'en';
+    }
+}
+
+
 if (!Session::has($locale)) {
     Session::put('locale', $locale);
 }
