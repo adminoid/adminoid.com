@@ -20,7 +20,7 @@
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Проектирование</h2>
-               <p> Для построения ER-диаграмм, блок схем, мозгового штурма обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a> и <a href="#brain" class="hover brain">ум</a>.</p>
+                <p>Для построения ER-диаграмм, блок схем, мозгового штурма обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, <a href="#brain" class="hover brain">ум</a> и хождение туда-сюда.</p>
               </div>
               <div class="six wide column images-wrapper">
                 <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart">
@@ -130,18 +130,12 @@
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Администрирование</h2>
-                Последнее время администрировал OS <a href="#ubuntu" class="hover ubuntu">Ubuntu</a> / <a href="#debian"
+                В последние годы использовал OS <a href="#ubuntu" class="hover ubuntu">Ubuntu</a> / <a href="#debian"
                                                                                                           class="hover debian">Debian</a>,
-                в качестве web-сервера использовал <a href="#nginx" class="hover nginx">Nginx</a> или
-                <a href="#apache" class="hover apache">Apache</a>.
-                Сейчас моя сборка в качестве сервера: на любую OS ставлю
-                <a href="#docker" class="hover docker">docker</a>, внутри модифицированный мной <a href="#laradock"
-                                                                                                   class="hover laradock">laradock</a>
-                - преднастроенная сборка для docker в виде набора
-                dockerfile-ов для каждого компонента на основе <a href="#ubuntu" class="hover ubuntu">ubuntu</a>.
-                Это работает и для локальной (dev) версии проекта и для production. А так же легко переносится на любой
-                vds/vps/hosting, надо просто установить <a href="#docker" class="hover docker">docker</a>, скопировать
-                файлы и запустить как обычно.
+                а в качестве web-сервера использовал <a href="#nginx" class="hover nginx">Nginx</a> или
+                <a href="#apache" class="hover apache">Apache</a>. <br>
+                А сейчас, используя <a href="#docker" class="hover docker">Docker</a>, могу установить одновременно несколько разных версий php, mysql и т.п..
+                На дешевом хостинге за 250 рублей в месяц такая система будет быстро работать. И ее можно легко, в несколько простых шагов, перенести на любой другой хостинг, сервер машину или облачный сервис.
               </div>
               <div class="six wide column images-wrapper">
                 <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker">
@@ -149,7 +143,6 @@
                 <img src="/static/img/adminoid/pages/tools/administration/ubuntu.png" alt="Ubuntu" id="ubuntu">
                 <img src="/static/img/adminoid/pages/tools/administration/apache.png" alt="Apache" id="apache">
                 <img src="/static/img/adminoid/pages/tools/administration/debian.png" alt="Debian" id="debian">
-                <img src="/static/img/adminoid/pages/tools/administration/laradock.png" alt="laradock" id="laradock">
               </div>
             </div>
           </div>
@@ -162,15 +155,11 @@
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Рабочее окружение</h2>
-                Работаю на <a href="#mac" class="hover mac">macbook pro</a>. Слепая <a href="#keymap"
-                                                                                       class="hover keymap">10-ти
-                  пальцевая печать</a> и редактор <a href="#vim" class="hover vim">VIM</a> делают редактирование текста
-                молниеносным. Контроль версий -
-                <a href="#git" class="hover git">git</a>.
+                Работаю на <a href="#mac" class="hover mac">macbook pro</a>. Слепая <a href="#keymap" class="hover keymap">10-ти пальцевая печать</a> и редактор <a href="#vim" class="hover vim">VIM</a> делают редактирование текста молниеносным. Все изменения под контролем у <a href="#git" class="hover git">git</a>.
                 Заметки и документацию пишу на <a href="#markdown" class="hover markdown">Markdown</a>.
                 Все дела расписываю в программе <a href="#omni" class="hover omni">OmniFocus</a>, затем отслеживаю их
                 выполнение по таймеру
-                <a href="#vitamin" class="hover vitamin">vitamin-r2</a>.
+                <a href="#vitamin" class="hover vitamin">Vitamin-R2</a>.
                 Документооборот кручу в <a href="#google-apps" class="hover google-apps">google apps</a>.
               </div>
               <div class="six wide column images-wrapper">

@@ -98,3 +98,8 @@ _Pages:_
 "modal" - js and css
 "dimmer" - js and css
 "form"
+
+## Run compilation
+`npm run watch`, `npm run dev` or `npm run production`  
+`cd semantic`  
+`gulp build-css` or `gulp build` if with js  

@@ -8,6 +8,7 @@ use App\Observers\PageObserver;
 use App\Image;
 use App\Observers\ImageObserver;
 //use Laravel\Dusk\DuskServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
      */
   public function boot()
   {
+    Schema::defaultStringLength(191);
     Page::observe(PageObserver::class);
     Image::observe(ImageObserver::class);
   }
