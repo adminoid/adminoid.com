@@ -35,15 +35,15 @@
             <div class="ui five column centered grid">
 
               <div class="center aligned column">
-                  <img src="static/img/adminoid/pages/workflow/projecting/lc-1.png" alt="lucidchart scheme">
+                  <img src="static/img/adminoid/pages/workflow/projecting/lc-1.png" alt="lucidchart scheme" data-rjs="2">
               </div>
 
               <div class="center aligned column">
-                <img src="static/img/adminoid/pages/workflow/projecting/lc-2.png" alt="lucidchart scheme">
+                <img src="static/img/adminoid/pages/workflow/projecting/lc-2.png" alt="lucidchart scheme" data-rjs="2">
               </div>
 
               <div class="center aligned column">
-                  <img src="static/img/adminoid/pages/workflow/projecting/lc-3.png" alt="lucidchart scheme">
+                  <img src="static/img/adminoid/pages/workflow/projecting/lc-3.png" alt="lucidchart scheme" data-rjs="2">
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
               <a href="/downloads/pages/workflow/adminoid-clean.sketch" target="_blank">Скачать дизайн-макет</a> для этого сайта
             </p>
             <p>
-              <img src="static/img/adminoid/pages/workflow/design/site.png" alt="">
+              <img src="static/img/adminoid/pages/workflow/design/site.png" alt="" data-rjs="2">
             </p>
           </div>
         </half-rotate>

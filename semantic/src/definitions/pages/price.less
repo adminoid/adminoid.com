@@ -1,3 +1,4 @@
+//@import "retina/retina";
 @codeFontName: 'Roboto Mono';
 @headerFontName: 'Roboto Condensed';
 @codeFont: @codeFontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -114,6 +115,7 @@
         }
         .img.large {
           background: url(/static/img/adminoid/pages/price/tomato-img.jpg) 100% 0 no-repeat;
+          //.retina('/static/img/adminoid/pages/price/tomato-img.jpg', 2, auto, 100% 0 no-repeat);
         }
         .img.small {
           img {
@@ -132,14 +134,16 @@
         min-height: 260px;
         .img.large {
           background: url(/static/img/adminoid/pages/price/girl-with-camera.jpg) 100% 50% no-repeat;
+          //.retina('/static/img/adminoid/pages/price/girl-with-camera.jpg', 2, auto, 100% 50% no-repeat);
         }
       }
       &.speed {
         //background: #F6F6F6;
-        border: 3px solid #1254B0;
+        border: 3px solid #CA2235;
         min-height: 260px;
         .img.large {
           background: url(/static/img/adminoid/pages/price/speed-img.jpg) 100% 50% no-repeat;
+          //.retina('/static/img/adminoid/pages/price/speed-img.jpg', 2, auto, 100% 50% no-repeat);
         }
         .img.small {
           img {
@@ -157,7 +161,8 @@
         border: 3px solid #1254B0;
         min-height: 260px;
         .img.large {
-          background: url(/static/img/adminoid/pages/price/greed-img.png) 0% 50% no-repeat;
+          background: url(/static/img/adminoid/pages/price/greed-img.jpg) 0% 50% no-repeat;
+          //.retina('/static/img/adminoid/pages/price/greed-img.jpg', 2, auto, 0% 50% no-repeat);
         }
       }
       &.total {
@@ -166,6 +171,7 @@
         min-height: 260px;
         .img.large {
           background: url(/static/img/adminoid/pages/price/money-img.jpg) 50% 50% no-repeat;
+          //.retina('/static/img/adminoid/pages/price/money-img.jpg', 2, auto, 50% 50% no-repeat);
         }
       }
       .column.img {

@@ -15,7 +15,7 @@
     <h1 class="ui green header">{{ $page->title_ru }}</h1>
     <div class="ui stackable two tablet column grid" id="intro">
       <div class="six wide large screen seven wide computer sixteen wide tablet column">
-        <img src="/static/img/adminoid/pages/main/ava-circle.jpg" alt="">
+        <img src="/static/img/adminoid/pages/main/ava-circle.jpg" data-rjs="2" alt="">
         <clouds inline-template>
           <svg id="clouds" width="189px" height="158px" viewBox="0 0 189 158" version="1.1"
                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -88,8 +88,8 @@
               href="https://github.com/sass">sass</a>,
           <br>
           <a href="https://getbootstrap.com/">Twitter Bootstrap</a>/<a
-              href="https://semantic-ui.com/">Semantic UI</a>/<a
-              href="https://github.com/thoughtbot/bourbon">Bourbon</a><br>
+              href="https://semantic-ui.com/">Semantic UI</a>
+          <br>
           <a href="https://www.docker.com/">docker</a> + <a href="https://www.ubuntu.com/">ubuntu</a>/<a
               href="https://www.debian.org/">debian</a>,
           <a href="https://www.sketchapp.com/">sketch</a> + <a

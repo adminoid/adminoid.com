@@ -43,6 +43,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
 .copy('semantic/dist/components/shape.min.css', 'public/css/components')
 .copy('semantic/dist/components/shape.min.js', 'public/js')
 .copy('semantic/dist/components/message.min.css', 'public/css/components')
+.copy('node_modules/retinajs/dist/retina.min.js', 'public/js')
 .version()
 .copyDirectory('semantic/dist/themes/default', 'public/css/themes/default');
 

@@ -103,3 +103,15 @@ _Pages:_
 `npm run watch`, `npm run dev` or `npm run production`  
 `cd semantic`  
 `gulp build-css` or `gulp build` if with js  
+
+## Retina js
+npm install retinajs --save  
+Add `.copy('node_modules/retinajs/dist/retina.min.js', 'public/js')`  
+to `webpack.mix.js` file  
+add  
+```<script src="{{ mix('/js/retina.min.js') }}"></script>```  
+to `resources/views/layouts/ru/page.blade.php` file  
+
+_Now disabled_:
+copy `node_modules/retinajs/dist/retina.less` to `semantic/src/definitions/pages/retina/retina.less`  
+Read: https://github.com/strues/retinajs
