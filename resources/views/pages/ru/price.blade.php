@@ -31,7 +31,6 @@
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>left-clamp</title>
-                <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Artboards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Large-Monitor---Process-Copy"
@@ -56,9 +55,7 @@
             <div class="clamp right mobile hidden">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
                 <title>right-clamp</title>
-                <desc>Created with Sketch.</desc>
                 <defs></defs>
                 <g id="Artboards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g id="Large-Monitor---Процесс-Copy"

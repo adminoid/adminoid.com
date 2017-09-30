@@ -197,7 +197,6 @@
               @click="toggleSidebar"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <title>Mobile-menu</title>
-              <desc>Created with Sketch.</desc>
               <defs>
                 <rect id="path-1" x="0" y="0" width="42" height="32" rx="4"></rect>
                 <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2"
