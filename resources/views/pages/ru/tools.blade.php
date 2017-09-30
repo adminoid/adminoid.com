@@ -135,7 +135,7 @@
                 а в качестве web-сервера использовал <a href="#nginx" class="hover nginx">Nginx</a> или
                 <a href="#apache" class="hover apache">Apache</a>. <br>
                 А сейчас, используя <a href="#docker" class="hover docker">Docker</a>, могу установить одновременно несколько разных версий php, mysql и т.п..
-                На дешевом хостинге за 250 рублей в месяц такая система будет быстро работать. И ее можно легко, в несколько простых шагов, перенести на любой другой хостинг, сервер машину или облачный сервис.
+                На дешевом хостинге за 250 рублей в месяц такая система будет быстро работать. И ее можно легко, в несколько простых шагов, перенести на любой другой хостинг, сервер, машину или облачный сервис.
               </div>
               <div class="six wide column images-wrapper">
                 <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker">

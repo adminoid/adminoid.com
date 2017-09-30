@@ -62,6 +62,10 @@
                 @endif
             @endforeach
 
+            <div class="sixteen wide column">
+                Ссылка на полное портфолио: <a href="https://www.fl.ru/users/adminoid/">https://www.fl.ru/users/adminoid/</a>
+            </div>
+
         </div>
     </div>
 @endsection

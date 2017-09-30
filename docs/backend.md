@@ -12,6 +12,8 @@ All files in migrations folder
 `mysql -u root`  
 `create database homestead`  
 
+> `brew services stop mysql`
+
 in .env file:
 ```
 DB_USERNAME=root  
