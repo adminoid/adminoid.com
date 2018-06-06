@@ -13,8 +13,8 @@ return [
     |
     */
 
-//    'default' => env('DB_CONNECTION', 'mysql'),
-    'default' => env('DB_CONNECTION', 'mysql_docker_mac'),
+    'default' => env('DB_CONNECTION', 'mysql'),
+//    'default' => env('DB_CONNECTION', 'mysql_docker_mac'),
 
     /*
     |--------------------------------------------------------------------------
