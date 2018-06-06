@@ -17,7 +17,7 @@
 @horizontalPadding: 0.833em;
 @borderRadius: @absoluteBorderRadius;
 @textTransform: none;
-@fontWeight: bold;
+@fontWeight: @bold;
 @borderWidth: 1px;
 @border: 0px solid transparent;
 
@@ -46,7 +46,7 @@
 @imageHeight: (1em + @verticalPadding * 2);
 
 /* Detail */
-@detailFontWeight: bold;
+@detailFontWeight: @bold;
 @detailOpacity: 0.8;
 @detailIconDistance: 0.25em;
 @detailMargin: 1em;
@@ -100,6 +100,7 @@
 @labelActiveHoverBackgroundImage: none;
 @labelActiveHoverTextColor: @selectedTextColor;
 
+
 /*-------------------
       Variations
 --------------------*/
@@ -132,18 +133,19 @@
 @ribbonShadowColor: rgba(0, 0, 0, 0.15);
 
 @ribbonMargin: 1rem;
-@ribbonOffset: ~"calc("-@ribbonMargin~" - " @ribbonTriangleSize ~")";
-@ribbonDistance: ~"calc(" @ribbonMargin ~" + " @ribbonTriangleSize ~")";
-@rightRibbonOffset: ~"calc(100% + " @ribbonMargin ~" + " @ribbonTriangleSize ~")";
+@ribbonOffset: ~"calc("-@ribbonMargin~" - "@ribbonTriangleSize~")";
+@ribbonDistance: ~"calc("@ribbonMargin~" + "@ribbonTriangleSize~")";
+@rightRibbonOffset:  ~"calc(100% + "@ribbonMargin~" + "@ribbonTriangleSize~")";
 
 @ribbonImageTopDistance: 1rem;
 @ribbonImageMargin: -0.05rem; /* Rounding Offset on Triangle */
-@ribbonImageOffset: ~"calc("-@ribbonImageMargin~" - " @ribbonTriangleSize ~")";
-@rightRibbonImageOffset: ~"calc(100% + " @ribbonImageMargin ~" + " @ribbonTriangleSize ~")";
+@ribbonImageOffset: ~"calc("-@ribbonImageMargin~" - "@ribbonTriangleSize~")";
+@rightRibbonImageOffset:  ~"calc(100% + "@ribbonImageMargin~" + "@ribbonTriangleSize~")";
 
 @ribbonTableMargin: @relativeMini; /* Rounding Offset on Triangle */
-@ribbonTableOffset: ~"calc("-@ribbonTableMargin~" - " @ribbonTriangleSize ~")";
-@rightRibbonTableOffset: ~"calc(100% + " @ribbonTableMargin ~" + " @ribbonTriangleSize ~")";
+@ribbonTableOffset: ~"calc("-@ribbonTableMargin~" - "@ribbonTriangleSize~")";
+@rightRibbonTableOffset:  ~"calc(100% + "@ribbonTableMargin~" + "@ribbonTriangleSize~")";
+
 
 /* Colors */
 @redTextColor: @white;
@@ -209,7 +211,7 @@
 
 /* Corner Text */
 @cornerTextWidth: 3em;
-@cornerTextWeight: bold;
+@cornerTextWeight: @bold;
 @cornerTextSize: 1em;
 
 /* Horizontal */
@@ -245,11 +247,11 @@
 --------------------*/
 
 /* Sizing */
-@mini: @9px;
-@tiny: @10px;
-@small: @11px;
-@medium: @12px;
-@large: @absoluteMedium;
-@big: @absoluteBig;
-@huge: @absoluteHuge;
-@massive: @absoluteMassive;
+@mini    : @9px;
+@tiny    : @10px;
+@small   : @11px;
+@medium  : @12px;
+@large   : @absoluteMedium;
+@big     : @absoluteBig;
+@huge    : @absoluteHuge;
+@massive : @absoluteMassive;

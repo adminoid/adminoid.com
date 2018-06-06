@@ -98,10 +98,9 @@
                                                                                                          class="hover webpack">webpack</a>.
                 Менеджментом пакетов, запуском тестов занимается
                 <a href="#node-js" class="node-js hover">node.js</a>.
-                Unit тесты - это <a href="#chai" class="hover chai">chai</a> + <a href="#mocha" class="mocha hover">mocha</a>
-                на
+                Unit тестирование <a href="#chai" class="hover chai">chai</a>, <a href="#mocha" class="mocha hover">mocha</a>,
                 <a href="#karma" class="hover karma">karma</a>.
-                На <a href="#ext-js" class="hover ext-js">extJs</a> я сделал немало админок.
+                {{--На <a href="#ext-js" class="hover ext-js">extJs</a> я сделал немало админок.--}}
               </div>
               <div class="six wide column images-wrapper">
                 <img src="/static/img/adminoid/pages/tools/frontend/less.png" alt="less" id="less" data-rjs="2">
@@ -117,7 +116,7 @@
                 <img src="/static/img/adminoid/pages/tools/frontend/karma.png" alt="karma" id="karma" data-rjs="2">
                 <img src="/static/img/adminoid/pages/tools/frontend/chai.png" alt="chai" id="chai" data-rjs="2">
                 <img src="/static/img/adminoid/pages/tools/frontend/mocha.png" alt="mocha" id="mocha" data-rjs="2">
-                <img src="/static/img/adminoid/pages/tools/frontend/ext-js.png" alt="ext-js" id="ext-js" data-rjs="2">
+                {{--<img src="/static/img/adminoid/pages/tools/frontend/ext-js.png" alt="ext-js" id="ext-js" data-rjs="2">--}}
                 <img src="/static/img/adminoid/pages/tools/frontend/node-js.png" alt="node-js" id="node-js" data-rjs="2">
                 <img src="/static/img/adminoid/pages/tools/frontend/webpack.png" alt="webpack" id="webpack" data-rjs="2">
               </div>
