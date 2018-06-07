@@ -274,7 +274,7 @@
       <i class="close icon"></i>
       <h2 class="ui yellow header">
         <div class="content">
-          Пиши, брат, как на душе лежит!
+          Отправьте запрос
         </div>
       </h2>
       <div class="content">
@@ -285,14 +285,14 @@
               v-if="!form.success">
           <div class="required field" v-bind:class="[form.errors.has('email') ? 'error' : '']"
                v-bind:class="[form.success ? 'disabled' : '']">
-            <label>Мыло</label>
+            <label>E-mail</label>
             <input type="email" name="email" placeholder="Email" v-model="form.email">
             <div class="ui red pointing prompt label" v-if="form.errors.has('email')" v-text="form.errors.get('email')"></div>
           </div>
 
           <div class="required field" v-bind:class="[form.errors.has('message') ? 'error' : '']"
                v-bind:class="[form.success ? 'disabled' : '']">
-            <label>Веревка</label>
+            <label>Сообщение</label>
             <div class="ui red pointing below prompt label" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></div>
             <textarea name="message" v-model="form.message"></textarea>
           </div>

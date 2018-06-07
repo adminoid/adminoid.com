@@ -133,7 +133,7 @@ return [
 
     'attributes' => [
         'email' => 'Email',
-        'message' => 'Веревка',
+        'message' => 'Сообщение',
         'first_name' => 'Имя',
         'last_name' => 'Фамилия',
         'phone' => 'Телефон',
