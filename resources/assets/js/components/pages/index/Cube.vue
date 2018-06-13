@@ -5,7 +5,7 @@
     class ItemsLoop {
         constructor(items) {
             this.items = items
-            this.last = items.length - 1,
+            this.last = items.length - 1
             this.curr = 0
             this.next = 1
             this.prev = this.last
