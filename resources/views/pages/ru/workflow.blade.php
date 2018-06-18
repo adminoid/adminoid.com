@@ -14,12 +14,12 @@
         <div class="inner-column"></div>
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
-               v-on:mousemove="onHover"
-               v-on:mouseleave="onLeave"
-               v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
+               @mousemove="onHover"
+               @mouseleave="onLeave"
+               :style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
             <h2>Проектирование</h2>
             <p>
-              Для того, чтобы красиво “пораскинуть мозгами” я использую диаграммы связей (или mind map).
+              Для того, чтобы красиво “пораскинуть мозгами”, я использую диаграммы связей (или mind map).
               Для проектирования БД - ER-диаграммы, для логики приложения - блок-схемы.
             </p>
             <p>

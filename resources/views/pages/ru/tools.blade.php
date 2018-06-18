@@ -20,7 +20,7 @@
             <div class="ui stackable grid">
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Проектирование</h2>
-                <p>Для построения ER-диаграмм, блок схем, мозгового штурма обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, <a href="#brain" class="hover brain">ум</a> и хождение туда-сюда.</p>
+                <p>Для построения ER-диаграмм, блок схем, мозгового штурма я обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, <a href="#brain" class="hover brain">ум</a> и хождение туда-сюда.</p>
               </div>
               <div class="six wide column images-wrapper">
                 <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart" data-rjs="2">
@@ -38,7 +38,7 @@
               <div class="ten wide column text-wrapper">
                 <h2 class="ui red header">Дизайн</h2>
                 Сейчас дизайн-макет я делаю в программе <a href="#sketch" class="hover sketch">
-                  sketch</a>, а когда ее еще небыло, был долгое время обречен на
+                  sketch</a>, до нее был долгое время обречен на
                 <a href="#photoshop" class="hover photoshop">photoshop</a>.
               </div>
               <div class="six wide column images-wrapper">
@@ -136,7 +136,7 @@
                 а в качестве web-сервера использовал <a href="#nginx" class="hover nginx">Nginx</a> или
                 <a href="#apache" class="hover apache">Apache</a>. <br>
                 А сейчас, используя <a href="#docker" class="hover docker">Docker</a>, могу установить одновременно несколько разных версий php, mysql и т.п..
-                На дешевом хостинге за 250 рублей в месяц такая система будет быстро работать. И ее можно легко, в несколько простых шагов, перенести на любой другой хостинг, сервер, машину или облачный сервис.
+                На дешевом облачном хостинге за 250 рублей в месяц такая система будет быстро работать. И ее можно легко, в несколько простых шагов, перенести на любой другой хостинг, сервер, машину или облачный сервис.
               </div>
               <div class="six wide column images-wrapper">
                 <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker"

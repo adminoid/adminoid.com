@@ -323,7 +323,7 @@
           </div>
 
           <button class="ui primary button" type="submit"
-                  v-bind:class="[form.errors.any() ? 'loading' : '']" v-bind:disabled="form.errors.any() || form.success">От души, братишка!</button>
+                  v-bind:class="[form.errors.any() ? 'loading' : '']" v-bind:disabled="form.errors.any() || form.success">Отправить</button>
         </form>
       </div>
     </div>
