@@ -33,7 +33,6 @@
             </p>
 
             <div class="ui five column centered grid">
-
               <div class="center aligned column">
                   <img src="static/img/adminoid/pages/workflow/projecting/lc-1.png" alt="lucidchart scheme" data-rjs="2">
               </div>

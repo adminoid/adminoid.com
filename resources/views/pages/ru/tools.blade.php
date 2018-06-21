@@ -92,13 +92,13 @@
                 с <a href="#twitter-bootstrap" class="hover twitter-bootstrap">Twitter Bootstrap</a>, для этого сайта
                 использовал <a href="#semantic-ui" class="hover semantic-ui">semantic-ui</a>.
                 <h3>Javascript</h3>
-                Пишу на <a href="#ecma-script" class="hover ecma-script">ecmaScript 5</a> и выше, в качестве каркаса
+                Пишу на <a href="#ecma-script" class="hover ecma-script">ecmaScript 6</a>, в качестве каркаса
                 приложения использую
                 <a href="#vue-js" class="vue-js hover">vue.js</a>. Компилирую и сжимаю код при помощи <a href="#webpack"
                                                                                                          class="hover webpack">webpack</a>.
                 Менеджментом пакетов, запуском тестов занимается
                 <a href="#node-js" class="node-js hover">node.js</a>.
-                Unit тестирование <a href="#chai" class="hover chai">chai</a>, <a href="#mocha" class="mocha hover">mocha</a>,
+                Unit тестирование: <a href="#chai" class="hover chai">chai</a>, <a href="#mocha" class="mocha hover">mocha</a>,
                 <a href="#karma" class="hover karma">karma</a>.
                 {{--На <a href="#ext-js" class="hover ext-js">extJs</a> я сделал немало админок.--}}
               </div>

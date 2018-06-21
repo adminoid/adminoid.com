@@ -9,7 +9,6 @@
 @red: #CD2E41;
 .page#price {
   #clock-offer {
-    //min-height: 300px;
     font-family: @codeFont;
     color: @blue;
     padding-bottom: 45px;
@@ -94,6 +93,7 @@
   }
   #price-descriptions {
     .description {
+      min-height: 310px;
       border-radius: 8px;
       margin-bottom: 3em;
       @media only screen and (max-width: (@computerBreakpoint - 1)) {
@@ -102,7 +102,6 @@
       &.tomato {
         border: 3px solid #358101;
         background: #D5E6E5;
-        min-height: 260px;
         span#pomodoro {
           color: #CA2235;
           margin-right: -43px;
@@ -131,7 +130,7 @@
       &.video {
         background-image: linear-gradient(-180deg, #EDE9EA 0%, #EDE9EA 52%, #EAE8E9 79%, #E8E2E4 100%);
         border: 3px solid #FF981C;
-        min-height: 260px;
+
         .img.large {
           background: url(/static/img/adminoid/pages/price/girl-with-camera.jpg) 100% 50% no-repeat;
           //.retina('/static/img/adminoid/pages/price/girl-with-camera.jpg', 2, auto, 100% 50% no-repeat);
@@ -140,7 +139,6 @@
       &.speed {
         //background: #F6F6F6;
         border: 3px solid #CA2235;
-        min-height: 260px;
         .img.large {
           background: url(/static/img/adminoid/pages/price/speed-img.jpg) 100% 50% no-repeat;
           //.retina('/static/img/adminoid/pages/price/speed-img.jpg', 2, auto, 100% 50% no-repeat);
@@ -159,7 +157,6 @@
       &.greed {
         background: #F7F7F7;
         border: 3px solid #1254B0;
-        min-height: 260px;
         .img.large {
           background: url(/static/img/adminoid/pages/price/greed-img.jpg) 0% 50% no-repeat;
           //.retina('/static/img/adminoid/pages/price/greed-img.jpg', 2, auto, 0% 50% no-repeat);
@@ -168,7 +165,6 @@
       &.total {
         background: #FFF;
         border: 3px solid #418B1B;
-        min-height: 260px;
         .img.large {
           background: url(/static/img/adminoid/pages/price/money-img.jpg) 50% 50% no-repeat;
           //.retina('/static/img/adminoid/pages/price/money-img.jpg', 2, auto, 50% 50% no-repeat);
