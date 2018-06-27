@@ -92,17 +92,3 @@
     }
   }
 </script>
-<template>
-  <div class="content window fix" id="ikmed-prices"
-       @mouseenter="startZoom" @touchstart="startZoom"
-       @mousemove="onZoom" @touchmove="onZoom"
-       @mouseleave="stopZoom" @touchend="stopZoom">
-    <img class="chrome zoom"
-         src="/static/img/adminoid/pages/portfolio/presentations/ikmed-prices/chrome.jpg"
-         alt=""
-         :style="{ left: left + 'px', top: top + 'px' }">
-    <img class="ikmed-logo" src="/static/img/adminoid/pages/portfolio/presentations/ikmed-logo-big.png"
-         alt="">
-  </div>
-</template>
-<style></style>

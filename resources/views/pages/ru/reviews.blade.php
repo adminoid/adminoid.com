@@ -26,7 +26,7 @@
             </div>
             <div class="ui top right attached label">{{ date('d.m.Y', strtotime($review->pageable->published_at)) }}</div>
             <div class="ui bottom right attached label"><i
-                      class="outline linkify icon"></i><a href="{{ $review->pageable->link_to_review }}" class="right floated">Ссылка на отзыв</a></div>
+                      class="linkify icon"></i><a href="{{ $review->pageable->link_to_review }}" class="right floated">Ссылка на отзыв</a></div>
           </div>
         </div>
       @endforeach
