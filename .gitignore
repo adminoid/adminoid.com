@@ -12,6 +12,4 @@ yarn-error.log
 .env*
 /database/seeds/images
 /semantic/dist
-/public/mix-manifest.json
 /public/images
-/public/downloads
