@@ -13,3 +13,5 @@ yarn-error.log
 /database/seeds/images
 /semantic/dist
 /public/images
+/public/downloads
+.DS_Store
