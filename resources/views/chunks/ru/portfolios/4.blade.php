@@ -7,9 +7,9 @@
         </div>
         <zoom class="content" inline-template>
             <div class="content window fix" id="ikmed-prices"
-                 v-on:mouseenter="startZoom" v-on:touchstart="startZoom"
-                 v-on:mousemove="onZoom" v-on:touchmove="onZoom"
-                 v-on:mouseleave="stopZoom" v-on:touchend="stopZoom"
+                 @mouseenter="startZoom" @touchstart="startZoom"
+                 @mousemove="onZoom" @touchmove="onZoom"
+                 @mouseleave="stopZoom" @touchend="stopZoom"
             >
                 <img class="ui fluid image zoom"
                      src="/static/img/adminoid/pages/portfolio/presentations/ikmed-prices/chrome.jpg"

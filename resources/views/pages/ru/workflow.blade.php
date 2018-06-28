@@ -52,9 +52,9 @@
         <div class="inner-column"></div>
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
-               v-on:mousemove="onHover"
-               v-on:mouseleave="onLeave"
-               v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
+               @mousemove="onHover"
+               @mouseleave="onLeave"
+               :style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
             <h2>Дизайн</h2>
             <p>
               <a href="/downloads/pages/workflow/adminoid-clean.sketch" target="_blank">Скачать дизайн-макет</a> для этого сайта
@@ -70,9 +70,9 @@
         <div class="inner-column"></div>
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
-               v-on:mousemove="onHover"
-               v-on:mouseleave="onLeave"
-               v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
+               @mousemove="onHover"
+               @mouseleave="onLeave"
+               :style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
             <h2>Фронтенд</h2>
             <p>
               Примеры из этого проекта:
@@ -89,9 +89,9 @@
 
         <half-rotate class="sixteen wide column" inline-template>
           <div class="sixteen wide column message"
-               v-on:mousemove="onHover"
-               v-on:mouseleave="onLeave"
-               v-bind:style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
+               @mousemove="onHover"
+               @mouseleave="onLeave"
+               :style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
             <h2>Бэкенд</h2>
             <p>
               Примеры из этого проекта:

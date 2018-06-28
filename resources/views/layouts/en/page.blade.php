@@ -290,7 +290,7 @@
                 Reviews
               </a>
               <div class="item">
-                <button class="ui button" id="super" v-on:click="write">
+                <button class="ui button" id="super" @click="write">
                   Write
                 </button>
               </div>

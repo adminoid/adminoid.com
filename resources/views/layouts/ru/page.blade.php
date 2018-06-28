@@ -296,7 +296,7 @@
                 Отзывы
               </a>
               <div class="item">
-                <button class="ui button" id="super" v-on:click="write">
+                <button class="ui button" id="super" @click="write">
                   Пиши
                 </button>
               </div>
@@ -322,7 +322,7 @@
         <div class="ui success message" v-if="form.success">
           <p>@{{ form.message }}</p>
         </div>
-        <form class="ui form success" method="post" action="/feedback-messages" v-on:submit.prevent="onSubmit" v-on:keydown="form.errors.clear($event.target.name)" v-on:focusin="form.errors.clear($event.target.name)"
+        <form class="ui form success" method="post" action="/feedback-messages" @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)" @focusin="form.errors.clear($event.target.name)"
               v-if="!form.success">
           <div class="required field" :class="[form.errors.has('email') ? 'error' : '']"
                :class="[form.success ? 'disabled' : '']">

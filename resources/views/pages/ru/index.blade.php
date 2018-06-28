@@ -163,13 +163,13 @@
         <div class="sixteen wide tablet fourteen wide computer twelve wide large screen column">
 
           <div class="four ui top attached basic buttons">
-            <button class="ui button btn-shape-left" v-on:click="moveLeft"><i class="left large arrow blue icon"></i>
+            <button class="ui button btn-shape-left" @click="moveLeft"><i class="left large arrow blue icon"></i>
             </button>
-            <button class="ui button btn-shape-down" v-on:click="moveUp"><i class="down large arrow yellow icon"></i>
+            <button class="ui button btn-shape-down" @click="moveUp"><i class="down large arrow yellow icon"></i>
             </button>
-            <button class="ui button btn-shape-up" v-on:click="moveDown"><i class="up large arrow green icon"></i>
+            <button class="ui button btn-shape-up" @click="moveDown"><i class="up large arrow green icon"></i>
             </button>
-            <button class="ui button btn-shape-right" v-on:click="moveRight"><i class="right large arrow red icon"></i>
+            <button class="ui button btn-shape-right" @click="moveRight"><i class="right large arrow red icon"></i>
             </button>
           </div>
 
@@ -181,12 +181,12 @@
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
-                          <h3 class="ui green header" v-on:touchstart="onUnhover">Надежность</h3>
+                          <h3 class="ui green header" @touchstart="onUnhover">Надежность</h3>
                         </div>
                         <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/reliability.jpg"
-                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
-                             v-on:touchstart="onHover">
-                        <div class="text" v-on:touchstart="onUnhover">
+                             @mouseenter="onHover" @mouseleave="onUnhover"
+                             @touchstart="onHover">
+                        <div class="text" @touchstart="onUnhover">
                           <p>За годы работы (с июня 2008) на крупнейшей российской бирже фриланса FL.ru у меня только
                             положительные
                             отзывы и завершенные сделки (см. <a href="/reviews">отзывы</a>). В начале пути,
@@ -202,12 +202,12 @@
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
-                          <h3 class="ui green header" v-on:touchstart="onUnhover">Фронтенд</h3>
+                          <h3 class="ui green header" @touchstart="onUnhover">Фронтенд</h3>
                         </div>
                         <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/frontend.jpg"
-                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
-                             v-on:touchstart="onHover">
-                        <div class="text" v-on:touchstart="onUnhover">
+                             @mouseenter="onHover" @mouseleave="onUnhover"
+                             @touchstart="onHover">
+                        <div class="text" @touchstart="onUnhover">
                           <p>Первый сайт сверстал в 2002 году табличной версткой. В период пика популярности Internet
                             Explorer 6, верстал под заказ множество кросбраузерных страниц. Профессионально программирую на JavaScript с 2009 года. С фреймворком Vue.js работаю с 2014 года.</p>
                         </div>
@@ -220,12 +220,12 @@
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
-                          <h3 class="ui green header" v-on:touchstart="onUnhover">Бэкенд</h3>
+                          <h3 class="ui green header" @touchstart="onUnhover">Бэкенд</h3>
                         </div>
                         <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/backend.jpg"
-                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
-                             v-on:touchstart="onHover">
-                        <div class="text" v-on:touchstart="onUnhover">
+                             @mouseenter="onHover" @mouseleave="onUnhover"
+                             @touchstart="onHover">
+                        <div class="text" @touchstart="onUnhover">
                           <p>Программирую на PHP с 2006 года. С 2013 года работаю с фреймворком Laravel (3.x -> 4.x -> 5.x). В работе
                             использую Unit-тесты, xDebug, phpStorm/VIM.</p>
                         </div>
@@ -238,12 +238,12 @@
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
-                          <h3 class="ui green header" v-on:touchstart="onUnhover">Сервер</h3>
+                          <h3 class="ui green header" @touchstart="onUnhover">Сервер</h3>
                         </div>
                         <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/server.jpg"
-                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
-                             v-on:touchstart="onHover">
-                        <div class="text" v-on:touchstart="onUnhover">
+                             @mouseenter="onHover" @mouseleave="onUnhover"
+                             @touchstart="onHover">
+                        <div class="text" @touchstart="onUnhover">
                           <p>Я сам решаю задачи администрирования. С 2000 по 2005 годы работал системным
                             администратором
                             *nix систем. Администрировал крупные многоранговые сети до 250 машин. Сейчас в качестве
@@ -258,12 +258,12 @@
                     <div class="content">
                       <div class="center">
                         <div class="ui top left attached label">
-                          <h3 class="ui green header" v-on:touchstart="onUnhover">Дизайн</h3>
+                          <h3 class="ui green header" @touchstart="onUnhover">Дизайн</h3>
                         </div>
                         <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/design.jpg"
-                             v-on:mouseenter="onHover" v-on:mouseleave="onUnhover"
-                             v-on:touchstart="onHover">
-                        <div class="text" v-on:touchstart="onUnhover">
+                             @mouseenter="onHover" @mouseleave="onUnhover"
+                             @touchstart="onHover">
+                        <div class="text" @touchstart="onUnhover">
                           <p>С 90-х годов начал изучать Photoshop, CorelDRAW. Понимаю теорию дизайна (композиция,
                             цветовой баланс, акценты и т.д.). Разработаю функциональный дизайн в программе
                             Sketch, в полной мере решающий практические задачи, адаптивный, с наборами стилей и UI
@@ -278,16 +278,16 @@
           </div>
 
           <div class="four ui bottom attached basic buttons">
-            <button class="ui button btn-shape-left" v-on:click="moveLeft">
+            <button class="ui button btn-shape-left" @click="moveLeft">
               <i class="left large arrow blue icon"></i>
             </button>
-            <button class="ui button btn-shape-down" v-on:click="moveUp">
+            <button class="ui button btn-shape-down" @click="moveUp">
               <i class="down large arrow yellow icon"></i>
             </button>
-            <button class="ui button btn-shape-up" v-on:click="moveDown">
+            <button class="ui button btn-shape-up" @click="moveDown">
               <i class="up large arrow green icon"></i>
             </button>
-            <button class="ui button btn-shape-right" v-on:click="moveRight">
+            <button class="ui button btn-shape-right" @click="moveRight">
               <i class="right large arrow red icon"></i>
             </button>
           </div>
