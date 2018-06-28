@@ -311,7 +311,7 @@
       <div class="ui middle aligned four column grid">
         <div class="five wide column">
           <div class="ui middle aligned container">
-            <img src="/static/img/temp/yandex-metrika.png" alt="">
+            {{--<img src="/static/img/temp/yandex-metrika.png" alt="">--}}
           </div>
         </div>
         <div class="four wide column">
