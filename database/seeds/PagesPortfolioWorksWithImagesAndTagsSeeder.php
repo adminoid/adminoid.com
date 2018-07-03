@@ -144,6 +144,87 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
 
         $portfolioData = [
             [
+                'slug' => 'adminoid-cms',
+                'title_ru' => 'Adminoid CMS',
+                'title_en' => 'Adminoid CMS',
+                'description_ru' => "
+<p>Adminoid CMS MODX CMS, с которой когда-то 
+работал. Реализована на Laravel и Vue.js.
+Это простая но расширяемая SEO-дружественная система управления контентом, 
+основана на древовидном представлении данных и управлении ими через 
+TreeView, в котором можно просто перетаскивать узлы-страницы для их 
+перемещения.</p>
+
+Особенности:
+<ul>
+<li>Uri (адреса страниц) автоматически генерируются при изменении или 
+перемещении</li>
+<li>Если страница перемещается, система запоминает все прошлые uri и 
+автоматически переадресует через 301 редирект на актуальный адрес</li>
+<li>Автоматическая генерация sitemap.xml</li>
+<li>Все страницы - это один eloquent объект, но их можно расширять, создавать 
+дополнительные типы страниц с дополнительными свойствами и методами</li>
+<li>Содержимое страницы по умолчаню редактируется при помощи wysiwyg 
+редактора summernote совместимого с twitter bootstrap. Загрузка картинок в 
+редакторе происходит в папку с таким же именем как uri страницы, к которой 
+принадлежит картинка</li>
+<li>Верстка по умолчанию исполнена с использованием фреймворка twitter bootstrap</li>
+</ul>
+<p>
+<strong>Демо-версия:</strong> <a href='https://cms.adminoid.com/admin-panel/'>https://cms.adminoid.com/admin-panel/</a><br>
+<strong>Логин:</strong> admin@adminoid.com<br>
+<strong>Пароль:</strong> password
+</p>
+<p><strong>Репозиторий:</strong> <a href='https://github.com/adminoid/adminoid-cms'>https://github.com/adminoid/adminoid-cms</a></p>
+                ",
+                'description_en' => "
+<h2>About Adminoid CMS</h2>
+<p>When creating the Adminoid CMS, I was inspired by the <a href='https://modx.com/'>modx cms</a>, with which I used to have worked. Made with <a href='https://laravel.com/'>Laravel</a> and <a href='https://vuejs.org/'>Vue.js</a>.</p>
+
+<p>
+This is a simple but extensible SEO-friendly content management system,
+based on tree-like data representation and management through
+TreeView, in which you can simply drag the page nodes for them
+moving.
+</p>
+
+<h2>Features</h2>
+
+<ul>
+    <li>Uri (page addresses) are automatically generated when you change or
+    moving</li>
+    <li>If the page moves, the system remembers all past uri and
+    automatically redirects through 301 redirects to the current address</li>
+    <li>Automatic generation of sitemap.xml</li>
+    <li>All pages are one eloquent object, but they can be extended, added
+    new page types with additional properties and methods</li>
+    <li>The contents of the page are edited by default with wysiwyg
+    summernote editor compatible with twitter bootstrap. Uploading images to
+    editor occurs in a folder with the same name as the uri of the page to which
+    owns the picture</li>
+    <li>The default template is implementing using the twitter bootstrap framework</li>
+</ul>
+<p>
+<strong>Demo:</strong> <a href='https://cms.adminoid.com/admin-panel/'>https://cms.adminoid.com/admin-panel/</a><br>
+<strong>Login:</strong> admin@adminoid.com<br>
+<strong>Password:</strong> password
+</p>
+<p><strong>Repo:</strong> <a href='https://github.com/adminoid/adminoid-cms'>https://github.com/adminoid/adminoid-cms</a></p>
+                ",
+                'sort_order_id' => 7,
+                'priority_level' => 'high',
+                'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6327062/adminoid-cms-laravel-56_-vuejs-25-2018/',
+                'link' => 'https://cms.adminoid.com',
+                'custom_date' => '2018',
+                'custom_face' => true,
+                'chunk_ru' => 'chunks/ru/portfolios/adminoid-cms',
+                'chunk_en' => 'chunks/en/portfolios/adminoid-cms',
+                'images' => [
+                    'database/seeds/images/portfolio/adminoid-cms/screen.jpg',
+                ],
+                'tags' => ['php', 'laravel', 'javascript', 'vue.js', 'twitter bootstrap']
+            ],
+            [
                 'slug' => 'online-store-ikmed-ru',
                 'title_ru' => 'Интернет-магазин "ikmed.ru"',
                 'title_en' => 'Online Store ikmed.ru',
@@ -163,14 +244,14 @@ JavaScript, Vue.js, JQuery, ExtJS, and other simple js frameworks;<br>
 <br>
 Integration: SDEK, Yandeks.Kassa, of Yandex.Market<br>
 SEO-optimization",
-                'sort_order_id' => 0,
+                'sort_order_id' => 6,
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/viewproj.php?prjid=5683403',
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2015-2016',
                 'custom_face' => true,
-                'chunk_ru' => 'chunks/ru/portfolios/1',
-                'chunk_en' => 'chunks/en/portfolios/1',
+                'chunk_ru' => 'chunks/ru/portfolios/ikmed',
+                'chunk_en' => 'chunks/en/portfolios/ikmed',
                 'images' => [
                     'database/seeds/images/portfolio/0/0.jpg',
                     'database/seeds/images/portfolio/0/f_1545741da73a36a9.jpg',
@@ -185,14 +266,14 @@ SEO-optimization",
                 'title_en' => 'Orders control panel for e-shop "ikmed.ru"',
                 'description_ru' => "",
                 'description_en' => "",
-                'sort_order_id' => 1,
+                'sort_order_id' => 5,
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/viewproj.php?prjid=5683426',
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2015',
                 'custom_face' => true,
-                'chunk_ru' => 'chunks/ru/portfolios/2',
-                'chunk_en' => 'chunks/en/portfolios/2',
+                'chunk_ru' => 'chunks/ru/portfolios/control-panel-for-ikmed',
+                'chunk_en' => 'chunks/en/portfolios/control-panel-for-ikmed',
                 'images' => [
                     'database/seeds/images/portfolio/1/f_14657436ae522b62.jpg',
                 ],
@@ -210,14 +291,14 @@ CRUD/Laravel resource",
 Dropzone.js<br>
 Summernote.js<br>
 CRUD/Laravel resource",
-                'sort_order_id' => 2,
+                'sort_order_id' => 4,
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/viewproj.php?prjid=5683494',
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2016',
                 'custom_face' => true,
-                'chunk_ru' => 'chunks/ru/portfolios/3',
-                'chunk_en' => 'chunks/en/portfolios/3',
+                'chunk_ru' => 'chunks/ru/portfolios/products-control-panel-for-ikmed',
+                'chunk_en' => 'chunks/en/portfolios/products-control-panel-for-ikmed',
                 'images' => [
                     'database/seeds/images/portfolio/2/0.jpg',
                     'database/seeds/images/portfolio/2/f_3105741bfd419e3d.jpg',
@@ -238,8 +319,8 @@ CRUD/Laravel resource",
                 'link' => 'https://www.ikmed.ru',
                 'custom_date' => '2016',
                 'custom_face' => true,
-                'chunk_ru' => 'chunks/ru/portfolios/4',
-                'chunk_en' => 'chunks/en/portfolios/4',
+                'chunk_ru' => 'chunks/ru/portfolios/prices-control-panel-for-ikmed',
+                'chunk_en' => 'chunks/en/portfolios/prices-control-panel-for-ikmed',
                 'images' => [
                     'database/seeds/images/portfolio/3/f_31957436ab2538b2.jpg',
                 ],
@@ -251,7 +332,7 @@ CRUD/Laravel resource",
                 'title_en' => 'Transfer CPA system to a new platform',
                 'description_ru' => "",
                 'description_en' => "",
-                'sort_order_id' => 4,
+                'sort_order_id' => 2,
                 'priority_level' => 'middle',
                 'external_url' => 'https://www.fl.ru/users/adminoid/viewproj.php?prjid=5952421',
                 'link' => '',
@@ -268,7 +349,7 @@ CRUD/Laravel resource",
                 'title_en' => 'Development of an E-shop with multilevel referral system',
                 'description_ru' => "",
                 'description_en' => "",
-                'sort_order_id' => 5,
+                'sort_order_id' => 1,
                 'priority_level' => 'middle',
                 'external_url' => 'https://www.fl.ru/users/adminoid/viewproj.php?prjid=5952433',
                 'link' => '',
@@ -286,7 +367,7 @@ CRUD/Laravel resource",
                 'title_en' => 'Automated accounting system in Google spreadsheet',
                 'description_ru' => "",
                 'description_en' => "",
-                'sort_order_id' => 6,
+                'sort_order_id' => 0,
                 'priority_level' => 'middle',
                 'external_url' => 'https://www.fl.ru/users/adminoid/viewproj.php?prjid=5952433',
                 'link' => '',
