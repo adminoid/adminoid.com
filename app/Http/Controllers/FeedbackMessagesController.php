@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\FeedbackMessage;
 use Illuminate\Http\Request;
 //use Illuminate\Foundation\Validation\ValidatesRequests;
+use App\Mail\FeedbackSend;
+use Illuminate\Support\Facades\Mail;
 
 class FeedbackMessagesController extends Controller
 {
@@ -32,7 +34,7 @@ class FeedbackMessagesController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return array|\Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -50,16 +52,17 @@ class FeedbackMessagesController extends Controller
 
         // Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
 
-        FeedbackMessage::forceCreate([
+        $feedbackMessage = (new \App\FeedbackMessage)->forceCreate([
             'email' => request('email'),
             'message' => request('message'),
             'first_name' => request('first_name'),
             'last_name' => request('last_name'),
             'phone' => request('phone'),
-            'email' => request('email'),
             'ip' => $ip,
             'user_agent' => $user_agent
         ]);
+
+        Mail::to('info@romb.ru')->queue(new FeedbackSend($feedbackMessage));
 
         return ['message' => __('messages.feedback_message_sent')];
 
