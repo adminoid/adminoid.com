@@ -52,7 +52,7 @@ class FeedbackMessagesController extends Controller
 
         // Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36
 
-        $feedbackMessage = (new \App\FeedbackMessage)->forceCreate([
+        $feedbackMessage = (new FeedbackMessage)->forceCreate([
             'email' => request('email'),
             'message' => request('message'),
             'first_name' => request('first_name'),
