@@ -77,6 +77,12 @@
     <link rel="stylesheet" href="{{ mix('/css/components/sidebar.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/header.min.css') }}">
     <link rel="stylesheet" href="{{ mix('/css/components/segment.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/modal.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/dimmer.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/transition.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/form.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/label.min.css') }}">
+    <link rel="stylesheet" href="{{ mix('/css/components/message.min.css') }}">
   @show
 
 </head>
@@ -100,7 +106,8 @@
           <div class="four wide column">
             <div id="header-logo" class="header item">
               <a href="/">
-                <svg id="header-logo-svg" width="219px" height="53px" viewBox="0 0 219 53" version="1.1"
+                <svg id="header-logo-svg" viewBox="0 0 219 53" version="1.1"
+                     style="width:219px;height:53px"
                      xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>
@@ -183,7 +190,7 @@
                         </g>
                         <g id="adminoid/header/full/logo/man-new">
                           <g id="man-full">
-                            <rect id="foots" fill="#CD2E41" x="0" y="49" width="40"
+                            <rect id="foots" fill="#CD2E41" x="0" y="50" width="40"
                                   height="3" rx="1.5"></rect>
                             <path
                                 d="M20,25.5 C20,24.6715729 20.671656,24 21.497101,24 L30,24 L38.502899,24 C39.329725,24 40,24.6657972 40,25.5 L40,25.5 C40,26.3284271 39.328344,27 38.502899,27 L30,27 L21.497101,27 C20.670275,27 20,26.3342028 20,25.5 L20,25.5 Z"
@@ -304,6 +311,66 @@
 
   </div>
 
+  <feedback-form inline-template>
+    <div class="ui modal" id="super-modal">
+      <i class="close icon"></i>
+      <h2 class="ui yellow header">
+        <div class="content">
+          Отправьте запрос
+        </div>
+      </h2>
+      <div class="content">
+        <div class="ui success message" v-if="form.success">
+          <p>@{{ form.message }}</p>
+        </div>
+        <form class="ui form success" method="post" action="/feedback-messages" @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)" @focusin="form.errors.clear($event.target.name)"
+              v-if="!form.success">
+          <div class="required field" :class="[form.errors.has('email') ? 'error' : '']"
+               :class="[form.success ? 'disabled' : '']">
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="Email" v-model="form.email">
+            <div class="ui red pointing prompt label" v-if="form.errors.has('email')" v-text="form.errors.get('email')"></div>
+          </div>
+
+          <div class="required field" :class="[form.errors.has('message') ? 'error' : '']"
+               :class="[form.success ? 'disabled' : '']">
+            <label>Сообщение</label>
+            <div class="ui red pointing below prompt label" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></div>
+            <textarea name="message" v-model="form.message"></textarea>
+          </div>
+
+          <div class="three fields">
+
+            <div class="required field" :class="[form.errors.has('first_name') ? 'error' : '']"
+                 :class="[form.success ? 'disabled' : '']">
+              <label>Имя</label>
+              <input type="text" name="first_name" placeholder="Имя" v-model="form.first_name">
+              <div class="ui red pointing prompt label" v-if="form.errors.has('first_name')" v-text="form.errors.get('first_name')"></div>
+            </div>
+
+            <div class="required field" :class="[form.errors.has('last_name') ? 'error' : '']"
+                 :class="[form.success ? 'disabled' : '']">
+              <label>Фамилия</label>
+              <input type="text" name="last_name" placeholder="Фамилия" v-model="form.last_name">
+              <div class="ui red pointing prompt label" v-if="form.errors.has('last_name')" v-text="form.errors.get('last_name')"></div>
+            </div>
+
+            <div class="required field" :class="[form.errors.has('phone') ? 'error' : '']"
+                 :class="[form.success ? 'disabled' : '']">
+              <label>Телефон</label>
+              <input type="tel" name="phone" placeholder="Телефон" v-model="form.phone">
+              <div class="ui red pointing prompt label" v-if="form.errors.has('phone')" v-text="form.errors.get('phone')"></div>
+            </div>
+
+          </div>
+
+          <button class="ui primary button" type="submit"
+                  :class="[form.errors.any() ? 'loading' : '']" :disabled="form.errors.any() || form.success">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </feedback-form>
+
 </div>
 <div class="page-footer pusher">
   <div class="ui inverted vertical footer segment">
@@ -316,7 +383,7 @@
         </div>
         <div class="four wide column">
           <div class="ui inverted link list">
-            <img class="ui centered image" src="/static/img/adminoid/footer/colors.svg" alt="site colors">
+            {{--<img class="ui centered image" src="/static/img/adminoid/footer/colors.svg" alt="site colors">--}}
           </div>
         </div>
         <div class="seven wide column right aligned">
@@ -332,6 +399,10 @@
   <script src="{{ mix('/js/vendor.js') }}"></script>
   <script src="{{ mix('/js/app.js') }}"></script>
   <script src="{{ mix('/js/sidebar.min.js') }}"></script>
+  <script src="{{ mix('/js/dimmer.min.js') }}"></script>
+  <script src="{{ mix('/js/transition.min.js') }}"></script>
+  <script src="{{ mix('/js/modal.min.js') }}"></script>
+  <script src="{{ mix('/js/retina.min.js') }}"></script>
 @show
 
 </body>
