@@ -58,13 +58,14 @@
                                             <text id="site-need" font-family="RobotoMono-Regular, Roboto Mono"
                                                   font-size="24"
                                                   font-weight="normal" fill="#000000">
-                                                <tspan x="34" y="70">Сайт надо?</tspan>
+                                                <tspan x="50" y="56">Need a</tspan>
+                                                <tspan x="50" y="84">web app?</tspan>
                                             </text>
                                             <text id="very-beautiful" style="visibility: hidden; opacity: 0;"
                                                   font-family="RobotoMono-Regular, Roboto Mono"
                                                   font-size="24" font-weight="normal" fill="#000000">
-                                                <tspan x="69.9941406" y="56">Very</tspan>
-                                                <tspan x="48.390625" y="84">beautiful</tspan>
+                                                <tspan x="45" y="56">Very</tspan>
+                                                <tspan x="45" y="84">beautiful</tspan>
                                             </text>
                                         </g>
                                     </g>
@@ -76,11 +77,11 @@
             </div>
             <div class="ten wide large screen nine wide computer sixteen wide tablet column">
 
-                <p>Yes, you are in the right place, if you are need a modern web application.</p>
+                <p>Yes, you are in the right place, if you need a modern web application.</p>
 
-                <p>I was named Peter in honor of St. Peter.</p>
+                <p>I was named Peter in honor of St. Apostle Peter.</p>
 
-                <p>I'm is a <u>Full Stack Web-developer</u>:<br>
+                <p>I'm a <u>Full Stack Web-developer</u>:<br>
                     (<a href="https://secure.php.net/">php</a> + <a href="https://laravel.com/">Laravel</a>,
                     <strong>javascript</strong> +
                     <a href="https://vuejs.org/">Vue.js</a>, <br>
@@ -92,68 +93,44 @@
                     <a href="https://www.sketchapp.com/">sketch app</a>/<a
                             href="https://www.adobe.com/products/photoshop.html">photoshop</a>)</p>
 
-                <p>I working with Mac OS X, do touch type and use VIM editor.</p>
+                <p>Work in Mac OS X, use ten-finger touch typing and vim editor.</p>
 
-                <p>Look the site, get acquainted with my opportunities and services.</p>
+                <p>Look through the site, get acquainted with my possibilities and services.</p>
 
             </div>
         </div>
 
         <h2 class="ui blue header">Standard Services</h2>
         <ol>
-            <li><strong>Creating fully functional site prototypes</strong>.
-                Internet users accustomed to certain standards of web-sites/services which were formed for many years of usability experience.<br>
+            <li><strong>Creation of functional sites prototypes</strong>.
+                There are certain standards of usability and design in website development, that users are get used to.<br>
 
-                Здраво будет начать свой Интернет-бизнес с привычного для пользователей Интернета, минимального профессионального дизайна, например, от команды <a href="http://getbootstrap.com/">twitter bootstrap</a>, концентрируясь на удобстве и структуре подачи информации, чтобы, уже в дальнейшем, ставить рискованные эксперименты с собственными нововведениями в дизайне, калибруя их через мульти/сплит -тестирование, котороя я, кстати, тоже могу организовать с помощью <a href="https://analytics.google.com/analytics/web/">google analytics</a>.
+                These standards are determined by the leaders of Internet business (social networks, search engines and other popular services). And this standards are reflected in popular css-frameworks with design, developed by world-class professionals. But any hasty innovation in design may negativity reflect in website conversion. That is why in modern Internet marketing any innovations go through split/multi tests.
+
+                This wise to start your Internet project with minimal professional design, eg design by <a href="http://getbootstrap.com/">twitter bootstrap</a> team, concentrating on the convenience and structure of information presenting in order to be able to set more risky experiments with your own innovations in design, sizing (calibrating) them through multi/split testing in the future. By the way, I can organise it with the help of <a href="https://analytics.google.com/analytics/web/">google analytics</a>.
             </li>
-            <li><strong>Разработка Интернет-магазинов, интегрированных систем, порталов и любых других сайтов под ключ</strong>.
-                Хотя я сам с удовольствием сопровождаю свои работы, мои проекты так же привлекательны и для множества
-                сторонних
-                разработчиков в доработке и поддержке, вот почему:
+
+            <li><strong>Developing of online stores, integrated systems, portals and any other web apps.</strong> Though I myself accompany my own works, my projects are also attractive to many other good web-developers in rework and support. <br>
+
+                The reason is: <br>
                 <ul>
-                    <li>я использую одни из самых популярных инструментов, с которыми хотят работать множество
-                        программистов во
-                        всем мире.
-                        Например, бэкенд я пишу на PHP с помощью фреймворка Laravel, а в качестве каркаса для фронтенда
-                        я
-                        использую
-                        JavaScript фреймворк Vue.js, подробнее смотрите здесь - <a href="/tools">инструменты</a>
-                    </li>
-                    <li>пишу код соответственно общепринятым стандартам, комментирую, документирую его,
-                        именую
-                        развернуто.
-                        По возможности не изобретаю велосипед, если есть проверенные людьми во времени решения, у которых
-                        есть
-                        документация,
-                        поддержка, то использую их
-                    </li>
-                    <li>PHP и Javascript задачи при возможности или необходимости ставлю тестами (модульными, функциональными) и затем
-                        реализую их.
-                        Test Driven Development помогает сторонним разработчикам легко вносить изменения в код, не
-                        повреждая общей
-                        функциональности проекта. Так же тесты служат в качестве наглядной документации
-                    </li>
+                    <li>I use one of the most popular tools, which most of the programmers in the world work with, for example, I write backend on PHP with the help of <a href="https://laravel.com/">Laravel framework</a>, I use javascript framework <a href="https://vuejs.org/">Vue.js</a> as a framework for frontend and so on (see more details here - tools).</li>
+
+                    <li>I write code according to generally accepted standards, comment and document it. I try not to reinvent the wheel, if there are time-tested solutions, then I just use them.</li>
+
+                    <li>When it possible or necessary, I set PHP and Javascript tasks with tests (unit or functional) and then actualize (realize) them. Test Driven Development helps the third-party programmers make changes easily without damaging general project functionality. The unit tests also serve as visual documentation.</li>
                 </ul>
+
             </li>
-            <li><strong>Переделывание устаревшего сайта</strong>, который, например, слишком медленен и дорог в обслуживании. В данном
-                случае,
-                в основу
-                берется структура и наработанная логика старого сайта, и на их основе разрабатывается полностью новый
-                сайт. Затем данные со старого сайта (изображения, структуры данных из БД, старые url для сохранения SEO веса
-                входящих
-                ссылок и т.д.) переносятся в новый сайт
-            </li>
-            <li><strong>Google Apps Script программирование</strong>. Поскольку, по большей части я работал с Интернет-магазинами, где
-                всегда
-                остро стоят задачи
-                импорта/экспорта/обработки прайс листов, больше всего мною сделано работ для электронных таблиц Google
-                Spreadsheet
-            </li>
-            <li><strong>Интерактивная SVG/Canvas/WebGL-анимация</strong> сейчас еще слабо распространена, поэтому может заинтересовать
-                посетителя и усилить поведенческий фактор
-            </li>
-            <li>Так же могу выполнить какие-то частичные работы касающиеся Laravel, Vue.js и всего вышеперечисленного, но это - нерациональный расход ресурсов и займусь подобным лишь в случае высокой заинтересованности
-            </li>
+
+            <li><strong>Redoing an outdated web projects</strong> if it is too slow or too expensive in maintenance. In this case we take as a basis the structure and logic of the old one and on their basis develop a completely new site. Then data from old web app (images, data structures from database, old urls to save the weight of incoming links (SEO) etc.) are transferred to a new site.</li>
+
+            <li><strong><a href="https://developers.google.com/apps-script/">Google Apps Script programming</a></strong>. Since in the past I worked a lot with online stores, where import/export/price lists processing tasks are always acute, most of my google apps works was done for Google Sheets.</li>
+
+            <li><strong>Interactive SVG/Canvas/WebGL-animation</strong> is still poorly distributed. In this case it can be interesting to visitors and strengthen the user behavioral ranking factor (SEO).</li>
+
+            <li>I can also perform partial work concerning Laravel, Vue.js and all of the above, but this is not a rational approach and I will do it only in case of high interest.</li>
+
         </ol>
 
         <h2 class="ui red header">Понты эпичные</h2>
