@@ -36,7 +36,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                 'name_ru' => 'Инструменты',
                 'name_en' => 'Tools',
                 'title_ru' => 'Инструменты, которые я использую для создания сайтов',
-                'title_en' => 'The tools I use to create sites',
+                'title_en' => 'Tools I use to create web apps',
                 'template_ru' => 'pages.ru.tools',
                 'template_en' => 'pages.en.tools',
                 'slug' => 'tools',

@@ -133,7 +133,7 @@
 
         </ol>
 
-        <h2 class="ui red header">Понты эпичные</h2>
+        <h2 class="ui red header">Show offs</h2>
 
         <cube inline-template>
             <div class="ui grid">
