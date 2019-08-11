@@ -17,11 +17,11 @@ class CreateFeedbackMessagesTable extends Migration
       $table->increments('id');
       $table->string('email');
       $table->text('message');
-      $table->string('first_name');
-      $table->string('last_name');
-      $table->string('phone');
-      $table->string('ip');
-      $table->string('user_agent');
+      $table->string('first_name')->nullable();
+      $table->string('last_name')->nullable();
+      $table->string('phone')->nullable()->nullable();
+      $table->string('ip')->nullable();
+      $table->string('user_agent')->nullable();
       $table->timestamps();
     });
   }

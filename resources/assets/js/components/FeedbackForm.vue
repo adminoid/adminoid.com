@@ -77,9 +77,9 @@
                 form: new Form({
                     email: '',
                     message: '',
-                    first_name: '',
-                    last_name: '',
-                    phone: '',
+                    // first_name: '',
+                    // last_name: '',
+                    // phone: '',
                 })
             }
         },

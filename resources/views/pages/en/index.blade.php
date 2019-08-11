@@ -100,7 +100,7 @@
             </div>
         </div>
 
-        <h2 class="ui blue header">Standard Services</h2>
+        <h2 class="ui blue header">Standard services</h2>
         <ol>
             <li><strong>Creation of functional sites prototypes</strong>.
                 There are certain standards of usability and design in website development, that users are get used to.<br>
@@ -133,7 +133,7 @@
 
         </ol>
 
-        <h2 class="ui red header">Show offs</h2>
+        <h2 class="ui red header">The cube surfaces</h2>
 
         <cube inline-template>
             <div class="ui grid">

@@ -18,7 +18,7 @@
         <div class="ui stackable grid">
 
             @foreach($page->descendants as $portfolioPage)
-                @if ($portfolioPage->pageable->custom_face == 1)
+                @if ($portfolioPage->pageable->custom_face === 1)
                     @include($portfolioPage->pageable->chunk_ru)
                 @else
 

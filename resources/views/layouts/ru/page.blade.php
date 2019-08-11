@@ -338,31 +338,6 @@
             <textarea name="message" v-model="form.message"></textarea>
           </div>
 
-          <div class="three fields">
-
-            <div class="required field" :class="[form.errors.has('first_name') ? 'error' : '']"
-                 :class="[form.success ? 'disabled' : '']">
-              <label>Имя</label>
-              <input type="text" name="first_name" placeholder="Имя" v-model="form.first_name">
-              <div class="ui red pointing prompt label" v-if="form.errors.has('first_name')" v-text="form.errors.get('first_name')"></div>
-            </div>
-
-            <div class="required field" :class="[form.errors.has('last_name') ? 'error' : '']"
-                 :class="[form.success ? 'disabled' : '']">
-              <label>Фамилия</label>
-              <input type="text" name="last_name" placeholder="Фамилия" v-model="form.last_name">
-              <div class="ui red pointing prompt label" v-if="form.errors.has('last_name')" v-text="form.errors.get('last_name')"></div>
-            </div>
-
-            <div class="required field" :class="[form.errors.has('phone') ? 'error' : '']"
-                 :class="[form.success ? 'disabled' : '']">
-              <label>Телефон</label>
-              <input type="tel" name="phone" placeholder="Телефон" v-model="form.phone">
-              <div class="ui red pointing prompt label" v-if="form.errors.has('phone')" v-text="form.errors.get('phone')"></div>
-            </div>
-
-          </div>
-
           <button class="ui primary button" type="submit"
                   :class="[form.errors.any() ? 'loading' : '']" :disabled="form.errors.any() || form.success">Отправить</button>
         </form>

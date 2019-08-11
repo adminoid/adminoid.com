@@ -148,7 +148,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                 'title_ru' => 'Adminoid CMS',
                 'title_en' => 'Adminoid CMS',
                 'description_ru' => "
-<p>Adminoid CMS MODX CMS, с которой когда-то 
+<p>Adminoid CMS создана по мотивам MODX CMS, с которой я когда-то давно 
 работал. Реализована на Laravel и Vue.js.
 Это простая но расширяемая SEO-дружественная система управления контентом, 
 основана на древовидном представлении данных и управлении ими через 
@@ -178,38 +178,24 @@ TreeView, в котором можно просто перетаскивать �
 <p><strong>Репозиторий:</strong> <a href='https://github.com/adminoid/adminoid-cms'>https://github.com/adminoid/adminoid-cms</a></p>
                 ",
                 'description_en' => "
-<h2>About Adminoid CMS</h2>
-<p>When creating the Adminoid CMS, I was inspired by the <a href='https://modx.com/'>modx cms</a>, with which I used to have worked. Made with <a href='https://laravel.com/'>Laravel</a> and <a href='https://vuejs.org/'>Vue.js</a>.</p>
+<p>Created on the inspiration of a MODX CMS with which I once worked for a long time.
+Implemented on laravel and vue.js. It's a simple, but extensible seo-friendly content management system, tree-based view of pages and control through tree view, where you can simply drag the page nodes to move them.</p>
 
-<p>
-This is a simple but extensible SEO-friendly content management system,
-based on tree-like data representation and management through
-TreeView, in which you can simply drag the page nodes for them
-moving.
-</p>
-
-<h2>Features</h2>
-
+Particular qualities:
 <ul>
-    <li>Uri (page addresses) are automatically generated when you change or
-    moving</li>
-    <li>If the page moves, the system remembers all past uri and
-    automatically redirects through 301 redirects to the current address</li>
-    <li>Automatic generation of sitemap.xml</li>
-    <li>All pages are one eloquent object, but they can be extended, added
-    new page types with additional properties and methods</li>
-    <li>The contents of the page are edited by default with wysiwyg
-    summernote editor compatible with twitter bootstrap. Uploading images to
-    editor occurs in a folder with the same name as the uri of the page to which
-    owns the picture</li>
-    <li>The default template is implementing using the twitter bootstrap framework</li>
+<li>Uri (page addresses) are automatically generated when changing and moving</li>
+<li>If a page is being moved, the system remembers all previous uri and (automatically) redirects them through 301 http redirect to a current address.</li>
+<li>Automatic generation sitemap xml.</li>
+<li>All pages are one laravel eloquent object, but they can be extended or additional page types with additional properties and methods can be created.</li>
+<li>Default content is being edited with the help of wysiwyg editor summernote compatible with twitter bootstrap. Uploading images on page takes place to the server directory with the same name as uri of page the images belong to.</li>
+<li>The layout is created using twitter bootstrap.</li>
 </ul>
 <p>
-<strong>Demo:</strong> <a href='https://cms.adminoid.com/admin-panel/'>https://cms.adminoid.com/admin-panel/</a><br>
-<strong>Login:</strong> admin@adminoid.com<br>
-<strong>Password:</strong> password
+<strong>See demo version of admin panel:</strong> <a href='https://cms.adminoid.com/admin-panel/'>https://cms.adminoid.com/admin-panel/</a><br>
+<strong>Логин:</strong> admin@adminoid.com<br>
+<strong>Пароль:</strong> password
 </p>
-<p><strong>Repo:</strong> <a href='https://github.com/adminoid/adminoid-cms'>https://github.com/adminoid/adminoid-cms</a></p>
+<p><strong>Repository:</strong> <a href='https://github.com/adminoid/adminoid-cms'>https://github.com/adminoid/adminoid-cms</a></p>
                 ",
                 'sort_order_id' => 7,
                 'priority_level' => 'high',

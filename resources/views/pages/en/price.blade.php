@@ -21,9 +21,9 @@
                             <span class="mobile hidden">
                                 70 bucks
                             </span>
-            <h2 class="ui header mobile only blue"><img src="/static/img/adminoid/icons/money.png"
+            <h2 class="ui header mobile only blue"><img src="/static/img/adminoid/icons/bucks.png"
                                                         alt="70 bucks">
-              2000 bucks<sup>*</sup> =
+              70 bucks<sup>*</sup> =
               <img src="/static/img/adminoid/icons/clock.png"
                    alt="image of one hour of work"> 1 hour of work</h2>
             <div class="clamp left mobile hidden">
@@ -82,11 +82,11 @@
         <div id="papers">
           <div class="one-thousand-papers mobile hidden">
             <div class="paper back">
-              <img src="/static/img/adminoid/pages/price/thousand-paper-back.jpg" data-rjs="2"
+              <img src="/static/img/adminoid/pages/price/twenty-bucks.jpg" data-rjs="2"
                    alt="Banknote">
             </div>
             <div class="paper front">
-              <img src="/static/img/adminoid/pages/price/thousand-paper-front.jpg" data-rjs="2"
+              <img src="/static/img/adminoid/pages/price/fifty-bucks.jpg" data-rjs="2"
                    alt="Banknote">
             </div>
           </div>
@@ -395,10 +395,10 @@
                            font-family="RobotoMono-Bold, Roboto Mono" fill="#1254B0"
                            font-weight="bold" style="fill: rgb(18, 84, 176);">
                           <text id="hour" font-size="22">
-                            <tspan x="10" y="22">hour</tspan>
+                            <tspan x="-15" y="22">Hour of</tspan>
                           </text>
                           <text id="work" font-size="19">
-                            <tspan x="3" y="40">work</tspan>
+                            <tspan x="7" y="40">work</tspan>
                           </text>
                         </g>
                       </g>
@@ -434,7 +434,7 @@
           <p>I work strictly on a timer. If I have to make a pause, I pause a timer.</p>
 
           <p>It is not just a timer, it's <span id="pomodoro">Pomodoro technique<img
-                      src="/static/img/adminoid/pages/price/span-tomato.png" alt="" data-rjs="2"></span> +
+                      src="/static/img/adminoid/pages/price/span-tomato.png" alt="" data-rjs="2"></span>&nbsp;&nbsp;+
             <strong>GTD</strong>. Briefly: I break the case down into a hierarchy of short sub tasks,
             put sub tasks in the timer, work 25 minutes, then have a short break and so on.</p>
         </div>

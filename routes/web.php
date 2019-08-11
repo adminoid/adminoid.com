@@ -23,6 +23,8 @@ if (array_key_exists('HTTP_HOST', $_SERVER)) {
     $zone = $domainParts[count($domainParts) - 1];
     if ($zone == 'com') {
         $locale = 'en';
+    } elseif ($zone == 'ru') {
+        $locale = 'ru';
     }
 }
 

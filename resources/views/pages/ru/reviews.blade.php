@@ -19,7 +19,7 @@
           <div class="ui container">
             <h2 class="ui header">
               <img src="{{ $review->images->first()->folder_in_public }}/{{ $review->images->first()->name }}.{{ $review->images->first()->ext }}" class="ui circular image">
-              {{ $review->pageable->name }} <span class="nick">[<a href="{{ $review->pageable->link_to_profile }}">{{ $review->pageable->nick }}</a>]</span>
+              {{ $review->pageable->name_ru }} <span class="nick">[<a href="{{ $review->pageable->link_to_profile }}">{{ $review->pageable->nick }}</a>]</span>
             </h2>
             <div class="review-text">
               <p>{!! $review->pageable->content_ru !!}</p>
@@ -32,6 +32,6 @@
       @endforeach
 
         <p>Отзывы взяты отсюда: <a href="https://www.fl.ru/users/adminoid/opinions/">https://www.fl.ru/users/adminoid/opinions/</a></p>
-        
+
     </div>
 @endsection
