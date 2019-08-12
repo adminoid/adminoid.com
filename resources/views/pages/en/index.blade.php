@@ -164,11 +164,10 @@
                                                      @mouseenter="onHover" @mouseleave="onUnhover"
                                                      @touchstart="onHover">
                                                 <div class="text" @touchstart="onUnhover">
-                                                    <p>За годы работы (с июня 2008) на крупнейшей российской бирже фриланса FL.ru у меня только
-                                                        положительные
-                                                        отзывы и завершенные сделки (см. <a href="/reviews">отзывы</a>). В начале пути,
-                                                        когда я был неопытен, шанс совершить ошибку был еще велик, но я им не воспользовался. Как
-                                                        теперь накосячить ума не приложу…</p>
+                                                    <p>
+                                                        Over the years of work (since June 2008) on the largest Russian freelance exchange FL.ru, I have only positive reviews and fully completed works (see <a href="/reviews">reviews</a>).
+                                                        At the beginning of the journey, when I was inexperienced, the chance to make a mistake was still great, but I did not use it. Now I won’t know how to screw up my mind ...
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -185,8 +184,9 @@
                                                      @mouseenter="onHover" @mouseleave="onUnhover"
                                                      @touchstart="onHover">
                                                 <div class="text" @touchstart="onUnhover">
-                                                    <p>Первый сайт сверстал в 2002 году табличной версткой. В период пика популярности Internet
-                                                        Explorer 6, верстал под заказ множество кросбраузерных страниц. Профессионально программирую на JavaScript с 2009 года. С фреймворком Vue.js работаю с 2014 года.</p>
+                                                    <p>
+                                                        The first site was created in 2002 using an HTML table layout. At the peak of the popularity of Internet Explorer 6, I created many cross-browser custom pages. I have been professionally programming in JavaScript since 2009, and have been working with the Vue.js framework since 2014.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,8 +203,9 @@
                                                      @mouseenter="onHover" @mouseleave="onUnhover"
                                                      @touchstart="onHover">
                                                 <div class="text" @touchstart="onUnhover">
-                                                    <p>Программирую на PHP с 2006 года. С 2013 года работаю с фреймворком Laravel (3.x -> 4.x -> 5.x). В работе
-                                                        использую Unit-тесты, xDebug, phpStorm/VIM.</p>
+                                                    <p>
+                                                        I have been programming in PHP since 2006. Since 2013 I have been working with the Laravel framework (3.x -> 4.x -> 5.x), using Unit tests, xDebug, phpStorm / VIM (with 10 finger touch typing) in my work.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -221,10 +222,9 @@
                                                      @mouseenter="onHover" @mouseleave="onUnhover"
                                                      @touchstart="onHover">
                                                 <div class="text" @touchstart="onUnhover">
-                                                    <p>Я сам решаю задачи администрирования. С 2000 по 2005 годы работал системным
-                                                        администратором
-                                                        *nix систем. Администрировал крупные многоранговые сети до 250 машин. Сейчас в качестве
-                                                        сервера использую связку Docker+LEMP.</p>
+                                                    <p>
+                                                        I solve administration tasks myself. From 2000 to 2005 he worked as a system administrator of *nix (FreeBSD/Solaris/OpenBSD/Red Hat Linux) systems. I'm was administers large multi-rank networks with more than 250 machines. Now I use Docker/Laradock/LEMP and more...
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -241,10 +241,9 @@
                                                      @mouseenter="onHover" @mouseleave="onUnhover"
                                                      @touchstart="onHover">
                                                 <div class="text" @touchstart="onUnhover">
-                                                    <p>С 90-х годов начал изучать Photoshop, CorelDRAW. Понимаю теорию дизайна (композиция,
-                                                        цветовой баланс, акценты и т.д.). Разработаю функциональный дизайн в программе
-                                                        Sketch, в полной мере решающий практические задачи, адаптивный, с наборами стилей и UI
-                                                        элементов. Готов объяснить, что я сделал, почему и зачем.</p>
+                                                    <p>
+                                                        From the 90s, he began to study Photoshop, CorelDRAW. I understand design theory (composition, color balance, accents, etc.). Functional design I do in the Sketch application. I am doing responsive design, with sets of styles and user interface elements. I understand and can explain what and why I did.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
