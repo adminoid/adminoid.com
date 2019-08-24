@@ -392,7 +392,8 @@
                           </g>
                         </g>
                         <g id="work-text" transform="translate(50, 90)"
-                           font-family="RobotoMono-Bold, Roboto Mono" fill="#1254B0"
+                           font-family="'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
+                           fill="#1254B0"
                            font-weight="bold" style="fill: rgb(18, 84, 176);">
                           <text id="hour" font-size="22">
                             <tspan x="-15" y="22">Hour of</tspan>

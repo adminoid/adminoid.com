@@ -55,14 +55,14 @@
                                             <use id="Oval-3" stroke="#CD2E41" mask="url(#mask-clouds-6)"
                                                  stroke-width="4" fill="#FFFFFF"
                                                  stroke-dasharray="4" xlink:href="#path-clouds-5"></use>
-                                            <text id="site-need" font-family="RobotoMono-Regular, Roboto Mono"
-                                                  font-size="24"
-                                                  font-weight="normal" fill="#000000">
+                                            <text id="site-need"
+                                                  font-family="RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
+                                                  font-size="24" font-weight="normal" fill="#000000">
                                                 <tspan x="50" y="56">Need a</tspan>
                                                 <tspan x="50" y="84">web app?</tspan>
                                             </text>
                                             <text id="very-beautiful" style="visibility: hidden; opacity: 0;"
-                                                  font-family="RobotoMono-Regular, Roboto Mono"
+                                                  font-family="RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
                                                   font-size="24" font-weight="normal" fill="#000000">
                                                 <tspan x="45" y="56">Very</tspan>
                                                 <tspan x="45" y="84">beautiful</tspan>

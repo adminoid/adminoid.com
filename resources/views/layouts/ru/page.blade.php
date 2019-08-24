@@ -129,7 +129,7 @@
                                     fill="url(#linearGradient-1)" x="0"
                                     y="1" width="78" height="17" rx="8"></rect>
                               <text id="web-Master"
-                                    font-family="RobotoSlab-Regular, Roboto Slab"
+                                    font-family="RobotoSlab-Regular,'Roboto Slab','Helvetica Neue',Arial,Helvetica,sans-serif"
                                     font-size="13"
                                     font-weight="normal">
                                 <tspan id="web" x="5" y="14" fill="#FFFFFF">
