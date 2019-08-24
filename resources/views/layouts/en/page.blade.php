@@ -340,7 +340,7 @@
           </div>
 
           <button class="ui primary button" type="submit"
-                  :class="[form.errors.any() ? 'loading' : '']" :disabled="form.errors.any() || form.success">Отправить</button>
+                  :class="[form.errors.any() ? 'loading' : '']" :disabled="form.errors.any() || form.success">Send</button>
         </form>
       </div>
     </div>
@@ -354,10 +354,9 @@
         <div class="eight wide column">
           <div class="ui middle aligned container">
               <div class="footer-copy">
-                &copy; Site was created in 2017 year. In 2019 year my skills have envolved many times. Some information is out of date.
-              </div>
-              <div class="compatibility">
-                <em>This site optimized for <img src="/static/img/adminoid/footer/chrome.svg" width="16" height="16" alt="Google Chrome"> Google Chrome</em>
+                &copy; <span class="y">Site was created in 2017 year.</span>
+                <span class="g">In 2019 my skills have envolved many times.</span>
+                <span class="y">Some information is out of date.</span>
               </div>
           </div>
         </div>

@@ -57,15 +57,17 @@ li {
   > .ui.footer > .ui.container > .ui.grid {
     height: 114px;
   }
-  .compatibility {
-    font-size: 0.9em;
+  .footer-copy {
+    .y {
+      color: #ff981c;
+    }
+    .g {
+      color: #76e437;
+    }
   }
   @media only screen and (max-width : @largestMobileScreen) {
     .footer-copy {
       font-size: 12px;
-    }
-    .compatibility {
-      display: none;
     }
   }
 }

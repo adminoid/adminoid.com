@@ -1,4 +1,5 @@
-@computerBreakpoint: 992px;
+@computerBreakpoint          : 992px;
+@largeMonitorBreakpoint      : 1200px;
 #tools {
 
   a {
@@ -46,6 +47,12 @@
       }
     }
     &#design {
+      @media (min-width: (@computerBreakpoint)) {
+        min-width: 930px;
+      }
+      @media (min-width: (@largeMonitorBreakpoint)) {
+        min-width: 1123px;
+      }
       .text-wrapper {
         a.sketch {
           background: no-repeat url(/static/img/adminoid/pages/tools/projecting/icons/sketch.png);
