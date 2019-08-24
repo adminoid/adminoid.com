@@ -166,7 +166,7 @@
                                                 <div class="text" @touchstart="onUnhover">
                                                     <p>
                                                         Over the years of work (since June 2008) on the largest Russian freelance exchange FL.ru, I have only positive reviews and fully completed works (see <a href="/reviews">reviews</a>).
-                                                        At the beginning of the journey, when I was inexperienced, the chance to make a mistake was still great, but I did not use it. Now I won’t know how to screw up my mind ...
+                                                        At the beginning of the journey, when I was inexperienced, the chance to make a mistake was still great, but I did not use it. Now I won’t know how to screw up my mind.
                                                     </p>
                                                 </div>
                                             </div>

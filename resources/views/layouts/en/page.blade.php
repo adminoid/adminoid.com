@@ -351,14 +351,14 @@
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui middle aligned four column grid">
-        <div class="five wide column">
+        <div class="eight wide column">
           <div class="ui middle aligned container">
-            {{--<img src="/static/img/temp/yandex-metrika.png" alt="">--}}
-          </div>
-        </div>
-        <div class="four wide column">
-          <div class="ui inverted link list">
-            {{--<img class="ui centered image" src="/static/img/adminoid/footer/colors.svg" alt="site colors">--}}
+              <div class="footer-copy">
+                &copy; Site was created in 2017 year. In 2019 year my skills have envolved many times. Some information is out of date.
+              </div>
+              <div class="compatibility">
+                <em>This site optimized for <img src="/static/img/adminoid/footer/chrome.svg" width="16" height="16" alt="Google Chrome"> Google Chrome</em>
+              </div>
           </div>
         </div>
         <div class="seven wide column right aligned">
