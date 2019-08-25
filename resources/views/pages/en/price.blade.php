@@ -447,7 +447,7 @@
           <p>Video from the screen is the most detailed of the reports on the work I have ever known.
             In my practice, I use this method whenever possible. The only condition for long-term projects is timely downloading video.<br>
 
-            For example, hourly video from a screen of my macbook pro 13" retina takes ~80 megabytes <em>(This feature is available at an additional cost)</em>.
+            For example, hourly video from a screen of my macbook pro 13" retina takes ~80 megabytes.
           </p>
         </div>
         <div class="column img">

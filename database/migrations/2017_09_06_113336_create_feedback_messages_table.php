@@ -17,9 +17,6 @@ class CreateFeedbackMessagesTable extends Migration
       $table->increments('id');
       $table->string('email');
       $table->text('text');
-      $table->string('first_name')->nullable();
-      $table->string('last_name')->nullable();
-      $table->string('phone')->nullable()->nullable();
       $table->string('ip')->nullable();
       $table->string('user_agent')->nullable();
       $table->timestamps();
