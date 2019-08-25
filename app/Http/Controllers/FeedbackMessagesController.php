@@ -41,7 +41,7 @@ class FeedbackMessagesController extends Controller
 
         $this->validate($request, [
             'email' => 'required|max:255',
-            'message' => 'required|max:5000',
+            'text' => 'required|max:5000',
 //            'first_name' => 'required|max:255',
 //            'last_name' => 'required|max:255',
 //            'phone' => 'required|max:255',
@@ -54,7 +54,7 @@ class FeedbackMessagesController extends Controller
 
         $feedbackMessage = (new FeedbackMessage)->forceCreate([
             'email' => request('email'),
-            'message' => request('message'),
+            'text' => request('text'),
 //            'first_name' => request('first_name'),
 //            'last_name' => request('last_name'),
 //            'phone' => request('phone'),

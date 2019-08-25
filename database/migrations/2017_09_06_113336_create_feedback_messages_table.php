@@ -16,7 +16,7 @@ class CreateFeedbackMessagesTable extends Migration
     Schema::create('feedback_messages', function (Blueprint $table) {
       $table->increments('id');
       $table->string('email');
-      $table->text('message');
+      $table->text('text');
       $table->string('first_name')->nullable();
       $table->string('last_name')->nullable();
       $table->string('phone')->nullable()->nullable();

@@ -58,6 +58,12 @@ li {
     height: 114px;
   }
   .footer-copy {
+    a.en-link {
+      color: #fff;
+      display: block;
+      margin: 10px;
+      float: right;
+    }
     .y {
       color: #ff981c;
     }

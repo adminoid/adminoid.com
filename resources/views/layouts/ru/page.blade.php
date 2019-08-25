@@ -315,7 +315,7 @@
       <i class="close icon"></i>
       <h2 class="ui yellow header">
         <div class="content">
-          Отправьте запрос
+          Жду твоего преложения
         </div>
       </h2>
       <div class="content">
@@ -326,7 +326,7 @@
               v-if="!form.success">
           <div class="required field" :class="[form.errors.has('email') ? 'error' : '']"
                :class="[form.success ? 'disabled' : '']">
-            <label>E-mail</label>
+            <label>Твой email</label>
             <input type="email" name="email" placeholder="Email" v-model="form.email">
             <div class="ui red pointing prompt label" v-if="form.errors.has('email')" v-text="form.errors.get('email')"></div>
           </div>
@@ -334,8 +334,8 @@
           <div class="required field" :class="[form.errors.has('message') ? 'error' : '']"
                :class="[form.success ? 'disabled' : '']">
             <label>Сообщение</label>
-            <div class="ui red pointing below prompt label" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></div>
-            <textarea name="message" v-model="form.message"></textarea>
+            <div class="ui red pointing below prompt label" v-if="form.errors.has('text')" v-text="form.errors.get('text')"></div>
+            <textarea name="text" v-model="form.text"></textarea>
           </div>
 
           <button class="ui primary button" type="submit"
@@ -350,14 +350,14 @@
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui middle aligned four column grid">
-        <div class="five wide column">
+        <div class="eight wide column">
           <div class="ui middle aligned container">
-            {{--<img src="/static/img/temp/yandex-metrika.png" alt="">--}}
-          </div>
-        </div>
-        <div class="four wide column">
-          <div class="ui inverted link list">
-            {{--<img class="ui centered image" src="/static/img/adminoid/footer/colors.svg" alt="site colors">--}}
+              <div class="footer-copy">
+                &copy; <span class="y">Сайт разработан в 2017 году.</span>
+                <span class="g">К 2019 я сильно развил свои навыки.</span>
+                <span class="y">Некоторая информация устарела.</span>
+                <a href="https://adminoid.com/" class="en-link">English version</a>
+              </div>
           </div>
         </div>
         <div class="seven wide column right aligned">

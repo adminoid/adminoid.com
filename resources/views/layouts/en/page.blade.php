@@ -327,7 +327,7 @@
               v-if="!form.success">
           <div class="required field" :class="[form.errors.has('email') ? 'error' : '']"
                :class="[form.success ? 'disabled' : '']">
-            <label>E-mail</label>
+            <label>Your email</label>
             <input type="email" name="email" placeholder="Email" v-model="form.email">
             <div class="ui red pointing prompt label" v-if="form.errors.has('email')" v-text="form.errors.get('email')"></div>
           </div>
@@ -335,8 +335,8 @@
           <div class="required field" :class="[form.errors.has('message') ? 'error' : '']"
                :class="[form.success ? 'disabled' : '']">
             <label>Message</label>
-            <div class="ui red pointing below prompt label" v-if="form.errors.has('message')" v-text="form.errors.get('message')"></div>
-            <textarea name="message" v-model="form.message"></textarea>
+            <div class="ui red pointing below prompt label" v-if="form.errors.has('text')" v-text="form.errors.get('text')"></div>
+            <textarea name="text" v-model="form.text"></textarea>
           </div>
 
           <button class="ui primary button" type="submit"
