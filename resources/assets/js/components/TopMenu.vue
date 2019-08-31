@@ -1,6 +1,9 @@
 <script>
   import {TweenMax, TimelineLite} from 'gsap'
   export default {
+
+    props: ['write'],
+
     data () {
       return {
         // browser: 0,
@@ -40,6 +43,7 @@
         eyeTransformWithAngle: 'translate(13.000000, 36.000000) rotate(40.000000) translate(-13.000000, -36.000000) translate(8.000000, 31.000000)'
       }
     },
+
     mounted () {
       this.checkTopOffset();
       this.initFlicker();
@@ -48,14 +52,17 @@
 
       // this.browser = this.detectBrowser();
     },
+
     created: function () {
       window.addEventListener('scroll', this.checkTopOffset);
       window.addEventListener('mousemove', this.eyeMove);
     },
+
     beforeDestroy: function () {
       window.removeEventListener('scroll', this.checkTopOffset);
       window.removeEventListener('mousemove', this.eyeMove);
     },
+
     watch: {
       topOffset: function (val, oldVal) {
         if (oldVal < this.settings.topOffsetForToggleAnimation && val >= this.settings.topOffsetForToggleAnimation) {
@@ -65,12 +72,10 @@
         }
       }
     },
+
     methods: {
-      write: function () {
-        let $modal = $('#super-modal');
-        $modal
-        .modal('setting', 'transition', 'horizontal flip')
-        .modal('toggle');
+      toWrite: function () {
+        this.$parent.$emit('go-write',true);
       },
 
       eyeMove: function (e) {

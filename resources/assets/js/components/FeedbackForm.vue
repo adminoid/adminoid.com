@@ -88,7 +88,7 @@
         this.form.submit('post', '/feedback-messages')
           .then(data => {
             this.message = data.message;
-            // console.log(data)
+            // this.$parent.$emit('stop-write',true);
           });
 //                        .catch(errors => console.log(errors))
       }

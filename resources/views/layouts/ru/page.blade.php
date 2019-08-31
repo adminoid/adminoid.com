@@ -99,7 +99,7 @@
 <div id="app" class="pusher ">
   <div class="page-content">
 
-    <top-menu inline-template>
+    <top-menu inline-template :write="write">
       <div class="ui fixed menu" id="top-menu">
         <div class="ui grid container">
           <div class="four wide column">
@@ -296,7 +296,7 @@
                 Отзывы
               </a>
               <div class="item">
-                <button class="ui button" id="super" @click="write">
+                <button class="ui button" id="super" @click="toWrite" :class="{active: write}">
                   Пиши
                 </button>
               </div>
