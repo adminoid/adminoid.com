@@ -74,6 +74,12 @@ li {
   @media only screen and (max-width : @largestMobileScreen) {
     .footer-copy {
       font-size: 12px;
+      a.en-link {
+        color: #fff;
+        display: block;
+        margin: 0;
+        float: right;
+      }
     }
   }
 }

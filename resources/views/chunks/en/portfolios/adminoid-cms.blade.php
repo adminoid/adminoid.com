@@ -14,11 +14,6 @@
                             <a href="{{ $portfolioPage->pageable->link }}"><i class="linkify icon"></i>{{ $portfolioPage->pageable->link }}</a>
                             <br>
                         @endif
-                        @if($portfolioPage->pageable->external_url)
-                            <a href="{{ $portfolioPage->pageable->external_url }}" target="_blank"><i
-                                        class="external icon"></i>{{ $portfolioPage->pageable->external_url }}</a>
-                            <br>
-                        @endif
                     </span>
             @foreach($portfolioPage->tags as $tag)
                 <a class="ui image label original"><img src="/{{ $tag->icon }}">

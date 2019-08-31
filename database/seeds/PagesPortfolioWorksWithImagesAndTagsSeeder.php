@@ -144,6 +144,32 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
 
         $portfolioData = [
             [
+                'slug' => 'filtered-map-labels',
+                'title_ru' => 'Более 10000 точек на карте с фильтрацией',
+                'title_en' => 'Over 10,000 points on the map with filtering',
+                'description_ru' => '
+<p>Отображение более 10 000 случайных точек на карте с фильтрацией по полям различных типов. Наличествует система кеширования меток с переиндексации. Состояние фильтров дублируется в урл. Сделано по ТЗ от заказчика. Здесь использованы Яндекс карты, но я так же работал с google картами и посредником leaflet.<br>Просто посмотри: <a href="https://ymaps.adminoid.com/">https://ymaps.adminoid.com/</a></p>
+                ',
+                'description_en' => '
+<p>Display over 10,000 random points on the map with filtering by fields of various types. There is a caching system for tags with reindexing. The state of the filters is duplicated in url. Made according to the statement of work from the customer. Yandex maps are used here, but I also worked with google maps and leaflet.<br>Just take a look: <a href="https://ymaps.adminoid.com/">https://ymaps.adminoid.com/</a></p> 
+                ',
+                'sort_order_id' => 7,
+                'priority_level' => 'high',
+                'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6642189/bolee-10000-tochek-na-karte-s-filtratsiey-laravel_vue_lodash-2018-2019/',
+                'link' => 'https://ymaps.adminoid.com',
+                'custom_date' => '2018-2019',
+                'custom_face' => true,
+                'chunk_ru' => 'chunks/ru/portfolios/ymaps',
+                'chunk_en' => 'chunks/en/portfolios/ymaps',
+                'images' => [
+                    'database/seeds/images/portfolio/ymaps/screen.jpg',
+                ],
+                'tags' => ['php', 'laravel', 'javascript', 'vue.js', 'twitter bootstrap']
+            ],
+
+
+
+            [
                 'slug' => 'adminoid-cms',
                 'title_ru' => 'Adminoid CMS',
                 'title_en' => 'Adminoid CMS',

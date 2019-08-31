@@ -15,6 +15,10 @@
 
         <h1 class="ui blue header">{{ $page->title_ru }}</h1>
 
+        <div class="ui negative message">
+            <p>Многие мои работы нигде не представлены, потому что в них я принимал частичное участие. А также я работал на офисных работах, в том числе в крупных организациях (МГРО Единая Россия, ГУП ИПК Московская Правда, Carlo Pazolini).</p>
+        </div>
+
         <div class="ui stackable grid">
 
             @foreach($page->descendants as $portfolioPage)

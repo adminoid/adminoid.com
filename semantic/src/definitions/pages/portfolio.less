@@ -189,6 +189,54 @@
           }
         }
       }
+      &#ymaps {
+        height: 400px;
+        @media (max-width: @computerBreakpoint) {
+          height: 300px;
+        }
+        &::before {
+          position: absolute;
+          content: "";
+          background-image: url('/static/img/adminoid/pages/portfolio/ymaps/screen.jpg');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-color: rgba(255, 253, 242, 0.75);
+          width: 100%;
+          right: 0;
+          top: 0;
+          opacity: .9;
+          height: 400px;
+          @media (max-width: @computerBreakpoint) {
+            height: 300px;
+            opacity: .3;
+          }
+        }
+        .description-text {
+          position: absolute;
+          width: 350px;
+          background-color: rgba(255, 253, 242, 0.75);
+          border-radius: 5px;
+          color: black;
+          padding: 8px;
+          border: 1px solid #CB3044;
+          top: 110px;
+          left: 270px;
+          @media (min-width: @largeMonitorBreakpoint) {
+            top: 111px;
+            left: 321px;
+          }
+          @media (max-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+            top: 111px;
+            left: 205px;
+            width: 340px;
+          }
+          @media (max-width: @computerBreakpoint) {
+            top: 40px;
+            left: 50%;
+            margin-left: -156px;
+          }
+        }
+      }
       &#adminoid-cms {
         height: auto !important;
         //@media only screen and (min-width: @largeMonitorBreakpoint) {
@@ -205,6 +253,7 @@
         //}
         > img {
           float: right;
+          margin-left: 15px;
         }
         .description-text {
           font-size: .75em;
