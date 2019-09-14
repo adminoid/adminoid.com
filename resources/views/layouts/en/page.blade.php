@@ -7,47 +7,35 @@
 
   <title>@yield('title')</title>
 
-@if(app()->environment() == 'production')
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121426935-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  {{--@if(app()->environment() == 'production')--}}
 
-        gtag('config', 'UA-121426935-1');
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121426935-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter49399369 = new Ya.Metrika2({
-                        id:49399369,
-                        clickmap:true,
-                        trackLinks:true,
-                        accurateTrackBounce:true,
-                        webvisor:true
-                    });
-                } catch(e) { }
-            });
+    gtag('config', 'UA-121426935-1');
+  </script>
 
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/tag.js";
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks2");
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/49399369" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-@endif
+    ym(49399369, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/49399369" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  {{--  @endif--}}
 
   <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png">
@@ -236,44 +224,44 @@
             <div class=" item">
               <svg id="micro-menu-svg" width="46px"
                    height="36px" viewBox="0 0 46 36" version="1.1" xmlns="http://www.w3.org/2000/svg"
-              @click="toggleSidebar"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <title>Mobile-menu</title>
-              <defs>
-                <rect id="path-1" x="0" y="0" width="42" height="32" rx="4"></rect>
-                <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2"
-                      y="-2" width="46" height="36">
-                  <rect x="-2" y="-2" width="46" height="36" fill="white"></rect>
-                  <use xlink:href="#path-1" fill="black"></use>
-                </mask>
-              </defs>
-              <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g id="adminoid/header/short/sm" transform="translate(-663.000000, -7.000000)">
-                  <g id="adminoid/header/short/mobile">
-                    <g id="Mobile-menu" transform="translate(665.000000, 9.000000)">
-                      <g id="Rectangle-28">
-                        <use id="Rectangle-28-fill" fill="#FFFFFF" fill-rule="evenodd"
-                             xlink:href="#path-1"></use>
-                        <use id="Rectangle-28-stroke" stroke="#1154B0" mask="url(#mask-2)"
-                             stroke-width="4"
-                             stroke-linecap="square" xlink:href="#path-1"></use>
+                   @click="toggleSidebar"
+                   xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>Mobile-menu</title>
+                <defs>
+                  <rect id="path-1" x="0" y="0" width="42" height="32" rx="4"></rect>
+                  <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2"
+                        y="-2" width="46" height="36">
+                    <rect x="-2" y="-2" width="46" height="36" fill="white"></rect>
+                    <use xlink:href="#path-1" fill="black"></use>
+                  </mask>
+                </defs>
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="adminoid/header/short/sm" transform="translate(-663.000000, -7.000000)">
+                    <g id="adminoid/header/short/mobile">
+                      <g id="Mobile-menu" transform="translate(665.000000, 9.000000)">
+                        <g id="Rectangle-28">
+                          <use id="Rectangle-28-fill" fill="#FFFFFF" fill-rule="evenodd"
+                               xlink:href="#path-1"></use>
+                          <use id="Rectangle-28-stroke" stroke="#1154B0" mask="url(#mask-2)"
+                               stroke-width="4"
+                               stroke-linecap="square" xlink:href="#path-1"></use>
+                        </g>
+                        <path class="svg-lines" d="M10.5,10 L31.8232396,10" id="Line"
+                              stroke="#0049AA"
+                              stroke-width="2"
+                              stroke-linecap="square"></path>
+                        <path class="svg-lines" d="M10.5,16 L31.8232396,16" id="Line-2"
+                              stroke="#0049AA"
+                              stroke-width="2"
+                              stroke-linecap="square"></path>
+                        <path class="svg-lines" d="M10.5,22 L31.8232396,22" id="Line-3"
+                              stroke="#0049AA"
+                              stroke-width="2"
+                              stroke-linecap="square"></path>
                       </g>
-                      <path class="svg-lines" d="M10.5,10 L31.8232396,10" id="Line"
-                            stroke="#0049AA"
-                            stroke-width="2"
-                            stroke-linecap="square"></path>
-                      <path class="svg-lines" d="M10.5,16 L31.8232396,16" id="Line-2"
-                            stroke="#0049AA"
-                            stroke-width="2"
-                            stroke-linecap="square"></path>
-                      <path class="svg-lines" d="M10.5,22 L31.8232396,22" id="Line-3"
-                            stroke="#0049AA"
-                            stroke-width="2"
-                            stroke-linecap="square"></path>
                     </g>
                   </g>
                 </g>
-              </g>
               </svg>
 
             </div>
@@ -282,7 +270,7 @@
           <div class="twelve wide left floated column computer widescreen largescreen only">
             <div class="ui six item menu">
               <a href="/price" class="item{{ Request::is('price') ? ' active' : '' }}">
-               Price
+                Price
               </a>
               <a href="/tools" class="item{{ Request::is('tools') ? ' active' : '' }}">
                 Tools
@@ -353,11 +341,11 @@
       <div class="ui middle aligned four column grid">
         <div class="eight wide column">
           <div class="ui middle aligned container">
-              <div class="footer-copy">
-                &copy; <span class="y">Site was created in 2017 year.</span>
-                <span class="g">In 2019 my skills have envolved many times.</span>
-                <span class="y">Some information is out of date.</span>
-              </div>
+            <div class="footer-copy">
+              &copy; <span class="y">Site was created in 2017 year.</span>
+              <span class="g">In 2019 my skills have envolved many times.</span>
+              <span class="y">Some information is out of date.</span>
+            </div>
           </div>
         </div>
         <div class="seven wide column right aligned">
