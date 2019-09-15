@@ -189,6 +189,14 @@
           }
         }
       }
+      &#chat-constructor {
+        &.fix {
+          height: auto;
+          @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+            height: auto;
+          }
+        }
+      }
       &#ymaps {
         height: 400px;
         @media (max-width: @computerBreakpoint) {

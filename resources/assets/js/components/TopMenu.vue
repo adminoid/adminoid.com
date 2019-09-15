@@ -46,7 +46,7 @@
 
     mounted () {
       this.checkTopOffset();
-      this.initFlicker();
+      // this.initFlicker();
       this.timeline = this.compileTimeline();
       this.$eye = $(this.$el).find(this.selectors.eye);
 

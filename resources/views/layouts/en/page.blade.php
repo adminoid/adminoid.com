@@ -95,7 +95,7 @@
             <div id="header-logo" class="header item">
               <a href="/">
                 <svg id="header-logo-svg" viewBox="0 0 219 53" version="1.1"
-                     style="width:219px;height:53px"
+                     style="width:219px;height:53px;transform:rotateZ(360deg);"
                      xmlns="http://www.w3.org/2000/svg"
                      xmlns:xlink="http://www.w3.org/1999/xlink">
                   <defs>

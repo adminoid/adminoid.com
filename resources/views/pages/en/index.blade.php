@@ -18,6 +18,7 @@
                 <img src="/static/img/adminoid/pages/main/ava-circle.jpg" data-rjs="2" alt="">
                 <clouds inline-template>
                     <svg id="clouds" width="189px" height="158px" viewBox="0 0 189 158" version="1.1"
+                         style="transform:rotateZ(360deg) translateZ(0);will-change: transform;"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <title>static/img/adminoid/pages/main/clouds</title>
                         <defs>
@@ -41,11 +42,11 @@
                             </mask>
                         </defs>
                         <g id="Главная-clouds" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Large-Monitor---Главная-clouds" transform="translate(-276.000000, -122.000000)">
-                                <g id="adminoid/contents/main-page-content" transform="translate(94.000000, 96.000000)">
-                                    <g id="intro-clouds" transform="translate(3.000000, 0.000000)">
+                            <g id="Large-Monitor---Главная-clouds" style="will-change: transform;" transform="translate(-276.000000, -122.000000)">
+                                <g id="adminoid/contents/main-page-content" style="will-change: transform;" transform="translate(94.000000, 96.000000)">
+                                    <g id="intro-clouds" style="will-change: transform;" transform="translate(3.000000, 0.000000)">
                                         <g id="static/img/adminoid/pages/main/clouds"
-                                           transform="translate(179.000000, 26.000000)">
+                                           style="will-change: transform;" transform="translate(179.000000, 26.000000)">
                                             <use id="Oval-1" stroke="#1254B0" mask="url(#mask-clouds-2)"
                                                  stroke-width="4" fill="#FFFFFF"
                                                  stroke-dasharray="4" xlink:href="#path-clouds-1"></use>

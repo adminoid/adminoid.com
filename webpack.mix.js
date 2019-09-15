@@ -52,4 +52,7 @@ mix.webpackConfig({
   output: {
     chunkFilename: 'js/[name].[chunkhash].js',
   },
+  watchOptions: {
+    ignored: /node_modules/
+  }
 });

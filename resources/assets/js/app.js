@@ -39,6 +39,10 @@ Vue.component("zoom", function (resolve) {
   require(['./components/pages/portfolio/Zoom.vue'], resolve)
 });
 
+Vue.component("video-background", function (resolve) {
+  require(['./components/pages/portfolio/VideoBackground.vue'], resolve)
+});
+
 Vue.component("half-rotate", function (resolve) {
   require(['./components/pages/workflow/HalfRotate.vue'], resolve)
 });

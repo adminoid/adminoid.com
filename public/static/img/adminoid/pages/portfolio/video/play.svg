@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="88px" viewBox="0 0 91 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>sale-button-red</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#B52132" offset="0%"></stop>
+            <stop stop-color="#CA2235" offset="51.8634407%"></stop>
+            <stop stop-color="#E9293E" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="41 -1.5 80.5 80.5 1.5 80.5"></polygon>
+        <filter x="-5.7%" y="-16.8%" width="123.5%" height="122.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="5" dy="-4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.28627451   0 0 0 0 0.666666667  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-2.5%" y="-13.8%" width="117.2%" height="116.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="video" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sale-button-red">
+            <g id="Group">
+                <g id="Triangle" transform="translate(41.000000, 39.500000) rotate(-270.000000) translate(-41.000000, -39.500000) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                    <path stroke="#69000C" stroke-width="1" d="M41,-0.347875248 L2.29584058,80 L79.7041594,80 L41,-0.347875248 Z" stroke-linejoin="square"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
