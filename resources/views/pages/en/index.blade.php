@@ -115,9 +115,9 @@
 
                 The reason is: <br>
                 <ul>
-                    <li>I use one of the most popular tools, which most of the programmers in the world work with, for example, I write backend on PHP with the help of <a href="https://laravel.com/">Laravel framework</a>, I use javascript framework <a href="https://vuejs.org/">Vue.js</a> as a framework for frontend and so on (see more details here - tools).</li>
+                    <li>I use one of the most popular tools, which most of the programmers in the world work with, for example, I make backend in PHP with the help of <a href="https://laravel.com/">Laravel framework</a>, I use javascript framework <a href="https://vuejs.org/">Vue.js</a> as a framework for frontend and so on (see more details here - tools).</li>
 
-                    <li>I write code according to generally accepted standards, comment and document it. I try not to reinvent the wheel, if there are time-tested solutions, then I just use them.</li>
+                    <li>I coding according to generally accepted standards, comment and document it. I try not to reinvent the wheel, if there are time-tested solutions, then I just use them.</li>
 
                     <li>When it possible or necessary, I set PHP and Javascript tasks with tests (unit or functional) and then actualize (realize) them. Test Driven Development helps the third-party programmers make changes easily without damaging general project functionality. The unit tests also serve as visual documentation.</li>
                 </ul>

@@ -156,7 +156,7 @@
 
                                 I work on a <a href="#mac" class="hover mac">Macbook pro</a>. <a href="#keymap" class="hover keymap">Touch typing</a> and <a href="#vim" class="hover vim">VIM</a> editor make the text editing lightning fast. Any changes are under control of <a href="#git" class="hover git">git</a>.
 
-                                I write notes and docs on <a href="#markdown" class="hover markdown">Markdown</a>.
+                                I make notes and docs in <a href="#markdown" class="hover markdown">Markdown</a>.
 
                                 My documents automated in <a href="#google-apps" class="hover google-apps">google apps</a>.
 

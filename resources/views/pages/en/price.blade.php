@@ -516,7 +516,7 @@
 
           <p>Time is the most valuable thing, not money.</p>
 
-          <p>If you want to get practically an ideal result, spending very little time, click on the red button at the top - <write-link>write me</write-link>.</p>
+          <p>If you want to get practically an ideal result, spending very little time, click on the red button at the top - <write-link>text me</write-link>.</p>
 
         </div>
       </div>
