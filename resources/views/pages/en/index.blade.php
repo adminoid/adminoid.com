@@ -16,7 +16,7 @@
         <div class="ui stackable two tablet column grid" id="intro">
             <div class="six wide large screen seven wide computer sixteen wide tablet column">
                 <img src="/static/img/adminoid/pages/main/ava-circle.jpg" data-rjs="2" alt="">
-                <clouds inline-template>
+{{--                <clouds inline-template>--}}
                     <svg id="clouds" width="189px" height="158px" viewBox="0 0 189 158" version="1.1"
                          style="transform:rotateZ(360deg) translateZ(0);will-change: transform;"
                          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -74,7 +74,7 @@
                             </g>
                         </g>
                     </svg>
-                </clouds>
+{{--                </clouds>--}}
             </div>
             <div class="ten wide large screen nine wide computer sixteen wide tablet column">
 

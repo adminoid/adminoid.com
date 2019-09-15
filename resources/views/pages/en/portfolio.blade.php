@@ -16,7 +16,7 @@
         <h1 class="ui blue header">{{ $page->title_en }}</h1>
 
         <div class="ui negative message">
-            <p>Many of my works are not represented anywhere, because I only participated in them. And I also worked in office work, including in large organizations (MGRO United Russia, GUP IPK Moskovskaya Pravda, Carlo Pazolini).</p>
+            <p>Many of my works are not represented anywhere, because I only participated in them. And I also worked in office work, including in large organizations (central office of United Russia political party (I work for current russian Minister of Culture Vladimir Medinsky), publishing house "Moskovskaya Pravda", shoe company "Carlo Pazolini").</p>
         </div>
 
         <div class="ui stackable grid">
