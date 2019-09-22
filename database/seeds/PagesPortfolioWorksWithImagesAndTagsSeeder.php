@@ -147,7 +147,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
             [
                 'slug' => 'chat-bot-constructor',
                 'title_ru' => 'Конструктор чат ботов',
-                'title_en' => 'Chat bots constructor',
+                'title_en' => 'Chat bot constructor',
                 'description_ru' => '
                 <p>Конструктор чат ботов. Drag&drop, динамическая отрисовка svg линий. <br>
                  Только Vue.js, lodash, typescript, без специальных библиотек. <br>
@@ -161,7 +161,6 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                  Only Vue.js, lodash, typescript, without special libraries. <br>
                  Check out the demo: <a href="https://cc.adminoid.com/">https://cc.adminoid.com/</a> <br>
                  (login: mr@adminoid.com, password: 123). <br>
-                 <em>This is the crown of my works as of 2019</em>.</p>
                  <p>Repository: <a href="https://github.com/adminoid/chat-constructor">https://github.com/adminoid/chat-constructor</a></p>
                 ',
                 'sort_order_id' => 9,
@@ -188,9 +187,9 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                 ',
                 'sort_order_id' => 8,
                 'priority_level' => 'high',
-                'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6642189/bolee-10000-tochek-na-karte-s-filtratsiey-laravel_vue_lodash-2018-2019/',
+                'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6642189/bolee-10000-tochek-na-karte-s-filtratsiey-laravel_vue_lodash-2018/',
                 'link' => 'https://ymaps.adminoid.com',
-                'custom_date' => '2018-2019',
+                'custom_date' => '2018',
                 'custom_face' => true,
                 'chunk_ru' => 'chunks/ru/portfolios/ymaps',
                 'chunk_en' => 'chunks/en/portfolios/ymaps',
@@ -240,7 +239,6 @@ TreeView, в котором можно просто перетаскивать �
 <p>Created on the inspiration of a MODX CMS with which I once worked for a long time.
 Implemented on laravel and vue.js. It's a simple, but extensible seo-friendly content management system, tree-based view of pages and control through tree view, where you can simply drag the page nodes to move them.</p>
 
-Particular qualities:
 <ul>
 <li>Uri (page addresses) are automatically generated when changing and moving</li>
 <li>If a page is being moved, the system remembers all previous uri and (automatically) redirects them through 301 http redirect to a current address.</li>

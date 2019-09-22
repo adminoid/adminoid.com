@@ -4,8 +4,10 @@
             <h3 class="left floated">{{ $portfolioPage->pageable->title_ru }}</h3>
             <div class="right floated meta yellow"><i class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}</div>
         </div>
-        <div class="content window fix normal-cursor" id="ymaps">
-            <div class="description-text">{!! $portfolioPage->pageable->description_ru !!}</div>
+        <div class="content window fix normal-cursor" id="chat-constructor">
+          <video-background>
+            {!! $portfolioPage->pageable->description_ru !!}
+          </video-background>
         </div>
         <div class="extra content">
                     <span class="right aligned right floated links">

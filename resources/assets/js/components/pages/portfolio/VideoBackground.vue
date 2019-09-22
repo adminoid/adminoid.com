@@ -5,7 +5,7 @@
       <slot/>
     </div>
 
-    <video ref="video" class="video__background" autoplay loop muted playsinline width="100%" height="100%" src="http://localhost:8000/static/img/adminoid/pages/cc/motion.mp4" type="video/mp4"/>
+    <video ref="video" class="video__background" autoplay loop muted playsinline width="100%" height="100%" src="https://adminoid.com/static/img/adminoid/pages/cc/motion.mp4" type="video/mp4"/>
 
     <a class="video__button" :class="action" href="#" @click.prevent="togglePlay">
       <img :src="imgSrc" :alt="action | capitalize">
