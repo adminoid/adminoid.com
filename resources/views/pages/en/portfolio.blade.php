@@ -15,10 +15,6 @@
 
         <h1 class="ui blue header">{{ $page->title_en }}</h1>
 
-        <div class="ui negative message">
-            <p>Many of my works are not represented anywhere, because I only participated in them. And I also worked in office work, including in large organizations (central office of United Russia political party (I work for current russian Minister of Culture Vladimir Medinsky), publishing house "Moskovskaya Pravda", shoe company "Carlo Pazolini").</p>
-        </div>
-
         <div class="ui stackable grid">
 
             @foreach($page->descendants as $portfolioPage)
@@ -31,7 +27,7 @@
                             <div class="content">
                                 <h3 class="left floated">{{ $portfolioPage->pageable->title_en }}</h3>
                                 <div class="right floated meta yellow"><i
-                                            class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}</div>
+                                        class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}</div>
                             </div>
                             <zoom class="content" inline-template>
                                 <div class="content window fix"
@@ -67,7 +63,13 @@
             @endforeach
 
             <div class="sixteen wide column">
-                Full portfolio for many years (website number 1 on Russian freelance): <a href="https://www.fl.ru/users/adminoid/">https://www.fl.ru/users/adminoid/</a>
+                More than 80 works done since 2008 in my full portfolio (freelancing platform number one in Russia):
+                <br>
+                <a href="https://www.fl.ru/users/adminoid/">https://www.fl.ru/users/adminoid/</a> (<a href="https://translate.google.com/translate?sl=ru&tl=en&u=https%3A%2F%2Fwww.fl.ru%2Fusers%2Fadminoid%2F">Auto-translated version in English</a>)
+            </div>
+
+            <div class="ui negative message">
+                <p>Many of my works are not represented anywhere, because I only participated in them. And I also worked in office work, including in large organizations (central office of United Russia political party (I work for current russian Minister of Culture Vladimir Medinsky), publishing house "Moskovskaya Pravda", shoe company "Carlo Pazolini").</p>
             </div>
 
         </div>
