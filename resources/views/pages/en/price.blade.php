@@ -432,22 +432,22 @@
 
           <p>I only take money for professional development. If I need some time to study the topic, to think it over, I do it at my own expense.</p>
 
-          <p>I work strictly on a timer. If I have to make a pause, I pause a timer.</p>
+          <p>I work strictly on a timer. If I have to pause, I pause a timer.</p>
 
-          <p>It is not just a timer, it's <span id="pomodoro">Pomodoro technique<img
+          <p>It is not just a timer, it's the <span id="pomodoro">Pomodoro technique<img
                       src="/static/img/adminoid/pages/price/span-tomato.png" alt="" data-rjs="2"></span>&nbsp;&nbsp;+
             <strong>GTD</strong>. Briefly: I break the case down into a hierarchy of short sub tasks,
-            put sub tasks in the timer, work 25 minutes, then have a short break and so on.</p>
+            put sub tasks into the timer, work 25 minutes, then have a short break and so on.</p>
         </div>
       </div>
 
       <div class="description video ui stackable two column grid">
         <div class="column text">
           <p><strong>You can watch what I was doing</strong></p>
-          <p>Video from the screen is the most detailed of the reports on the work I have ever known.
+          <p>Screen captures are the most detailed of the reports on the work I have ever known.
             In my practice, I use this method whenever possible. The only condition for long-term projects is timely downloading video.<br>
 
-            For example, hourly video from a screen of my macbook pro 13" retina takes ~80 megabytes.
+            For example, hourly video from a screen of my macbook pro 13" retina takes up ~80 megabytes.
           </p>
         </div>
         <div class="column img">
@@ -469,12 +469,12 @@
         </div>
         <div class="column text">
           <p>
-            <strong>I work faster and better than a year ago. And this is geometric progressive trend.</strong>
+            <strong>I work faster and better than a year ago. And this trend is exponential.</strong>
           </p>
 
-          <p>I use a ten-finger typing, VIM editor facilities and other hi-end tools. This increases the speed of input and text processing by tens of times.</p>
+          <p>I touch type, VIM editor facilities and other hi-end tools. This increases the speed of input and text processing by tens of times.</p>
 
-          <p>Most of the standard tasks I have already solved. A lot solutions of various tasks I remember by heart.</p>
+          <p>I have already solved most standard tasks. A lot solutions of various tasks I remember by heart.</p>
 
           <p>
             When you work with a team, you need some time when a designer swears with frontend developer, a frontend programmer with a backend developer and so on.<br>
@@ -485,11 +485,11 @@
 
       <div class="description total ui stackable two column grid">
         <div class="column text">
-          <p><strong>How much can it cost to create a website from me?</strong></p>
+          <p><strong>How much do I charge to make a website?</strong></p>
 
-          <p>Minimal price for the project is ten hundred bucks. It's because I have to build mutual understanding and teamwork with every customer.</p>
+          <p>The minimum price for the project is one thousand dollars. It's because I have to build a mutual understanding and teamwork with every customer.</p>
 
-          <p>For 1000$ I can make a working web app that solves the tasks. For example, an online shop with integration into various advertising, analytical and financial systems with professional simple design based on sass/less framework <a href="https://getbootstrap.com/">Twitter Bootstrap</a>.</p>
+          <p>For $1000 I can make a working web app that solves the tasks. For example, an online shop with integration into various advertising, analytical and financial systems with professional simple design based on sass/less framework <a href="https://getbootstrap.com/">Twitter Bootstrap</a>.</p>
 
           <p>I prefer working in stages Each stage - is a completed task.</p>
         </div>
@@ -511,12 +511,12 @@
           </div>
         </div>
         <div class="column text">
-          <p><strong>Greed is ruining</strong></p>
-          <p>More often I have met clients who would like to finish the work, done by someone else. Until a "thrifty" client gets the bumps and understands he has to pay for every thing, he is doomed to waste money in vain.</p>
+          <p><strong>If you pay peanuts, you get monkeys</strong></p>
+          <p>I have often met clients who would like to finish work from someone else. Until a "thrifty" client gets the bumps and understands he has to pay for every thing, he is doomed to waste money in vain.</p>
 
           <p>Time is the most valuable thing, not money.</p>
 
-          <p>If you want to get practically an ideal result, spending very little time, click on the red button at the top - <write-link>text me</write-link>.</p>
+          <p>If you want to get practically an ideal result, spending very little time, click on the red button at the top - <write-link>message me</write-link>.</p>
 
         </div>
       </div>

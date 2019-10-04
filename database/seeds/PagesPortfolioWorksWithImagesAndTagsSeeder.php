@@ -178,7 +178,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
             [
                 'slug' => 'filtered-map-labels',
                 'title_ru' => 'Более 10000 точек на карте с фильтрацией',
-                'title_en' => 'Over 10,000 points on the map with filtering',
+                'title_en' => 'Over 10,000 points on a map with filtering',
                 'description_ru' => '
 <p>Отображение более 10 000 случайных точек на карте с фильтрацией по полям различных типов. Наличествует система кеширования меток с переиндексации. Состояние фильтров дублируется в урл. Сделано по ТЗ от заказчика. Здесь использованы Яндекс карты, но я так же работал с google картами и посредником leaflet.<br>Просто посмотри: <a href="https://ymaps.adminoid.com/">https://ymaps.adminoid.com/</a></p>
                 ',
@@ -353,7 +353,7 @@ CRUD/Laravel resource",
             [
                 'slug' => 'prices-control-panel-for-ikmed-ru',
                 'title_ru' => 'Панель управления ценами и акциями, мониторинг позиций на Яндекс.Маркет для Интернет магазина "ikmed.ru"',
-                'title_en' => 'Prices and stocks (and monitoring positions on Yandex.market) control panel for internet shop "ikmed.ru"',
+                'title_en' => 'Price and stock (and monitoring positions on Yandex.market) control panel for internet shop "ikmed.ru"',
                 'description_ru' => "Интерактивный интерфейс, при изменении цены (например) – динамически пересчитываются все цифры и определяется позиция на маркете.",
                 'description_en' => "Interactive interface, the price change (for example) - dynamically translated all the numbers and determined position in the convenience store.",
                 'sort_order_id' => 3,
@@ -406,8 +406,8 @@ CRUD/Laravel resource",
             ],
             [
                 'slug' => 'accounting-system-google-spreadsheet',
-                'title_ru' => 'Автоматизированная система учета в Google spreadsheet',
-                'title_en' => 'Automated accounting system in Google spreadsheet',
+                'title_ru' => 'Автоматизированная система учета в Google Sheets',
+                'title_en' => 'Automated accounting system in Google Sheets',
                 'description_ru' => "",
                 'description_en' => "",
                 'sort_order_id' => 0,

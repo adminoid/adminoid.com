@@ -19,7 +19,7 @@
                     <div class="ui segment block sixteen wide column" id="projecting">
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Projecting</h2>
+                                <h2 class="ui red header">Planning</h2>
 
                                 <p>To build ER-diagrams, flowcharts, brainstorm I usually use <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, my <a href="#brain" class="hover brain">mind</a> and walking back and forth.</p>
                             </div>

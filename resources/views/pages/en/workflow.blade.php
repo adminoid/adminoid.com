@@ -17,9 +17,9 @@
                      @mousemove="onHover"
                      @mouseleave="onLeave"
                      :style="{ transform: 'rotateY(' + widthAngle + 'deg)' + 'rotateX(' + heightAngle + 'deg)' }">
-                    <h2>Projecting</h2>
+                    <h2>Planning</h2>
                     <p>
-                        In order to make a nice brainstorm, I use mind maps. For designing databases - ER-diagrams.
+                        In order to brainstorm well, I use mind maps. For designing databases - ER-diagrams.
                     </p>
                     <p>
                         Here are some more examples (there are also some tabs):

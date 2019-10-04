@@ -106,25 +106,25 @@
             <li><strong>Creation of functional sites prototypes</strong>.
                 There are certain standards of usability and design in website development, that users are get used to.<br>
 
-                These standards are determined by the leaders of Internet business (social networks, search engines and other popular services). And this standards are reflected in popular css-frameworks with design, developed by world-class professionals. But any hasty innovation in design may negativity reflect in website conversion. That is why in modern Internet marketing any innovations go through split/multi tests.
+                These standards are determined by the leaders of Internet business (social networks, search engines and other popular services). And this standards are reflected in popular css-frameworks with design, developed by world-class professionals. But any hasty innovation in design may negatively reflect in website conversion. That is why in modern Internet marketing any innovations go through split/multi tests.
 
-                This wise to start your Internet project with minimal professional design, eg design by <a href="http://getbootstrap.com/">twitter bootstrap</a> team, concentrating on the convenience and structure of information presenting in order to be able to set more risky experiments with your own innovations in design, sizing (calibrating) them through multi/split testing in the future. By the way, I can organise it with the help of <a href="https://analytics.google.com/analytics/web/">google analytics</a>.
+                It is wise to start your Internet project with minimal professional design, eg design by the <a href="http://getbootstrap.com/">twitter bootstrap</a> team, concentrating on the convenience and structure of information presenting in order to be able to set riskier experiments with your own innovations in design, sizing (calibrating) them through multi/split testing in the future. By the way, I can organise it with the help of <a href="https://analytics.google.com/analytics/web/">google analytics</a>.
             </li>
 
-            <li><strong>Developing of online stores, integrated systems, portals and any other web apps.</strong> Though I myself accompany my own works, my projects are also attractive to many other good web-developers in rework and support. <br>
+            <li><strong>Development of online stores, integrated systems, portals and any other web apps.</strong> My products are easy to maintain. <br>
 
                 The reason is: <br>
                 <ul>
-                    <li>I use one of the most popular tools, which most of the programmers in the world work with, for example, I make backend in PHP with the help of <a href="https://laravel.com/">Laravel framework</a>, I use javascript framework <a href="https://vuejs.org/">Vue.js</a> as a framework for frontend and so on (see more details here - tools).</li>
+                    <li>I use one of the most popular tools, which most of the programmers in the world work with, for example, I make backend in PHP with the help of the <a href="https://laravel.com/">Laravel framework</a>, I use the javascript framework <a href="https://vuejs.org/">Vue.js</a> as a framework for frontend and so on (see more details here - tools).</li>
 
-                    <li>I coding according to generally accepted standards, comment and document it. I try not to reinvent the wheel, if there are time-tested solutions, then I just use them.</li>
+                    <li>I code according to generally accepted standards, comment and document it. I try not to reinvent the wheel, if there are time-tested solutions, then I just use them.</li>
 
                     <li>When it possible or necessary, I set PHP and Javascript tasks with tests (unit or functional) and then actualize (realize) them. Test Driven Development helps the third-party programmers make changes easily without damaging general project functionality. The unit tests also serve as visual documentation.</li>
                 </ul>
 
             </li>
 
-            <li><strong>Redoing an outdated web projects</strong> if it is too slow or too expensive in maintenance. In this case we take as a basis the structure and logic of the old one and on their basis develop a completely new site. Then data from old web app (images, data structures from database, old urls to save the weight of incoming links (SEO) etc.) are transferred to a new site.</li>
+            <li><strong>Redoing outdated web projects</strong> if it is too slow or too expensive in maintenance. In this case we take as a basis the structure and logic of the old one and on its basis develop a completely new site. Then data from old web app (images, data structures from database, old urls to save the weight of incoming links (SEO) etc.) are transferred to a new site.</li>
 
             <li><strong><a href="https://developers.google.com/apps-script/">Google Apps Script programming</a></strong>. Since in the past I worked a lot with online stores, where import/export/price lists processing tasks are always acute, most of my google apps works was done for Google Sheets.</li>
 
@@ -166,7 +166,7 @@
                                                      @touchstart="onHover">
                                                 <div class="text" @touchstart="onUnhover">
                                                     <p>
-                                                        Over the years of work (since June 2008) on the largest Russian freelance exchange FL.ru, I have only positive reviews and fully completed works (see <a href="/reviews">reviews</a>).
+                                                        Over the years of work (since June 2008) on the largest Russian freelance exchange FL.ru, I have only positive reviews and fully completed work (see <a href="/reviews">reviews</a>).
                                                         At the beginning of the journey, when I was inexperienced, the chance to make a mistake was still great, but I did not use it. Now I won’t know how to screw up my mind.
                                                     </p>
                                                 </div>

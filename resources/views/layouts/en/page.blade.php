@@ -286,7 +286,7 @@
               </a>
               <div class="item">
                 <button class="ui button" id="super" @click="toWrite" :class="{active: write}">
-                  Text me
+                  Message me
                 </button>
               </div>
             </div>

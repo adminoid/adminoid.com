@@ -63,7 +63,7 @@
             @endforeach
 
             <div class="sixteen wide column">
-                More than 80 works done since 2008 in my full portfolio (freelancing platform number one in Russia):
+                More than 80 jobs done since 2008 in my full portfolio (freelancing platform number one in Russia):
                 <br>
                 <a href="https://www.fl.ru/users/adminoid/">https://www.fl.ru/users/adminoid/</a> (<a href="https://translate.google.com/translate?sl=ru&tl=en&u=https%3A%2F%2Fwww.fl.ru%2Fusers%2Fadminoid%2F">Auto-translated version in English</a>)
             </div>
