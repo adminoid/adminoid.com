@@ -1,5 +1,3 @@
-# For compile semantic-ui staff
-
 > nvm use 10.16.2
 > npx gulp build
 

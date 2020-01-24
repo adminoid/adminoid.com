@@ -34,6 +34,17 @@
                                      @mouseenter="startZoom" @touchstart="startZoom"
                                      @mousemove="onZoom" @touchmove="onZoom"
                                      @mouseleave="stopZoom" @touchend="stopZoom">
+
+                                    <pre style="z-index: 100000; position: absolute; background: #fff; opacity: .7">
+
+                                        @{{ cursor }}
+
+                                        @{{ initialData.widthProportion }}
+
+                                        @{{ border }}
+
+                                    </pre>
+
                                     <img class="ui fluid image zoom"
                                          src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
                                          alt=""
