@@ -135,7 +135,15 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
             [
                 'name' => 'vue.js',
                 'icon' => 'static/img/adminoid/icons/tags/vue-js.png',
-            ]
+            ],
+            [
+                'name' => 'd3',
+                'icon' => 'static/img/adminoid/icons/tags/d3.png',
+            ],
+            [
+                'name' => 'lodash',
+                'icon' => 'static/img/adminoid/icons/tags/lodash.png',
+            ],
         ];
 
         foreach ($tagsData as $tagData) {
@@ -145,9 +153,29 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
         $portfolioData = [
 
             [
+                'slug' => 'mining-farms-monitoring',
+                'title_ru' => 'Мониторинг ферм майнинга криптовалют',
+                'title_en' => 'Cryptocurrency mining monitoring system',
+                'description_ru' => "-",
+                'description_en' => "-",
+                'sort_order_id' => '9',
+                'priority_level' => 'high',
+                'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6692568/monitoring-ferm-mayninga-kriptovalyut-vue_lodash_d3-2019/',
+                'link' => '',
+                'custom_date' => '2019',
+                'custom_face' => false,
+                'chunk_ru' => '',
+                'chunk_en' => '',
+                'images' => [
+                    'database/seeds/images/portfolio/rig/rigzilla.jpg',
+                ],
+                'tags' => ['javascript', 'd3', 'lodash', 'vue.js', 'twitter bootstrap', 'laravel'],
+            ],
+
+            [
                 'slug' => 'chat-bot-constructor',
                 'title_ru' => 'Конструктор чат ботов',
-                'title_en' => 'Chat bot constructor',
+                'title_en' => 'Chat-bots constructor',
                 'description_ru' => '
                 <p>Конструктор чат ботов. Drag&drop, динамическая отрисовка svg линий. <br>
                  Только Vue.js, lodash, typescript, без специальных библиотек. <br>
@@ -163,7 +191,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                  (login: mr@adminoid.com, password: 123). <br>
                  <p>Repository: <a href="https://github.com/adminoid/chat-constructor">https://github.com/adminoid/chat-constructor</a></p>
                 ',
-                'sort_order_id' => 9,
+                'sort_order_id' => '9',
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6653837/konstruktor-chat-botov-laravel_vue_lodash_svg-2019/',
                 'link' => 'https://cc.adminoid.com',
@@ -172,7 +200,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                 'chunk_ru' => 'chunks/ru/portfolios/cc',
                 'chunk_en' => 'chunks/en/portfolios/cc',
                 'images' => [],
-                'tags' => ['php', 'laravel', 'javascript', 'vue.js', 'twitter bootstrap']
+                'tags' => ['php', 'laravel', 'javascript', 'vue.js', 'twitter bootstrap', 'lodash']
             ],
 
             [

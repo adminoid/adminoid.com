@@ -286,7 +286,7 @@
               </a>
               <div class="item">
                 <button class="ui button" id="super" @click="toWrite" :class="{active: write}">
-                  Message me
+                  Text me
                 </button>
               </div>
             </div>
@@ -304,7 +304,7 @@
       <i class="close icon"></i>
       <h2 class="ui yellow header">
         <div class="content">
-          Waiting for your suggestion, bro
+          Waiting for your suggestion
         </div>
       </h2>
       <div class="content">
