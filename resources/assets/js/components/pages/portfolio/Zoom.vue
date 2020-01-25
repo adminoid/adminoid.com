@@ -38,7 +38,7 @@
 
         $image: {},
 
-        border: 100,
+        border: 150,
 
       }
     },
@@ -59,11 +59,8 @@
 
     methods: {
       makeStartUpData: function () {
-        // console.info('here');
-        // console.log(this.$el);
         this.$wrapper = $(this.$el);
         this.$image = this.$wrapper.find(this.selectors.image);
-        console.log(this.$image);
       },
 
       calculateSizesAndProportions: function () {
@@ -103,7 +100,7 @@
       left: function () {
         if (this.cursor.x) {
           return -(
-              this.cursor.x * this.initialData.widthProportion - this.cursor.x - this.border
+              this.cursor.x * this.initialData.widthProportion - this.cursor.x - this.border * 1.5
           )
         }
       },
@@ -111,7 +108,7 @@
       top: function () {
         if (this.cursor.y) {
           return -(
-              this.cursor.y * this.initialData.heightProportion - this.cursor.y - this.border
+              this.cursor.y * this.initialData.heightProportion - this.cursor.y - this.border * 1.5
           )
         }
       }

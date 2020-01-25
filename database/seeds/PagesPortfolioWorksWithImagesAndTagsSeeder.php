@@ -277,8 +277,8 @@ Implemented on laravel and vue.js. It's a simple, but extensible seo-friendly co
 </ul>
 <p>
 <strong>See demo version of admin panel:</strong> <a href='https://cms.adminoid.com/admin-panel/'>https://cms.adminoid.com/admin-panel/</a><br>
-<strong>Логин:</strong> admin@adminoid.com<br>
-<strong>Пароль:</strong> password
+<strong>Login:</strong> admin@adminoid.com<br>
+<strong>Password:</strong> password
 </p>
 <p><strong>Repository:</strong> <a href='https://github.com/adminoid/adminoid-cms'>https://github.com/adminoid/adminoid-cms</a></p>
                 ",
