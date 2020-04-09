@@ -59,14 +59,14 @@
                                             <text id="site-need"
                                                   font-family="RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
                                                   font-size="24" font-weight="normal" fill="#000000">
-                                                <tspan x="50" y="56">Need a</tspan>
-                                                <tspan x="50" y="84">web app?</tspan>
+                                                <tspan x="67" y="56">Need a</tspan>
+                                                <tspan x="55" y="84">web app?</tspan>
                                             </text>
                                             <text id="very-beautiful" style="visibility: hidden; opacity: 0;"
                                                   font-family="RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
                                                   font-size="24" font-weight="normal" fill="#000000">
-                                                <tspan x="45" y="56">Very</tspan>
-                                                <tspan x="45" y="84">beautiful</tspan>
+                                                <tspan x="83" y="53">Very</tspan>
+                                                <tspan x="61" y="82">beautiful</tspan>
                                             </text>
                                         </g>
                                     </g>

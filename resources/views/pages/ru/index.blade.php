@@ -56,16 +56,17 @@
                       <use id="Oval-3" stroke="#CD2E41" mask="url(#mask-clouds-6)"
                            stroke-width="4" fill="#FFFFFF"
                            stroke-dasharray="4" xlink:href="#path-clouds-5"></use>
-                      <text id="site-need" font-family="RobotoMono-Regular, Roboto Mono"
-                            font-size="24"
+                      <text id="site-need"
+                            font-family="RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif;"
+                              font-size="24"
                             font-weight="normal" fill="#000000">
-                        <tspan x="34" y="70">Сайт надо?</tspan>
+                        <tspan x="43" y="70">Сайт надо?</tspan>
                       </text>
-                      <text id="very-beautiful" style="visibility: hidden; opacity: 0;"
-                            font-family="RobotoMono-Regular, Roboto Mono"
+                      <text id="very-beautiful" style="visibility: hidden; opacity: 0;
+                            font-family: RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif;"
                             font-size="24" font-weight="normal" fill="#000000">
-                        <tspan x="69.9941406" y="56">Очень</tspan>
-                        <tspan x="48.390625" y="84">красивый</tspan>
+                        <tspan x="68" y="53">Очень</tspan>
+                        <tspan x="52" y="81">красивый</tspan>
                       </text>
                     </g>
                   </g>
