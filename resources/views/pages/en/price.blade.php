@@ -396,10 +396,10 @@
                            fill="#1254B0"
                            font-weight="bold" style="fill: rgb(18, 84, 176);">
                           <text id="hour" font-size="22">
-                            <tspan x="-15" y="22">Hour of</tspan>
+                            <tspan x="-9" y="22">Hour of</tspan>
                           </text>
                           <text id="work" font-size="19">
-                            <tspan x="7" y="40">work</tspan>
+                            <tspan x="8" y="40">work</tspan>
                           </text>
                         </g>
                       </g>

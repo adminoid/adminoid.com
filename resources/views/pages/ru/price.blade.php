@@ -393,7 +393,8 @@
                           </g>
                         </g>
                         <g id="work-text" transform="translate(50, 90)"
-                           font-family="RobotoMono-Bold, Roboto Mono" fill="#1254B0"
+                           font-family="RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
+                           fill="#1254B0"
                            font-weight="bold" style="fill: rgb(18, 84, 176);">
                           <text id="час" font-size="22">
                             <tspan x="10" y="22">час</tspan>
