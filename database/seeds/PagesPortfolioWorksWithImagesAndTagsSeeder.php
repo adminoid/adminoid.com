@@ -81,6 +81,10 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
         // Tags creation
         $tagsData = [
             [
+                'name' => 'node.js',
+                'icon' => 'static/img/adminoid/icons/tags/node.svg',
+            ],
+            [
                 'name' => 'lucidchart',
                 'icon' => 'static/img/adminoid/icons/tags/lucidchart.png',
             ],
@@ -114,7 +118,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
             ],
             [
                 'name' => 'laravel',
-                'icon' => 'static/img/adminoid/icons/tags/laravel.png',
+                'icon' => 'static/img/adminoid/icons/tags/laravel.svg',
             ],
             [
                 'name' => 'less',
@@ -134,7 +138,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
             ],
             [
                 'name' => 'vue.js',
-                'icon' => 'static/img/adminoid/icons/tags/vue-js.png',
+                'icon' => 'static/img/adminoid/icons/tags/vue.svg',
             ],
             [
                 'name' => 'd3',
@@ -153,12 +157,32 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
         $portfolioData = [
 
             [
+                'slug' => 'socket-messaging',
+                'title_ru' => 'Симтема оповещения на базе socket.io, Laravel и Vue.js',
+                'title_en' => 'Messaging system, based on  socket.io, Laravel and Vue.js',
+                'description_ru' => '<p>Система оповещения для сайта заказчика на базе socket.io, Laravel<br>
+                 и Vue.js с привадными индивидуальными каналами</p>',
+                'description_en' => '<p>Messaging system for customer site. Based on socket.io, Laravel and Vue.js<br>
+                 with private personal channels</p>',
+                'sort_order_id' => 11,
+                'priority_level' => 'high',
+                'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/7102606/simtema-opovescheniya-na-baze-socketio-laravel-i-vuejs/',
+                'link' => 'https://cc.adminoid.com',
+                'custom_date' => '2020',
+                'custom_face' => true,
+                'chunk_ru' => 'chunks/ru/portfolios/messaging',
+                'chunk_en' => 'chunks/en/portfolios/messaging',
+                'images' => [],
+                'tags' => ['php', 'laravel', 'javascript', 'vue.js', 'twitter bootstrap']
+            ],
+
+            [
                 'slug' => 'mining-farms-monitoring',
                 'title_ru' => 'Мониторинг ферм майнинга криптовалют',
                 'title_en' => 'Cryptocurrency mining monitoring system',
                 'description_ru' => "-",
                 'description_en' => "-",
-                'sort_order_id' => '9',
+                'sort_order_id' => 10,
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6692568/monitoring-ferm-mayninga-kriptovalyut-vue_lodash_d3-2019/',
                 'link' => '',
@@ -191,7 +215,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                  (login: mr@adminoid.com, password: 123). <br>
                  <p>Repository: <a href="https://github.com/adminoid/chat-constructor">https://github.com/adminoid/chat-constructor</a></p>
                 ',
-                'sort_order_id' => '9',
+                'sort_order_id' => 9,
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/6653837/konstruktor-chat-botov-laravel_vue_lodash_svg-2019/',
                 'link' => 'https://cc.adminoid.com',
