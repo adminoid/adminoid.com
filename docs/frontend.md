@@ -115,3 +115,14 @@ to `resources/views/layouts/ru/page.blade.php` file
 _Now disabled_:
 copy `node_modules/retinajs/dist/retina.less` to `semantic/src/definitions/pages/retina/retina.less`  
 Read: https://github.com/strues/retinajs
+
+## Gulp compilation works fine with
+```shell
+gulp -v
+CLI version: 2.3.0
+Local version: 3.9.1
+```
+```shell
+node -v
+v10.16.1
+```

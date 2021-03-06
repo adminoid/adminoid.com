@@ -1,9 +1,9 @@
 # TODO's
 - /Users/petja/PhpstormProjects/freelance/archive
   - hsnbrg
-    - come up with title and description
-    - add to database
-    - add to github
+    + come up with title and description
+    + add to database
+    + add to github
   - incryptoexchange
     - can remove folder /Users/petja/PhpstormProjects/freelance/archive/incryptoexchange/inc
     - create two repos without layout folder

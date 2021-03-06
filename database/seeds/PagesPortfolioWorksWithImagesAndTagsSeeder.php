@@ -81,6 +81,10 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
         // Tags creation
         $tagsData = [
             [
+                'name' => 'sass',
+                'icon' => 'static/img/adminoid/icons/tags/sass.svg',
+            ],
+            [
                 'name' => 'node.js',
                 'icon' => 'static/img/adminoid/icons/tags/node.svg',
             ],
@@ -164,7 +168,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                  и Vue.js с привадными индивидуальными каналами</p>',
                 'description_en' => '<p>Messaging system for customer site. Based on socket.io, Laravel and Vue.js<br>
                  with private personal channels</p>',
-                'sort_order_id' => 11,
+                'sort_order_id' => 12,
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/7102606/simtema-opovescheniya-na-baze-socketio-laravel-i-vuejs/',
                 'link' => '',
@@ -175,6 +179,27 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                 'images' => [],
                 'tags' => ['php', 'laravel', 'javascript', 'vue.js', 'twitter bootstrap']
             ],
+
+            [
+                'slug' => 'btc-rupee',
+                'title_ru' => 'Обменник биткоинов на индийские рупии',
+                'title_en' => 'Bitcoin to Indian Rupee exchanger',
+                'description_ru' => '',
+                'description_en' => '',
+                'sort_order_id' => 11,
+                'priority_level' => 'high',
+                'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/7102756/chestnyiy-obmennik-bitkoinov-na-indiyskie-rupii/',
+                'link' => '',
+                'custom_date' => '2019',
+                'custom_face' => false,
+                'chunk_ru' => '',
+                'chunk_en' => '',
+                'images' => [
+                    'database/seeds/images/portfolio/btc-rupee/screen.jpg',
+                ],
+                'tags' => ['node.js', 'javascript', 'vue.js', 'sass']
+            ],
+
 
             [
                 'slug' => 'mining-farms-monitoring',
@@ -250,8 +275,6 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                 ],
                 'tags' => ['php', 'laravel', 'javascript', 'vue.js', 'twitter bootstrap']
             ],
-
-
 
             [
                 'slug' => 'adminoid-cms',
