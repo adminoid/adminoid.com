@@ -167,7 +167,7 @@ class PagesPortfolioWorksWithImagesAndTagsSeeder extends Seeder
                 'sort_order_id' => 11,
                 'priority_level' => 'high',
                 'external_url' => 'https://www.fl.ru/users/adminoid/portfolio/7102606/simtema-opovescheniya-na-baze-socketio-laravel-i-vuejs/',
-                'link' => 'https://cc.adminoid.com',
+                'link' => '',
                 'custom_date' => '2020',
                 'custom_face' => true,
                 'chunk_ru' => 'chunks/ru/portfolios/messaging',
