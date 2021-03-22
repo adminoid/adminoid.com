@@ -43,13 +43,11 @@
       }
     },
     created: function () {
-//      this.calculateSizesAndProportions()
       window.addEventListener('resize', this.calculateSizesAndProportions);
     },
 
     mounted: function () {
       this.makeStartUpData();
-      // setTimeout(this.calculateSizesAndProportions, 500);
       this.calculateSizesAndProportions();
     },
 

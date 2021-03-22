@@ -13,7 +13,7 @@
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>Your browser does not support this, try viewing it on YouTube: YOUR URL</iframe>
             </center>
-            <script>
+            <script type="application/javascript">
                 window.addEventListener("load", playerSizer);
                 window.addEventListener("resize", playerSizer);
                 function playerSizer() {
