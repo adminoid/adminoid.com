@@ -348,7 +348,7 @@
             </div>
           </div>
         </div>
-        <div class="seven wide column right aligned">
+        <div class="seven wide column right aligned logo-img">
           <img src="/static/img/adminoid/footer/footer-logo.svg" alt="">
         </div>
       </div>

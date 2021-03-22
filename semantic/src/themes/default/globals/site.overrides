@@ -45,6 +45,13 @@ li {
   width: 100%;
   /* Set the fixed height of the footer here */
   font-family: @headerFont;
+  @media only screen and (max-width : @largestMobileScreen) {
+    .logo-img {
+      img {
+        width: 150px;
+      }
+    }
+  }
   &.pusher {
     min-height: inherit !important;
   }
@@ -73,7 +80,8 @@ li {
   }
   @media only screen and (max-width : @largestMobileScreen) {
     .footer-copy {
-      font-size: 12px;
+      font-size: 10px;
+      line-height: 16px;
       a.en-link {
         color: #fff;
         display: block;

@@ -15,7 +15,7 @@
         <h1 class="ui green header">{{ $page->title_en }}</h1>
         <div class="ui stackable two tablet column grid" id="intro">
             <div class="six wide large screen seven wide computer sixteen wide tablet column">
-                <img src="/static/img/adminoid/pages/main/ava-circle.jpg" data-rjs="2" alt="">
+                <img src="/static/img/adminoid/pages/main/ava-circle.jpg" class="ava" data-rjs="2" alt="">
                 <clouds inline-template>
                     <svg id="clouds" width="189px" height="158px" viewBox="0 0 189 158" version="1.1"
                          style="transform:rotateZ(360deg) translateZ(0);will-change: transform;"

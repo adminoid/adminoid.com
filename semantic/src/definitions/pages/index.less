@@ -12,10 +12,28 @@
     }
     .column {
       position: relative;
+      img.ava {
+        width: 261px;
+        height: 254px;
+      }
+      @media only screen and (max-width : 400px) {
+        img.ava {
+          width: 190px;
+          height: 185px;
+        }
+      }
       #clouds {
         position: absolute;
         top: 17px;
         left: 195px;
+      }
+      @media only screen and (max-width : 400px) {
+        #clouds {
+          width: 150px;
+          position: absolute;
+          top: -7px;
+          left: 138px;
+        }
       }
     }
   }
