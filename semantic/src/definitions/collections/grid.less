@@ -69,10 +69,11 @@
   padding-right: (@gutterWidth / 2);
   vertical-align: top;
 }
-
-.ui.grid > * {
-  padding-left: (@gutterWidth / 2);
-  padding-right: (@gutterWidth / 2);
+@media (min-width: @largestMobileScreen) {
+  .ui.grid > * {
+    padding-left: (@gutterWidth / 2);
+    padding-right: (@gutterWidth / 2);
+  }
 }
 
 /*-------------------
