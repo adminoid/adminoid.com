@@ -5,36 +5,40 @@
             <div class="right floated meta yellow"><i
                         class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}</div>
         </div>
-        <zoom class="content" inline-template>
-            <div class="content window fix" id="ikmed-prices"
-                 @mouseenter="startZoom" @touchstart="startZoom"
-                 @mousemove="onZoom" @touchmove="onZoom"
-                 @mouseleave="stopZoom" @touchend="stopZoom"
-            >
-                <img class="ui fluid image zoom"
-                     src="/static/img/adminoid/pages/portfolio/presentations/ikmed-prices/chrome.jpg"
-                     alt=""
-                     :style="{ left: left + 'px', top: top + 'px' }">
-                <img class="ikmed-logo abs" src="/static/img/adminoid/pages/portfolio/presentations/ikmed-logo-big.png"
-                     alt="">
+
+        <zoom inline-template>
+            <div class="window content"
+                 ref="container"
+                 @mouseenter="startZoom"
+                 @mousemove="onZoom"
+                 @mouseleave="stopZoom">
+                <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
+                     alt="{{ $portfolioPage->pageable->title_en }}"
+                     ref="image"
+                     :class="imageClasses"
+                     :style="imageStyle">
             </div>
         </zoom>
+
         <div class="extra content">
-                            <span class="right aligned right floated links">
-                                       @if($portfolioPage->pageable->link)
-                                    <a href="{{ $portfolioPage->pageable->link }}"><i
-                                                class="linkify icon"></i>{{ $portfolioPage->pageable->link }}</a>
-                                    <br>
-                                @endif
-                                @if($portfolioPage->pageable->external_url)
-                                    <a href="{{ $portfolioPage->pageable->external_url }}" target="_blank"><i
-                                                class="external icon"></i>{{ parse_url($portfolioPage->pageable->external_url)['host'] }}</a>
-                                    <br>
-                                @endif
-                    </span>
+            <span class="right aligned right floated links">
+                @if($portfolioPage->pageable->link)
+                    <a href="{{ $portfolioPage->pageable->link }}"><i
+                                class="linkify icon"></i>{{ $portfolioPage->pageable->link }}</a>
+                    <br>
+                @endif
+                @if($portfolioPage->pageable->external_url)
+                    <a href="{{ $portfolioPage->pageable->external_url }}" target="_blank"><i
+                                class="external icon"></i>{{ parse_url($portfolioPage->pageable->external_url)['host'] }}</a>
+                    <br>
+                @endif
+            </span>
             @foreach($portfolioPage->tags as $tag)
-                <a class="ui image label original"><img src="/{{ $tag->icon }}">
-                    {{ $tag->name }}</a>
+                <a class="ui image label original">
+                    <img src="/{{ $tag->icon }}"
+                         alt="{{ $tag->name }}">
+                    {{ $tag->name }}
+                </a>
             @endforeach
         </div>
     </div>

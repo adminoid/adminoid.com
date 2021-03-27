@@ -29,20 +29,32 @@
                                 <div class="right floated meta yellow"><i
                                         class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}</div>
                             </div>
-                            <zoom class="content" inline-template>
-                                <div class="content window fix"
-                                     @mouseenter="startZoom" @touchstart="startZoom"
-                                     @mousemove="onZoom" @touchmove="onZoom"
-                                     @mouseleave="stopZoom" @touchend="stopZoom">
-                                    <img class="ui fluid image zoom"
-                                         src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
-                                         alt=""
-                                         :style="{ left: left + 'px', top: top + 'px' }">
+
+                            <zoom inline-template>
+                                <div class="window content"
+                                     ref="container"
+                                     :style="containerStyle"
+                                     @mouseenter="startZoom"
+                                     @mousemove="onZoom"
+                                     @mouseleave="stopZoom"
+                                >
+
+                                    <pre style="background:white;position:absolute;left:10px;top:10px;color:saddlebrown;z-index:1">
+                                        @{{ left }} / @{{ top }}
+                                    </pre>
+
+                                    <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
+                                         alt="{{ $portfolioPage->pageable->title_en }}"
+                                         ref="image"
+                                         class="zoom"
+                                         :class="imageClasses"
+                                         :style="imageStyle">
                                 </div>
                             </zoom>
+
                             <div class="extra content">
                                 <span class="right aligned right floated links">
-                                       @if($portfolioPage->pageable->link)
+                                   @if($portfolioPage->pageable->link)
                                         <a href="{{ $portfolioPage->pageable->link }}"><i class="linkify icon"></i>{{ $portfolioPage->pageable->link }}</a>
                                         <br>
                                     @endif
@@ -53,8 +65,11 @@
                                 </span>
 
                                 @foreach($portfolioPage->tags as $tag)
-                                    <a class="ui image label original"><img src="/{{ $tag->icon }}">
-                                        {{ $tag->name }}</a>
+                                    <a class="ui image label original">
+                                        <img src="/{{ $tag->icon }}"
+                                             alt="{{ $tag->name }}">
+                                        {{ $tag->name }}
+                                    </a>
                                 @endforeach
                             </div>
                         </div>

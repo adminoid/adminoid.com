@@ -33,17 +33,21 @@
                                 <div class="right floated meta yellow"><i
                                             class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}</div>
                             </div>
-                            <zoom class="content" inline-template>
-                                <div class="content window fix"
-                                     @mouseenter="startZoom" @touchstart="startZoom"
-                                     @mousemove="onZoom" @touchmove="onZoom"
-                                     @mouseleave="stopZoom" @touchend="stopZoom">
-                                    <img class="ui fluid image zoom"
-                                         src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
-                                         alt=""
-                                         :style="{ left: left + 'px', top: top + 'px' }">
+
+                            <zoom inline-template>
+                                <div class="window content"
+                                     ref="container"
+                                     @mouseenter="startZoom"
+                                     @mousemove="onZoom"
+                                     @mouseleave="stopZoom">
+                                    <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
+                                         alt="{{ $portfolioPage->pageable->title_en }}"
+                                         ref="image"
+                                         :class="imageClasses"
+                                         :style="imageStyle">
                                 </div>
                             </zoom>
+
                             <div class="extra content">
                                 <span class="right aligned right floated links">
                                        @if($portfolioPage->pageable->link)

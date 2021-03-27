@@ -21,3 +21,10 @@
 - fix main page layout
 - fix footer layout
 - fix zoom component on portfolio page
+
+I have sizes of image and container and image/container proportions.
+I need to set container height based on it width and height proportion.
+Then get the indicative side.
+If indicative is width:
+  I have fixed width of container and unknown height of it.
+  I need to find width/height proportion of image and apply it to define container height 

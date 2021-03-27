@@ -159,7 +159,7 @@
                                         <div class="content">
                                             <div class="center">
                                                 <div class="ui top left attached label">
-                                                    <h3 class="ui green header" @touchstart="onUnhover">Perfectly fine</h3>
+                                                    <h3 class="ui green header" @touchstart="onUnhover">Strong and stable</h3>
                                                 </div>
                                                 <img class="ui fluid rounded image" src="static/img/adminoid/pages/main/reliability.jpg"
                                                      @mouseenter="onHover" @mouseleave="onUnhover"
