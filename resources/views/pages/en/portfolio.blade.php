@@ -34,15 +34,9 @@
                                 <div class="window content"
                                      ref="container"
                                      :style="containerStyle"
-                                     @mouseenter="startZoom"
                                      @mousemove="onZoom"
                                      @mouseleave="stopZoom"
                                 >
-
-                                    <pre style="background:white;position:absolute;left:10px;top:10px;color:saddlebrown;z-index:1">
-                                        @{{ left }} / @{{ top }}
-                                    </pre>
-
                                     <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
                                          alt="{{ $portfolioPage->pageable->title_en }}"
                                          ref="image"

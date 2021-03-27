@@ -9,12 +9,13 @@
         <zoom inline-template>
             <div class="window content"
                  ref="container"
-                 @mouseenter="startZoom"
+                 :style="containerStyle"
                  @mousemove="onZoom"
                  @mouseleave="stopZoom">
                 <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
                      alt="{{ $portfolioPage->pageable->title_en }}"
                      ref="image"
+                     class="zoom"
                      :class="imageClasses"
                      :style="imageStyle">
             </div>

@@ -37,7 +37,6 @@
                             <zoom inline-template>
                                 <div class="window content"
                                      ref="container"
-                                     @mouseenter="startZoom"
                                      @mousemove="onZoom"
                                      @mouseleave="stopZoom">
                                     <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"

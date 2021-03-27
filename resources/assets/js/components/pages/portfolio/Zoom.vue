@@ -45,43 +45,30 @@
         this.image.width = this.$refs.image.naturalWidth + this.padding * 2
         this.image.height = this.$refs.image.naturalHeight + this.padding * 2
         this.proportion = this.image.width / this.image.height
-
         this.container.width = this.$refs.container.clientWidth
         this.container.height = Math.round(this.container.width / this.proportion)
-
-        console.group('--calculateSizesAndProportions--')
-        console.log(this.image.width, this.image.height)
-        console.log(this.container.width, this.container.height)
-        console.groupEnd()
-
-      },
-
-      startZoom: function() {
-        this.imagePosition = 'absolute'
-        this.zoomStopped = false
       },
 
       onZoom: function(e) {
-        this.calculateCursorPosition(e)
+        if (!("ontouchstart" in document.documentElement)) {
+          this.imagePosition = 'absolute'
+          this.zoomStopped = false
+
+          let xPos = Math.abs(window.pageXOffset - e.pageX)
+              - this.$refs.container.getBoundingClientRect().left
+          let yPos = Math.abs(window.pageYOffset - e.pageY)
+              - this.$refs.container.getBoundingClientRect().top
+
+          this.cursor.x = (xPos > 0) ? xPos : 0
+          this.cursor.y = (yPos > 0) ? yPos : 0
+        }
       },
 
       stopZoom: function() {
-
-        console.info('stopZoom')
-
-        this.imagePosition = 'static'
-        this.zoomStopped = true
-      },
-
-      calculateCursorPosition: function(e) {
-        let xPos = Math.abs(window.pageXOffset - e.pageX)
-            - this.$refs.container.getBoundingClientRect().left
-        let yPos = Math.abs(window.pageYOffset - e.pageY)
-            - this.$refs.container.getBoundingClientRect().top
-
-        this.cursor.x = (xPos > 0) ? xPos : 0
-        this.cursor.y = (yPos > 0) ? yPos : 0
-
+        if (!("ontouchstart" in document.documentElement)) {
+          this.imagePosition = 'static'
+          this.zoomStopped = true
+        }
       },
 
     },
