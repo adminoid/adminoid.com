@@ -11,8 +11,7 @@
                  ref="container"
                  :style="containerStyle"
                  @mousemove="onZoom"
-                 @mouseleave="stopZoom"
-            >
+                 @mouseleave="stopZoom">
                 <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
                      alt="{{ $portfolioPage->pageable->title_en }}"
                      ref="image"

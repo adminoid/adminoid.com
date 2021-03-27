@@ -28,3 +28,6 @@ Then get the indicative side.
 If indicative is width:
   I have fixed width of container and unknown height of it.
   I need to find width/height proportion of image and apply it to define container height 
+
+- fix yandex-map in portfolio on mobile screen
+- fix blade template on ru version
