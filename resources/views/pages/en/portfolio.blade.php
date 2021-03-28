@@ -36,13 +36,14 @@
                                      :style="containerStyle"
                                      @mousemove="onZoom"
                                      @mouseleave="stopZoom"
+                                     @touchstart="onTap"
                                 >
                                     <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
                                          alt="{{ $portfolioPage->pageable->title_en }}"
+                                         class="ui fluid image"
                                          ref="image"
-                                         class="zoom"
-                                         :class="imageClasses"
-                                         :style="imageStyle">
+                                         :style="imageStyle"
+                                    >
                                 </div>
                             </zoom>
 
