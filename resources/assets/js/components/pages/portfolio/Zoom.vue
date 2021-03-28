@@ -138,7 +138,7 @@ export default {
     },
 
     onTap: function (e) {
-      if (this.touch) {
+      if (!this.locked && this.touch) {
         this.active = !this.active
         this.updateCursorPosition(e)
         this.$nextTick(_ => {
