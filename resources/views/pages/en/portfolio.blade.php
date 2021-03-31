@@ -36,7 +36,8 @@
                                      :style="containerStyle"
                                      @mousemove="onZoom"
                                      @mouseleave="stopZoom"
-                                     @touchstart="onTap"
+                                     @touchstart="onTouchStart"
+                                     @touchend="onTouchEnd"
                                 >
                                     <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
                                          alt="{{ $portfolioPage->pageable->title_en }}"

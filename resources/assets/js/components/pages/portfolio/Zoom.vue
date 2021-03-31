@@ -5,6 +5,19 @@ const ImageActiveStyle = 'max-width:none;width:auto;' // remove [ui fluid image]
 export default {
   data: function() {
     return {
+      touches: {
+        start: {
+          x: 0,
+          y: 0,
+        },
+        stop: {
+          x: 0,
+          y: 0,
+        },
+        time: {
+          start: 0,
+        },
+      },
       touch: false,
       active: false,
       container: {
@@ -111,7 +124,7 @@ export default {
 
     updateCursorPosition: function (e) {
       let xPos, yPos
-      if (this.touch) {
+      if (this.touch && !this.active) {
         xPos = Math.abs(e.touches[0].clientX - this.$refs.container.getBoundingClientRect().left)
         yPos = Math.abs(e.touches[0].clientY - this.$refs.container.getBoundingClientRect().top)
       } else {
@@ -137,17 +150,35 @@ export default {
       }
     },
 
-    onTap: function (e) {
+    onTouchStart: function (e) {
       if (!this.locked && this.touch) {
-        this.active = !this.active
+        if (!this.active) {
+          this.touches.start.x = this.cursor.x
+          this.touches.start.y = this.cursor.y
+          this.touches.stop.x = this.cursor.x
+          this.touches.stop.y = this.cursor.y
+          this.touches.time.start = new Date()
+          this.updateCursorPosition(e)
+        } else {
+          this.active = false
+        }
+      }
+    },
+
+    onTouchEnd: function (e) {
+      const diffX = Math.abs(this.touches.start.x - this.cursor.x)
+      const diffY = Math.abs(this.touches.start.y - this.cursor.y)
+      const diffTime = new Date() - this.touches.time.start
+      const isTap = ((diffX > 20 || diffY > 20) && diffTime < 100)
+      if (isTap && !this.active && !this.locked) {
+        this.active = true
         this.updateCursorPosition(e)
         this.$nextTick(_ => {
           this.$refs.container.scrollLeft = this.leftScroll
           this.$refs.container.scrollTop = this.topScroll
         })
       }
-    },
-
+    }
   },
 
 }
