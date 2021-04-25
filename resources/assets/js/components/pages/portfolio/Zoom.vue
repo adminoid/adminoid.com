@@ -73,8 +73,7 @@ export default {
         return (this.leftFactor > 0 || this.topFactor > 0) ?
             `${ImageActiveStyle}position:absolute;left:${this.leftPosition}px;top:${this.topPosition}px;`
             : ''
-      }
-      else {
+      } else {
         return (this.active) ? ImageActiveStyle : ''
       }
     },
@@ -124,7 +123,7 @@ export default {
 
     updateCursorPosition: function (e) {
       let xPos, yPos
-      if (this.touch && !this.active) {
+      if (e.touches.length > 0 && this.touch && !this.active) {
         xPos = Math.abs(e.touches[0].clientX - this.$refs.container.getBoundingClientRect().left)
         yPos = Math.abs(e.touches[0].clientY - this.$refs.container.getBoundingClientRect().top)
       } else {
@@ -152,31 +151,35 @@ export default {
 
     onTouchStart: function (e) {
       if (!this.locked && this.touch) {
+        this.touches.time.start = new Date()
         if (!this.active) {
+          this.updateCursorPosition(e)
           this.touches.start.x = this.cursor.x
           this.touches.start.y = this.cursor.y
-          this.touches.stop.x = this.cursor.x
-          this.touches.stop.y = this.cursor.y
-          this.touches.time.start = new Date()
-          this.updateCursorPosition(e)
-        } else {
-          this.active = false
         }
+      // else {
+      //     this.active = false
+      //   }
       }
     },
 
     onTouchEnd: function (e) {
+      this.updateCursorPosition(e)
       const diffX = Math.abs(this.touches.start.x - this.cursor.x)
       const diffY = Math.abs(this.touches.start.y - this.cursor.y)
       const diffTime = new Date() - this.touches.time.start
       const isTap = ((diffX > 20 || diffY > 20) && diffTime < 100)
+      console.info(isTap)
       if (isTap && !this.active && !this.locked) {
         this.active = true
-        this.updateCursorPosition(e)
+        console.log(this.leftScroll, this.topScroll)
         this.$nextTick(_ => {
+          console.info('to scroll')
           this.$refs.container.scrollLeft = this.leftScroll
           this.$refs.container.scrollTop = this.topScroll
         })
+      } else if (isTap && this.active) {
+        this.active = false
       }
     }
   },

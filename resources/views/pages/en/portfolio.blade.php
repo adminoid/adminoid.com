@@ -26,8 +26,10 @@
                         <div class="ui card">
                             <div class="content">
                                 <h3 class="left floated">{{ $portfolioPage->pageable->title_en }}</h3>
-                                <div class="right floated meta yellow"><i
-                                        class="calendar icon"></i>{{ $portfolioPage->pageable->custom_date }}</div>
+                                <div class="right floated meta yellow">
+                                    <i class="calendar icon"></i>
+                                    {{ $portfolioPage->pageable->custom_date }}
+                                </div>
                             </div>
 
                             <zoom inline-template>
@@ -50,7 +52,7 @@
 
                             <div class="extra content">
                                 <span class="right aligned right floated links">
-                                   @if($portfolioPage->pageable->link)
+                                    @if($portfolioPage->pageable->link)
                                         <a href="{{ $portfolioPage->pageable->link }}"><i class="linkify icon"></i>{{ $portfolioPage->pageable->link }}</a>
                                         <br>
                                     @endif

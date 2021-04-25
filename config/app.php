@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'adminoid.com'),
 
     /*
     |--------------------------------------------------------------------------
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://adminoid.ru'),
+    'url' => env('APP_URL', 'https://adminoid.com'),
 
     /*
     |--------------------------------------------------------------------------
