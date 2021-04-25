@@ -123,9 +123,9 @@ export default {
 
     updateCursorPosition: function (e) {
       let xPos, yPos
-      if (e.touches.length > 0 && this.touch && !this.active) {
-        xPos = Math.abs(e.touches[0].clientX - this.$refs.container.getBoundingClientRect().left)
-        yPos = Math.abs(e.touches[0].clientY - this.$refs.container.getBoundingClientRect().top)
+      if (e.changedTouches.length > 0 && this.touch && !this.active) {
+        xPos = Math.abs(e.changedTouches[0].clientX - this.$refs.container.getBoundingClientRect().left)
+        yPos = Math.abs(e.changedTouches[0].clientY - this.$refs.container.getBoundingClientRect().top)
       } else {
         xPos = Math.abs(window.pageXOffset - e.pageX)
             - this.$refs.container.getBoundingClientRect().left
@@ -152,14 +152,13 @@ export default {
     onTouchStart: function (e) {
       if (!this.locked && this.touch) {
         this.touches.time.start = new Date()
+        this.touches.start.x = 0
+        this.touches.start.y = 0
+        this.updateCursorPosition(e)
         if (!this.active) {
-          this.updateCursorPosition(e)
           this.touches.start.x = this.cursor.x
           this.touches.start.y = this.cursor.y
         }
-      // else {
-      //     this.active = false
-      //   }
       }
     },
 
@@ -168,13 +167,10 @@ export default {
       const diffX = Math.abs(this.touches.start.x - this.cursor.x)
       const diffY = Math.abs(this.touches.start.y - this.cursor.y)
       const diffTime = new Date() - this.touches.time.start
-      const isTap = ((diffX > 20 || diffY > 20) && diffTime < 100)
-      console.info(isTap)
+      const isTap = (diffX < 20 || diffY < 20) && diffTime < 100
       if (isTap && !this.active && !this.locked) {
         this.active = true
-        console.log(this.leftScroll, this.topScroll)
         this.$nextTick(_ => {
-          console.info('to scroll')
           this.$refs.container.scrollLeft = this.leftScroll
           this.$refs.container.scrollTop = this.topScroll
         })
