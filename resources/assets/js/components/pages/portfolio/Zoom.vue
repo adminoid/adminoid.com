@@ -123,7 +123,7 @@ export default {
 
     updateCursorPosition: function (e) {
       let xPos, yPos
-      if (e.changedTouches.length > 0 && this.touch && !this.active) {
+      if (this.touch && !this.active && e.changedTouches.length > 0) {
         xPos = Math.abs(e.changedTouches[0].clientX - this.$refs.container.getBoundingClientRect().left)
         yPos = Math.abs(e.changedTouches[0].clientY - this.$refs.container.getBoundingClientRect().top)
       } else {
