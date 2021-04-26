@@ -41,50 +41,91 @@
         &.right {
           right: -9em;
         }
+        @media only screen and (max-width: (@tabletBreakpoint - 1)) {
+          &.left {
+            left: -0.2em;
+          }
+          &.right {
+            right: -0.2em;
+          }
+        }
+        @media (max-width: 460px) {
+          &.left {
+            left: -3em;
+          }
+          &.right {
+            right: -3em;
+          }
+        }
       }
     }
     #papers {
+      margin-top: 15px;
       position: relative;
       .one-thousand-papers {
-        position: absolute;
-        top: 1em;
-        left: 4.7em;
-        @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
-          left: 1.5em;
-        }
-        @media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1)) {
-          left: 1.2em;
+        //position: absolute;
+        //top: 1em;
+        //left: 4.7em;
+        //@media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+        //  left: 1.5em;
+        //}
+        //@media only screen and (min-width: @tabletBreakpoint) and (max-width: (@computerBreakpoint - 1)) {
+        //  left: 1.2em;
+        //}
+        height: 210px;
+        width: 424px;
+        margin: 0 auto;
+        @media (max-width: 451px) {
+          height: 168px;
+          width: 329px;
         }
         .paper {
-          position: absolute;
-          &.front {
-            top: 0;
-            left: 0;
-          }
           &.back {
-            top: 2em;
-            left: 2em;
+            position: relative;
+          }
+          &.front {
+            position: absolute;
+            top: 3em;
+            left: 3em;
           }
           img {
-            /* thousand-paper-front: */
-            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.50);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+            width: 377px;
+            height: 161px;
+            @media(max-width: 450px) {
+              width: 282px;
+              height: 120px;
+            }
           }
         }
       }
     }
-    #equal-sign {
+    #equal-sign__wrapper {
       font-size: 6em;
       color: @red;
       padding-top: 1.3em;
-      @media only screen and (min-width: @largeMonitorBreakpoint) {
-        padding-left: 0.2em;
+      @media (min-width: @largeMonitorBreakpoint) {
+        padding-left: 1.1em;
       }
-      @media only screen and (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
-        padding-left: 0.3em;
+      @media (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+        //padding-left: 0.3em;
+        padding-left: 1.1em;
+      }
+      #equal-sign__sign {
+        @media (max-width: @tabletBreakpoint - 1) {
+          text-align: center!important;
+        }
       }
     }
     #clocks {
       padding-top: 3em;
+      #clocks__wrapper {
+        text-align: center;
+        margin-top: 40px;
+        @media (min-width: 768px) {
+          margin-top: 12px;
+        }
+      }
     }
   }
   .notice {

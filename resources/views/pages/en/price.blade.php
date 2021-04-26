@@ -18,15 +18,8 @@
       <div class="ten wide tablet eight wide computer column">
         <div class="info ui centered grid">
           <div class="seven wide column price-description">
-                            <span class="mobile hidden">
-                                70 bucks
-                            </span>
-            <h2 class="ui header mobile only blue"><img src="/static/img/adminoid/icons/bucks.png"
-                                                        alt="70 bucks">
-              70 bucks<sup>*</sup> =
-              <img src="/static/img/adminoid/icons/clock.png"
-                   alt="image of one hour of work"> 1 hour of work</h2>
-            <div class="clamp left mobile hidden">
+            70 bucks
+            <div class="clamp left">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>left-clamp</title>
@@ -51,7 +44,7 @@
                 </g>
               </svg>
             </div>
-            <div class="clamp right mobile hidden">
+            <div class="clamp right">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>right-clamp</title>
@@ -80,30 +73,30 @@
           </div>
         </div>
         <div id="papers">
-          <div class="one-thousand-papers mobile hidden">
+          <div class="one-thousand-papers">
             <div class="paper back">
               <img src="/static/img/adminoid/pages/price/twenty-bucks.jpg" data-rjs="2"
                    alt="Banknote">
-            </div>
-            <div class="paper front">
-              <img src="/static/img/adminoid/pages/price/fifty-bucks.jpg" data-rjs="2"
-                   alt="Banknote">
+                <div class="paper front">
+                    <img src="/static/img/adminoid/pages/price/fifty-bucks.jpg" data-rjs="2"
+                         alt="Banknote">
+                </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="two wide column mobile hidden" id="equal-sign">
+      <div class="two wide column" id="equal-sign__wrapper">
         <div class="ui centered grid">
-          <div class="column">
+          <div id="equal-sign__sign">
             =
           </div>
         </div>
       </div>
 
-      <div class="four wide tablet six wide computer column mobile hidden" id="clocks">
+      <div class="four wide tablet six wide computer column" id="clocks">
         <div class="ui centered grid">
-          <div class="column">
+          <div id="clocks__wrapper">
             <clock inline-template>
               <svg id="clock" width="163px" height="163px" viewBox="0 0 163 163" version="1.1"
                    @mouseover="onHover" @mouseleave="onLeave"

@@ -78,7 +78,13 @@ If indicative is width:
         - image change style [position: static || absolute]
     - true
         - container change style [overflow: hidden || scrollable]
-          
+
+# Next
+- eye to touch
+    - may be get coordinates of touch event
+    - bind touch event
+- clock on price page move to mobile version
+
 
 
 
