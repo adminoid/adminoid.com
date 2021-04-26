@@ -40,10 +40,11 @@
                                      :style="containerStyle"
                                      @mousemove="onZoom"
                                      @mouseleave="stopZoom"
-                                     @touchstart="onTap"
+                                     @touchstart="onTouchStart"
+                                     @touchend="onTouchEnd"
                                 >
                                     <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
-                                         alt="{{ $portfolioPage->pageable->title_en }}"
+                                         alt="{{ $portfolioPage->pageable->title_ru }}"
                                          class="zoom ui fluid image"
                                          ref="image"
                                          :style="imageStyle"
@@ -53,19 +54,22 @@
 
                             <div class="extra content">
                                 <span class="right aligned right floated links">
-                                       @if($portfolioPage->pageable->link)
-                                         <a href="{{ $portfolioPage->pageable->link }}"><i class="linkify icon"></i>{{ $portfolioPage->pageable->link }}</a>
-                                         <br>
-                                       @endif
-                                       @if($portfolioPage->pageable->external_url)
-                                           <a href="{{ $portfolioPage->pageable->external_url }}" target="_blank"><i class="external icon"></i>{{ $portfolioPage->pageable->external_url }}</a>
-                                           <br>
-                                       @endif
+                                    @if($portfolioPage->pageable->link)
+                                        <a href="{{ $portfolioPage->pageable->link }}"><i class="linkify icon"></i>{{ $portfolioPage->pageable->link }}</a>
+                                        <br>
+                                    @endif
+                                    @if($portfolioPage->pageable->external_url)
+                                        <a href="{{ $portfolioPage->pageable->external_url }}" target="_blank"><i class="external icon"></i>{{ parse_url($portfolioPage->pageable->external_url)['host'] }}</a>
+                                        <br>
+                                    @endif
                                 </span>
 
                                 @foreach($portfolioPage->tags as $tag)
-                                    <a class="ui image label original"><img src="/{{ $tag->icon }}">
-                                        {{ $tag->name }}</a>
+                                    <a class="ui image label original">
+                                        <img src="/{{ $tag->icon }}"
+                                             alt="{{ $tag->name }}">
+                                        {{ $tag->name }}
+                                    </a>
                                 @endforeach
                             </div>
                         </div>

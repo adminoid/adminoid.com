@@ -12,7 +12,8 @@
                  :style="containerStyle"
                  @mousemove="onZoom"
                  @mouseleave="stopZoom"
-                 @touchstart="onTap"
+                 @touchstart="onTouchStart"
+                 @touchend="onTouchEnd"
             >
                 <img src="{{ $portfolioPage->images->first()->folder_in_public }}/{{ $portfolioPage->images->first()->name }}.{{ $portfolioPage->images->first()->ext }}"
                      alt="{{ $portfolioPage->pageable->title_en }}"
@@ -32,7 +33,7 @@
                 @endif
                 @if($portfolioPage->pageable->external_url)
                     <a href="{{ $portfolioPage->pageable->external_url }}" target="_blank"><i
-                        class="external icon"></i>{{ $portfolioPage->pageable->external_url }}</a>
+                                class="external icon"></i>{{ parse_url($portfolioPage->pageable->external_url)['host'] }}</a>
                     <br>
                 @endif
             </span>

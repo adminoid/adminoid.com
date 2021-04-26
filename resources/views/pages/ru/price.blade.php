@@ -18,15 +18,7 @@
       <div class="ten wide tablet eight wide computer column">
         <div class="info ui centered grid">
           <div class="seven wide column price-description">
-                            <span class="mobile hidden">
-                                2000 рублей{{--<sup>*</sup>--}}
-                            </span>
-            <h2 class="ui header mobile only blue"><img src="/static/img/adminoid/icons/money.png"
-                                                        alt="купюры 2000 рублей">
-              2000 рублей<sup>*</sup> =
-              <img src="/static/img/adminoid/icons/clock.png"
-                   alt="изображение, как бы, одного часа труда"> 1 час
-              труда</h2>
+            2000 рублей
             <div class="clamp left mobile hidden">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -58,7 +50,7 @@
                 <title>right-clamp</title>
                 <defs></defs>
                 <g id="Artboards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <g id="Large-Monitor---Процесс-Copy"
+                  <g id="Large-Monitor---Process-Copy"
                      transform="translate(-311.000000, -118.000000)"
                      stroke-width="2" stroke="#CD2E41">
                     <g id="money-action" transform="translate(23.000000, 117.000000)">
@@ -81,33 +73,35 @@
           </div>
         </div>
         <div id="papers">
-          <div class="one-thousand-papers mobile hidden">
+          <div class="one-thousand-papers">
             <div class="paper back">
               <img src="/static/img/adminoid/pages/price/thousand-paper-back.jpg" data-rjs="2"
                    alt="бумажка в тясячу рублей">
-            </div>
-            <div class="paper front">
-              <img src="/static/img/adminoid/pages/price/thousand-paper-front.jpg" data-rjs="2"
-                   alt="бумажка в тясячу рублей">
+              <div class="paper front">
+                <img src="/static/img/adminoid/pages/price/thousand-paper-front.jpg" data-rjs="2"
+                     alt="бумажка в тясячу рублей">
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="two wide column mobile hidden" id="equal-sign">
+      <div class="two wide column" id="equal-sign__wrapper">
         <div class="ui centered grid">
-          <div class="column">
+          <div id="equal-sign__sign">
             =
           </div>
         </div>
       </div>
 
-      <div class="four wide tablet six wide computer column mobile hidden" id="clocks">
+      <div class="four wide tablet six wide computer column" id="clocks">
         <div class="ui centered grid">
-          <div class="column">
+          <div id="clocks__wrapper">
             <clock inline-template>
               <svg id="clock" width="163px" height="163px" viewBox="0 0 163 163" version="1.1"
-                   @mouseover="onHover" @mouseleave="onLeave"
+                   @mouseover="onHover"
+                   @mouseleave="onLeave"
+                   @touchstart="onTouchStart"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>
                   clocks</title>
                 <desc>Clock svg for Clock vue component</desc>
@@ -393,13 +387,13 @@
                           </g>
                         </g>
                         <g id="work-text" transform="translate(50, 90)"
-                           font-family="RobotoMono-Regular,'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
+                           font-family="'Roboto Mono','Helvetica Neue',Arial,Helvetica,sans-serif"
                            fill="#1254B0"
                            font-weight="bold" style="fill: rgb(18, 84, 176);">
-                          <text id="час" font-size="22">
-                            <tspan x="10" y="22">час</tspan>
+                          <text id="hour" font-size="22">
+                            <tspan x="-9" y="22">час</tspan>
                           </text>
-                          <text id="труда" font-size="19">
+                          <text id="work" font-size="19">
                             <tspan x="3" y="40">труда</tspan>
                           </text>
                         </g>
@@ -414,10 +408,6 @@
       </div>
 
     </div>
-
-    {{--<div class="notice">--}}
-      {{--<em>* При условии найма нормального программиста заказчиком из России, это - честная цена. Для западного заказчика - это демпинговая цена. И я - ненормальный.</em>--}}
-    {{--</div>--}}
 
     <br>
     <br>

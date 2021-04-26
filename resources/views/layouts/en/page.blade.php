@@ -7,8 +7,6 @@
 
   <title>@yield('title')</title>
 
-  {{--@if(app()->environment() == 'production')--}}
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121426935-1"></script>
   <script>
