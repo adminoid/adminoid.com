@@ -99,7 +99,9 @@
           <div id="clocks__wrapper">
             <clock inline-template>
               <svg id="clock" width="163px" height="163px" viewBox="0 0 163 163" version="1.1"
-                   @mouseover="onHover" @mouseleave="onLeave"
+                   @mouseover="onHover"
+                   @mouseleave="onLeave"
+                   @touchstart="onTouchStart"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>
                   clocks</title>
                 <desc>Clock svg for Clock vue component</desc>
