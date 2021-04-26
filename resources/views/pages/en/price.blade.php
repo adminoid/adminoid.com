@@ -19,7 +19,7 @@
         <div class="info ui centered grid">
           <div class="seven wide column price-description">
             40 bucks
-            <div class="clamp left">
+            <div class="clamp left mobile hidden">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>left-clamp</title>
@@ -44,7 +44,7 @@
                 </g>
               </svg>
             </div>
-            <div class="clamp right">
+            <div class="clamp right mobile hidden">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>right-clamp</title>

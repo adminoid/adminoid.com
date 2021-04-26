@@ -10,6 +10,7 @@ export default {
         hourValue: 0
       },
       touched: false,
+      touch: false,
     }
   },
 
@@ -24,6 +25,7 @@ export default {
   },
 
   mounted: function () {
+    this.touch = window.navigator.userAgent.indexOf('Mobile') !== -1
     this.compileTimeline()
   },
   methods: {
@@ -45,13 +47,13 @@ export default {
       timeline.add(TweenLite.fromTo('g#work-text', 0.1, {fill: 'rgb(18, 84, 176)'}, {fill: 'rgb(255, 255, 255)'}), 0.1)
       this.timeline = timeline
     },
-    onHover: function (e) {
-      if (e.type !== "touchstart") {
+    onHover: function () {
+      if (!this.touch) {
         this.timeline.pause().play()
       }
     },
-    onLeave: function (e) {
-      if (e.type !== "touchstart") {
+    onLeave: function () {
+      if (!this.touch) {
         this.timeline.pause().reverse()
       }
     },
