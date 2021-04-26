@@ -40,11 +40,13 @@ export default {
       },
       reduced: false,
       $eye: {},
-      eyeTransformWithAngle: 'translate(13.000000, 36.000000) rotate(40.000000) translate(-13.000000, -36.000000) translate(8.000000, 31.000000)'
+      eyeTransformWithAngle: 'translate(13.000000, 36.000000) rotate(40.000000) translate(-13.000000, -36.000000) translate(8.000000, 31.000000)',
+      touch: false,
     }
   },
 
   mounted () {
+    this.touch = window.navigator.userAgent.indexOf('Mobile') !== -1
     this.checkTopOffset();
     // this.initFlicker();
     this.timeline = this.compileTimeline();
@@ -57,11 +59,15 @@ export default {
     // todo: addEventListener for touch
     window.addEventListener('scroll', this.checkTopOffset)
     window.addEventListener('mousemove', this.eyeMove)
+    window.addEventListener('touchstart', this.eyeMove)
+    window.addEventListener('touchmove', this.eyeMove)
   },
 
   beforeDestroy: function () {
-    window.removeEventListener('scroll', this.checkTopOffset);
-    window.removeEventListener('mousemove', this.eyeMove);
+    window.removeEventListener('scroll', this.checkTopOffset)
+    window.removeEventListener('mousemove', this.eyeMove)
+    window.removeEventListener('touchstart', this.eyeMove)
+    window.removeEventListener('touchmove', this.eyeMove)
   },
 
   watch: {
@@ -82,26 +88,24 @@ export default {
     // todo: init below method onTouch
     eyeMove: function (e) {
       if (!this.reduced) return false
-      this.cursor.x = e.pageX
-      this.cursor.y = e.pageY
 
-      // let adjustment;
-      // switch (this.browser) {
-      //   case 'chrome':
-      //     adjustment = 1082;
-      //     break;
-      //   case 'safari':
-      //     adjustment = 882;
-      //     break;
-      //   case 'firefox':
-      //     adjustment = 382;
-      //     break;
-      // }
+      if (this.touch) {
+        if (e.type !== 'mousemove') {
+          this.cursor.x = e.changedTouches[0].clientX + this.getScrollOffset().left
+          this.cursor.y = e.changedTouches[0].clientY + this.getScrollOffset().top
+        }
+      } else {
+        this.cursor.x = e.pageX
+        this.cursor.y = e.pageY
+      }
 
-      // let eyeCenter = [this.$eye[0].getBoundingClientRect().left + this.$eye.width() / 2, this.$eye[0].getBoundingClientRect().top + adjustment + this.$eye.height() / 2];
-      let eyeCenter = [this.$eye[0].getBoundingClientRect().left + this.getScrollOffset().left + this.$eye.width() / 2, this.$eye[0].getBoundingClientRect().top + this.getScrollOffset().top + this.$eye.height() / 2];
-      let eyeAngle = Math.atan2(e.pageX - eyeCenter[0], -(e.pageY - eyeCenter[1])) * (180 / Math.PI) - 90;
+      this.setAngle()
 
+    },
+
+    setAngle() {
+      let eyeCenter = [this.$eye[0].getBoundingClientRect().left + this.getScrollOffset().left + this.$eye.width() / 2, this.$eye[0].getBoundingClientRect().top + this.getScrollOffset().top + this.$eye.height() / 2]
+      let eyeAngle = Math.atan2(this.cursor.x - eyeCenter[0], -(this.cursor.y - eyeCenter[1])) * (180 / Math.PI) - 90
       this.eyeTransformWithAngle = 'translate(13.000000, 36.000000) rotate(' + eyeAngle + ') translate(-13.000000, -36.000000) translate(8.000000, 31.000000)';
     },
 
@@ -113,28 +117,12 @@ export default {
       };
     },
 
-    // detectBrowser () {
-    //   const ua = navigator.userAgent.toLowerCase();
-    //   // console.log(ua);
-    //
-    //   if (ua.indexOf('firefox') != -1) {
-    //     return 'firefox';
-    //   }
-    //   else if (ua.indexOf('safari') != -1) {
-    //     if (ua.indexOf('chrome') > -1) {
-    //       return 'chrome';
-    //     } else {
-    //       return 'safari';
-    //     }
-    //   }
-    // },
-
     toggleSidebar: function () {
       $('#top-menu-sidebar')
           .sidebar({
             transition: 'overlay'
           })
-          .sidebar('toggle');
+          .sidebar('toggle')
     },
 
     initFlicker: function () {
