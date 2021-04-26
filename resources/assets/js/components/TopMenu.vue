@@ -90,10 +90,8 @@ export default {
       if (!this.reduced) return false
 
       if (this.touch) {
-        if (e.type !== 'mousemove') {
-          this.cursor.x = e.changedTouches[0].clientX + this.getScrollOffset().left
-          this.cursor.y = e.changedTouches[0].clientY + this.getScrollOffset().top
-        }
+        this.cursor.x = e.changedTouches[0].clientX + this.getScrollOffset().left
+        this.cursor.y = e.changedTouches[0].clientY + this.getScrollOffset().top
       } else {
         this.cursor.x = e.pageX
         this.cursor.y = e.pageY
@@ -164,11 +162,11 @@ export default {
 
     runLogoAnimation: function (direction = 'forward') {
       if (direction === 'forward') {
-        this.reduced = true;
-        this.timeline.pause().play();
+        this.reduced = true
+        this.timeline.pause().play()
       } else if (direction === 'backward') {
-        this.reduced = false;
-        this.timeline.pause().reverse();
+        this.reduced = false
+        this.timeline.pause().reverse()
       }
     },
 
