@@ -486,7 +486,7 @@
 
           <p>For $1000 I can make a working web app that solves the tasks. For example, an online shop with integration into various advertising, analytical and financial systems with professional simple design based on sass/less framework <a href="https://getbootstrap.com/">Twitter Bootstrap</a>.</p>
 
-          <p>I prefer working in stages Each stage - is a completed task.</p>
+          <p>I prefer working in stages. Each stage - is a completed task.</p>
         </div>
         <div class="column img">
           <div class="img large computer widescreen largescreen only"></div>
