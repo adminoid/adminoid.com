@@ -227,27 +227,32 @@
           color: black;
           padding: 8px;
           border: 1px solid #CB3044;
-          top: 110px;
-          left: 270px;
-          @media (max-width: 451px) {
+          top: 84px;
+          left: 206px;
+          @media (max-width: 450px) {
             width: 310px;
-            top: 20px;
+            top: 31px;
             left: 9px;
+          }
+          @media (min-width: 451px) and (max-width: (@tabletBreakpoint - 1)) {
+            width: 310px;
+            top: 31px;
+            left: 59px;
+          }
+          @media (min-width: @computerBreakpoint) and (max-width: (@largeMonitorBreakpoint - 1)) {
+            top: 111px;
+            left: 265px;
+            width: 340px;
           }
           @media (min-width: @largeMonitorBreakpoint) {
             top: 111px;
             left: 321px;
           }
-          @media (max-width: @computerBreakpoint - 1) and (max-width: (@largeMonitorBreakpoint - 1)) {
-            top: 111px;
-            left: 205px;
-            width: 340px;
-          }
-          @media (max-width: @computerBreakpoint - 1) {
-            top: 40px;
-            left: 50%;
-            margin-left: -156px;
-          }
+          //@media (max-width: @computerBreakpoint - 1) {
+          //  top: 40px;
+          //  left: 50%;
+          //  margin-left: -156px;
+          //}
         }
       }
       &#adminoid-cms {
