@@ -103,13 +103,19 @@
     #equal-sign__wrapper {
       font-size: 6em;
       color: @red;
-      @media (min-width: @computerBreakpoint) {
+      @media (max-width: 767px) {
         padding-left: 1.1rem;
       }
       #equal-sign__sign {
         padding-top: 1.3rem;
-        @media (max-width: @tabletBreakpoint - 1) {
+        @media (max-width: 767px) {
           text-align: center!important;
+        }
+        @media (min-width: 768px) {
+          padding-top: 6.8rem;
+        }
+        @media (min-width: 992px) {
+          padding-left: 6rem;
         }
       }
     }
