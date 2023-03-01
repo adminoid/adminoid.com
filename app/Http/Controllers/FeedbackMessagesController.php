@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\FeedbackMessage;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 //use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Mail\FeedbackSend;
@@ -47,10 +48,11 @@ class FeedbackMessagesController extends Controller
 
         $ip = $request->ip();
         $user_agent = $request->header('User-Agent');
+        $current_date = Carbon::now();
 
         $feedbackMessage = (new FeedbackMessage)->forceCreate([
             'email' => request('email'),
-            'text' => request('text'),
+            'text' => request('text') . " ____ " . $current_date,
             'ip' => $ip,
             'user_agent' => $user_agent
         ]);
