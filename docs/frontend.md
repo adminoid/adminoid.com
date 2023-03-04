@@ -125,4 +125,13 @@ Local version: 3.9.1
 ```shell
 node -v
 v10.16.1
+npm ci # install exactly versioned packages from package-lock.json
+```
+
+### Python
+`Python >= v2.5.0 & < 3.0.0`
+```shell
+brew install pyenv
+pyenv install 2.7.18
+npm config set python /Users/petja/.pyenv/versions/2.7.18/bin/python # path to python 2.7.18
 ```

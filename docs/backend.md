@@ -14,6 +14,14 @@ All files in migrations folder
 
 > `brew services stop mysql`
 
+### Create database with user and password
+```mysql
+CREATE DATABASE adminoid_db;
+CREATE USER 'adminoid'@'localhost' IDENTIFIED BY 'some_password';
+GRANT ALL PRIVILEGES ON adminoid_db.* TO 'adminoid'@'localhost';
+FLUSH PRIVILEGES;
+```
+
 in .env file:
 ```
 DB_USERNAME=root  
