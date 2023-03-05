@@ -1,0 +1,58 @@
+version: "3.8"
+
+services:
+
+#  caddy:
+#    image: lucaslorentz/caddy-docker-proxy:ci-alpine
+#    ports:
+#      - 80:80
+#      - 443:443
+#    environment:
+#      - CADDY_INGRESS_NETWORKS=caddy
+#    networks:
+#      - caddy
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
+#      - caddy_data:/data
+#    restart: unless-stopped
+
+#  matrix_bnb_web:
+#    tty: true
+#    stdin_open: true
+#    build: ./matrix_bnb_web
+#    command: tail -f /dev/null
+#    networks:
+#      - caddy
+#    volumes:
+#      - /var/web/matrix-bnb-web:/matrix-bnb-web
+#    ports:
+#      - "3051:3051"
+#    labels:
+#      caddy: angryhacker.ru www.angryhacker.ru
+#      caddy.reverse_proxy: "{{upstreams 3051}}"
+
+  laravel_adminoid:
+    tty: true
+    stdin_open: true
+    build: ./adminoid_laravel
+    command: tail -f /dev/null
+    networks:
+      - adminoid
+      - caddy
+    volumes:
+      - ..:/adminoid_site
+    ports:
+      - "8080:8081"
+#    labels:
+#      caddy: adminoid.ru www.adminoid.ru adminoid.com www.adminoid.com
+#      caddy.reverse_proxy: "{{upstreams 8080}}"
+
+networks:
+  caddy:
+    name: caddy
+  adminoid:
+    name: adminoid
+
+volumes:
+  caddy_data: {}
+
