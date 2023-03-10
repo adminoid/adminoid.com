@@ -32,15 +32,17 @@ services:
 #      caddy.reverse_proxy: "{{upstreams 3051}}"
 
   laravel_adminoid:
+    build:
+      context: ..
+      dockerfile: ./.docker/laravel_adminoid/Dockerfile
     tty: true
     stdin_open: true
-    build: ./adminoid_laravel
     command: tail -f /dev/null
     networks:
       - adminoid
       - caddy
-    volumes:
-      - ..:/adminoid_site
+#    volumes:
+#      - ../:/site_adminoid:rw
     ports:
       - "8080:8081"
 #    labels:
