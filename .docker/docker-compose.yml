@@ -45,6 +45,21 @@ services:
       - caddy
     ports:
       - "8000:8000"
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb
+    restart: always
+#    volumes:
+#      - mariadb_data/mysqld.sock:/run/mysqld/mysqld.sock
+    environment:
+      MARIADB_ROOT_PASSWORD: "${DB_PASSWORD_ROOT}"
+      MYSQL_DATABASE: "${DB_DATABASE}"
+      MYSQL_USER: "${DB_USERNAME}"
+      MYSQL_PASSWORD: "${DB_PASSWORD}"
+    networks:
+      - adminoid
 
 networks:
   caddy:
@@ -57,4 +72,5 @@ networks:
 
 volumes:
   caddy_data: {}
+#  mariadb_data: {}
 
