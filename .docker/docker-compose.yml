@@ -32,28 +32,28 @@ services:
 #      caddy.reverse_proxy: "{{upstreams 3051}}"
 
   laravel_adminoid:
+#    network_mode: host
     build:
       context: ..
-      dockerfile: ./.docker/laravel_adminoid/Dockerfile
+      dockerfile: .docker/laravel_adminoid/Dockerfile
     tty: true
     stdin_open: true
-    command: tail -f /dev/null
+#    command: php artisan serve
+    restart: unless-stopped
     networks:
       - adminoid
       - caddy
-#    volumes:
-#      - ../:/site_adminoid:rw
     ports:
-      - "8080:8081"
-#    labels:
-#      caddy: adminoid.ru www.adminoid.ru adminoid.com www.adminoid.com
-#      caddy.reverse_proxy: "{{upstreams 8080}}"
+      - "8000:8000"
 
 networks:
   caddy:
-    name: caddy
   adminoid:
-    name: adminoid
+    driver: bridge
+#    driver_opts:
+#      enable_ipv4: 1
+#      enable_ipv6: 1
+#    external: true
 
 volumes:
   caddy_data: {}

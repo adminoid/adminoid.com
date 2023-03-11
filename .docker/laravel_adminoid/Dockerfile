@@ -7,11 +7,19 @@ VOLUME ["/site_adminoid"]
 
 WORKDIR /site_adminoid
 
-RUN ls -la > /site_adminoid/ll1.txt
-RUN pwd > /site_adminoid/ll2.txt
+#RUN apt-get update
+#RUN apt-get install -y vim
 
-ADD .docker/laravel_adminoid/entrypoint.sh .
-RUN chmod +x ./entrypoint.sh
-RUN sh -c ./entrypoint.sh
+#RUN ls -la > /site_adminoid/ll1.txt
+#RUN pwd > /site_adminoid/ll2.txt
 
-EXPOSE 8080
+#ADD .docker/laravel_adminoid/entrypoint.sh .
+#RUN chmod +x ./entrypoint.sh
+#RUN sh -c ./entrypoint.sh
+
+#CMD php artisan serve
+#ENTRYPOINT ["/site_adminoid/entrypoint.sh"]
+
+CMD php artisan serve --host=0.0.0.0 --port=8000
+
+EXPOSE 8000

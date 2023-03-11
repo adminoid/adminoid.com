@@ -1,2 +1,3 @@
 #!/bin/sh
-php -v > ./ll3.txt
+php -v > ./ll31.txt
+php artisan serve
