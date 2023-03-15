@@ -38,8 +38,10 @@ services:
       dockerfile: .docker/laravel_adminoid/Dockerfile
     tty: true
     stdin_open: true
-#    command: php artisan serve
+#    command: php artisan serve --host=0.0.0.0 --port=8000
     restart: unless-stopped
+    volumes:
+      - site_adminoid:/adminoid_site
     networks:
       - adminoid
       - caddy
@@ -51,8 +53,8 @@ services:
   mariadb:
     image: mariadb
     restart: always
-#    volumes:
-#      - mariadb_data/mysqld.sock:/run/mysqld/mysqld.sock
+    volumes:
+      - mariadb_data:/var/lib/mysql
     environment:
       MARIADB_ROOT_PASSWORD: "${DB_PASSWORD_ROOT}"
       MYSQL_DATABASE: "${DB_DATABASE}"
@@ -65,12 +67,9 @@ networks:
   caddy:
   adminoid:
     driver: bridge
-#    driver_opts:
-#      enable_ipv4: 1
-#      enable_ipv6: 1
-#    external: true
 
 volumes:
   caddy_data: {}
-#  mariadb_data: {}
+  mariadb_data: {}
+  site_adminoid: {}
 
