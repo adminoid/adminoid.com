@@ -7,7 +7,8 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 //use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Mail\FeedbackSend;
-use Illuminate\Support\Facades\Mail;
+// use Illuminate\Support\Facades\Mail;
+use App\Jobs\SendTelegram;
 
 class FeedbackMessagesController extends Controller
 {
@@ -57,7 +58,9 @@ class FeedbackMessagesController extends Controller
             'user_agent' => $user_agent
         ]);
 
-        Mail::to('info@romb.ru')->queue(new FeedbackSend($feedbackMessage));
+//         Mail::to('info@romb.ru')->queue(new FeedbackSend($feedbackMessage));
+
+        SendTelegram::dispatch($feedbackMessage);
 
         return ['message' => __('messages.feedback_message_sent')];
 

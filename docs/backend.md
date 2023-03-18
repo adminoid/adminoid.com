@@ -74,4 +74,6 @@ All files and images folder in `database/seeds`
 If not work, run:  
 `composer dump-autoload`  
 
+# Running queue
 
+`php artisan queue:work &`
