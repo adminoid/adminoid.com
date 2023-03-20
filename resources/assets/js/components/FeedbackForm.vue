@@ -11,7 +11,6 @@
       return Object.keys(this.errors).length > 0
     }
     get(field) {
-      console.log(field);
       if (this.errors[field]) {
         return this.errors[field][0]
       }
@@ -77,10 +76,8 @@
         form: new Form({
           email: '',
           text: '',
-          // first_name: '',
-          // last_name: '',
-          // phone: '',
-        })
+          rc_key: '',
+        }),
       }
     },
     methods: {
@@ -88,10 +85,17 @@
         this.form.submit('post', '/feedback-messages')
           .then(data => {
             this.message = data.message;
-            // this.$parent.$emit('stop-write',true);
+            this.$parent.$emit('stop-write',true);
           });
-//                        .catch(errors => console.log(errors))
       }
-    }
+    },
+    mounted: function() {
+      const setToken = () => {
+        return (token) => {
+          this.form.rc_key = token
+        }
+      };
+      Vue.prototype.$bus.on("rc-loaded", setToken());
+    },
   }
 </script>

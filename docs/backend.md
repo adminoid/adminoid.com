@@ -77,3 +77,13 @@ If not work, run:
 # Running queue
 
 `php artisan queue:work &`
+
+# Clear all cache
+
+```shell
+php artisan config:clear && \
+php artisan cache:clear && \
+composer dump-autoload && \
+php artisan view:clear && \
+php artisan route:clear
+```

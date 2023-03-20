@@ -13,10 +13,8 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-121426935-1');
   </script>
-
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -33,7 +31,9 @@
   <noscript><div><img src="https://mc.yandex.ru/watch/49399369" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   <!-- /Yandex.Metrika counter -->
 
-  {{--  @endif--}}
+  <script>
+    window.rcKey = "{{ config('recaptcha.rcSite') }}";
+  </script>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png">
@@ -309,8 +309,21 @@
         <div class="ui success message" v-if="form.success">
           <p>@{{ form.message }}</p>
         </div>
-        <form class="ui form success" method="post" action="/feedback-messages" @submit.prevent="onSubmit" @keydown="form.errors.clear($event.target.name)" @focusin="form.errors.clear($event.target.name)"
-              v-if="!form.success">
+        <form
+            class="ui form success"
+            method="post"
+            action="/feedback-messages"
+            @submit.prevent="onSubmit"
+            @keydown="form.errors.clear($event.target.name)"
+            @focusin="form.errors.clear($event.target.name)"
+            v-if="!form.success">
+
+          <div v-if="form.errors.has('rc_key')">
+            <div class="ui red prompt label" v-text="form.errors.get('rc_key')"></div>
+            <br>
+            <br>
+          </div>
+
           <div class="required field" :class="[form.errors.has('email') ? 'error' : '']"
                :class="[form.success ? 'disabled' : '']">
             <label>Your email</label>

@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
+import Vue from "vue";
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -18,6 +18,9 @@ window.Vue = require('vue');
 import TopMenu from './components/TopMenu'
 import FeedbackForm from './components/FeedbackForm'
 import WriteLink from './components/WriteLink'
+import mitt from "mitt";
+
+Vue.prototype.$bus = mitt();
 
 Vue.component("clouds", function (resolve) {
   require(['./components/pages/index/Clouds'], resolve)
@@ -47,6 +50,8 @@ Vue.component("half-rotate", function (resolve) {
   require(['./components/pages/workflow/HalfRotate.vue'], resolve)
 });
 
+window.Vue = Vue;
+
 const app = new Vue({
 
   el: '#app',
@@ -65,13 +70,23 @@ const app = new Vue({
 
 app
   .$on('go-write', () => {
-
+    let scriptEle = document.createElement("script");
+    scriptEle.setAttribute("src", `https://www.google.com/recaptcha/api.js?render=${window.rcKey}`);
+    scriptEle.addEventListener("load", () => {
+        // here must get recaptcha code
+        grecaptcha.ready(function() {
+            grecaptcha.execute(window.rcKey, {action: 'submit'}).then((token) => {
+                // send mitt event
+                Vue.prototype.$bus.emit("rc-loaded", token);
+            });
+        });
+    });
+    scriptEle.addEventListener("error", (ev) => {
+        console.log("Error on loading file", ev);
+    });
+    document.body.appendChild(scriptEle);
     app.write = true;
-
-    let $modal = $('#super-modal');
-    // .modal('setting', 'transition', 'horizontal flip').modal('toggle');
-
-    $modal.modal({
+    $('#super-modal').modal({
       transition: 'horizontal flip',
       onHide: function(){
         setTimeout(() => {
@@ -79,12 +94,9 @@ app
         }, 333);
       },
     }).modal('show');
-
   })
   .$on('stop-write', () => {
-
     setTimeout(() => {
       app.write = false;
     }, 333);
-
   });

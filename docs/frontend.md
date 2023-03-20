@@ -101,8 +101,9 @@ _Pages:_
 
 ## Run compilation
 `npm run watch`, `npm run dev` or `npm run production`  
-`cd semantic`  
-`gulp build-css` or `gulp build` if with js  
+`cd semantic`
+`../node_modules/gulp/bin/gulp.js build-css`
+_gulp build-css or gulp build if with js_  
 
 ## Retina js
 npm install retinajs --save  
