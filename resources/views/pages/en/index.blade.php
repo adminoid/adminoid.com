@@ -82,27 +82,54 @@
 
                 <p>I was named Peter in honor of St. Apostle Peter.</p>
 
-                <p>I'm a <u>Full Stack Web-developer</u>:<br>
-                    (<a href="https://secure.php.net/">php</a> + <a href="https://laravel.com/">Laravel</a>,
-                    <strong>javascript</strong> +
-                    <a href="https://vuejs.org/">Vue.js</a>, <br>
-                    <strong>html</strong> + <strong>css</strong> + <a href="https://github.com/less/less.js">less</a>/<a
-                            href="https://github.com/sass">sass</a>,
-                    <br>
-                    <a href="https://www.ubuntu.com/">ubuntu</a>/<a
-                            href="https://www.debian.org/">debian</a> + <a href="https://www.docker.com/">docker</a>, <br>
-                    <a href="https://www.sketchapp.com/">sketch app</a>/<a
-                            href="https://www.adobe.com/products/photoshop.html">photoshop</a>)</p>
+                <p>I'm a <u>Full Stack Web(3.0) developer</u>:<br>
+                  <strong>JavaScript</strong>/<strong>TypeScript</strong> +
+                  <a href="https://vuejs.org/">Vue.js</a> + <a href="https://web3js.readthedocs.io/">web3.js</a>, <br>
+                  <strong>Golang</strong>, <a href="https://soliditylang.org/">Solidity</a>,
+                  <a href="https://ton.org/docs/develop/func/overview">Func</a>,
+                  <br>
+                  and <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.php.net/">PHP</a>.
+                  <br>
 
-                <p>Work in Mac OS X, use ten-finger touch typing and vim editor.</p>
+                  Servers set up with an <a href="https://ubuntu.com/">Ubuntu</a> + <a href="https://www.docker.com/">Docker</a>, <br>
+                </p>
+
+                <p>I'm working in <strong>macOS</strong>, use <strong>ten-finger touch typing</strong> and <strong>VIM</strong> editor.</p>
 
                 <p>Look through the site, get acquainted with my possibilities and services.</p>
 
             </div>
         </div>
 
+        <br>
+        <div class="updated-2023">
+          <em>Updated <strong>March 21, 2023</strong></em>
+          <p>
+            I haven't updated my website and portfolio for the past few years, I just haven't had the time to do so.<br>
+            Because of it,
+            Therefore, at least briefly, I will describe the main news.<br>
+            Firstly: <strong>Backend code now i write in Golang</strong> with an eye on performance, that is, without the use of frameworks and ORMs.<br>
+            Secondly: the last couple of years I have had a lot of work with the blockchain.<br>
+            As a new turnkey service, I want to introduce the service: <strong>"Smart contract + website"</strong><br>
+            The minimum cost of any order is $10 000.
+          </p>
+          <p>
+            In conclusion my technology stack is:
+            <ul>
+              <li>Smart contracts: Solidity/Func</li>
+              <li>Frontend: Vue.js 3.x, javascript/typescript</li>
+              <li>Backend: Golang</li>
+            </ul>
+            <em>And also, if necessary, I work with <strong>Node.js</strong> and <strong>PHP</strong></em>
+          </p>
+        </div>
+
         <h2 class="ui blue header">Standard services</h2>
         <ol>
+            <li><strong>Smart contract + website</strong>.
+              I will write a <strong>Smart contracts</strong>, no matter what complexity, on <strong>Solidity</strong> or <strong>Func (TON blockchain)</strong>, as well as create a web application (site) and integrate with it.
+            </li>
+
             <li><strong>Creation of functional sites prototypes</strong>.
                 There are certain standards of usability and design in website development, that users are get used to.<br>
 

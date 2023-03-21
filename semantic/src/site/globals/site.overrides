@@ -5,3 +5,14 @@
 .grecaptcha-badge {
     visibility: hidden;
 }
+
+.updated-2023 {
+    color: #357377;
+    background: #FBFDFF;
+    border: 2px solid #EE7E98;
+    border-radius: 15px;
+    padding: 10px 15px;
+    > em {
+      color: #7D4854;
+    }
+}

@@ -11,7 +11,7 @@
 |
 */
 
-//$locale = 'ru';
+// $locale = 'ru';
 $locale = 'en';
 if (array_key_exists('HTTP_HOST', $_SERVER)) {
     $domain = $_SERVER['HTTP_HOST'];

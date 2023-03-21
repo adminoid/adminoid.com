@@ -13,3 +13,4 @@ yarn-error.log
 /public/images
 /public/downloads
 .DS_Store
+/private

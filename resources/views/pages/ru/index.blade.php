@@ -82,27 +82,52 @@
 
         <p>В младенчестве меня нарекли Петром.</p>
 
-        <p>Я - <u>Full Stack Web-разработчик</u>:<br>
-          (<a href="https://secure.php.net/">php</a> + <a href="https://laravel.com/">Laravel</a>,
-          <strong>javascript</strong> +
-          <a href="https://vuejs.org/">Vue.js</a>, <br>
-          <strong>html</strong> + <strong>css</strong> + <a href="https://github.com/less/less.js">less</a>/<a
-              href="https://github.com/sass">sass</a>,
+        <p>Я - <u>Full Stack Web(3.0) разработчик</u>:<br>
+          <strong>JavaScript</strong>/<strong>TypeScript</strong> +
+          <a href="https://vuejs.org/">Vue.js</a> + <a href="https://web3js.readthedocs.io/">web3.js</a>, <br>
+          <strong>Golang</strong>, <a href="https://soliditylang.org/">Solidity</a>,
+          <a href="https://ton.org/docs/develop/func/overview">Func</a>,
           <br>
-          <a href="https://www.ubuntu.com/">ubuntu</a>/<a
-                  href="https://www.debian.org/">debian</a> + <a href="https://www.docker.com/">docker</a>, <br>
-          <a href="https://www.sketchapp.com/">sketch app</a>/<a
-              href="https://www.adobe.com/products/photoshop.html">photoshop</a>)</p>
+          а так же <a href="https://nodejs.org/">Node.js</a>, <a href="https://www.php.net/">PHP</a>.
+          <br>
 
-        <p>Работаю в macOS. Владею слепой десятипальцевой печатью, использую возможности редактора VIM.</p>
+          Настройка серверов <a href="https://ubuntu.com/">Ubuntu</a> + <a href="https://www.docker.com/">Docker</a>, <br>
+        </p>
+
+        <p>Работаю в <strong>macOS</strong>. Владею <strong>слепой десятипальцевой печатью</strong>, использую возможности редактора <strong>VIM</strong>.</p>
 
         <p>Полистай сайт, ознакомься с моими возможностями и услугами.</p>
 
       </div>
     </div>
 
+    <br>
+    <div class="updated-2023">
+      <em>От <strong>20 марта 2023:</strong></em>
+      <p>
+        Последние несколько лет я не обновлял портфолио и этот сайт, просто не было на это времени.<br>
+        Поэтому, хотя бы вкратце, опишу главные новости.<br>
+        Первое: <strong>бэкенд сейчас я пишу на Go (Golang)</strong> с прицелом на производительность, то есть не используя фреймворки и ORM.<br>
+        Второе: последние пару лет было много работы в нише блокчейн.<br>
+        В качестве новой услуги под ключ хочу представить услугу: <strong>Смарт контракт + сайт</strong><br>
+        Минимальная стоимость любого заказа - 300 000 рублей.
+      </p>
+      <p>
+        Итого по стеку:
+        <ul>
+          <li>Смарт-контракты: Solidity/Func</li>
+          <li>Frontend: Vue.js 3.x, JavaScript/TypeScript</li>
+          <li>Backend: Golang</li>
+        </ul>
+        <em>А так же, при необходимости, работаю с <strong>Node.js</strong> и <strong>PHP</strong></em>
+      </p>
+    </div>
+
     <h2 class="ui blue header">Услуги типичные</h2>
     <ol>
+      <li><strong>Смарт-контракт + сайт</strong>.
+        Напишу <strong>смарт-контракты</strong> любой сложности на <strong>Solidity</strong> или <strong>Func (блокчейн TON)</strong>, а так же создам сайт и интегрирую его со смарт-контрактами.
+      </li>
       <li><strong>Создание полнофункциональных прототипов сайтов</strong>.
         В web-разработке складываются определенные стандарты юзабилити и дизайна, к которым привыкли пользователи. Эти стандарты определяют лидеры Интернет-бизнеса (социальные сети, поисковики, популярные сервисы). И эти стандарты отражаются в популярных css-фреймворках, с разработанным дизайном от профессионалов мирового уровня. Любое необдуманное нововведение в дизайне может негативно отразиться в конверсии web-приложения, поэтому в современном Интернет-маркетинге любые нововведения подвергаются сплит/мульти-тестам.
         <br>
@@ -153,8 +178,6 @@
       </li>
       <li><strong>Интерактивная SVG/Canvas/WebGL-анимация</strong> сейчас еще слабо распространена, поэтому может заинтересовать
         посетителя и усилить поведенческий фактор
-      </li>
-      <li>Так же могу выполнить какие-то частичные работы касающиеся Laravel, Vue.js и всего вышеперечисленного, но это - нерациональный расход ресурсов и займусь подобным лишь в случае высокой заинтересованности
       </li>
     </ol>
 

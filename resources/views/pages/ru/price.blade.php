@@ -76,7 +76,7 @@
           <div class="one-thousand-papers">
             <div class="paper back">
               <img src="/static/img/adminoid/pages/price/thousand-paper-back.jpg" data-rjs="2"
-                   alt="бумажка в тясячу рублей">
+                   alt="бумажка в тысячу рублей">
               <div class="paper front">
                 <img src="/static/img/adminoid/pages/price/thousand-paper-front.jpg" data-rjs="2"
                      alt="бумажка в тясячу рублей">
