@@ -18,7 +18,7 @@
       <div class="ten wide tablet eight wide computer column">
         <div class="info ui centered grid">
           <div class="seven wide column price-description">
-            40 bucks
+            70 bucks
             <div class="clamp left mobile hidden">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -75,7 +75,7 @@
         <div id="papers">
           <div class="one-thousand-papers">
             <div class="paper back">
-              <img src="/static/img/adminoid/pages/price/twenty-bucks.jpg" data-rjs="2"
+              <img src="/static/img/adminoid/pages/price/fifty-bucks.jpg" data-rjs="2"
                    alt="Banknote">
                 <div class="paper front">
                     <img src="/static/img/adminoid/pages/price/twenty-bucks-back.jpg" data-rjs="2"
