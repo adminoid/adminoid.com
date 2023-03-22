@@ -18,7 +18,7 @@
       <div class="ten wide tablet eight wide computer column">
         <div class="info ui centered grid">
           <div class="seven wide column price-description">
-            2000 рублей
+            3000 рублей
             <div class="clamp left mobile hidden">
               <svg width="155px" height="47px" viewBox="0 0 155 47" version="1.1"
                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -75,8 +75,8 @@
         <div id="papers">
           <div class="one-thousand-papers">
             <div class="paper back">
-              <img src="/static/img/adminoid/pages/price/thousand-paper-back.jpg" data-rjs="2"
-                   alt="бумажка в тысячу рублей">
+              <img src="/static/img/adminoid/pages/price/two-thousand.jpg" data-rjs="2"
+                   alt="бумажка в две тысячи рублей">
               <div class="paper front">
                 <img src="/static/img/adminoid/pages/price/thousand-paper-front.jpg" data-rjs="2"
                      alt="бумажка в тясячу рублей">
