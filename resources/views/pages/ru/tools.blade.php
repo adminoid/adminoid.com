@@ -37,7 +37,7 @@
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Дизайн</h2>
-                                Сейчас дизайн-макет я делаю в программе <a href="#sketch" class="hover sketch">
+                                Сейчас дизайн-макет я делаю в <a href="#sketch" class="hover sketch">
                                     sketch</a>, до нее был долгое время обречен на
                                 <a href="#photoshop" class="hover photoshop">photoshop</a>.
                             </div>
@@ -56,12 +56,11 @@
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Бэкенд</h2>
-                                Разрабатываю на <a
-                                        href="#php" class="hover php">php</a>, используя <a href="#laravel"
-                                                                                            class="hover laravel">laravel</a>
-                                в качестве
-                                фреймворка, в среде <a href="#php-storm" class="hover php-storm">phpStorm</a>, через тестирование <a
-                                        href="#php-unit" class="hover php-unit">phpUnit</a>.
+                                Разрабатываю на <a href="#php" class="hover php">php</a>,
+                                используя <a href="#laravel" class="hover laravel">laravel</a>
+                                в качестве фреймворка, в среде
+                                <a href="#php-storm" class="hover php-storm">phpStorm</a>
+                                , через тестирование <a href="#php-unit" class="hover php-unit">PHPUnit</a>.
                             </div>
                             <div class="six wide column images-wrapper">
                                 <img src="/static/img/adminoid/pages/tools/backend/laravel.png" alt="Laravel Framework" id="laravel" data-rjs="2">
@@ -109,17 +108,17 @@
 
                                     <div class="ten wide column text-wrapper">
                                         <h3>html, css</h3>
-                                        Стили я описываю при помощи <a href="#less" class="hover less">LESS</a>
-                                        или <a href="#sass" class="hover sass">SASS</a>.
+                                        Использую шаблонизатор <a href="#pug" class="hover pug">Pug</a> Стили я описываю при помощи
+                                        <a href="#sass" class="hover sass">SASS</a>.
                                         В последние годы я верстаю только адаптивные сайты. Из css-фрейморков больше всего приходилось работать
                                         с <a href="#twitter-bootstrap" class="hover twitter-bootstrap">Twitter Bootstrap</a>, для этого сайта
                                         использовал <a href="#semantic-ui" class="hover semantic-ui">semantic-ui</a>.
                                     </div>
                                     <div class="six wide column images-wrapper images-wrapper_html">
-                                        <img src="/static/img/adminoid/pages/tools/frontend/less.png" alt="less" id="less" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/sass.png" alt="sass" id="sass" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/twitter-bootstrap.png" alt="twitter-bootstrap" id="twitter-bootstrap" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/semantic-ui.png" alt="semantic-ui" id="semantic-ui" data-rjs="2">
+                                        <img src="/static/img/adminoid/pages/tools/frontend/pug.svg" alt="pug" id="pug" data-rjs="2">
                                     </div>
 
                                 </div>
@@ -139,8 +138,11 @@
                                 / <a href="#debian" class="hover debian">Debian</a>,
                                 а в качестве web-сервера использовал <a href="#nginx" class="hover nginx">Nginx</a> или
                                 <a href="#apache" class="hover apache">Apache</a>. <br>
-                                А сейчас, используя <a href="#docker" class="hover docker">Docker</a>, могу установить одновременно несколько разных версий php, mysql и т.п..
-                                На дешевом облачном хостинге за 250 рублей в месяц такая система будет быстро работать. И ее можно легко, в несколько простых шагов, перенести на любой другой хостинг, сервер, машину или облачный сервис.
+                                А сейчас, используя <a href="#docker" class="hover docker">Docker</a>,
+                                могу установить одновременно несколько разных версий php, mysql и т.п..
+                                На дешевом облачном хостинге за 250 рублей в месяц такая система будет
+                                быстро работать. И ее можно легко, в несколько простых шагов, перенести
+                                на любой другой хостинг, сервер, машину или облачный сервис.
                             </div>
                             <div class="six wide column images-wrapper">
                                 <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker" data-rjs="2">
@@ -160,7 +162,8 @@
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Рабочее окружение</h2>
-                                Работаю на <a href="#mac" class="hover mac">macbook pro</a>. Слепая <a href="#keymap" class="hover keymap">10-ти пальцевая печать</a> и редактор <a href="#vim" class="hover vim">VIM</a> делают редактирование текста молниеносным. Все изменения под контролем у <a href="#git" class="hover git">git</a>.
+                                Работаю на <a href="#mac" class="hover mac">macbook pro</a>.
+                                Слепая <a href="#keymap" class="hover keymap">10-ти пальцевая печать</a> и редактор <a href="#vim" class="hover vim">VIM</a> делают редактирование текста молниеносным. Все изменения под контролем у <a href="#git" class="hover git">git</a>.
                                 Заметки и документацию пишу на <a href="#markdown" class="hover markdown">Markdown</a>.
                                 Все дела расписываю в программе <a href="#omni" class="hover omni">OmniFocus</a>, затем отслеживаю их
                                 выполнение по таймеру
