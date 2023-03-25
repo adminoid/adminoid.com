@@ -52,7 +52,7 @@ Vue.component("half-rotate", function (resolve) {
 
 window.Vue = Vue;
 
-const app = new Vue({
+const app = new window.Vue({
 
   el: '#app',
 

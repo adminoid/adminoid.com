@@ -114,10 +114,9 @@
     }
     &#frontend {
       h2 {
-        margin: 0;
+        margin-bottom: 1rem;
       }
       h3 {
-        //margin: 5px 0 0;
         color: #418B1B;
       }
       .text-wrapper {
@@ -139,7 +138,7 @@
         }
 
         a.ecma-script {
-          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/ecma-script.png);
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/es6.svg);
           padding-left: 19px;
         }
         a.vue-js {
@@ -162,17 +161,16 @@
           background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/mocha.png);
           padding-left: 22px;
         }
-        a.karma {
-          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/karma.png);
-          padding-left: 28px;
-        }
-        a.ext-js {
-          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/ext-js.png);
-          padding-left: 22px;
+        a.jest {
+          background: no-repeat url(/static/img/adminoid/pages/tools/frontend/icons/jest.svg);
+          padding-left: 19px;
         }
       }
       .images-wrapper {
-        min-height: 330px;
+        min-height: 180px;
+        &.images-wrapper_html {
+            min-height: 150px
+        }
         @media (max-width: (@computerBreakpoint - 1)) {
           margin-top: -1.5em !important;
           margin-bottom: 1em;
@@ -194,35 +192,31 @@
           left: 286px; // 217
         }
         img#ecma-script {
-          top: 138px;
-          left: 282px;
+          top: 138-120px;
+          left: 276px;
         }
         img#vue-js {
-          top: 185px;
+          top: 185-120px;
           left: 48px;
         }
-        img#karma {
-          top: 183-33px;
+        img#jest {
+          top: 30px;
           left: 134+29+15px;
         }
         img#chai {
-          top: 230-33px;
+          top: 230-33-120px;
           left: 116+29+15px;
         }
         img#mocha {
-          top: 231-33px;
+          top: 231-33-120px;
           left: 168+29+15px;
         }
-        img#ext-js {
-          top: 178-33px;
-          left: 241+29+15px;
-        }
         img#node-js {
-          top: 290-36px;
+          top: 290-36-120px;
           left: 117+29+15px;
         }
         img#webpack {
-          top: 272-33px;
+          top: 272-33-120px;
           left: 268px;
         }
       }

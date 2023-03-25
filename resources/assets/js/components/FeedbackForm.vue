@@ -95,7 +95,7 @@
           this.form.rc_key = token
         }
       };
-      Vue.prototype.$bus.on("rc-loaded", setToken());
+      window.Vue.prototype.$bus.on("rc-loaded", setToken());
     },
   }
 </script>

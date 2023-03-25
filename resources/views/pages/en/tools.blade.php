@@ -98,13 +98,9 @@
                             <div class="six wide column images-wrapper">
                                 <img src="/static/img/adminoid/pages/tools/frontend/less.png" alt="less" id="less" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/frontend/sass.png" alt="sass" id="sass" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/frontend/twitter-bootstrap.png" alt="twitter-bootstrap"
-                                     id="twitter-bootstrap" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/frontend/semantic-ui.png" alt="semantic-ui" id="semantic-ui"
-                                     data-rjs="2">
-
-                                <img src="/static/img/adminoid/pages/tools/frontend/ecma-script.png" alt="ecma-script" id="ecma-script"
-                                     data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/frontend/twitter-bootstrap.png" alt="twitter-bootstrap" id="twitter-bootstrap" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/frontend/semantic-ui.png" alt="semantic-ui" id="semantic-ui" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/frontend/es6.svg" alt="ecma-script" id="ecma-script" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/frontend/vue-js.png" alt="vue-js" id="vue-js" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/frontend/karma.png" alt="karma" id="karma" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/frontend/chai.png" alt="chai" id="chai" data-rjs="2">
@@ -132,15 +128,11 @@
 
                             </div>
                             <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker"
-                                     data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/administration/nginx.png" alt="Nginx" id="nginx" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/ubuntu.png" alt="Ubuntu" id="ubuntu"
-                                     data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/apache.png" alt="Apache" id="apache"
-                                     data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/debian.png" alt="Debian" id="debian"
-                                     data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/ubuntu.png" alt="Ubuntu" id="ubuntu" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/apache.png" alt="Apache" id="apache" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/debian.png" alt="Debian" id="debian" data-rjs="2">
                             </div>
                         </div>
                     </div>
@@ -167,13 +159,10 @@
                                 <img src="/static/img/adminoid/pages/tools/environment/keymap.png" alt="keymap" id="keymap" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/environment/vim.png" alt="vim" id="vim" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/environment/git.png" alt="git" id="git" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/environment/markdown.png" alt="markdown" id="markdown"
-                                     data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/environment/markdown.png" alt="markdown" id="markdown" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/environment/omni.png" alt="omni" id="omni" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/environment/vitamin.png" alt="Vitamin-R 2" id="vitamin"
-                                     data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/environment/google-apps.png" alt="Google Apps"
-                                     id="google-apps" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/environment/vitamin.png" alt="Vitamin-R 2" id="vitamin" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/environment/google-apps.png" alt="Google Apps" id="google-apps" data-rjs="2">
                             </div>
                         </div>
                     </div>
