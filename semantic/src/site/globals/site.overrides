@@ -16,3 +16,10 @@
       color: #7D4854;
     }
 }
+
+.tg-link {
+    > img {
+        width: 20px;
+        height: 20px;
+    }
+}

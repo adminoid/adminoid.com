@@ -360,7 +360,7 @@
           </div>
         </div>
         <div class="seven wide column right aligned logo-img">
-          <img src="/static/img/adminoid/footer/footer-logo.svg" alt="">
+          <img src="/static/img/adminoid/footer/footer-logo.svg" alt="adminoid.com">
         </div>
       </div>
     </div>

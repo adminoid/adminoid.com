@@ -38,11 +38,13 @@
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Дизайн</h2>
                                 Сейчас дизайн-макет я делаю в <a href="#sketch" class="hover sketch">
-                                    sketch</a>, до нее был долгое время обречен на
+                                    sketch</a> или <a href="#figma" class="hover figma">
+                                    figma</a>, до нее был долгое время обречен на
                                 <a href="#photoshop" class="hover photoshop">photoshop</a>.
                             </div>
                             <div class="six wide column images-wrapper">
                                 <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch App" id="sketch" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/design/figma.svg" alt="Figma" id="figma">
                                 <img src="/static/img/adminoid/pages/tools/design/photoshop.png" alt="photoshop" id="photoshop" data-rjs="2">
                             </div>
                         </div>
@@ -56,17 +58,18 @@
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Бэкенд</h2>
-                                Разрабатываю на <a href="#php" class="hover php">php</a>,
-                                используя <a href="#laravel" class="hover laravel">laravel</a>
-                                в качестве фреймворка, в среде
-                                <a href="#php-storm" class="hover php-storm">phpStorm</a>
-                                , через тестирование <a href="#php-unit" class="hover php-unit">PHPUnit</a>.
+                                Разрабатываю на <a href="#golang" class="hover golang">Golang</a>
+                                и/или <a href="#node-js" class="node-js hover">Node.js</a>.
+                                Раньше использовал <a href="#php" class="hover php">PHP</a>
+                                c <a href="#laravel" class="hover laravel">Laravel</a>,
+                                на тестах <a href="#php-unit" class="hover php-unit"></a>.
                             </div>
                             <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/backend/laravel.png" alt="Laravel Framework" id="laravel" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/backend/php.png" alt="язык php" id="php" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/backend/phpstorm.png" alt="среда разработки PhpStorm" id="php-storm" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/backend/php-unit.png" alt="PHPUnit" id="php-unit" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/backend/laravel.svg" alt="Laravel Framework" id="laravel">
+                                <img src="/static/img/adminoid/pages/tools/backend/golang.svg" alt="язык golang" id="golang">
+                                <img src="/static/img/adminoid/pages/tools/backend/php.svg" alt="язык php" id="php">
+                                <img src="/static/img/adminoid/pages/tools/backend/phpunit.svg" alt="PHPUnit" id="php-unit">
+                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="node-js" id="node-js">
                             </div>
                         </div>
                     </div>
@@ -87,10 +90,8 @@
                                         приложения использую
                                         <a href="#vue-js" class="vue-js hover">vue.js</a>.
                                         Компилирую и сжимаю код при помощи <a href="#webpack" class="hover webpack">webpack</a>.
-                                        Менеджментом пакетов, запуском тестов занимается
-                                        <a href="#node-js" class="node-js hover">node.js</a>.
                                         Unit тестирование: <a href="#chai" class="hover chai">chai</a>, <a href="#mocha" class="mocha hover">mocha</a>,
-                                        <a href="#jest" class="hover jest">jest</a>.
+                                        <a href="#jest" class="hover jest">jest</a>. Для E2E тестов или автоматизации работы в браузере - Puppeteer
                                     </div>
 
                                     <div class="six wide column images-wrapper">
@@ -99,7 +100,6 @@
                                         <img src="/static/img/adminoid/pages/tools/frontend/jest.svg" alt="jest" id="jest" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/chai.png" alt="chai" id="chai" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/mocha.png" alt="mocha" id="mocha" data-rjs="2">
-                                        <img src="/static/img/adminoid/pages/tools/frontend/node-js.png" alt="node-js" id="node-js" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/webpack.png" alt="webpack" id="webpack" data-rjs="2">
                                     </div>
 
