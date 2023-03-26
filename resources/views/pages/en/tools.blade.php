@@ -41,72 +41,6 @@
 
             <tools-block inline-template>
                 <div>
-                    <div class="ui segment block sixteen wide column" id="projecting">
-                        <div class="ui stackable grid">
-                            <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Planning</h2>
-
-                                <p>To build ER-diagrams, flowcharts, brainstorm I usually use <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, my <a href="#brain" class="hover brain">mind</a> and walking back and forth.</p>
-                            </div>
-
-                            <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/projecting/brain.png" alt="brain" id="brain" data-rjs="2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </tools-block>
-
-            <tools-block inline-template>
-                <div>
-                    <div class="ui segment block sixteen wide column" id="design">
-                        <div class="ui stackable grid">
-                            <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Design</h2>
-                                Now I do the design layout in the<a href="#sketch" class="hover sketch">Sketch</a>
-                                or <a href="#figma" class="hover figma">Figma</a>.
-                                <br>
-                                But I used to work in <a href="#photoshop" class="hover photoshop">Photoshop</a> for a long time before.
-                            </div>
-                            <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch" id="sketch" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/design/figma.svg" alt="Figma" id="figma">
-                                <img src="/static/img/adminoid/pages/tools/design/photoshop.png" alt="Photoshop" id="photoshop" data-rjs="2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </tools-block>
-
-            <tools-block inline-template>
-                <div>
-                    <div class="ui segment block sixteen wide column" id="backend">
-                        <div class="ui stackable grid">
-                            <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Backend</h2>
-                                For now I am developing a backend either with
-                                <a href="#golang" class="hover golang">Golang</a> or
-                                <a href="#node-js" class="node-js hover">Node.js</a>.
-                                Once upon a time for same purposes I used
-                                <a href="#php" class="hover php">Php</a>,
-                                <a href="#laravel" class="hover laravel">Laravel</a> Framework
-                                with a <a href="#php-unit" class="hover php-unit"></a> testing.
-                            </div>
-                            <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/backend/laravel.svg" alt="Laravel Framework" id="laravel">
-                                <img src="/static/img/adminoid/pages/tools/backend/golang.svg" alt="язык golang" id="golang">
-                                <img src="/static/img/adminoid/pages/tools/backend/php.svg" alt="язык php" id="php">
-                                <img src="/static/img/adminoid/pages/tools/backend/phpunit.svg" alt="PHPUnit" id="php-unit">
-                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="node-js" id="node-js">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </tools-block>
-
-            <tools-block inline-template>
-                <div>
                     <div class="ui segment block sixteen wide column" id="frontend">
                         <div class="ui stackable grid">
                             <div class="sixteen wide column text-wrapper">
@@ -162,28 +96,24 @@
 
             <tools-block inline-template>
                 <div>
-                    <div class="ui segment block sixteen wide column" id="administration">
+                    <div class="ui segment block sixteen wide column" id="backend">
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Administration</h2>
-
-                                In recent years I have used OS <a href="#ubuntu" class="hover ubuntu">Ubuntu</a>
-                                / <a href="#debian" class="hover debian">Debian</a>
-                                (in childhood I use FreeBSD). As a web server I have used
-                                <a href="#nginx" class="hover nginx">Nginx</a>, Caddy (In childhood -
-                                <a href="#apache" class="hover apache">Apache</a>).
-                                And now, using <a href="#docker" class="hover docker">Docker</a>,
-                                I can install different versions of backend services at the same time.
-                                I use docker-composer, docker-swarm, docker-machine and so on. System
-                                based on docker possible transfer to other hardware in minutes.
-
+                                <h2 class="ui red header">Backend</h2>
+                                For now I am developing a backend either with
+                                <a href="#golang" class="hover golang">Golang</a> or
+                                <a href="#node-js" class="node-js hover">Node.js</a>.
+                                Once upon a time for same purposes I used
+                                <a href="#php" class="hover php">Php</a>,
+                                <a href="#laravel" class="hover laravel">Laravel</a> Framework
+                                with a <a href="#php-unit" class="hover php-unit"></a> testing.
                             </div>
                             <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/nginx.png" alt="Nginx" id="nginx" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/ubuntu.png" alt="Ubuntu" id="ubuntu" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/apache.png" alt="Apache" id="apache" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/debian.png" alt="Debian" id="debian" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/backend/laravel.svg" alt="Laravel Framework" id="laravel">
+                                <img src="/static/img/adminoid/pages/tools/backend/golang.svg" alt="язык golang" id="golang">
+                                <img src="/static/img/adminoid/pages/tools/backend/php.svg" alt="язык php" id="php">
+                                <img src="/static/img/adminoid/pages/tools/backend/phpunit.svg" alt="PHPUnit" id="php-unit">
+                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="node-js" id="node-js">
                             </div>
                         </div>
                     </div>
@@ -217,6 +147,76 @@
                                 <img src="/static/img/adminoid/pages/tools/environment/omni.png" alt="omni" id="omni" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/environment/vitamin.png" alt="Vitamin-R 2" id="vitamin" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/environment/google-apps.png" alt="Google Apps" id="google-apps" data-rjs="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
+                    <div class="ui segment block sixteen wide column" id="administration">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Administration</h2>
+
+                                In recent years I have used OS <a href="#ubuntu" class="hover ubuntu">Ubuntu</a>
+                                / <a href="#debian" class="hover debian">Debian</a>
+                                (in childhood I use FreeBSD). As a web server I have used
+                                <a href="#nginx" class="hover nginx">Nginx</a>, Caddy (In childhood -
+                                <a href="#apache" class="hover apache">Apache</a>).
+                                And now, using <a href="#docker" class="hover docker">Docker</a>,
+                                I can install different versions of backend services at the same time.
+                                I use docker-composer, docker-swarm, docker-machine and so on. System
+                                based on docker possible transfer to other hardware in minutes.
+
+                            </div>
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/nginx.png" alt="Nginx" id="nginx" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/ubuntu.png" alt="Ubuntu" id="ubuntu" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/apache.png" alt="Apache" id="apache" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/debian.png" alt="Debian" id="debian" data-rjs="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
+                    <div class="ui segment block sixteen wide column" id="projecting">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Planning</h2>
+
+                                <p>To build ER-diagrams, flowcharts, brainstorm I usually use <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, my <a href="#brain" class="hover brain">mind</a> and walking back and forth.</p>
+                            </div>
+
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/projecting/brain.png" alt="brain" id="brain" data-rjs="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
+                    <div class="ui segment block sixteen wide column" id="design">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Design</h2>
+                                Now I do the design layout in the<a href="#sketch" class="hover sketch">Sketch</a>
+                                or <a href="#figma" class="hover figma">Figma</a>.
+                                <br>
+                                But I used to work in <a href="#photoshop" class="hover photoshop">Photoshop</a> for a long time before.
+                            </div>
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch" id="sketch" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/design/figma.svg" alt="Figma" id="figma">
+                                <img src="/static/img/adminoid/pages/tools/design/photoshop.png" alt="Photoshop" id="photoshop" data-rjs="2">
                             </div>
                         </div>
                     </div>
