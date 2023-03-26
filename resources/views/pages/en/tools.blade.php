@@ -16,6 +16,31 @@
 
             <tools-block inline-template>
                 <div>
+                    <div class="ui segment block sixteen wide column" id="blockchain">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Blockchain</h2>
+                                <p>
+                                    I will develop a contract or a system of contracts in the language of
+                                    <a href="#solidity" class="hover solidity">Solidity</a>.
+                                    I'll write unit tests with <a href="#hardhat" class="hover hardhat">Hardhat</a>.
+                                    While development I also use
+                                    <a href="#openzeppelin" class="hover openzeppelin">OpenZeppelin</a>
+                                    framework.
+                                </p>
+                            </div>
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/blockchain/solidity.svg" alt="Solidity" id="solidity">
+                                <img src="/static/img/adminoid/pages/tools/blockchain/hardhat.svg" alt="Hardhat" id="hardhat">
+                                <img src="/static/img/adminoid/pages/tools/blockchain/openzeppelin.svg" alt="OpenZeppelin" id="openzeppelin">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
                     <div class="ui segment block sixteen wide column" id="projecting">
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">

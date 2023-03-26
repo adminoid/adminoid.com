@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81.1989831px" height="90px" viewBox="0 0 81.1989831 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>openzeppelin</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="openzeppelin" fill-rule="nonzero">
+            <path d="M81.198938,89.9999546 L81.198938,66.5725135 L55.6865246,66.5725135 C48.7485428,66.5725135 42.3218263,70.2145797 38.7684018,76.1606445 L30.4973965,89.9999546 L81.198938,89.9999546 Z" id="Path" fill="#63D2F9"></path>
+            <polygon id="Path" fill="#4E5EE4" points="0 -2.25372451e-15 0 23.4274413 67.1974976 23.4274413 81.1989831 -2.25372451e-15"></polygon>
+            <path d="M32.1600108,36.6135166 L0.0739882863,90 L27.4105227,90 L65.77968,26.1306377 L50.6843237,26.1306377 C43.091494,26.1306377 36.057189,30.1113504 32.1600108,36.6135166 Z" id="Path" fill="#63B0F9"></path>
+        </g>
+    </g>
+</svg>

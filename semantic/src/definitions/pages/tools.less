@@ -1,7 +1,6 @@
 @computerBreakpoint          : 992px;
 @largeMonitorBreakpoint      : 1200px;
 #tools {
-
   a {
     border-bottom: dotted 2px #1D60B5;
     &:hover {
@@ -21,6 +20,36 @@
       position: relative;
       img {
         position: absolute;
+      }
+    }
+    &#blockchain {
+      .text-wrapper {
+        a.solidity {
+          background: no-repeat url('/static/img/adminoid/pages/tools/blockchain/icons/solidity.svg');
+          padding-left: 15px;
+        }
+        a.hardhat {
+          background: no-repeat url('/static/img/adminoid/pages/tools/blockchain/icons/hardhat.svg');
+          padding-left: 29px;
+        }
+        a.openzeppelin {
+          background: no-repeat url('/static/img/adminoid/pages/tools/blockchain/icons/openzeppelin.svg');
+          padding-left: 20px;
+        }
+      }
+      .images-wrapper {
+        img#solidity {
+          top: 29px;
+          left: 10px;
+        }
+        img#hardhat {
+          top: 51px;
+          left: 95px;
+        }
+        img#openzeppelin {
+          top: 29px;
+          left: 223px;
+        }
       }
     }
     &#projecting {
@@ -200,19 +229,19 @@
         }
         img#pug {
           top: 50px;
-          left: 16px;
+          left: 30px;
         }
         img#sass {
           top: 52px;
-          left: 106px;
+          left: 120px;
         }
         img#twitter-bootstrap {
           top: 50px;
-          left: 185px;
+          left: 199px;
         }
         img#semantic-ui {
           top: 50px;
-          left: 263px;
+          left: 277px;
         }
         img#ecma-script {
           top: 32px;

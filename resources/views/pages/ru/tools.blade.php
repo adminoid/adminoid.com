@@ -21,16 +21,16 @@
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Блокчейн</h2>
                                 <p>
-                                    Разработаю контракт или систему контрактов на Solidity
-                                    Для построения ER-диаграмм, блок схем, мозгового
-                                    штурма я обычно использую
-                                    <a href="#lucidchart" class="hover lucidchart">lucidchart</a>,
-                                    <a href="#brain" class="hover brain">ум</a>
-                                    и хождение туда-сюда.</p>
+                                    Разработаю контракт или систему контрактов на
+                                    <a href="#solidity" class="hover solidity">Solidity</a>,
+                                    напишу тесты с <a href="#hardhat" class="hover hardhat">Hardhat</a>,
+                                    использую фреймворк <a href="#openzeppelin" class="hover openzeppelin">OpenZeppelin</a>.
+                                </p>
                             </div>
                             <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/projecting/brain.png" alt="brain" id="brain" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/blockchain/solidity.svg" alt="solidity" id="solidity">
+                                <img src="/static/img/adminoid/pages/tools/blockchain/hardhat.svg" alt="hardhat" id="hardhat">
+                                <img src="/static/img/adminoid/pages/tools/blockchain/openzeppelin.svg" alt="openzeppelin" id="openzeppelin">
                             </div>
                         </div>
                     </div>
