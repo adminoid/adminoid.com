@@ -50,11 +50,6 @@ li {
       img {
         width: 150px;
       }
-      .tg-link {
-        img {
-            width: auto;
-        }
-      }
     }
   }
   &.pusher {

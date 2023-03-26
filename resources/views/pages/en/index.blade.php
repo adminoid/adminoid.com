@@ -96,6 +96,12 @@
 
                 <p>I'm working in <strong>macOS</strong>, use <strong>ten-finger touch typing</strong> and <strong>VIM</strong> editor.</p>
 
+                <p class="p-bold">Preferred method of communication - telegram
+                    <a href="https://t.me/qrkey" target="_blank" class="tg-link" title="@qrkey">
+                        <img src="/static/img/telegram.svg" alt="@qrkey"> QRKEY
+                    </a>
+                </p>
+
                 <p>Look through the site, get acquainted with my possibilities and services.</p>
 
             </div>

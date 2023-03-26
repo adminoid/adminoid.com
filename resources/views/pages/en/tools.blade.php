@@ -49,12 +49,10 @@
 
                                     <div class="ten wide column text-wrapper">
                                         <h3>JavaScript</h3>
-
                                         For programming in javascript I prefer use latest version of
                                         <a href="#ecma-script" class="hover ecma-script">ECMAScript</a>
                                         and Typescript. For basis I always use <a href="#vue-js" class="vue-js hover">Vue.js</a>.
                                         As a module builder I use <a href="#webpack" class="hover webpack">webpack</a>.
-                                        Also I know and use <a href="#node-js" class="node-js hover">Node.js</a>.
                                         I cover code by unit tests with: <a href="#chai" class="hover chai">chai</a>,
                                         <a href="#mocha" class="mocha hover">mocha</a>,
                                         <a href="#jest" class="hover jest">jest</a> and so on.
@@ -66,7 +64,6 @@
                                         <img src="/static/img/adminoid/pages/tools/frontend/jest.svg" alt="jest" id="jest" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/chai.png" alt="chai" id="chai" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/mocha.png" alt="mocha" id="mocha" data-rjs="2">
-                                        <img src="/static/img/adminoid/pages/tools/frontend/node-js.png" alt="node-js" id="node-js" data-rjs="2">
                                         <img src="/static/img/adminoid/pages/tools/frontend/webpack.png" alt="webpack" id="webpack" data-rjs="2">
                                     </div>
 

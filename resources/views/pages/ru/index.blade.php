@@ -96,6 +96,11 @@
 
         <p>Работаю в <strong>macOS</strong>. Владею <strong>слепой десятипальцевой печатью</strong>, использую возможности редактора <strong>VIM</strong>.</p>
 
+        <p class="p-bold">Предпочтительный способ связи - телеграм
+          <a href="https://t.me/qrkey" target="_blank" class="tg-link" title="@qrkey">
+            <img src="/static/img/telegram.svg" alt="@qrkey"> QRKEY
+          </a>
+        </p>
         <p>Полистай сайт, ознакомься с моими возможностями и услугами.</p>
 
       </div>

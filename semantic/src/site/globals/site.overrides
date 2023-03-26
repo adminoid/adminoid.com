@@ -13,13 +13,26 @@
     border-radius: 15px;
     padding: 10px 15px;
     > em {
-      color: #7D4854;
+        color: #7D4854;
     }
 }
 
+p.p-bold {
+    font-weight: bold;
+    color: #315FAF;
+}
+
 .tg-link {
-    > img {
-        width: 20px;
-        height: 20px;
+    color: #4F9CD4;
+    border: #4F9CD4 dashed 2px;
+    padding: 5px;
+    border-radius: 15px;
+    &:hover {
+        color: #4F9CD4;
+        border-style: solid;
+    }
+    img {
+        position: relative;
+        top: 5px;
     }
 }
