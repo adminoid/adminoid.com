@@ -39,13 +39,15 @@
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Design</h2>
-                                Now I do the design layout in the<a href="#sketch" class="hover sketch">sketch app</a>.
+                                Now I do the design layout in the<a href="#sketch" class="hover sketch">Sketch</a>
+                                or <a href="#figma" class="hover figma">Figma</a>.
                                 <br>
-                                But I used to work in <a href="#photoshop" class="hover photoshop">photoshop</a> for a long time before.
+                                But I used to work in <a href="#photoshop" class="hover photoshop">Photoshop</a> for a long time before.
                             </div>
                             <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch App" id="sketch" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/design/photoshop.png" alt="photoshop" id="photoshop" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch" id="sketch" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/design/figma.svg" alt="Figma" id="figma">
+                                <img src="/static/img/adminoid/pages/tools/design/photoshop.png" alt="Photoshop" id="photoshop" data-rjs="2">
                             </div>
                         </div>
                     </div>
@@ -58,18 +60,20 @@
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Backend</h2>
-                                I am developing a backend with
-                                <a href="#php" class="hover php">php</a>
-                                using the <a href="#laravel" class="hover laravel">Laravel</a>
-                                Framework (in
-                                <a href="#php-storm" class="hover php-storm">PhpStorm</a>
-                                IDE and through <a href="#php-unit" class="hover php-unit">PHPUnit</a> TDD).
+                                For now I am developing a backend either with
+                                <a href="#golang" class="hover golang">Golang</a> or
+                                <a href="#node-js" class="node-js hover">Node.js</a>.
+                                Once upon a time for same purposes I used
+                                <a href="#php" class="hover php">Php</a>,
+                                <a href="#laravel" class="hover laravel">Laravel</a> Framework
+                                with a <a href="#php-unit" class="hover php-unit"></a> testing.
                             </div>
                             <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/backend/laravel.png" alt="Laravel Framework" id="laravel" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/backend/php.png" alt="язык php" id="php" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/backend/phpstorm.png" alt="среда разработки PhpStorm" id="php-storm" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/backend/php-unit.png" alt="PHPUnit" id="php-unit" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/backend/laravel.svg" alt="Laravel Framework" id="laravel">
+                                <img src="/static/img/adminoid/pages/tools/backend/golang.svg" alt="язык golang" id="golang">
+                                <img src="/static/img/adminoid/pages/tools/backend/php.svg" alt="язык php" id="php">
+                                <img src="/static/img/adminoid/pages/tools/backend/phpunit.svg" alt="PHPUnit" id="php-unit">
+                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="node-js" id="node-js">
                             </div>
                         </div>
                     </div>

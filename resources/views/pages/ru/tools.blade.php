@@ -38,9 +38,9 @@
                             <div class="ten wide column text-wrapper">
                                 <h2 class="ui red header">Дизайн</h2>
                                 Сейчас дизайн-макет я делаю в <a href="#sketch" class="hover sketch">
-                                    sketch</a> или <a href="#figma" class="hover figma">
-                                    figma</a>, до нее был долгое время обречен на
-                                <a href="#photoshop" class="hover photoshop">photoshop</a>.
+                                    Sketch</a> или <a href="#figma" class="hover figma">
+                                    Figma</a>, до нее был долгое время обречен на
+                                <a href="#photoshop" class="hover photoshop">Photoshop</a>.
                             </div>
                             <div class="six wide column images-wrapper">
                                 <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch App" id="sketch" data-rjs="2">
@@ -69,7 +69,7 @@
                                 <img src="/static/img/adminoid/pages/tools/backend/golang.svg" alt="язык golang" id="golang">
                                 <img src="/static/img/adminoid/pages/tools/backend/php.svg" alt="язык php" id="php">
                                 <img src="/static/img/adminoid/pages/tools/backend/phpunit.svg" alt="PHPUnit" id="php-unit">
-                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="node-js" id="node-js">
+                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="Node.js" id="node-js">
                             </div>
                         </div>
                     </div>

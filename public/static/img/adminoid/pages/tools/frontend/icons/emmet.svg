@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>emmet</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="emmet" fill-rule="nonzero">
+            <circle id="Oval" fill="#1C1C20" cx="9.5" cy="9.5" r="9.5"></circle>
+            <polygon id="Path" fill="#BAFFA9" points="13.2939673 9.24327545 12.2360119 8.18532006 12.7801458 5.94838305 10.5129709 6.46227902 9.48517894 5.43448708 14.5635883 4.16486614 13.2939673 9.24327545"></polygon>
+            <polygon id="Path" fill="#7ACB16" points="11.5407628 16.2563914 2.47206303 7.18776606 7.55054682 5.91807064 8.57833876 6.94586257 4.95082905 7.85270276 7.00641292 9.90828662 9.39446513 9.33391478 8.78992983 11.6917291 10.8455137 13.7473129 11.7523539 10.1198777 12.8103093 11.1779076 11.5407628 16.2563169"></polygon>
+        </g>
+    </g>
+</svg>
