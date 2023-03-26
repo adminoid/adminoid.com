@@ -16,6 +16,29 @@
 
             <tools-block inline-template>
                 <div>
+                    <div class="ui segment block sixteen wide column" id="blockchain">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Блокчейн</h2>
+                                <p>
+                                    Разработаю контракт или систему контрактов на Solidity
+                                    Для построения ER-диаграмм, блок схем, мозгового
+                                    штурма я обычно использую
+                                    <a href="#lucidchart" class="hover lucidchart">lucidchart</a>,
+                                    <a href="#brain" class="hover brain">ум</a>
+                                    и хождение туда-сюда.</p>
+                            </div>
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/projecting/brain.png" alt="brain" id="brain" data-rjs="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
                     <div class="ui segment block sixteen wide column" id="projecting">
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">

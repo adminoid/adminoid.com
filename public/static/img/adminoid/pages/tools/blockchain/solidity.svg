@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57.99631px" height="90px" viewBox="0 0 57.99631 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>solidity</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="solidity" fill="#000000" fill-rule="nonzero">
+            <polyline id="Path" opacity="0.45" points="43.3837638 0 28.9151292 25.7158672 0 25.7158672 14.4575646 0 43.3837638 0"></polyline>
+            <polygon id="Path" opacity="0.6" points="28.9151292 25.7158672 57.8413284 25.7158672 43.3837638 0 14.4575646 0"></polygon>
+            <polygon id="Path" opacity="0.8" points="14.4575646 51.4206642 28.9151292 25.7158672 14.4575646 0 0 25.7158672"></polygon>
+            <polyline id="Path" opacity="0.45" points="14.601476 90 29.0701107 64.2841328 57.99631 64.2841328 43.5276753 90 14.601476 90"></polyline>
+            <polygon id="Path" opacity="0.6" points="29.0701107 64.2841328 0.143911439 64.2841328 14.601476 90 43.5276753 90"></polygon>
+            <polygon id="Path" opacity="0.8" points="43.5276753 38.5793358 29.0701107 64.2841328 43.5276753 90 57.99631 64.2841328"></polygon>
+        </g>
+    </g>
+</svg>
