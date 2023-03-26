@@ -39,68 +39,6 @@
 
             <tools-block inline-template>
                 <div>
-                    <div class="ui segment block sixteen wide column" id="projecting">
-                        <div class="ui stackable grid">
-                            <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Проектирование</h2>
-                                <p>Для построения ER-диаграмм, блок схем, мозгового штурма я обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, <a href="#brain" class="hover brain">ум</a> и хождение туда-сюда.</p>
-                            </div>
-                            <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/projecting/brain.png" alt="brain" id="brain" data-rjs="2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </tools-block>
-
-            <tools-block inline-template>
-                <div>
-                    <div class="ui segment block sixteen wide column" id="design">
-                        <div class="ui stackable grid">
-                            <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Дизайн</h2>
-                                Сейчас дизайн-макет я делаю в <a href="#sketch" class="hover sketch">
-                                    Sketch</a> или <a href="#figma" class="hover figma">
-                                    Figma</a>, до нее был долгое время обречен на
-                                <a href="#photoshop" class="hover photoshop">Photoshop</a>.
-                            </div>
-                            <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch App" id="sketch" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/design/figma.svg" alt="Figma" id="figma">
-                                <img src="/static/img/adminoid/pages/tools/design/photoshop.png" alt="photoshop" id="photoshop" data-rjs="2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </tools-block>
-
-            <tools-block inline-template>
-                <div>
-                    <div class="ui segment block sixteen wide column" id="backend">
-                        <div class="ui stackable grid">
-                            <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Бэкенд</h2>
-                                Разрабатываю на <a href="#golang" class="hover golang">Golang</a>
-                                и/или <a href="#node-js" class="node-js hover">Node.js</a>.
-                                Раньше использовал <a href="#php" class="hover php">PHP</a>
-                                c <a href="#laravel" class="hover laravel">Laravel</a>,
-                                на тестах <a href="#php-unit" class="hover php-unit"></a>.
-                            </div>
-                            <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/backend/laravel.svg" alt="Laravel Framework" id="laravel">
-                                <img src="/static/img/adminoid/pages/tools/backend/golang.svg" alt="язык golang" id="golang">
-                                <img src="/static/img/adminoid/pages/tools/backend/php.svg" alt="язык php" id="php">
-                                <img src="/static/img/adminoid/pages/tools/backend/phpunit.svg" alt="PHPUnit" id="php-unit">
-                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="Node.js" id="node-js">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </tools-block>
-
-            <tools-block inline-template>
-                <div>
                     <div class="ui segment block sixteen wide column" id="frontend">
                         <div class="ui stackable grid">
                             <div class="sixteen wide column text-wrapper">
@@ -153,26 +91,22 @@
 
             <tools-block inline-template>
                 <div>
-                    <div class="ui segment block sixteen wide column" id="administration">
+                    <div class="ui segment block sixteen wide column" id="backend">
                         <div class="ui stackable grid">
                             <div class="ten wide column text-wrapper">
-                                <h2 class="ui red header">Администрирование</h2>
-                                В последние годы использовал OS <a href="#ubuntu" class="hover ubuntu">Ubuntu</a>
-                                / <a href="#debian" class="hover debian">Debian</a>,
-                                а в качестве web-сервера использовал <a href="#nginx" class="hover nginx">Nginx</a> или
-                                <a href="#apache" class="hover apache">Apache</a>. <br>
-                                А сейчас, используя <a href="#docker" class="hover docker">Docker</a>,
-                                могу установить одновременно несколько разных версий php, mysql и т.п..
-                                На дешевом облачном хостинге за 250 рублей в месяц такая система будет
-                                быстро работать. И ее можно легко, в несколько простых шагов, перенести
-                                на любой другой хостинг, сервер, машину или облачный сервис.
+                                <h2 class="ui red header">Бэкенд</h2>
+                                Разрабатываю на <a href="#golang" class="hover golang">Golang</a>
+                                и/или <a href="#node-js" class="node-js hover">Node.js</a>.
+                                Раньше использовал <a href="#php" class="hover php">PHP</a>
+                                c <a href="#laravel" class="hover laravel">Laravel</a>,
+                                на тестах <a href="#php-unit" class="hover php-unit"></a>.
                             </div>
                             <div class="six wide column images-wrapper">
-                                <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/nginx.png" alt="Nginx" id="nginx" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/ubuntu.png" alt="Ubuntu" id="ubuntu" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/apache.png" alt="Apache" id="apache" data-rjs="2">
-                                <img src="/static/img/adminoid/pages/tools/administration/debian.png" alt="Debian" id="debian" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/backend/laravel.svg" alt="Laravel Framework" id="laravel">
+                                <img src="/static/img/adminoid/pages/tools/backend/golang.svg" alt="язык golang" id="golang">
+                                <img src="/static/img/adminoid/pages/tools/backend/php.svg" alt="язык php" id="php">
+                                <img src="/static/img/adminoid/pages/tools/backend/phpunit.svg" alt="PHPUnit" id="php-unit">
+                                <img src="/static/img/adminoid/pages/tools/backend/node-js.svg" alt="Node.js" id="node-js">
                             </div>
                         </div>
                     </div>
@@ -202,6 +136,72 @@
                                 <img src="/static/img/adminoid/pages/tools/environment/omni.png" alt="omni" id="omni" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/environment/vitamin.png" alt="Vitamin-R 2" id="vitamin" data-rjs="2">
                                 <img src="/static/img/adminoid/pages/tools/environment/google-apps.png" alt="Google Apps" id="google-apps" data-rjs="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
+                    <div class="ui segment block sixteen wide column" id="administration">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Администрирование</h2>
+                                В последние годы использовал OS <a href="#ubuntu" class="hover ubuntu">Ubuntu</a>
+                                / <a href="#debian" class="hover debian">Debian</a>,
+                                а в качестве web-сервера использовал <a href="#nginx" class="hover nginx">Nginx</a> или
+                                <a href="#apache" class="hover apache">Apache</a>. <br>
+                                А сейчас, используя <a href="#docker" class="hover docker">Docker</a>,
+                                могу установить одновременно несколько разных версий php, mysql и т.п..
+                                На дешевом облачном хостинге за 250 рублей в месяц такая система будет
+                                быстро работать. И ее можно легко, в несколько простых шагов, перенести
+                                на любой другой хостинг, сервер, машину или облачный сервис.
+                            </div>
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/administration/docker.png" alt="Docker" id="docker" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/nginx.png" alt="Nginx" id="nginx" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/ubuntu.png" alt="Ubuntu" id="ubuntu" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/apache.png" alt="Apache" id="apache" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/administration/debian.png" alt="Debian" id="debian" data-rjs="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
+                    <div class="ui segment block sixteen wide column" id="projecting">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Проектирование</h2>
+                                <p>Для построения ER-диаграмм, блок схем, мозгового штурма я обычно использую <a href="#lucidchart" class="hover lucidchart">lucidchart</a>, <a href="#brain" class="hover brain">ум</a> и хождение туда-сюда.</p>
+                            </div>
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/projecting/lucidchart.png" alt="lucidchart-projecting" id="lucidchart" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/projecting/brain.png" alt="brain" id="brain" data-rjs="2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </tools-block>
+
+            <tools-block inline-template>
+                <div>
+                    <div class="ui segment block sixteen wide column" id="design">
+                        <div class="ui stackable grid">
+                            <div class="ten wide column text-wrapper">
+                                <h2 class="ui red header">Дизайн</h2>
+                                Сейчас дизайн-макет я делаю в <a href="#sketch" class="hover sketch">
+                                    Sketch</a> или <a href="#figma" class="hover figma">
+                                    Figma</a>, до нее был долгое время обречен на
+                                <a href="#photoshop" class="hover photoshop">Photoshop</a>.
+                            </div>
+                            <div class="six wide column images-wrapper">
+                                <img src="/static/img/adminoid/pages/tools/design/sketch.png" alt="Sketch App" id="sketch" data-rjs="2">
+                                <img src="/static/img/adminoid/pages/tools/design/figma.svg" alt="Figma" id="figma">
+                                <img src="/static/img/adminoid/pages/tools/design/photoshop.png" alt="photoshop" id="photoshop" data-rjs="2">
                             </div>
                         </div>
                     </div>
