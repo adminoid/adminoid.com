@@ -72,7 +72,7 @@ class FeedbackMessagesController extends Controller
                     $current_date = Carbon::now();
                     $feedbackMessage = (new FeedbackMessage)->forceCreate([
                         'email' => request('email'),
-                        'text' => request('text') . "\n\r ____ " . $current_date,
+                        'text' => "\n\r" . request('text') . "\n\r\n\r ____ " . $current_date,
                         'ip' => $ip,
                         'user_agent' => $user_agent
                     ]);
